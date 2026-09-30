@@ -1,0 +1,7 @@
+{
+  "_comment": "ZIP -> centroid fallback used when Nominatim is unreachable. Values come from geocoding, never typed by hand. Add a ZIP when a shop in it is added.",
+  "91303": { "lat": 34.2011, "lon": -118.5981 },
+  "90064": { "lat": 34.0380, "lon": -118.4419 },
+  "91105": { "lat": 34.1326, "lon": -118.1472 },
+  "91324": { "lat": 34.2345, "lon": -118.5535 }
+}
