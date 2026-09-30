@@ -119,6 +119,11 @@ export default function Page() {
             </button>
           ))}
         </nav>
+        <button className="iconbtn" aria-label={prefs.theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+          aria-pressed={prefs.theme === "dark"} title="Light / dark"
+          onClick={() => update({ theme: prefs.theme === "dark" ? "light" : "dark" })}>
+          {prefs.theme === "dark" ? "☀" : "☾"}
+        </button>
         <button className="iconbtn" aria-label="Settings" aria-expanded={settingsOpen}
           onClick={() => setSettingsOpen((o) => !o)}>⚙</button>
         {settingsOpen && (

@@ -41,5 +41,20 @@
   { "date": "2026-09-30", "action": "added", "game": "lorcana", "shopId": "fire-and-dice", "summary": "Lorcana Constructed: Wed 7 PM." },
   { "date": "2026-09-30", "action": "added", "game": "hololive", "shopId": "fire-and-dice", "summary": "hololive Constructed: Wed 7:30 PM." },
   { "date": "2026-09-30", "action": "added", "game": "palworld", "shopId": "fire-and-dice", "summary": "Palworld Constructed: Thu 5:30 PM." },
-  { "date": "2026-09-30", "action": "note", "game": null, "shopId": "fire-and-dice", "summary": "Board Game Night (Wed 6 PM) and D&D Adventurer's League (Wed 6:30 PM) are on the store's schedule but not on this calendar, which tracks trading card games only." }
+  { "date": "2026-09-30", "action": "note", "game": null, "shopId": "fire-and-dice", "summary": "Board Game Night (Wed 6 PM) and D&D Adventurer's League (Wed 6:30 PM) are on the store's schedule but not on this calendar, which tracks trading card games only." },
+
+  { "date": "2026-09-30", "action": "added", "game": null, "shopId": "coretcg", "summary": "CoreTCG's new weekly tournament schedule, effective Friday Oct 2, 2026 (from the store's announcement: most tournaments now start at 6 PM, more prizing). Nothing is listed before Oct 2." },
+  { "date": "2026-09-30", "action": "added", "game": "union_arena", "shopId": "coretcg", "summary": "Union Arena: Mon 6 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "gundam", "shopId": "coretcg", "summary": "Gundam: Mon 6 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "onepiece", "shopId": "coretcg", "summary": "One Piece: Mon 6 PM, Wed 6 PM, Sat 1 PM weekly case tournament (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "grand_archive", "shopId": "coretcg", "summary": "Grand Archive (Regular and Pantheon): Tue 6 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "azuki", "shopId": "coretcg", "summary": "Azuki: Thu 6 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "mtg", "shopId": "coretcg", "summary": "Magic: Fri 5 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "lorcana", "shopId": "coretcg", "summary": "Lorcana: Fri 6 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "riftbound", "shopId": "coretcg", "summary": "Riftbound: Fri 6 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "digimon", "shopId": "coretcg", "summary": "Digimon: Sat 6 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "dbs_masters", "shopId": "coretcg", "summary": "Dragon Ball Super Masters: Sat 6 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "pokemon", "shopId": "coretcg", "summary": "Pokémon: Sun 12:30 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "added", "game": "yugioh", "shopId": "coretcg", "summary": "Yu-Gi-Oh!: Sun 4:30 PM (from Oct 2)." },
+  { "date": "2026-09-30", "action": "note", "game": null, "shopId": "coretcg", "summary": "The store also announced new hours from Oct 2 but the closing time was cut off in the post; hours stay as previously listed until confirmed. Entry fees not published." }
 ]

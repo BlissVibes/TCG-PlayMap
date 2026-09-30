@@ -48,12 +48,12 @@
     "lon": -118.1472093,
     "tz": "America/Los_Angeles",
     "website": "https://www.coretcg.com/",
-    "socials": { "facebook": "https://www.facebook.com/CoreTradingCardGames/upcoming_hosted_events" },
-    "hours": "Mon-Sun 11 AM-8 PM",
-    "games": ["yugioh", "onepiece", "grand_archive", "pokemon", "mtg"],
-    "notes": "Weekly schedule pending: the website only links to Facebook's hosted-events list, which cannot be read automatically. Runs large regionals (Yu-Gi-Oh!, One Piece, Grand Archive).",
+    "socials": { "facebook": "https://www.facebook.com/CoreTradingCardGames/upcoming_hosted_events", "x": "https://x.com/CoreTCG" },
+    "hours": "Mon-Sun 11 AM-8 PM (new hours from Oct 2, 2026 announced; opening 12 PM, closing time not yet confirmed)",
+    "games": ["union_arena", "gundam", "onepiece", "grand_archive", "azuki", "mtg", "lorcana", "riftbound", "digimon", "dbs_masters", "pokemon", "yugioh"],
+    "notes": "Weekly tournament schedule effective Oct 2, 2026, from the store's announcement graphic; most tournaments start at 6 PM. Also runs large regionals (Yu-Gi-Oh!, One Piece, Grand Archive). More info: linktr.ee/coretcg.",
     "active": true,
-    "source": { "url": "https://www.coretcg.com/", "checked": "2026-09-30", "note": "events live on Facebook only" }
+    "source": { "url": "https://x.com/CoreTCG/status/2104985921091457209", "checked": "2026-09-30", "note": "Weekly Tournaments graphic posted 2026-09-29" }
   },
   {
     "id": "fire-and-dice",

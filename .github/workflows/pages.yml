@@ -21,6 +21,11 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      # Turns Pages on for the repo the first time this runs (Source: GitHub
+      # Actions), so no settings click is needed to go live.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - run: npm ci
       - run: npm test
       - run: npm run build

@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.0.0";
+export const VERSION = "0.1.0.1";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,14 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.0.1",
+    date: "2026-09-30",
+    changes: [
+      "CoreTCG (Pasadena) weekly tournament schedule added, effective Oct 2, 2026 - 14 slots across 12 games. All four seed shops now have schedules.",
+      "Light / dark toggle (☾ / ☀) in the header; the first visit follows your device setting.",
+    ],
+  },
   {
     version: "0.1.0.0",
     date: "2026-09-30",

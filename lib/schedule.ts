@@ -67,7 +67,7 @@ export interface Shop {
   tz: string;
   website?: string;
   phone?: string;
-  socials?: { facebook?: string; instagram?: string; discord?: string; threads?: string };
+  socials?: { facebook?: string; instagram?: string; discord?: string; threads?: string; x?: string };
   /** Free text, exactly as the store publishes it. */
   hours?: string;
   /** Games the store supports (stock, singles, space) even when no event row says so. */
