@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.0.4";
+export const VERSION = "0.1.0.5";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.0.5",
+    date: "2026-09-30",
+    changes: ["King Fandom: withdrew the note claiming the store's two schedule pages disagreed - they match; Saturday Commander noted as pods of 4."],
+  },
   {
     version: "0.1.0.4",
     date: "2026-09-30",

@@ -12,7 +12,7 @@
   { "date": "2026-09-30", "action": "added", "game": "mtg", "shopId": "king-fandom", "summary": "Weekly Magic Commander tournament: Sat 12 PM ($10). Star Trek pre-release Nov 7 ($35)." },
   { "date": "2026-09-30", "action": "added", "game": "union_arena", "shopId": "king-fandom", "summary": "Weekly Union Arena tournament: Sun 12 PM ($5)." },
   { "date": "2026-09-30", "action": "note", "game": "lorcana", "shopId": "king-fandom", "summary": "Lorcana listed as 'coming soon' on Wednesdays; not on the calendar until the store confirms." },
-  { "date": "2026-09-30", "action": "note", "game": null, "shopId": "king-fandom", "summary": "The store's tournaments page and its marketplace-schedule calendar disagree on which day some games run (e.g. Pokémon Thu vs Wed). The tournaments page was used; needs confirming with the store." },
+  { "date": "2026-09-30", "action": "note", "game": null, "shopId": "king-fandom", "summary": "Correction: the store's tournaments page and its month calendar AGREE on every day (Sep 1, 2026 is a Tuesday; an earlier note here claimed they differed, which was a misreading of the calendar grid). Schedule stands as listed." },
 
   { "date": "2026-09-30", "action": "added", "game": null, "shopId": "rwt-collective", "summary": "RWT Collective (West LA, Olympic Blvd) added to the map." },
   { "date": "2026-09-30", "action": "added", "game": "grand_archive", "shopId": "rwt-collective", "summary": "Weekly Grand Archive: Mon 6:30 PM, Sat 1 PM." },
