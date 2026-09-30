@@ -21,11 +21,10 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      # Turns Pages on for the repo the first time this runs (Source: GitHub
-      # Actions), so no settings click is needed to go live.
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
+      # Pages must be switched on ONCE by a repo admin: Settings -> Pages ->
+      # Source: GitHub Actions. The workflow token cannot do it (tried
+      # configure-pages `enablement: true` on 2026-09-30: "Resource not
+      # accessible by integration"), so until that click the deploy job fails.
       - run: npm ci
       - run: npm test
       - run: npm run build

@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.0.1";
+export const VERSION = "0.1.0.2";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.0.2",
+    date: "2026-09-30",
+    changes: ["Internal: deploy workflow fix (GitHub Pages enablement is a one-time repo setting, not a workflow step)."],
+  },
   {
     version: "0.1.0.1",
     date: "2026-09-30",

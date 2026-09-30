@@ -3,8 +3,9 @@
 Where and when to play trading card games around Los Angeles: a map of card
 shops that host play, and a calendar of their weekly events and tournaments.
 
-**Live:** https://blissvibes.github.io/TCG-PlayMap/ (GitHub Pages; enable it
-once under Settings → Pages → Source: *GitHub Actions*)
+**Live:** https://blissvibes.github.io/TCG-PlayMap/ (GitHub Pages; a repo
+admin enables it ONCE under Settings → Pages → Source: *GitHub Actions* — the
+workflow cannot do this itself, and its deploy job fails until it is done)
 
 ## What it does
 
