@@ -31,9 +31,16 @@ proposing structure — the phases are already laid out.
    ```
    `next build` does not typecheck test files; tsc does.
 
+   Then the browser: `CHROME_PATH=<chromium> npm run acceptance` against the
+   fresh `out/`. It opens the page with a FRESH profile and checks what a
+   first visitor sees (blocks, a pin per shop, block-to-map jump, theme
+   toggle, no page errors). On 2026-09-30 every other gate was green and the
+   live map had zero pins; only this caught it.
+
 6. **Verify the deploy, not the build.**
    `curl -s https://blissvibes.github.io/TCG-PlayMap/version.json` must show
-   the version just shipped. When Firestore arrives, add a health check that
+   the version just shipped, then
+   `npm run acceptance -- https://blissvibes.github.io/TCG-PlayMap/`. When Firestore arrives, add a health check that
    fails on zero shops — "the request succeeded and the map is empty" is the
    failure mode that has never once been a crash.
 

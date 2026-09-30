@@ -29,7 +29,11 @@ npm run dev          # http://localhost:3000
 npm test             # vitest
 npm run typecheck
 npm run build        # static export to out/
+npm run acceptance   # drives out/ in headless Chromium; pass a URL to test the live site
 ```
+
+Deploys: the `github-pages` environment only accepts the repo's **default
+branch**, so pushes to that branch deploy; `main` mirrors it.
 
 Data lives in `data/*.json`. To add a shop or an event, read
 `docs/ADDING_DATA.md`. Long-term plan: `docs/ROADMAP.md`. Shapes:

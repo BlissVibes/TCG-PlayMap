@@ -15,7 +15,7 @@
  * disagree about what "within 25 miles of 91303" means.
  */
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { loadLeaflet, TILE_ATTRIBUTION, TILE_URL } from "@/lib/leafletCdn";
 import { GAMES } from "@/lib/games";
 import { formatTime, WEEKDAY_SHORT, weekdayOf, type Occurrence, type Shop } from "@/lib/schedule";
@@ -90,6 +90,16 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
   const lastFocusNonce = useRef<number>(0);
   /** A fit was wanted while the container had no size; do it when it does. */
   const pendingFit = useRef(false);
+  /**
+   * Flips once Leaflet has loaded and the map object exists. The redraw
+   * effect depends on it, which is what makes the FIRST draw use current
+   * props: the map is created inside a run-once effect, and that effect's
+   * closure holds the props from the first render - an empty shop list,
+   * because the data had not loaded yet. Calling draw() from there painted
+   * nothing and nothing ever repainted; the live site shipped with zero pins
+   * on 2026-09-30 until this was found by driving the deployed page.
+   */
+  const [ready, setReady] = useState(false);
 
   const hasSize = () => !!el.current && el.current.clientWidth > 0 && el.current.clientHeight > 0;
 
@@ -119,8 +129,8 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
       map.current._pins = L.layerGroup().addTo(map.current);
       map.current._origin = L.layerGroup().addTo(map.current);
       setTimeout(() => map.current?.invalidateSize(), 0);
-      // Trigger the first draw now that the map exists.
-      draw();
+      // Do NOT call draw() here - this closure's props are stale (see `ready`).
+      setReady(true);
     })();
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -161,27 +171,27 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
     fit();
   };
 
-  // Redraw whenever the inputs change.
-  useEffect(() => { draw(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [shops, occurrences, origin, radiusMi, myEvents]);
+  // Draw once the map exists, and redraw whenever the inputs change.
+  useEffect(() => { if (ready) draw(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [ready, shops, occurrences, origin, radiusMi, myEvents]);
 
   // The tab just appeared: the container has a size for the first time, or a
   // new one. Fit if a fit was deferred, otherwise just re-measure.
   useEffect(() => {
-    if (!visible || !map.current) return;
+    if (!visible || !ready || !map.current) return;
     const t = setTimeout(() => {
       if (!map.current) return;
       if (pendingFit.current) fit(); else map.current.invalidateSize();
     }, 0);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [visible]);
+  }, [visible, ready]);
 
   // Jump to a shop when the calendar or the log asks. Runs after the tab
   // switch has laid out (the timeout), sets the view without animation and
   // THEN opens the popup - a popup opened mid-flyTo can be dropped by the
   // zoom animation.
   useEffect(() => {
-    if (!focus || !visible || !map.current || focus.nonce === lastFocusNonce.current) return;
+    if (!focus || !visible || !ready || !map.current || focus.nonce === lastFocusNonce.current) return;
     const m = markers.current.get(focus.shopId);
     if (!m) return;
     lastFocusNonce.current = focus.nonce;
@@ -193,7 +203,7 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
       m.openPopup();
     }, 60);
     return () => clearTimeout(t);
-  }, [focus, visible, shops]);
+  }, [focus, visible, ready, shops]);
 
   return <div className="mapwrap"><div ref={el} className="map" role="region" aria-label="Map of card shops" /></div>;
 }
