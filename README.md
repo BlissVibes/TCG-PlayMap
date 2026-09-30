@@ -32,8 +32,10 @@ npm run build        # static export to out/
 npm run acceptance   # drives out/ in headless Chromium; pass a URL to test the live site
 ```
 
-Deploys: the `github-pages` environment only accepts the repo's **default
-branch**, so pushes to that branch deploy; `main` mirrors it.
+Deploys: push to `main`. The `github-pages` environment only accepts the
+branch it was created with (`claude/busy-dirac-gsnjt7`), so the workflow
+fast-forwards that branch and dispatches the deploy there — see the header of
+`.github/workflows/pages.yml`, including how to retire that relay.
 
 Data lives in `data/*.json`. To add a shop or an event, read
 `docs/ADDING_DATA.md`. Long-term plan: `docs/ROADMAP.md`. Shapes:

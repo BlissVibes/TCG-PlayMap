@@ -37,7 +37,12 @@ proposing structure — the phases are already laid out.
    toggle, no page errors). On 2026-09-30 every other gate was green and the
    live map had zero pins; only this caught it.
 
-6. **Verify the deploy, not the build.**
+6. **Verify the deploy, not the build.** A push to `main` deploys via a
+   relay run on `claude/busy-dirac-gsnjt7` (header of
+   `.github/workflows/pages.yml` says why); expect TWO workflow runs and
+   ~2 minutes. Repo settings (Pages, environments) cannot be changed from an
+   agent session - the API paths are blocked by the proxy - so ask Mark for
+   those and never burn calls retrying them.
    `curl -s https://blissvibes.github.io/TCG-PlayMap/version.json` must show
    the version just shipped, then
    `npm run acceptance -- https://blissvibes.github.io/TCG-PlayMap/`. When Firestore arrives, add a health check that
