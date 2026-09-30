@@ -56,5 +56,6 @@
   { "date": "2026-09-30", "action": "added", "game": "dbs_masters", "shopId": "coretcg", "summary": "Dragon Ball Super Masters: Sat 6 PM (from Oct 2)." },
   { "date": "2026-09-30", "action": "added", "game": "pokemon", "shopId": "coretcg", "summary": "Pokémon: Sun 12:30 PM (from Oct 2)." },
   { "date": "2026-09-30", "action": "added", "game": "yugioh", "shopId": "coretcg", "summary": "Yu-Gi-Oh!: Sun 4:30 PM (from Oct 2)." },
-  { "date": "2026-09-30", "action": "note", "game": null, "shopId": "coretcg", "summary": "The store also announced new hours from Oct 2 but the closing time was cut off in the post; hours stay as previously listed until confirmed. Entry fees not published." }
+  { "date": "2026-09-30", "action": "note", "game": null, "shopId": "coretcg", "summary": "The store also announced new hours from Oct 2 but the closing time was cut off in the post; hours stay as previously listed until confirmed. Entry fees not published." },
+  { "date": "2026-09-30", "action": "changed", "game": null, "shopId": "coretcg", "summary": "Store hours from Oct 2, 2026: 12-9 PM daily (was 11 AM-8 PM), per the store's follow-up post." }
 ]

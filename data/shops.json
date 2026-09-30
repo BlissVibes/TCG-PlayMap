@@ -49,7 +49,7 @@
     "tz": "America/Los_Angeles",
     "website": "https://www.coretcg.com/",
     "socials": { "facebook": "https://www.facebook.com/CoreTradingCardGames/upcoming_hosted_events", "x": "https://x.com/CoreTCG" },
-    "hours": "Mon-Sun 11 AM-8 PM (new hours from Oct 2, 2026 announced; opening 12 PM, closing time not yet confirmed)",
+    "hours": "Mon-Sun 12-9 PM (from Oct 2, 2026; previously 11 AM-8 PM)",
     "games": ["union_arena", "gundam", "onepiece", "grand_archive", "azuki", "mtg", "lorcana", "riftbound", "digimon", "dbs_masters", "pokemon", "yugioh"],
     "notes": "Weekly tournament schedule effective Oct 2, 2026, from the store's announcement graphic; most tournaments start at 6 PM. Also runs large regionals (Yu-Gi-Oh!, One Piece, Grand Archive). More info: linktr.ee/coretcg.",
     "active": true,
