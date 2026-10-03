@@ -19,6 +19,13 @@ describe("committed data", () => {
     for (const s of shops) expect(s.active).toBe(true);
   });
 
+  it("gives every active shop a phone number", async () => {
+    // Every calendar block offers "call the shop" since 0.1.0.7; CoreTCG
+    // shipped without one and its blocks silently had no call link.
+    const { shops } = await jsonDataSource.load();
+    for (const s of shops.filter((x) => x.active)) expect(s.phone, `${s.id} has no phone`).toBeTruthy();
+  });
+
   it("logs every shop that has events", async () => {
     // A shop whose schedule was added silently is exactly what the calendar
     // log exists to prevent.

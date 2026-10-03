@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.0.7";
+export const VERSION = "0.1.0.8";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.0.8",
+    date: "2026-10-03",
+    changes: ["CoreTCG's phone number added, so every shop's events now have a call button."],
+  },
   {
     version: "0.1.0.7",
     date: "2026-10-03",

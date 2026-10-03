@@ -48,6 +48,7 @@
     "lon": -118.1472093,
     "tz": "America/Los_Angeles",
     "website": "https://www.coretcg.com/",
+    "phone": "(626) 577-6696",
     "socials": { "facebook": "https://www.facebook.com/CoreTradingCardGames/upcoming_hosted_events", "x": "https://x.com/CoreTCG" },
     "hours": "Mon-Sun 12-9 PM (from Oct 2, 2026; previously 11 AM-8 PM)",
     "games": ["union_arena", "gundam", "onepiece", "grand_archive", "azuki", "mtg", "lorcana", "riftbound", "digimon", "dbs_masters", "pokemon", "yugioh"],
