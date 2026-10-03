@@ -53,6 +53,28 @@ try {
   check("week view renders event blocks", blocks > 0, `${blocks} blocks`);
   check("some blocks are tournaments (trophy)", (await page.locator(".block .trophy").count()) > 0);
 
+  // Every block offers a call link (when the shop has a phone) and directions.
+  const firstBlock = page.locator(".block").first();
+  const dirHref = await firstBlock.locator('a[aria-label^="Directions to"]').getAttribute("href").catch(() => null);
+  check("blocks link to directions", !!dirHref && dirHref.includes("google.com/maps/dir/"), dirHref ?? "none");
+  const phoneBlocks = await page.locator('.block a[href^="tel:"]').count();
+  check("blocks show the shop's phone as a call link", phoneBlocks > 0, `${phoneBlocks} call links`);
+
+  // Month view must draw EVERY event the week view shows, date for date.
+  // (2026-10-03: month cells stopped at 4 chips and drew none on phones.)
+  const weekCounts = await page.$$eval(".block", (els) => {
+    const m = {}; for (const e of els) m[e.dataset.date] = (m[e.dataset.date] || 0) + 1; return m;
+  });
+  await page.getByRole("button", { name: "Month", exact: true }).click();
+  await page.waitForSelector(".cell");
+  const monthCounts = await page.$$eval(".cell", (els) =>
+    Object.fromEntries(els.map((e) => [e.getAttribute("aria-label").slice(0, 10), e.querySelectorAll(".mini").length])));
+  const mismatched = Object.entries(weekCounts).filter(([d, n]) => d in monthCounts && monthCounts[d] !== n);
+  check("month view draws every event the week view does", mismatched.length === 0,
+    mismatched.map(([d, n]) => `${d}: week ${n}, month ${monthCounts[d]}`).join("; "));
+  await page.getByRole("button", { name: "Week", exact: true }).click();
+  await page.waitForSelector(".block");
+
   // Map, fresh visit, BEFORE any interaction: every active shop must be a pin.
   await page.getByRole("tab", { name: "Map" }).click();
   await page.waitForSelector(".leaflet-container", { timeout: 20000 });

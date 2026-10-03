@@ -20,6 +20,7 @@ import { loadLeaflet, TILE_ATTRIBUTION, TILE_URL } from "@/lib/leafletCdn";
 import { GAMES } from "@/lib/games";
 import { formatTime, WEEKDAY_SHORT, weekdayOf, type Occurrence, type Shop } from "@/lib/schedule";
 import type { GeoOrigin } from "@/lib/geo";
+import { appleDirectionsUrl, directionsUrl, telHref } from "@/lib/shopLinks";
 
 export interface FocusRequest { shopId: string; nonce: number }
 
@@ -69,14 +70,17 @@ function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<string>
     }).join("");
     return `<li><b>${WEEKDAY_SHORT[wd]}</b><ul>${items}</ul></li>`;
   }).join("");
+  const tel = telHref(shop.phone);
+  const site = shop.website ?? shop.socials?.instagram ?? null;
   const links = [
-    shop.website ? `<a href="${esc(shop.website)}" target="_blank" rel="noopener">Website</a>` : "",
-    `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${shop.name}, ${shop.address}, ${shop.city} ${shop.zip}`)}" target="_blank" rel="noopener">Google Maps</a>`,
-    `<a href="https://maps.apple.com/?q=${encodeURIComponent(shop.name)}&address=${encodeURIComponent(`${shop.address}, ${shop.city}, ${shop.zip}`)}&ll=${shop.lat},${shop.lon}" target="_blank" rel="noopener">Apple Maps</a>`,
+    `<a href="${esc(directionsUrl(shop))}" target="_blank" rel="noopener">↗ Directions</a>`,
+    `<a href="${esc(appleDirectionsUrl(shop))}" target="_blank" rel="noopener">Apple Maps</a>`,
+    site ? `<a href="${esc(site)}" target="_blank" rel="noopener">${shop.website ? "Website" : "Instagram"}</a>` : "",
   ].filter(Boolean).join("");
   return `<div class="popup">
     <h3>${esc(shop.name)}</h3>
     <div class="addr">${esc(shop.address)}, ${esc(shop.city)} ${esc(shop.zip)}${shop.hours ? `<br>${esc(shop.hours)}` : ""}</div>
+    ${tel ? `<div class="phone"><a href="${tel}">📞 ${esc(shop.phone!)}</a></div>` : ""}
     ${days ? `<ul>${days}</ul>` : `<div class="addr">${esc(shop.notes ?? "No events on the calendar yet.")}</div>`}
     <div class="links" style="margin-top:8px">${links}</div>
   </div>`;

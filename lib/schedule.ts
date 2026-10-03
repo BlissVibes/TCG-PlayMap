@@ -188,6 +188,15 @@ export function formatTime(t: string): string {
   return `${h12}:${min} ${suffix}`;
 }
 
+/** "18:30" -> "6:30p", "18:00" -> "6p". For month cells, where width is scarce. */
+export function shortTime(t: string): string {
+  const m = /^(\d{1,2}):(\d{2})$/.exec(t);
+  if (!m) return t;
+  const h = Number(m[1]);
+  const h12 = h % 12 === 0 ? 12 : h % 12;
+  return `${h12}${m[2] === "00" ? "" : `:${m[2]}`}${h >= 12 ? "p" : "a"}`;
+}
+
 export function isTimeStr(t: unknown): t is string {
   if (typeof t !== "string") return false;
   const m = /^(\d{2}):(\d{2})$/.exec(t);

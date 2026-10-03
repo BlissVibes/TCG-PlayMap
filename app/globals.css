@@ -150,6 +150,11 @@ input, select { font: inherit; }
 .block .meta { color: var(--muted); }
 .block .trophy { color: var(--trophy); }
 .block .conf { color: var(--muted); font-size: 10px; margin-left: 4px; }
+.block .acts { grid-column: 2; display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; }
+.block .acts a { text-decoration: none; white-space: nowrap; }
+.block .acts a:hover { text-decoration: underline; }
+.popup .phone { margin: -2px 0 6px; font-size: 13px; }
+.popup .phone a { text-decoration: none; }
 
 .month { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
 .month .wd { font-size: 11px; color: var(--muted); text-align: center; padding: 4px 0; }
@@ -162,9 +167,10 @@ input, select { font: inherit; }
 .cell.today { border-color: var(--accent); }
 .cell.sel { outline: 2px solid var(--accent); }
 .cell .num { font-size: 12px; color: var(--muted); }
-.cell .mini { font-size: 10px; padding: 0 4px; border-radius: 4px; color: #fff; background: var(--chip); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cell .mini { font-size: 10px; line-height: 1.5; padding: 0 4px; border-radius: 4px; color: #fff; background: var(--chip); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cell .mini b { font-weight: 650; }
+.cell .mini .mshop { opacity: .85; }
 .cell .mini.greyed { opacity: .35; }
-.cell .more { font-size: 10px; color: var(--muted); }
 .daylist { margin-top: 12px; }
 .daylist h3 { font-size: 14px; margin: 0 0 8px; }
 .daylist .daybody { padding: 0; max-width: 520px; }
@@ -197,7 +203,8 @@ footer { padding: 10px 16px; color: var(--muted); font-size: 11px; border-top: 1
   .week { grid-template-columns: 1fr; }
   .day { min-height: 0; }
   .cell { min-height: 56px; }
-  .cell .mini { display: none; }
-  .cell .more { display: block; }
+  /* Too narrow for words: every event is still drawn, as a colour bar, and
+     the full blocks for the selected day are listed under the grid. */
+  .cell .mini { font-size: 0; height: 5px; padding: 0; border-radius: 2px; }
   .hdr h1 span { display: none; }
 }

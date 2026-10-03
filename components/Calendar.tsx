@@ -16,9 +16,10 @@
 import { useMemo, useState } from "react";
 import { GAMES } from "@/lib/games";
 import {
-  addDays, formatTime, groupByDate, MONTH_LABELS, monthGrid, parseDateStr, weekDates,
+  addDays, formatTime, groupByDate, MONTH_LABELS, monthGrid, parseDateStr, shortTime, weekDates,
   WEEKDAY_LABELS, WEEKDAY_SHORT, type Occurrence,
 } from "@/lib/schedule";
+import { directionsUrl, telHref } from "@/lib/shopLinks";
 
 export type CalView = "week" | "month";
 
@@ -50,6 +51,7 @@ function Block({ o, mine, greyed, showDistance, togglePick, onShowShop }: {
   const g = GAMES[o.event.game];
   const extra = [o.event.title, o.event.format, o.event.fee].filter(Boolean).join(" · ");
   const dist = showDistance && o.distanceMi != null ? ` · ${o.distanceMi.toFixed(1)} mi` : "";
+  const tel = telHref(o.shop.phone);
   return (
     <div className={`block${mine ? " mine" : ""}${greyed ? " greyed" : ""}`}
       style={{ ["--chip" as any]: g.color }} data-event={o.event.id} data-date={o.date}>
@@ -70,6 +72,14 @@ function Block({ o, mine, greyed, showDistance, togglePick, onShowShop }: {
         <span className="shop">{o.shop.name}{dist}</span>
         {extra && <span className="meta">{extra}</span>}
       </button>
+      {/* Outside the body button: a link cannot live inside a button. */}
+      <div className="acts">
+        {tel && (
+          <a href={tel} aria-label={`Call ${o.shop.name}`} title={`Call ${o.shop.name}`}>📞 {o.shop.phone}</a>
+        )}
+        <a href={directionsUrl(o.shop)} target="_blank" rel="noopener"
+          aria-label={`Directions to ${o.shop.name}`} title={`Directions to ${o.shop.name}`}>↗ Directions</a>
+      </div>
     </div>
   );
 }
@@ -91,6 +101,14 @@ export function Calendar(p: CalendarProps) {
   };
 
   const week = weekDates(p.anchor);
+  // In month view, the day whose full blocks (times, phone, directions) are
+  // listed under the grid: the one tapped, else today when today is in the
+  // month on screen. On a phone the grid cells are colour bars, so this list
+  // is where the details live.
+  const monthKey = p.anchor.slice(0, 7);
+  const daySel = selectedDay && selectedDay.slice(0, 7) === monthKey
+    ? selectedDay
+    : (p.today.slice(0, 7) === monthKey ? p.today : null);
   const title = p.view === "week"
     ? `${shortDate(week[0])} – ${shortDate(week[6])}, ${parseDateStr(week[6]).getFullYear()}`
     : `${MONTH_LABELS[anchorDt.getMonth()]} ${anchorDt.getFullYear()}`;
@@ -132,32 +150,37 @@ export function Calendar(p: CalendarProps) {
           <div className="month">
             {WEEKDAY_SHORT.map((w) => <div key={w} className="wd">{w}</div>)}
             {monthGrid(anchorDt.getFullYear(), anchorDt.getMonth() + 1).flat().map(({ date, inMonth }) => {
+              // EVERY event, never a "+N more". The month must show what the
+              // week shows; until 0.1.0.7 it stopped at four and drew none on
+              // phones, and the missing ones read as missing data.
               const list = byDate.get(date) ?? [];
-              const shown = list.slice(0, 4);
               return (
                 <button key={date} onClick={() => setSelectedDay(date)}
-                  className={`cell${inMonth ? "" : " out"}${date === p.today ? " today" : ""}${date === selectedDay ? " sel" : ""}`}
+                  className={`cell${inMonth ? "" : " out"}${date === p.today ? " today" : ""}${date === daySel ? " sel" : ""}`}
                   aria-label={`${date}, ${list.length} events`}>
                   <span className="num">{parseDateStr(date).getDate()}</span>
-                  {shown.map((o) => (
-                    <span key={`${o.event.id}@${o.date}`} className={`mini${isGreyed(o) ? " greyed" : ""}`}
-                      style={{ ["--chip" as any]: GAMES[o.event.game].color }}>
-                      {GAMES[o.event.game].short}{o.event.kind === "tournament" ? " 🏆" : ""}
-                    </span>
-                  ))}
-                  {list.length > shown.length && <span className="more">+{list.length - shown.length} more</span>}
-                  {list.length > 0 && shown.length === list.length && <span className="more" style={{ display: "none" }}>{list.length}</span>}
+                  {list.map((o) => {
+                    const g = GAMES[o.event.game];
+                    const trophy = o.event.kind === "tournament";
+                    return (
+                      <span key={`${o.event.id}@${o.date}`} className={`mini${isGreyed(o) ? " greyed" : ""}`}
+                        style={{ ["--chip" as any]: g.color }}
+                        title={`${formatTime(o.event.start)} ${g.label} at ${o.shop.name}${trophy ? " (tournament)" : ""}`}>
+                        <b>{shortTime(o.event.start)}</b> {g.short}{trophy ? " 🏆" : ""} <span className="mshop">{o.shop.name}</span>
+                      </span>
+                    );
+                  })}
                 </button>
               );
             })}
           </div>
-          {selectedDay && (
+          {daySel && (
             <div className="daylist">
-              <h3>{WEEKDAY_LABELS[parseDateStr(selectedDay).getDay()]}, {shortDate(selectedDay)}</h3>
+              <h3>{WEEKDAY_LABELS[parseDateStr(daySel).getDay()]}, {shortDate(daySel)}</h3>
               <div className="daybody">
-                {(byDate.get(selectedDay) ?? []).length === 0
+                {(byDate.get(daySel) ?? []).length === 0
                   ? <div className="empty">Nothing listed.</div>
-                  : renderList(byDate.get(selectedDay)!)}
+                  : renderList(byDate.get(daySel)!)}
               </div>
             </div>
           )}

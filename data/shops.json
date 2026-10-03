@@ -73,5 +73,24 @@
     "notes": "Weekly schedule is published as an image on the store's Facebook page (also runs Board Game Night Wed 6 PM and D&D Adventurer's League Wed 6:30 PM). Walnut Grove Shopping Center.",
     "active": true,
     "source": { "url": "https://www.facebook.com/fadgames/", "checked": "2026-09-30", "note": "schedule is an image; transcribed by hand" }
+  },
+
+  {
+    "id": "bear-cave-ccg",
+    "name": "Bear Cave CCG",
+    "address": "8820 Reseda Blvd",
+    "city": "Northridge",
+    "state": "CA",
+    "zip": "91324",
+    "lat": 34.2310611,
+    "lon": -118.5359842,
+    "tz": "America/Los_Angeles",
+    "phone": "(747) 370-0182",
+    "socials": { "instagram": "https://www.instagram.com/bearcaveccg/" },
+    "hours": "Daily 12-8 PM",
+    "games": ["gundam", "lorcana", "hololive", "pokemon", "yugioh", "onepiece", "palworld", "union_arena", "digimon", "riftbound", "mtg"],
+    "notes": "Weekly schedule from the store's Instagram graphic. Sundays are special events (announced on the store's Discord) plus Yu-Gi-Oh! Edison format. Also runs Beyblade X on Tuesdays.",
+    "active": true,
+    "source": { "url": "https://www.instagram.com/bearcaveccg/", "checked": "2026-10-03", "note": "weekly schedule graphic (Instagram), supplied by Mark" }
   }
 ]

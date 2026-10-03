@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.0.6";
+export const VERSION = "0.1.0.7";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,15 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.0.7",
+    date: "2026-10-03",
+    changes: [
+      "Every event block now has the shop's phone number (tap to call) and a Directions button; the map popup has both too.",
+      "Month view now shows every event, the same as the week view. It used to stop at four per day and showed none on phones.",
+      "Bear Cave CCG (Northridge) added with its weekly schedule: 22 slots across 11 games.",
+    ],
+  },
   {
     version: "0.1.0.6",
     date: "2026-09-30",
