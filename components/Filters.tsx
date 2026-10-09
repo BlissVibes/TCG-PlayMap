@@ -5,6 +5,11 @@
  * piece of state (the page's prefs). Collectify learned this the hard way:
  * two tabs with their own copy of the ZIP field answered "near me"
  * differently. One person, one location, one radius.
+ *
+ * GAME CHIPS (Mark, 2026-10-09): with no chip picked the calendar shows the
+ * visitor's own TCGs ("My TCGs", chosen in setup), not every game; only
+ * "Show all TCGs" shows everything. Hidden games get no chip at all.
+ * The rule itself lives in lib/prefs.ts (effectiveGames) so it is tested.
  */
 
 import { GAME_IDS, GAMES, type GameId } from "@/lib/games";
@@ -21,9 +26,15 @@ export interface FiltersProps {
   err: string | null;
   radiusMi: number;
   setRadiusMi: (mi: number) => void;
+  /** Chips the visitor picked right now (empty = default mode). */
   games: ReadonlySet<GameId>;
   toggleGame: (g: GameId) => void;
-  clearGames: () => void;
+  /** Which default the chip row is in when no chip is picked. */
+  mode: "picked" | "all" | "mine";
+  myGames: readonly GameId[];
+  showMine: () => void;
+  showAll: () => void;
+  hiddenGames: ReadonlySet<GameId>;
   kind: EventKind | null;
   setKind: (k: EventKind | null) => void;
   myOnly: boolean;
@@ -34,7 +45,7 @@ export interface FiltersProps {
 }
 
 export function Filters(p: FiltersProps) {
-  const games = GAME_IDS.filter((g) => p.availableGames.has(g));
+  const games = GAME_IDS.filter((g) => p.availableGames.has(g) && !p.hiddenGames.has(g));
   return (
     <div className="filters" role="search" aria-label="Filters">
       <div className="row">
@@ -67,7 +78,11 @@ export function Filters(p: FiltersProps) {
       </div>
 
       <div className="row" role="group" aria-label="Games">
-        <button className="chip" aria-pressed={p.games.size === 0} onClick={p.clearGames}>All games</button>
+        {p.myGames.length > 0 && (
+          <button className="chip" aria-pressed={p.mode === "mine"} onClick={p.showMine}
+            title={`My TCGs: ${p.myGames.map((g) => GAMES[g].short).join(", ")}`}>My TCGs</button>
+        )}
+        <button className="chip" aria-pressed={p.mode === "all"} onClick={p.showAll}>Show all TCGs</button>
         {games.map((g) => (
           <button key={g} className="chip game" aria-pressed={p.games.has(g)} onClick={() => p.toggleGame(g)}
             style={{ ["--chip" as any]: GAMES[g].color }} title={GAMES[g].label}>

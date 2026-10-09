@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.1.0";
+export const VERSION = "0.1.1.1";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,17 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.1.1",
+    date: "2026-10-09",
+    changes: [
+      "First visit now starts with a quick setup: your ZIP and distance, the TCGs you play, and any you want hidden. The calendar no longer opens on every event at once.",
+      "With no game picked, the calendar shows your TCGs; 'Show all TCGs' shows everything. Hidden TCGs stay hidden until you unhide them in Settings.",
+      "Settings has a per-TCG 'Mine' and 'Hide' switch, and can run setup again. Your choices are remembered in this browser.",
+      "Every event now shows what it costs to play, or 'Cost not listed' when the store doesn't say.",
+      "The map only shows shops running a game you're looking at.",
+    ],
+  },
   {
     version: "0.1.1.0",
     date: "2026-10-09",

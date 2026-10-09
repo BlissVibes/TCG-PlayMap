@@ -1,0 +1,74 @@
+# Refresh Riftbound weekly nights + special events from the official store
+# locator, and deploy if anything changed.
+#
+# MANUAL ONLY for now (Mark, 2026-10-09: data runs happen locally first).
+# To run it every week, uncomment the `schedule` block - Monday ~7am Pacific.
+#
+# What it does: scripts/riftbound/pull.mjs (about 60 polite requests to the
+# open locator API) -> scripts/candidates/merge.mjs --apply --bump (adds new
+# nights, ends dropped ones, logs every change, bumps the version) -> tests and
+# build as the gate -> commit to main -> fast-forward the Pages branch and
+# dispatch the deploy (a commit made with GITHUB_TOKEN does not trigger the
+# push-based deploy on its own). The merge report lands in the run summary;
+# its "NEEDS A HUMAN" section lists differences at hand-entered shops, which
+# the job never applies.
+name: Refresh Riftbound from the official locator
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "11 14 * * 1"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: riftbound-refresh
+  cancel-in-progress: false
+
+env:
+  DEPLOY_BRANCH: claude/busy-dirac-gsnjt7
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Pull the locator
+        run: node scripts/riftbound/pull.mjs
+      - name: Merge into the calendar
+        run: node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json --apply --bump --report "$RUNNER_TEMP/report.md"
+      - name: Report
+        if: always()
+        run: test -f "$RUNNER_TEMP/report.md" && cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY" || true
+      - name: Anything to ship?
+        id: diff
+        run: |
+          if git diff --quiet -- data lib/version.ts; then echo "changed=false" >> "$GITHUB_OUTPUT"; else echo "changed=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Gate - tests and build
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          npm test
+          npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /TCG-PlayMap
+      - name: Commit, push, deploy
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "tcg-playmap-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/shops.json data/events.json data/calendar_log.json data/research_queue.json data/candidates/riftbound-locator.json lib/version.ts
+          git commit -m "Riftbound refresh $(date -u +%F): $(node -e 'const s=require("fs").readFileSync("lib/version.ts","utf8");console.log(/export const VERSION = "([^"]+)"/.exec(s)[1])')"
+          git push origin HEAD:main
+          git push origin "HEAD:refs/heads/${DEPLOY_BRANCH}"
+          gh workflow run pages.yml --ref "${DEPLOY_BRANCH}"

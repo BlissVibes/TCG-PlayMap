@@ -16,7 +16,7 @@
 import { useMemo, useState } from "react";
 import { GAMES } from "@/lib/games";
 import {
-  addDays, formatTime, groupByDate, MONTH_LABELS, monthGrid, parseDateStr, shortTime, weekDates,
+  addDays, feeLabel, formatTime, groupByDate, MONTH_LABELS, monthGrid, parseDateStr, shortTime, weekDates,
   WEEKDAY_LABELS, WEEKDAY_SHORT, type Occurrence,
 } from "@/lib/schedule";
 import { directionsUrl, telHref } from "@/lib/shopLinks";
@@ -49,7 +49,7 @@ function Block({ o, mine, greyed, showDistance, togglePick, onShowShop }: {
   togglePick: (id: string) => void; onShowShop: (shopId: string) => void;
 }) {
   const g = GAMES[o.event.game];
-  const extra = [o.event.title, o.event.format, o.event.fee].filter(Boolean).join(" · ");
+  const extra = [o.event.title, o.event.format].filter(Boolean).join(" · ");
   const dist = showDistance && o.distanceMi != null ? ` · ${o.distanceMi.toFixed(1)} mi` : "";
   const tel = telHref(o.shop.phone);
   return (
@@ -63,6 +63,8 @@ function Block({ o, mine, greyed, showDistance, togglePick, onShowShop }: {
           <span className="time">{formatTime(o.event.start)}</span>
           <span className="gchip">{g.short}</span>
           {o.event.kind === "tournament" && <span className="trophy" title="Tournament">🏆</span>}
+          {/* Cost is always shown (rule 9); "Cost not listed" rather than a blank. */}
+          <span className={`fee${o.event.fee ? "" : " unknown"}`} title="Cost to play">{feeLabel(o.event.fee)}</span>
           {o.event.confidence !== "verified" && (
             <span className="conf" title={o.event.confidence === "scraped" ? "Read from the store's website" : "Unverified"}>
               {o.event.confidence === "scraped" ? "web" : "?"}
@@ -165,8 +167,8 @@ export function Calendar(p: CalendarProps) {
                     return (
                       <span key={`${o.event.id}@${o.date}`} className={`mini${isGreyed(o) ? " greyed" : ""}`}
                         style={{ ["--chip" as any]: g.color }}
-                        title={`${formatTime(o.event.start)} ${g.label} at ${o.shop.name}${trophy ? " (tournament)" : ""}`}>
-                        <b>{shortTime(o.event.start)}</b> {g.short}{trophy ? " 🏆" : ""} <span className="mshop">{o.shop.name}</span>
+                        title={`${formatTime(o.event.start)} ${g.label} at ${o.shop.name}${trophy ? " (tournament)" : ""} - ${feeLabel(o.event.fee)}`}>
+                        <b>{shortTime(o.event.start)}</b> {g.short}{trophy ? " 🏆" : ""} <span className="mfee">{o.event.fee ?? "?"}</span> <span className="mshop">{o.shop.name}</span>
                       </span>
                     );
                   })}

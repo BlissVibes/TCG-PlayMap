@@ -37,6 +37,15 @@ branch it was created with (`claude/busy-dirac-gsnjt7`), so the workflow
 fast-forwards that branch and dispatches the deploy there — see the header of
 `.github/workflows/pages.yml`, including how to retire that relay.
 
+Bulk data:
+- `node scripts/riftbound/pull.mjs` then
+  `node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json [--apply --bump]`
+  refreshes Riftbound from the official locator.
+- `scripts/bandai/README.md` covers Bandai TCG+ (Mark's Mac only).
+- `docs/LOCAL_RUN.md` lists the data runs still pending.
+- `docs/SHOP_RESEARCH.md` is the per-shop research runbook for Sonnet/Haiku
+  sessions.
+
 Data lives in `data/*.json`. To add a shop or an event, read
 `docs/ADDING_DATA.md`. Long-term plan: `docs/ROADMAP.md`. Shapes:
 `docs/DATA_MODEL.md`. Where each schedule came from: `docs/SOURCES.md`.

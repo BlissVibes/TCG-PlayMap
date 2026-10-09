@@ -92,7 +92,7 @@ describe("occurrencesInRange", () => {
 
   it("filters by radius, game and kind, and no origin means no distance filter", () => {
     const occs = occurrencesInRange(events, shops, "2026-10-01", "2026-10-01", { lat: 34.0, lon: -118.4, label: "x" });
-    const f = (p: Partial<ScheduleFilter>): ScheduleFilter => ({ origin: null, radiusMi: 25, games: new Set(), kind: null, ...p });
+    const f = (p: Partial<ScheduleFilter>): ScheduleFilter => ({ origin: null, radiusMi: 25, games: null, kind: null, ...p });
     expect(filterOccurrences(occs, f({})).length).toBe(2);
     expect(filterOccurrences(occs, f({ origin: { lat: 34.0, lon: -118.4, label: "x" }, radiusMi: 5 })).map((o) => o.shop.id)).toEqual(["near"]);
     expect(filterOccurrences(occs, f({ games: new Set(["mtg"]) })).map((o) => o.shop.id)).toEqual(["far"]);

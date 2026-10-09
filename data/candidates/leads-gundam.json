@@ -1,0 +1,883 @@
+{
+  "source": "research agent web survey 2026-10-09 (cloud session)",
+  "game": "gundam",
+  "note": "LEADS ONLY - confirm on the shop's own pages before adding rows (CLAUDE.md rule 7). Confirmed entries come first.",
+  "shops": [
+    {
+      "name": "The Mystery Shop",
+      "address": "420 South A Street",
+      "city": "Oxnard",
+      "zip": "93030",
+      "phone": "(805) 628-3048",
+      "website": "https://mysteryshop805.com/",
+      "socials": {},
+      "target_games": [
+        "gundam",
+        "riftbound"
+      ],
+      "target_schedule": [
+        {
+          "game": "gundam",
+          "day": "Tuesday",
+          "time": "18:30",
+          "text": "Gundam Card Game Constructed deck tournament When: Tuesdays, 6:30pm Cost: $5 Format: Constructed* * 4 players minimum required for tournament",
+          "source": "https://mysteryshop805.com/gaming/gundam"
+        },
+        {
+          "game": "gundam",
+          "day": "Saturday",
+          "time": "12:00-17:00",
+          "text": "Casual play When: Saturdays and Sundays @ 12–5pm (except during special events – check our calendar for the latest) Cost: Free!",
+          "source": "https://mysteryshop805.com/gaming/gundam"
+        },
+        {
+          "game": "gundam",
+          "day": "Sunday",
+          "time": "12:00-17:00",
+          "text": "Casual play When: Saturdays and Sundays @ 12–5pm (except during special events – check our calendar for the latest) Cost: Free!",
+          "source": "https://mysteryshop805.com/gaming/gundam"
+        },
+        {
+          "game": "riftbound",
+          "day": "Tuesday",
+          "time": "18:30",
+          "text": "Tuesday Disney Lorcana @ 7pm • Gundam Card Game @ 6:30pm • Riftbound @ 6:30pm",
+          "source": "https://mysteryshop805.com/"
+        }
+      ],
+      "schedule_url": "https://mysteryshop805.com/calendar",
+      "sources": [
+        "https://mysteryshop805.com/",
+        "https://mysteryshop805.com/gaming/gundam",
+        "https://thecardshopfinder.com/ca/oxnard/the-mystery-shop/"
+      ],
+      "confidence": "store's own site",
+      "notes": "Homepage has a full weekly list for all games (Mon Godzilla/Hololive, Tue Lorcana/Gundam/Riftbound, Wed UVS/Yu-Gi-Oh, Fri MTG/Pokemon/Yu-Gi-Oh, Sun One Piece/Vanguard). Gundam page says it is an official tournament store. Not on the Nov-2024 official trial-event store list. Phone/address from the store site header and directory listing."
+    },
+    {
+      "name": "Kingslayer Games (Fountain Valley)",
+      "address": "17870 Newhope St 106-108",
+      "city": "Fountain Valley",
+      "zip": "92708",
+      "phone": "714 884 4701",
+      "website": "https://www.kingslayergames.com/",
+      "socials": {},
+      "target_games": [
+        "gundam",
+        "riftbound"
+      ],
+      "target_schedule": [
+        {
+          "game": "gundam",
+          "day": "Saturday",
+          "time": "12:00",
+          "text": "Gundam Constructed 12 PM (calendar cells 10, 17, 24, 31 = Sat 2026-10-10/17/24/31; Oct 3 cell: \"Gundam Starter Deck Release 12 PM\")",
+          "source": "https://www.kingslayergames.com/events/events-calendar/fountain-valley/"
+        }
+      ],
+      "schedule_url": "https://www.kingslayergames.com/events/events-calendar/fountain-valley/",
+      "sources": [
+        "https://www.kingslayergames.com/events/events-calendar/fountain-valley/",
+        "https://www.kingslayergames.com/",
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "store's own site (month calendar; weekday anchored to real dates)",
+      "notes": "Calendar page has no month label; anchored to October 2026 because the homepage ticket \"10/10/26 Fountain Valley Pokemon Standard League Cup Saturday 10 AM\" matches calendar cell 10 (\"Pokémon Standard League Cup 10 AM Gundam Constructed 12 PM\"). Riftbound Radiance Pre-Rift events also listed. Listed in official Nov-2024 Gundam trial-event store list as \"Kingslayer Games Fountain Valley\". Chain also has Oceanside (San Diego Co., out of area)."
+    },
+    {
+      "name": "Kingslayer Games (Lake Forest)",
+      "address": "23615 El Toro Rd, Suite V",
+      "city": "Lake Forest",
+      "zip": null,
+      "phone": "949-215-3936",
+      "website": "https://www.kingslayergames.com/",
+      "socials": {},
+      "target_games": [
+        "gundam",
+        "dbs_fusion",
+        "riftbound"
+      ],
+      "target_schedule": [
+        {
+          "game": "gundam",
+          "day": "Sunday",
+          "time": "12:00",
+          "text": "Gundam Constructed 12 PM (calendar cells 4, 11, 18, 25 = Sun 2026-10-04/11/18/25)",
+          "source": "https://www.kingslayergames.com/events/events-calendar/lake-forest/"
+        },
+        {
+          "game": "dbs_fusion",
+          "day": "Saturday",
+          "time": "12:00",
+          "text": "Dragon Ball Super: Fusion World 12 PM (cells 3, 10, 17, 24 = Saturdays)",
+          "source": "https://www.kingslayergames.com/events/events-calendar/lake-forest/"
+        },
+        {
+          "game": "riftbound",
+          "day": "Tuesday",
+          "time": "18:30",
+          "text": "10/06/26 Lake Forest Riftbound Nexus Night Tuesday 630 PM; calendar cell 13 \"Riftbound Nexus Night 6:30\"",
+          "source": "https://www.kingslayergames.com/"
+        }
+      ],
+      "schedule_url": "https://www.kingslayergames.com/events/events-calendar/lake-forest/",
+      "sources": [
+        "https://www.kingslayergames.com/events/events-calendar/lake-forest/",
+        "https://www.kingslayergames.com/",
+        "https://legacy.fabtcg.com/en/locator/kingslayer-games-lake-forest/",
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "schedule: store's own site; address/phone: search snippet of FAB store locator only (site footer shows only the Fountain Valley address)",
+      "notes": "Address/phone/ZIP NOT confirmed on a page I read - geocode and verify. Weekday anchoring: homepage ticket \"10/06/26 Lake Forest Riftbound Nexus Night Tuesday\" and Oct 2026 calendar cell 13 = Tuesday. Listed in official Nov-2024 trial-event store list (LAKE FOREST Kingslayer Games Lake Forest)."
+    },
+    {
+      "name": "Brookhurst Hobbies (The Brookhurst Club)",
+      "address": "12072 Brookhurst Street",
+      "city": "Garden Grove",
+      "zip": "92840",
+      "phone": "(714) 636-3580",
+      "website": "https://brookhursthobbies.com/",
+      "socials": {},
+      "target_games": [
+        "gundam",
+        "riftbound"
+      ],
+      "target_schedule": [
+        {
+          "game": "gundam",
+          "day": "Thursday",
+          "time": "18:00",
+          "text": "10/08/2026 - GUNDAM CARD GAME EVENT THURSDAY $5.00 ... \"Entry for Gundam Card Game event, starts at 6:00PM at The Brookhurst Club 12072 Brookhurst Street Garden Grove CA 92840\"",
+          "source": "https://brookhursthobbies.com/10-08-2026-gundam-card-game-event-thursday/"
+        },
+        {
+          "game": "gundam",
+          "day": "Sunday",
+          "time": "15:30",
+          "text": "10/11/2026 - GUNDAM CARD GAME EVENT SUNDAY $5.00 ... \"Entry for Gundam Card Game event, starts at 3:30PM at The Brookhurst Club 12072 Brookhurst Street Garden Grove CA 92840\"",
+          "source": "https://brookhursthobbies.com/10-11-2026-gundam-card-game-event-sunday/"
+        },
+        {
+          "game": "riftbound",
+          "day": "Thursday",
+          "time": null,
+          "text": "10/08/2026 - RIFTBOUND: NEXUS NIGHT EVENT THURSDAY",
+          "source": "https://brookhursthobbies.com/brookhurst-club-events/"
+        }
+      ],
+      "schedule_url": "https://brookhursthobbies.com/brookhurst-club-events/",
+      "sources": [
+        "https://brookhursthobbies.com/brookhurst-club-events/",
+        "https://brookhursthobbies.com/10-08-2026-gundam-card-game-event-thursday/",
+        "https://brookhursthobbies.com/10-11-2026-gundam-card-game-event-sunday/",
+        "https://brookhursthobbies.com/",
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "store's own site (dated event tickets, Thursdays and Sundays through at least 10/25/2026)",
+      "notes": "Hobby shop (Gunpla, Warhammer) whose events run at \"The Brookhurst Club\"; the 12072 Brookhurst St address is the event venue as written on the ticket pages - store street number not separately confirmed. Phone from site footer. Also One Piece Sundays, FNM Fridays, D&D Wednesdays (non-TCG: log only). In official Nov-2024 trial-event list under Garden Grove."
+    },
+    {
+      "name": "A.G. Collectibles",
+      "address": "6658 Carnelian St",
+      "city": "Rancho Cucamonga",
+      "zip": "91701",
+      "phone": "909-758-0090",
+      "website": "https://www.agcollectibles.com/",
+      "socials": {},
+      "target_games": [
+        "gundam",
+        "dbs_fusion",
+        "riftbound"
+      ],
+      "target_schedule": [
+        {
+          "game": "gundam",
+          "day": "Sunday",
+          "time": "14:00",
+          "text": "event slugs gcg-november-2026-shop-tournament-2026-11-08-14-00 and ...-2026-11-15-14-00 (Sun 2026-11-08, Sun 2026-11-15, 2pm) - monthly shop tournament, not weekly",
+          "source": "https://www.agcollectibles.com/event-pages-sitemap.xml"
+        },
+        {
+          "game": "gundam",
+          "day": "Saturday",
+          "time": "14:00",
+          "text": "\"GUNDAM CARD GAME TOURNAMENT Sat, Aug 09 ... 2:00 PM – 5:00 PM ... Official Gundam Card Game Tournament. $10 entry.\" Past dates also Sat 2025-09-20, 2025-11-22, 2026-06-13, 2026-08-29 at 2pm",
+          "source": "https://www.agcollectibles.com/event-details/gundam-card-game-tournament-2025-08-09-14-00"
+        }
+      ],
+      "schedule_url": "https://www.agcollectibles.com/events",
+      "sources": [
+        "https://www.agcollectibles.com/event-details/gundam-card-game-tournament-2025-08-09-14-00",
+        "https://www.agcollectibles.com/event-pages-sitemap.xml",
+        "https://thecardshopfinder.com/ca/rancho-cucamonga/a-g-collectibles/"
+      ],
+      "confidence": "store's own site (Wix event pages; recurring cadence inferred from event URL slugs, only one event page read in full)",
+      "notes": "Gundam here is roughly monthly store tournaments (mostly Saturdays 2pm, Nov 2026 on Sundays 2pm), not a weekly. Sitemap also shows dragon-ball-tcg-tournament (Sat 2026-02-21, 2026-03-21 11am; Fusion World vs Masters not stated) and riftbound-tcg (Sat 2026-01-24 5:30pm). Site later served a bot-check page; not bypassed. Phone from directory listing."
+    },
+    {
+      "name": "Spellhold Games",
+      "address": "1438 E Katella Ave",
+      "city": "Orange",
+      "zip": "92867",
+      "phone": "(657) 221-0854",
+      "website": "https://www.spellholdgames.com/",
+      "socials": {
+        "facebook": "https://facebook.com/spellholdgames",
+        "instagram": "https://www.instagram.com/spellhold.games/"
+      },
+      "target_games": [
+        "gundam",
+        "riftbound"
+      ],
+      "target_schedule": [
+        {
+          "game": "gundam",
+          "day": "Sunday",
+          "time": "13:00",
+          "text": "Gundam 1st Anniversary Event 10/11 1pm - $25.00 (one-off, Sun 2026-10-11)",
+          "source": "https://www.spellholdgames.com/catalog/events-weekly_events/gundam_1st_anniversary_event_1011_1pm/2342677"
+        }
+      ],
+      "schedule_url": "https://www.spellholdgames.com/about",
+      "sources": [
+        "https://www.spellholdgames.com/",
+        "https://www.spellholdgames.com/about",
+        "https://www.spellholdgames.com/catalog/events-weekly_events/gundam_1st_anniversary_event_1011_1pm/2342677",
+        "https://thecardshopfinder.com/ca/orange/spellhold-games/"
+      ],
+      "confidence": "store's own site for the event; weekly Gundam night only from a third-party directory description",
+      "notes": "Directory: \"Pokemon, One Piece, Flesh and Blood, and Gundam events fill out the rest\" of the week - weekly Gundam day/time NOT found (store \"Weekly Events\" page /about has no readable text; schedule is probably an image or social post). Store email is orange@collectorlegion.com - appears to be a sister store of Collector Legion (Lawndale). Riftbound Summoner Skirmish 10/11 12:30pm and Pre-Rift 10/18 also listed. Hours Mon-Fri 1pm-10:30pm, Sat-Sun 12pm-8pm."
+    },
+    {
+      "name": "Loot Box",
+      "address": null,
+      "city": "Agoura Hills",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "ProjectCCG",
+      "address": null,
+      "city": "Alhambra (per 2024 list)",
+      "zip": null,
+      "phone": null,
+      "website": "https://projectccg.com",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/santa-ana/project-ccg/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "2024 list says Alhambra; a directory now lists \"Project CCG\" at 600 S Grand Ave Ste 102, Santa Ana 92705, 714-760-4123 (projectccg.com) - may be a move or second location; unverified."
+    },
+    {
+      "name": "Three J's Sportscards",
+      "address": "2424 W Ball Rd Ste F",
+      "city": "Anaheim",
+      "zip": "92804",
+      "phone": "714-758-3803",
+      "website": "https://www.team3j.com/",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/anaheim/three-js-sports-cards/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Address/phone from third-party directory. Homepage has no Gundam mention."
+    },
+    {
+      "name": "Dxn Provisions",
+      "address": null,
+      "city": "Arcadia",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Perfect Rares Card Center",
+      "address": null,
+      "city": "Artesia",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Emerald Knights Comics and Games",
+      "address": null,
+      "city": "Burbank",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Search snippet (Time Out) gives 4116 W. Burbank Blvd, Burbank 91505 - unverified; ekcomicsandgames.com did not resolve."
+    },
+    {
+      "name": "All Ways Gaming",
+      "address": null,
+      "city": "Chatsworth",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Games For Meeple",
+      "address": null,
+      "city": "Diamond Bar",
+      "zip": null,
+      "phone": null,
+      "website": "https://gamesformeeple.com",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Site is password-protected (Shopify password page)."
+    },
+    {
+      "name": "Sugoi Stuff",
+      "address": "7441 Garden Grove Blvd, Ste G",
+      "city": "Garden Grove",
+      "zip": "92841",
+      "phone": "714-643-7740",
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/garden-grove/sugoi-stuff/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Directory says weekly tournaments for Pokemon, One Piece \"and more\"; Gundam mention there is model kits."
+    },
+    {
+      "name": "Kartelles and collectibles",
+      "address": null,
+      "city": "Inglewood (inferred)",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "City label in the PDF is detached; Inglewood inferred from alphabetical position between Hanford and Lake Forest."
+    },
+    {
+      "name": "Matrix TCG",
+      "address": null,
+      "city": "Inglewood (inferred)",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "City inferred from PDF layout as for Kartelles."
+    },
+    {
+      "name": "Bases Cards & Comics",
+      "address": "42035 12th St W Ste 106",
+      "city": "Lancaster",
+      "zip": "93534",
+      "phone": "661-942-1396",
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/lancaster/bases-cards-and-comics/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Funhouse 51 Collectibles",
+      "address": "512 W Lancaster Blvd",
+      "city": "Lancaster",
+      "zip": "93534",
+      "phone": "661-418-6751",
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/lancaster/funhouse-51-collectibles/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Ageless Cards",
+      "address": null,
+      "city": "Lomita",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Anime Jungle",
+      "address": null,
+      "city": "Los Angeles",
+      "zip": null,
+      "phone": null,
+      "website": "https://animejungle.net/",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Little Tokyo anime shop; homepage events list shows pop-ups only."
+    },
+    {
+      "name": "GXGamers",
+      "address": "1243 S Alvarado St, Ste C5",
+      "city": "Los Angeles",
+      "zip": "90006",
+      "phone": "(323) 230-0185",
+      "website": "https://www.gxgamers.com",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/los-angeles/gxgamers/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "LVLUP Gaming TCG",
+      "address": "1356 E 41st St, Ste A",
+      "city": "Los Angeles",
+      "zip": "90011",
+      "phone": "(213) 755-0284",
+      "website": null,
+      "socials": {
+        "instagram": "https://www.instagram.com/lvlupgamingtcg/"
+      },
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/los-angeles/lvlup-gaming-tcg/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Phantom Cards & Collectibles",
+      "address": "232 E 2nd St F",
+      "city": "Los Angeles",
+      "zip": "90012",
+      "phone": "213-660-6820",
+      "website": null,
+      "socials": {
+        "instagram": "https://instagram.com/phantom_candc"
+      },
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/los-angeles/phantom-cards-collectibles/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Psycho Turtle Collectibles / Psycho Turtle Play",
+      "address": null,
+      "city": "Pico Rivera",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Two entries in the list (Collectibles and Play)."
+    },
+    {
+      "name": "The Light",
+      "address": "434 N Lemon Ave",
+      "city": "Ontario",
+      "zip": "91764",
+      "phone": "909-395-0935",
+      "website": null,
+      "socials": {
+        "facebook": "https://www.facebook.com/TheLightGames/"
+      },
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/ontario/the-light/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Diamond 9 Sports",
+      "address": null,
+      "city": "Placentia",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Collectible Exchange",
+      "address": "9155 Archibald Ave Ste E",
+      "city": "Rancho Cucamonga",
+      "zip": "91730",
+      "phone": "909-256-4840",
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/rancho-cucamonga/collectible-exchange/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Directory lists Gundam among carried games plus \"Tournament Hosting / In-Store Play\"; event times via Instagram per directory."
+    },
+    {
+      "name": "GMI Games",
+      "address": null,
+      "city": "Riverside",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "Top Deck Keep",
+      "address": "10128 Indiana Ave",
+      "city": "Riverside",
+      "zip": "92503",
+      "phone": "951-977-9955",
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/riverside/top-deck-keep/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "A & N Collectibles",
+      "address": null,
+      "city": "San Dimas",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": null
+    },
+    {
+      "name": "The Game Cellar",
+      "address": null,
+      "city": "San Gabriel",
+      "zip": null,
+      "phone": null,
+      "website": "https://www.thegamecellar.com/",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Homepage has no Gundam mention."
+    },
+    {
+      "name": "Tapped Out Gaming",
+      "address": "28410 Stanford Ave",
+      "city": "Santa Clarita",
+      "zip": "91355",
+      "phone": "661-294-2736",
+      "website": "https://www.tappedoutgaming.net",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://thecardshopfinder.com/ca/santa-clarita/tapped-out-gaming/"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Homepage has no Gundam mention."
+    },
+    {
+      "name": "A Hidden Fortress",
+      "address": "1960 Sequoia Ave, Unit 10",
+      "city": "Simi Valley",
+      "zip": "93063",
+      "phone": "805-526-6457",
+      "website": "https://www.ahiddenfortress.com/",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://www.ahiddenfortress.com/catalog/tournament/1513"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Sells Gundam sealed/singles; tournament ticket catalog (5 pages) shows no Gundam event."
+    },
+    {
+      "name": "WildCardCyclone",
+      "address": null,
+      "city": "Temple City",
+      "zip": null,
+      "phone": null,
+      "website": "https://www.wildcardcyclone.com/",
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Sells Gundam product online; no event info found."
+    },
+    {
+      "name": "Game Chest Del Amo",
+      "address": null,
+      "city": "Torrance",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "The Game Chest chain (Torrance, Irvine, Long Beach etc.); thegamechest.com did not resolve."
+    },
+    {
+      "name": "Ready Set Game",
+      "address": null,
+      "city": "Menifee",
+      "zip": null,
+      "phone": null,
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf"
+      ],
+      "confidence": "lead only: official Gundam Card Game Nov-2024 Edition Beta store-trial-event shop list (TCG+ store that signed up for the Jan-2025 trial); current Gundam play NOT confirmed",
+      "notes": "Menifee is southwest Riverside County - edge of the target area."
+    },
+    {
+      "name": "Collector Legion",
+      "address": "4451 Redondo Beach Blvd",
+      "city": "Lawndale",
+      "zip": "90260",
+      "phone": "(310) 504-0353",
+      "website": "https://www.collectorlegion.com/",
+      "socials": {
+        "facebook": "https://www.facebook.com/collectorlegion/",
+        "instagram": "https://www.instagram.com/collectorlegion/"
+      },
+      "target_games": [
+        "gundam"
+      ],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://www.gundam-gcg.com/en/pdf/store-trial-event-shoplist-2411-united-states.pdf",
+        "https://www.collectorlegion.com/"
+      ],
+      "confidence": "lead only: sells Gundam TCG (store site); no Gundam event found",
+      "notes": "NOT on the 2024 trial list; included because it sells Gundam TCG and its sister store Spellhold runs Gundam. No Gundam event found on its site (only Pokemon/Riftbound prereleases listed)."
+    }
+  ]
+}

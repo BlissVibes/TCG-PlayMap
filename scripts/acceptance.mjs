@@ -46,10 +46,38 @@ try {
   page.on("pageerror", (e) => pageErrors.push(e.message));
 
   await page.goto(target, { waitUntil: "load" });
-  await page.waitForSelector(".block", { timeout: 30000 });
 
-  // Calendar, fresh visit: this week, no filters.
+  // ── First visit: setup, not the whole messy list (Mark, 2026-10-09) ──
+  await page.waitForSelector(".setup", { timeout: 30000 });
+  check("first visit opens on setup, with no events listed", (await page.locator(".block").count()) === 0);
+  await page.fill("#setup-zip", "91303");     // in data/zips.json, so it resolves even offline
+  await page.selectOption("#setup-radius", "250");
+  await page.getByRole("button", { name: "Next" }).click();
+  await page.waitForSelector('.setup [aria-label="Your TCGs"]', { timeout: 15000 });
+  await page.locator('.setup .chip.game[title="Pokémon TCG"]').click();
+  await page.getByRole("button", { name: /^Next/ }).click();
+  await page.locator('.setup .chip.hide[title="Hide Yu-Gi-Oh!"]').click();
+  await page.getByRole("button", { name: /^Done/ }).click();
+  await page.waitForSelector(".block", { timeout: 15000 });
+  const chipText = async () => page.$$eval(".block .gchip", (els) => els.map((e) => e.textContent));
+  const mine = await chipText();
+  check("after setup, the calendar shows only MY TCGs", mine.length > 0 && mine.every((t) => t === "PKMN"), `${mine.length} blocks: ${[...new Set(mine)].join(",")}`);
+  await page.getByRole("button", { name: "Show all TCGs" }).click();
+  const all = await chipText();
+  check("'Show all TCGs' shows more games, but never a hidden one", all.length > mine.length && !all.includes("YGO"),
+    `${all.length} blocks, ${new Set(all).size} games, YGO ${all.includes("YGO") ? "SHOWN" : "hidden"}`);
+  await page.reload({ waitUntil: "load" });
+  await page.waitForSelector(".block", { timeout: 15000 });
+  check("choices survive a reload (no setup again)", (await page.locator(".setup").count()) === 0);
+  await page.getByRole("button", { name: "Settings" }).click();
+  await page.getByLabel("Hide Yu-Gi-Oh!").uncheck();
+  await page.getByRole("button", { name: "Settings" }).click();
+  check("unhiding in Settings brings the game back", (await chipText()).includes("YGO"));
+
+  // Calendar, after setup with everything shown: this week.
   const blocks = await page.locator(".block").count();
+  const feeShown = await page.locator(".block .fee").count();
+  check("every block shows its cost (or 'Cost not listed')", feeShown === blocks, `${feeShown}/${blocks}`);
   check("week view renders event blocks", blocks > 0, `${blocks} blocks`);
   check("some blocks are tournaments (trophy)", (await page.locator(".block .trophy").count()) > 0);
 

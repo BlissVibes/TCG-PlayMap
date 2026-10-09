@@ -75,6 +75,14 @@ export interface Shop {
   notes?: string;
   active: boolean;
   source: SourceRef;
+  /**
+   * Set when an importer CREATED this shop (e.g. "riftbound-locator"). The
+   * importer may fill missing contact fields on such a shop; it never edits a
+   * hand-entered shop beyond recording its id in `sourceIds`.
+   */
+  origin?: string;
+  /** This shop's id in each bulk source, e.g. { riftbound: "<locator uuid>" }. */
+  sourceIds?: Record<string, string>;
 }
 
 export interface PlayEvent {
@@ -97,7 +105,20 @@ export interface PlayEvent {
   validFrom?: string;
   validUntil?: string;
   skipDates?: string[];
+  /**
+   * Every N weeks instead of weekly (2 = every other week). Counted from the
+   * week of `validFrom`, which is therefore required. For biweekly nights like
+   * a Cube Draft or Yu-Gi-Oh! GOAT format.
+   */
+  everyWeeks?: number;
   confidence: Confidence;
+  /**
+   * Set when an importer wrote this row (e.g. "riftbound-locator"). The
+   * importer owns such rows: it ends them when the source drops them and
+   * replaces them when the fee changes. Hand-entered rows have no origin and
+   * no importer ever edits them (it may only fill a missing `fee`).
+   */
+  origin?: string;
   source?: SourceRef;
 }
 
@@ -188,6 +209,16 @@ export function formatTime(t: string): string {
   return `${h12}:${min} ${suffix}`;
 }
 
+/**
+ * The cost to play, always as words a player can read: the fee as the store
+ * wrote it, or "Cost not listed". Every surface renders this (CLAUDE.md
+ * rule 9) - an empty space where the price should be reads as "free".
+ */
+export function feeLabel(fee: string | null | undefined): string {
+  const f = (fee ?? "").trim();
+  return f ? f : "Cost not listed";
+}
+
 /** "18:30" -> "6:30p", "18:00" -> "6p". For month cells, where width is scarce. */
 export function shortTime(t: string): string {
   const m = /^(\d{1,2}):(\d{2})$/.exec(t);
@@ -213,6 +244,11 @@ export function occursOn(ev: PlayEvent, date: string): boolean {
   if (ev.validFrom && date < ev.validFrom) return false;
   if (ev.validUntil && date > ev.validUntil) return false;
   if (ev.skipDates?.includes(date)) return false;
+  if (ev.everyWeeks && ev.everyWeeks > 1) {
+    if (!ev.validFrom) return false;
+    const weeks = Math.round((parseDateStr(startOfWeek(date)).getTime() - parseDateStr(startOfWeek(ev.validFrom)).getTime()) / (7 * 86400000));
+    if (weeks % ev.everyWeeks !== 0) return false;
+  }
   return true;
 }
 
@@ -251,14 +287,14 @@ export function occurrencesInRange(
 export interface ScheduleFilter {
   origin: GeoOrigin | null;
   radiusMi: number;
-  /** Empty set = every game. */
-  games: ReadonlySet<GameId>;
+  /** The games to show; null = every game. An EMPTY set shows nothing (all hidden). */
+  games: ReadonlySet<GameId> | null;
   /** null = both. */
   kind: EventKind | null;
 }
 
 export const EMPTY_FILTER: ScheduleFilter = {
-  origin: null, radiusMi: 25, games: new Set(), kind: null,
+  origin: null, radiusMi: 25, games: null, kind: null,
 };
 
 export function shopPassesFilter(shop: Shop, f: ScheduleFilter): boolean {
@@ -267,7 +303,7 @@ export function shopPassesFilter(shop: Shop, f: ScheduleFilter): boolean {
 
 export function occurrencePassesFilter(o: Occurrence, f: ScheduleFilter): boolean {
   if (!shopPassesFilter(o.shop, f)) return false;
-  if (f.games.size > 0 && !f.games.has(o.event.game)) return false;
+  if (f.games && !f.games.has(o.event.game)) return false;
   if (f.kind && o.event.kind !== f.kind) return false;
   return true;
 }

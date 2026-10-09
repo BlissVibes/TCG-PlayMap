@@ -15,10 +15,11 @@ import { Calendar, type CalView } from "@/components/Calendar";
 import { Filters } from "@/components/Filters";
 import { LogTab } from "@/components/LogTab";
 import { PlayMap, type FocusRequest } from "@/components/PlayMap";
+import { Setup } from "@/components/Setup";
 import { getDataSource, type PlayMapData } from "@/lib/data";
 import { geocodeZip, normalizeZip } from "@/lib/geo";
-import type { GameId } from "@/lib/games";
-import { DEFAULT_PREFS, loadPrefs, savePrefs, type Prefs } from "@/lib/prefs";
+import { GAME_IDS, GAMES, type GameId } from "@/lib/games";
+import { DEFAULT_PREFS, effectiveGames, gameMode, loadPrefs, savePrefs, type Prefs } from "@/lib/prefs";
 import {
   addDays, filterOccurrences, occurrencesInRange, shopPassesFilter, startOfWeek, toDateStr,
   type EventKind, type ScheduleFilter,
@@ -69,14 +70,18 @@ export default function Page() {
   }, [prefs.zip, update]);
 
   // ── Derived data ────────────────────────────────────────────────────────
-  const gameSet = useMemo(() => new Set<GameId>(prefs.games), [prefs.games]);
-  const mySet = useMemo(() => new Set(prefs.myEvents), [prefs.myEvents]);
-  const filter: ScheduleFilter = useMemo(() => ({
-    origin: prefs.origin, radiusMi: prefs.radiusMi, games: gameSet, kind: prefs.kind,
-  }), [prefs.origin, prefs.radiusMi, gameSet, prefs.kind]);
-
   const shops = data?.shops ?? [];
   const events = data?.events ?? [];
+  const availableGames = useMemo(() => new Set<GameId>(events.map((e) => e.game)), [events]);
+  const gameSet = useMemo(() => new Set<GameId>(prefs.games), [prefs.games]);
+  const hiddenSet = useMemo(() => new Set<GameId>(prefs.hiddenGames), [prefs.hiddenGames]);
+  /** The games actually shown: picked chips, else My TCGs, else all - never hidden ones. */
+  const visibleGames = useMemo(() => effectiveGames(prefs, availableGames),
+    [prefs.games, prefs.myGames, prefs.hiddenGames, prefs.showAll, availableGames]); // eslint-disable-line react-hooks/exhaustive-deps
+  const mySet = useMemo(() => new Set(prefs.myEvents), [prefs.myEvents]);
+  const filter: ScheduleFilter = useMemo(() => ({
+    origin: prefs.origin, radiusMi: prefs.radiusMi, games: visibleGames, kind: prefs.kind,
+  }), [prefs.origin, prefs.radiusMi, visibleGames, prefs.kind]);
 
   /** The window the calendar is showing (a week, or a month padded to whole weeks). */
   const range = useMemo(() => {
@@ -96,8 +101,21 @@ export default function Page() {
     const s = startOfWeek(today);
     return filterOccurrences(occurrencesInRange(events, shops, s, addDays(s, 6), prefs.origin), filter);
   }, [events, shops, today, prefs.origin, filter]);
-  const mapShops = useMemo(() => shops.filter((s) => s.active && shopPassesFilter(s, filter)), [shops, filter]);
-  const availableGames = useMemo(() => new Set<GameId>(events.map((e) => e.game)), [events]);
+  /** Shops in range that run at least one visible game (a Riftbound-only shop is not a pin for a Pokémon player). */
+  const mapShops = useMemo(() => {
+    const running = new Set(events.filter((e) => visibleGames.has(e.game) && (!filter.kind || e.kind === filter.kind)).map((e) => e.shopId));
+    return shops.filter((s) => s.active && running.has(s.id) && shopPassesFilter(s, filter));
+  }, [shops, events, visibleGames, filter]);
+  /** Every game worth a row in Settings: in the data, or chosen/hidden before. */
+  const settingsGames = useMemo(() => GAME_IDS.filter((g) => availableGames.has(g) || prefs.myGames.includes(g) || prefs.hiddenGames.includes(g)),
+    [availableGames, prefs.myGames, prefs.hiddenGames]);
+  const toggleIn = (key: "myGames" | "hiddenGames", g: GameId) => setPrefs((p) => {
+    const has = p[key].includes(g);
+    const next = { ...p, [key]: has ? p[key].filter((x) => x !== g) : [...p[key], g] };
+    // A game cannot be both yours and hidden: choosing one clears the other.
+    if (!has) { const other = key === "myGames" ? "hiddenGames" : "myGames"; next[other] = p[other].filter((x) => x !== g); next.games = next.games.filter((x) => !next.hiddenGames.includes(x)); }
+    return next;
+  });
 
   const showShop = useCallback((shopId: string) => {
     setTab("map");
@@ -143,19 +161,36 @@ export default function Page() {
               <input type="checkbox" checked={prefs.myOnly} onChange={(e) => update({ myOnly: e.target.checked })} />
               Grey out events not in my calendar
             </label>
+            <h3>TCGs</h3>
+            <div className="tcglist" role="group" aria-label="My TCGs and hidden TCGs">
+              <span className="hdrrow">Game</span><span className="hdrrow">Mine</span><span className="hdrrow">Hide</span>
+              {settingsGames.map((g) => (
+                <div key={g} style={{ display: "contents" }}>
+                  <span><span className="gchip" style={{ ["--chip" as any]: GAMES[g].color }}>{GAMES[g].short}</span> {GAMES[g].label}</span>
+                  <label><input type="checkbox" checked={prefs.myGames.includes(g)} aria-label={`${GAMES[g].label} is one of my TCGs`}
+                    onChange={() => toggleIn("myGames", g)} /></label>
+                  <label><input type="checkbox" checked={prefs.hiddenGames.includes(g)} aria-label={`Hide ${GAMES[g].label}`}
+                    onChange={() => toggleIn("hiddenGames", g)} /></label>
+                </div>
+              ))}
+            </div>
+            <button className="chip" onClick={() => { update({ setupDone: false }); setTab("calendar"); setSettingsOpen(false); }}>
+              Run setup again
+            </button>
+            <h3>My calendar</h3>
             <button className="chip" disabled={prefs.myEvents.length === 0}
               onClick={() => { if (confirm("Remove every event from my calendar?")) update({ myEvents: [] }); }}>
               Clear my calendar ({prefs.myEvents.length})
             </button>
             <p className="small">
-              My calendar is saved in this browser only for now. Signing in to keep it across devices is planned.
+              Your setup, TCG choices and my calendar are saved in this browser only for now. Signing in to keep it across devices is planned.
             </p>
             <p className="small">Version {VERSION}</p>
           </div>
         )}
       </header>
 
-      {tab !== "log" && (
+      {tab !== "log" && !(tab === "calendar" && !prefs.setupDone) && (
         <Filters
           zip={prefs.zip} setZip={(zip) => update({ zip })} origin={prefs.origin}
           applyZip={applyZip} clearZip={() => { update({ origin: null, zip: "" }); setErr(null); }}
@@ -163,7 +198,9 @@ export default function Page() {
           radiusMi={prefs.radiusMi} setRadiusMi={(radiusMi) => update({ radiusMi })}
           games={gameSet}
           toggleGame={(g) => update({ games: gameSet.has(g) ? prefs.games.filter((x) => x !== g) : [...prefs.games, g] })}
-          clearGames={() => update({ games: [] })}
+          mode={gameMode(prefs)} myGames={prefs.myGames} hiddenGames={hiddenSet}
+          showMine={() => update({ games: [], showAll: false })}
+          showAll={() => update({ games: [], showAll: true })}
           kind={prefs.kind} setKind={(kind: EventKind | null) => update({ kind })}
           myOnly={prefs.myOnly} setMyOnly={(myOnly) => update({ myOnly })} myCount={prefs.myEvents.length}
           availableGames={availableGames}
@@ -178,7 +215,15 @@ export default function Page() {
         )}
       </div>
 
-      {tab === "calendar" && (
+      {tab === "calendar" && mounted && !prefs.setupDone && (
+        <Setup
+          initial={{ zip: prefs.zip, origin: prefs.origin, radiusMi: prefs.radiusMi, myGames: prefs.myGames, hiddenGames: prefs.hiddenGames }}
+          availableGames={availableGames}
+          onDone={(r) => update({ ...r, setupDone: true, games: [], showAll: false })}
+        />
+      )}
+
+      {tab === "calendar" && prefs.setupDone && (
         <Calendar view={view} setView={setView} anchor={anchor} setAnchor={setAnchor} today={today}
           occurrences={calendarOccs} myEvents={mySet} myOnly={prefs.myOnly} togglePick={togglePick}
           showDistance={prefs.showDistance && !!prefs.origin} onShowShop={showShop} />

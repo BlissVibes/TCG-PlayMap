@@ -92,6 +92,10 @@ export function validateData(data: PlayMapData): string[] {
     if (e.validFrom != null && !isDateStr(e.validFrom)) errs.push(`${at}: validFrom must be YYYY-MM-DD`);
     if (e.validUntil != null && !isDateStr(e.validUntil)) errs.push(`${at}: validUntil must be YYYY-MM-DD`);
     for (const d of e.skipDates ?? []) if (!isDateStr(d)) errs.push(`${at}: skipDate ${d} must be YYYY-MM-DD`);
+    if (e.everyWeeks != null) {
+      if (!Number.isInteger(e.everyWeeks) || e.everyWeeks < 2 || e.everyWeeks > 8) errs.push(`${at}: everyWeeks must be an integer 2-8`);
+      if (!hasWeekday || !e.validFrom) errs.push(`${at}: everyWeeks needs a weekday and a validFrom to count from`);
+    }
     if (!["verified", "scraped", "unverified"].includes(e.confidence)) errs.push(`${at}: bad confidence`);
   }
   for (const [i, l] of data.log.entries()) {

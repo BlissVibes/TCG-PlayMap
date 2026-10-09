@@ -33,6 +33,19 @@ export interface Prefs {
   /** Show "12.4 mi" next to the shop on calendar blocks (when a ZIP is set). */
   showDistance: boolean;
   theme: "light" | "dark";
+  /**
+   * First-visit setup finished (ZIP + distance, then TCGs). Until it is, the
+   * calendar shows the setup card instead of every event in the data - with a
+   * national data set the unfiltered list is noise, and a ZIP is the only way
+   * the calendar can know which shops are "near".
+   */
+  setupDone: boolean;
+  /** The visitor's own TCGs: what the calendar shows when no game chip is picked. Empty = all. */
+  myGames: GameId[];
+  /** TCGs the visitor never wants to see: off the chips, the calendar and the map until unhidden. */
+  hiddenGames: GameId[];
+  /** "Show all TCGs" pressed: show every (non-hidden) game instead of myGames. */
+  showAll: boolean;
 }
 
 const KEY = "tcg-playmap:prefs:v1";
@@ -40,6 +53,7 @@ const KEY = "tcg-playmap:prefs:v1";
 export const DEFAULT_PREFS: Prefs = {
   zip: "", origin: null, radiusMi: DEFAULT_RADIUS_MI, games: [], kind: null,
   myEvents: [], myOnly: false, showDistance: true, theme: "light",
+  setupDone: false, myGames: [], hiddenGames: [], showAll: false,
 };
 
 /** Coerce anything that came out of storage into a valid Prefs. Exported for tests. */
@@ -58,7 +72,38 @@ export function sanitizePrefs(raw: unknown): Prefs {
     myOnly: p.myOnly === true,
     showDistance: p.showDistance !== false,
     theme: p.theme === "dark" ? "dark" : "light",
+    setupDone: p.setupDone === true,
+    myGames: Array.isArray(p.myGames) ? p.myGames.filter(isGameId) : [],
+    hiddenGames: Array.isArray(p.hiddenGames) ? p.hiddenGames.filter(isGameId) : [],
+    showAll: p.showAll === true,
   };
+}
+
+/**
+ * WHICH GAMES THE CALENDAR AND MAP SHOW. The rule Mark set (2026-10-09):
+ *   1. Hidden games never show, whatever else is picked.
+ *   2. Game chips picked -> exactly those.
+ *   3. No chips, "Show all TCGs" on -> every game.
+ *   4. No chips -> the visitor's own TCGs (from setup), or every game if they
+ *      chose none.
+ * Returns the explicit set of games to show, never "empty means all", so a
+ * caller cannot mistake "everything hidden" for "no filter".
+ */
+export function effectiveGames(p: Pick<Prefs, "games" | "myGames" | "hiddenGames" | "showAll">, available: Iterable<GameId>): Set<GameId> {
+  const hidden = new Set(p.hiddenGames);
+  const all = [...available].filter((g) => !hidden.has(g));
+  let pick: GameId[];
+  if (p.games.length) pick = p.games;
+  else if (p.showAll || p.myGames.length === 0) pick = all;
+  else pick = p.myGames;
+  return new Set(pick.filter((g) => !hidden.has(g)));
+}
+
+/** Which of the three default modes the chip row is in, for its pressed state. */
+export function gameMode(p: Pick<Prefs, "games" | "myGames" | "showAll">): "picked" | "all" | "mine" {
+  if (p.games.length) return "picked";
+  if (p.showAll || p.myGames.length === 0) return "all";
+  return "mine";
 }
 
 export function loadPrefs(): Prefs {

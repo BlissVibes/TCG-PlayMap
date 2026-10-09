@@ -1,0 +1,197 @@
+{
+  "source": "research agent web survey 2026-10-09 (cloud session)",
+  "game": "dragonball",
+  "note": "LEADS ONLY - confirm on the shop's own pages before adding rows (CLAUDE.md rule 7). Confirmed entries come first.",
+  "shops": [
+    {
+      "name": "A Hidden Fortress",
+      "address": "1960 Sequoia Ave, Unit 10",
+      "city": "Simi Valley",
+      "zip": "93063",
+      "phone": "805-526-6457",
+      "website": "https://www.ahiddenfortress.com/",
+      "socials": {
+        "facebook": "https://www.facebook.com/pages/A-Hidden-Fortress/169619936408066",
+        "discord": [
+          "https://discord.gg/5UYzdyn",
+          "https://discord.gg/vQM3PXACMf"
+        ]
+      },
+      "target_games": [
+        "dbs_masters",
+        "dbs_fusion"
+      ],
+      "target_schedule": [
+        {
+          "game": "dbs_masters",
+          "day": "Tuesday",
+          "time": "18:30",
+          "text": "Tournament Entry product \"Dragonball Super - Tuesday Constructed\", $5.00, variant \"Tuesday, 6:30PM, Standard, New\"",
+          "source": "https://www.ahiddenfortress.com/catalog/tournament/dragonball_super__tuesday_constructed/478929"
+        },
+        {
+          "game": "dbs_fusion",
+          "day": "Saturday",
+          "time": "12:00",
+          "text": "Tournament Entry product \"Dragonball Fusion World - Regional Qualifier ($25.00)\", variant \"Saturday, 12:00PM\" (one-off qualifier, not weekly; official list dates the store's FW Store Regional to 9/28/2024)",
+          "source": "https://www.ahiddenfortress.com/catalog/tournament/dragonball_fusion_world__regional_qualifier_2500/523732"
+        }
+      ],
+      "schedule_url": "https://www.ahiddenfortress.com/catalog/tournament/1513",
+      "sources": [
+        "https://www.dbs-cardgame.com/fw/pdf/events/en/fw_store_reginal_event_list_final1.pdf",
+        "https://www.ahiddenfortress.com/",
+        "https://www.ahiddenfortress.com/about",
+        "https://www.ahiddenfortress.com/catalog/tournament/1513",
+        "https://thecardshopfinder.com/ca/simi-valley/a-hidden-fortress/"
+      ],
+      "confidence": "Store's own site (tournament-entry products) + official Bandai FW Store Regionals list (2024). The Tuesday DBS listing's product id (478929) is older than a 10/28/2023 FaB entry (504520), so it predates Fusion World and is the original game (Masters) - but it may be a stale catalog item; not confirmed current. Phone from third-party directory.",
+      "notes": "Store hours (own site): Tue-Fri 2-8pm, Sat 12-8pm, Sun 11am-4pm, closed Monday. Site sells Gundam TCG and Riftbound singles/sealed (no Gundam/Riftbound events seen). Official PDF writes the address as '1960 Sequoia Avenue #10'. Tournament-entry catalog is paginated (7+ pages); only pages 1-3 checked."
+    },
+    {
+      "name": "A.G. Collectibles",
+      "address": "6658 Carnelian St",
+      "city": "Rancho Cucamonga",
+      "zip": "91701",
+      "phone": "909-758-0090",
+      "website": "https://www.agcollectibles.com/",
+      "socials": {},
+      "target_games": [
+        "dbs_fusion",
+        "gundam",
+        "riftbound"
+      ],
+      "target_schedule": [
+        {
+          "game": "dbs_fusion",
+          "day": "Saturday",
+          "time": "14:00",
+          "text": "\"DBSCG FW FB11 RELEASE EVENT\" Sat Oct 17 (2026-10-17, startDate 2026-10-17T14:00:00-07:00) - one-off release event, not weekly",
+          "source": "https://www.agcollectibles.com/event-details/dbscg-fw-fb11-release-event-1"
+        },
+        {
+          "game": "dbs_fusion",
+          "day": "Saturday",
+          "time": "13:00",
+          "text": "\"DBSCG Fusion World Store TCG official Tournament\" 2024-09-28 1:00-3:00 PM: \"Arrive 1/2 hour before event starts. $10 buy in Promo pack upon entry.\" (past event)",
+          "source": "https://www.agcollectibles.com/event-details/dbscg-fusion-world-store-tcg-official-tournament-2024-09-28-13-00"
+        },
+        {
+          "game": "gundam",
+          "day": "Sunday",
+          "time": "14:00",
+          "text": "\"GCG - November 2026 Shop Tournament\" Sun Nov 1 2026 (time from event URL slug ...2026-11-01-14-00); also \"GUNDAM CARD GAME GD06 Release Event\" Sat Oct 31 2026",
+          "source": "https://www.agcollectibles.com/events-1"
+        },
+        {
+          "game": "riftbound",
+          "day": "Saturday",
+          "time": "11:30",
+          "text": "\"Riftbound\" Sat Oct 10 2026, labelled \"Multiple Dates\" (time from URL slug riftbound-2026-10-10-11-30); \"RADIANCE PRE-RIFT\" Oct 16 and Oct 17",
+          "source": "https://www.agcollectibles.com/events-1"
+        }
+      ],
+      "schedule_url": "https://www.agcollectibles.com/events-1",
+      "sources": [
+        "https://www.agcollectibles.com/events-1",
+        "https://www.agcollectibles.com/event-details/dbscg-fw-fb11-release-event-1",
+        "https://www.agcollectibles.com/event-details/dbscg-fusion-world-store-tcg-official-tournament-2024-09-28-13-00",
+        "https://thecardshopfinder.com/ca/rancho-cucamonga/a-g-collectibles/"
+      ],
+      "confidence": "Store's own site (Wix events). FW release event confirmed for 2026-10-17. No recurring weekly DBS event seen; two 'Store Tournament Event' entries on Sat Oct 10 11:30 could not be identified (site rate-limited / Cloudflare challenge), one other 'Store Tournament' Oct 10 2pm is One Piece.",
+      "notes": "Western Inland Empire. Site returned HTTP 429 after a few requests - be gentle. Also runs Lorcana, MTG, Weiss Schwarz, Vanguard, Palworld, hololive events."
+    },
+    {
+      "name": "GMI Games",
+      "address": "8304 Limonite Ave #M",
+      "city": "Riverside",
+      "zip": "92509",
+      "phone": null,
+      "website": "https://gmigames.com/",
+      "socials": {},
+      "target_games": [
+        "dbs_fusion"
+      ],
+      "target_schedule": [
+        {
+          "game": "dbs_fusion",
+          "day": "Friday",
+          "time": null,
+          "text": "Official FW Store Regionals list: \"United States California GMI Games 9/13/2024 8304 Limonite Ave # M Riverside 92509\" (past event)",
+          "source": "https://www.dbs-cardgame.com/fw/pdf/events/en/fw_store_reginal_event_list_final1.pdf"
+        }
+      ],
+      "schedule_url": null,
+      "sources": [
+        "https://www.dbs-cardgame.com/fw/pdf/events/en/fw_store_reginal_event_list_final1.pdf"
+      ],
+      "confidence": "Official Bandai locator (2024 one-off Store Regional) only. Current weekly DBS play NOT confirmed.",
+      "notes": "Search snippets (old D&D Beyond forum post) give '8300 Limonite Ave # F' and phone (951) 681-8270 and place it in Jurupa Valley (ZIP 92509 is Jurupa Valley) - unverified, so phone left null. gmigames.com now redirects to https://www.nexustabletopgames.com/ (possible rebrand; that site returned 429, not verified). Needs a check before listing."
+    },
+    {
+      "name": "Top Deck Keep",
+      "address": "10128 Indiana Ave",
+      "city": "Riverside",
+      "zip": "92503",
+      "phone": "951-977-9955",
+      "website": null,
+      "socials": {},
+      "target_games": [
+        "dbs_fusion"
+      ],
+      "target_schedule": [
+        {
+          "game": "dbs_fusion",
+          "day": "Saturday",
+          "time": null,
+          "text": "Official FW Store Regionals list: \"United States California Top Deck Keep 9/21/2024 10128 Indiana Ave Riverside 92503\" (past event)",
+          "source": "https://www.dbs-cardgame.com/fw/pdf/events/en/fw_store_reginal_event_list_final1.pdf"
+        }
+      ],
+      "schedule_url": null,
+      "sources": [
+        "https://www.dbs-cardgame.com/fw/pdf/events/en/fw_store_reginal_event_list_final1.pdf",
+        "https://thecardshopfinder.com/ca/riverside/top-deck-keep/"
+      ],
+      "confidence": "Official Bandai locator (2024 one-off Store Regional) + third-party directory (phone, mentions Dragon Ball on shelves). Current weekly DBS play NOT confirmed.",
+      "notes": "An older tappedout.net listing gives 7209 Arlington Ave Suite F - likely a previous location. No own website found."
+    },
+    {
+      "name": "Card Game Coliseum",
+      "address": "2717 S Orange Ave, Unit B",
+      "city": "Santa Ana",
+      "zip": "92707",
+      "phone": "657-210-4133",
+      "website": "https://cardgamecoliseum.tcgplayerpro.com",
+      "socials": {},
+      "target_games": [],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://thecardshopfinder.com/ca/santa-ana/card-game-coliseum/",
+        "https://cardatlas.app/blog/local/orange-county-ca/"
+      ],
+      "confidence": "Third-party directories only (thecardshopfinder: \"tournament-focused TCG shop on Orange Ave for Dragon Ball, Digimon, Pokemon and Flesh and Blood, with a strong organized-play scene\"; cardatlas, verified Jul 2026: \"Player-focused Santa Ana TCG shop for Dragon Ball Super ... with a full tournament and organized-play calendar\"). DBS version and days unknown.",
+      "notes": "Strong lead - both directories single out Dragon Ball. Own site (TCGplayer Pro) returned 403. Directory hours: Mon & Thu-Sun 12-8pm, closed Tue/Wed. Needs Bandai TCG+ or a call to confirm version/day."
+    },
+    {
+      "name": "Phantom Cards & Collectibles",
+      "address": "232 E 2nd St, Unit F",
+      "city": "Los Angeles",
+      "zip": "90012",
+      "phone": "213-660-6820",
+      "website": null,
+      "socials": {
+        "instagram": "https://instagram.com/phantom_candc"
+      },
+      "target_games": [],
+      "target_schedule": [],
+      "schedule_url": null,
+      "sources": [
+        "https://thecardshopfinder.com/ca/los-angeles/phantom-cards-collectibles/"
+      ],
+      "confidence": "Third-party directory only: \"anchors Little Tokyo with nightly Los Angeles tournaments for Pokemon, Yu-Gi-Oh, Dragon Ball Super, and Flesh and Blood.\" DBS version and day unknown.",
+      "notes": "Little Tokyo. Instagram login-walled. Needs confirmation of which DBS version and which night."
+    }
+  ]
+}

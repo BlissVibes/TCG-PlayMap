@@ -57,3 +57,24 @@ proposing structure — the phases are already laid out.
    nights and D&D go in the shop's `notes` and a calendar-log `note`, never
    in `events.json`. **Beyblade X IS listed** (game id `beyblade`; Mark,
    2026-10-09: "keep beyblade nights"). Ask before adding any other non-TCG.
+
+9. **Always record and show the cost.** Every event row gets a `fee` when the
+   store publishes one ("$10", "Free", "$5 (includes a pack)"), copied as
+   written. If the store publishes none, leave `fee` out and say so in notes;
+   the UI then shows "Cost not listed", never a blank (Mark, 2026-10-09:
+   "always show the cost associated with attending each tcg's play night").
+   Every block, month chip and map popup renders it via `feeLabel`.
+
+10. **Importers own their rows; humans own theirs.** Rows with an `origin`
+    (e.g. `riftbound-locator`) are written and ended by
+    `scripts/candidates/merge.mjs`; never hand-edit or delete them. The
+    importer never edits a hand-entered row except to fill a missing `fee`, and
+    adds no weekly nights at a hand-entered shop; it reports those under
+    "NEEDS A HUMAN". Bulk sources and their access status are in
+    `docs/SOURCES.md`.
+
+11. **Where the data work stands.** `docs/LOCAL_RUN.md` is the ordered list
+    of pending data runs: the Riftbound populate, Paper Hero's, the research
+    queue, and Bandai. Bulk per-shop research (`data/research_queue.json`) is
+    meant for Sonnet/Haiku sessions following `docs/SHOP_RESEARCH.md`. Hand
+    that file to such a session as its instructions.
