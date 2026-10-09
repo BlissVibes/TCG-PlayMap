@@ -53,5 +53,7 @@ proposing structure — the phases are already laid out.
    read from a website or an image is `scraped` until the store or Mark
    confirms it; record what could not be read in `docs/SOURCES.md`.
 
-8. **Non-TCG events are logged, not listed.** Board game nights and D&D go in
-   the shop's `notes` and a calendar-log `note`, never in `events.json`.
+8. **Non-TCG events are logged, not listed** — with one exception. Board game
+   nights and D&D go in the shop's `notes` and a calendar-log `note`, never
+   in `events.json`. **Beyblade X IS listed** (game id `beyblade`; Mark,
+   2026-10-09: "keep beyblade nights"). Ask before adding any other non-TCG.

@@ -89,8 +89,8 @@
     "phone": "(747) 370-0182",
     "socials": { "instagram": "https://www.instagram.com/bearcaveccg/" },
     "hours": "Daily 12-8 PM",
-    "games": ["gundam", "lorcana", "hololive", "pokemon", "yugioh", "onepiece", "palworld", "union_arena", "digimon", "riftbound", "mtg"],
-    "notes": "Weekly schedule from the store's Instagram graphic. Sundays are special events (announced on the store's Discord) plus Yu-Gi-Oh! Edison format. Also runs Beyblade X on Tuesdays.",
+    "games": ["gundam", "lorcana", "hololive", "pokemon", "yugioh", "onepiece", "palworld", "union_arena", "digimon", "riftbound", "mtg", "beyblade"],
+    "notes": "Weekly schedule from the store's Instagram graphic. Sundays are special events (announced on the store's Discord) plus Yu-Gi-Oh! Edison format. Beyblade X on Tuesdays.",
     "active": true,
     "source": { "url": "https://www.instagram.com/bearcaveccg/", "checked": "2026-10-03", "note": "weekly schedule graphic (Instagram), supplied by Mark" }
   }

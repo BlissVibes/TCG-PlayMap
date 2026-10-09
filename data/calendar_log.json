@@ -71,5 +71,6 @@
   {"date": "2026-10-03", "action": "added", "game": "digimon", "shopId": "bear-cave-ccg", "summary": "Digimon: Thu 6 PM, Sat 2:30 PM."},
   {"date": "2026-10-03", "action": "added", "game": "riftbound", "shopId": "bear-cave-ccg", "summary": "Riftbound: Thu 6 PM, Sat 6 PM."},
   {"date": "2026-10-03", "action": "added", "game": "mtg", "shopId": "bear-cave-ccg", "summary": "Magic: Fri 6 PM."},
-  { "date": "2026-10-03", "action": "note", "game": null, "shopId": "bear-cave-ccg", "summary": "Beyblade X (Tue 6 PM) and Sunday special events are on the store's schedule but not on this calendar; special events are announced on the store's Discord. The graphic does not say which nights are casual, so all are listed as tournaments until confirmed." }
+  { "date": "2026-10-03", "action": "note", "game": null, "shopId": "bear-cave-ccg", "summary": "Beyblade X (Tue 6 PM) and Sunday special events are on the store's schedule but not on this calendar; special events are announced on the store's Discord. The graphic does not say which nights are casual, so all are listed as tournaments until confirmed." },
+  { "date": "2026-10-09", "action": "added", "game": "beyblade", "shopId": "bear-cave-ccg", "summary": "Beyblade X: Tue 6 PM. Beyblade nights are now listed on the calendar (they were previously left off as not a card game)." }
 ]

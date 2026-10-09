@@ -46,6 +46,9 @@ export const GAMES = {
   oshipush:      { label: "OshiPush",                        short: "OSHI",   color: "#c86fc0" },
   naruto:        { label: "Naruto Kayou",                    short: "NARUTO", color: "#e58b1a" },
   palworld:      { label: "Palworld TCG",                    short: "PAL",    color: "#4f9a6e" },
+  // Not a card game, listed on purpose (Mark, 2026-10-09: "keep beyblade
+  // nights"). Shops run it on the same weekly rota as their TCG nights.
+  beyblade:      { label: "Beyblade X",                      short: "BEY",    color: "#475569" },
   other:         { label: "Other",                           short: "OTHER",  color: "#6c7280" },
 } as const satisfies Record<string, GameInfo>;
 
