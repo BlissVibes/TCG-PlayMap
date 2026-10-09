@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.0.9";
+export const VERSION = "0.1.1.0";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.1.0",
+    date: "2026-10-09",
+    changes: ["Internal: a script to pull which LA stores run Bandai games (Gundam, Dragon Ball, One Piece, Union Arena, Digimon), for a one-time map build-out."],
+  },
   {
     version: "0.1.0.9",
     date: "2026-10-09",

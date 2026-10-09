@@ -4,3 +4,6 @@ out/
 *.tsbuildinfo
 .DS_Store
 .env*.local
+
+# Raw Bandai TCG+ responses: stay on the machine that pulled them
+bandai-pull/

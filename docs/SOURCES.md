@@ -12,6 +12,16 @@ note anything that changed (and log it in `data/calendar_log.json`).
 
 | Bear Cave CCG | Weekly schedule graphic on https://www.instagram.com/bearcaveccg/ (screenshot supplied by Mark 2026-10-03) | **No** — image only | 2026-10-03 | 22 slots transcribed by hand. No fees, no casual/tournament labels: all marked `tournament`, **confirm**. Beyblade X (Tue 6 PM) omitted at first, then added 2026-10-09 at Mark's request. Sunday = "Special Events" (Discord) plus Yu-Gi-Oh! Edison Format 4 PM. Address/phone from Yelp & the Wizards locator; Nominatim's first hit at 8820 Reseda names "NJoy Games & Comics" (stale OSM label), so the plain-address coordinate was used. |
 
+## Bulk sources (one pull covers many shops)
+
+| source | games | access | status |
+|---|---|---|---|
+| Riftbound locator API — `api.riftbound.uvsgames.com/api/v2/game-stores/?game_id=3&latitude=…&longitude=…&num_miles=…` and `/api/v2/events/?game_slug=riftbound&latitude=…&start_date_after=…&start_date_before=…` | Riftbound | **Open, no login.** Locator robots.txt allows all but `/players/`; the API host has no robots.txt. Terms not linked from the locator; not reviewed. | 2026-10-09: 171 Greater-LA stores, 118 with a recurring weekly night. Store-entered events → `scraped`. |
+| Bandai TCG+ — `api.bandai-tcg-plus.com/api/user/event/list` | Gundam, DBS Fusion World, One Piece, Union Arena, Digimon, Naruto | **Guests get 403.** Terms (lp.bandai-tcg-plus.com/terms/en/ §5, §7) forbid automated access and copying. | **Mark's decision, 2026-10-09:** pull anyway, lightly, from his Mac with a secondary account — one initial population of which shops run these games, then occasional pulls for special events. `scripts/bandai/` (README there). Output is leads only. |
+| Wizards store & event locator — `locator.wizards.com/store/<id>` | Magic | Events are rendered in the page HTML. | Used for Paper Hero's. Also lists nearby stores. |
+| Shop Google Calendars — `calendar.google.com/calendar/ical/<id>/public/basic.ics` | everything the shop runs | Public iCal feed; recurrence included. | Best per-shop source when it exists. Paper Hero's (both LA stores) publishes one. |
+| Gundam official 2024 trial-event store list (PDF) | Gundam | Public PDF. | ~40 Greater-LA stores; 2 years old → leads only. |
+
 ## What was tried and did not work
 
 - **WebSearch summaries** are second-hand and were wrong in detail (one put
