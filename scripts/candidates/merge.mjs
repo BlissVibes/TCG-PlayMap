@@ -29,6 +29,11 @@
  *     its own game's weekly nights there (a Riftbound-locator shop can get
  *     Lorcana nights from Ravensburger Play), UNLESS a person has already
  *     entered nights for that game at that shop - then it only reports.
+ *   - A hand-entered night for the same shop, game and weekday within
+ *     SAME_NIGHT_MINUTES of the source's time IS that night: nothing is added
+ *     and its time and title are never changed; it is listed under "Time
+ *     differs from locator". Like an exact match, a MISSING fee is filled, and
+ *     the row's notes then say which time the locator listed it at.
  *   - New shops are created with `origin`, and a research-queue entry so a
  *     human or a cheaper model can fill in their OTHER games
  *     (docs/SHOP_RESEARCH.md).
@@ -146,6 +151,17 @@ const SOURCES = {
 };
 const sourceOf = (origin) => SOURCES[origin] ?? { locator: `${origin} store locator`, short: origin, refreshed: `Schedules refreshed from ${origin}` };
 
+/**
+ * A hand-entered night this close to the source's start time is the same night.
+ * Stores post a sign-in time in one place and a round-one time in another:
+ * on 2026-10-10 the Lorcana run listed Collectors Lounge 7:10 PM against our
+ * 7:00, Paper Hero's HB 6 PM against 7 PM, and Emerald Knights 5 PM against a
+ * 4 PM sign-in, as nights "missing" from our calendar, and would have done so
+ * on every run. Three hours apart is treated as a different night.
+ */
+export const SAME_NIGHT_MINUTES = 120;
+const minutes = (t) => { const [h, m] = String(t).split(":").map(Number); return h * 60 + m; };
+
 const isActive = (e, today) => !e.validUntil || e.validUntil >= today;
 
 // ── the merge ────────────────────────────────────────────────────────────────
@@ -153,7 +169,7 @@ export function merge({ cands, shops, events, log, queue, today, force = false }
   const origin = cands.source;
   const src = sourceOf(origin);
   const yesterday = addDays(today, -1);
-  const r = { newShops: [], newWeekly: [], newSpecial: [], filledFees: [], ended: [], replaced: [], curatedDiffs: [], skipped: [], outOfRegion: [], linked: [], retitled: [] };
+  const r = { newShops: [], newWeekly: [], newSpecial: [], filledFees: [], ended: [], replaced: [], curatedDiffs: [], timeDiffs: [], skipped: [], outOfRegion: [], linked: [], retitled: [] };
   const logLines = [];
 
   // Safety: a pull that suddenly has far fewer nights is a broken pull.
@@ -246,6 +262,22 @@ export function merge({ cands, shops, events, log, queue, today, force = false }
           r.filledFees.push(`${shop.name} ${WD[s.weekday]} ${fmtTime(s.time)}: ${s.fee}`);
           lines.push(`cost for ${WD[s.weekday]} ${fmtTime(s.time)} is ${s.fee} (from the locator)`);
         }
+        continue;
+      }
+      // The same night at a slightly different time, entered by a person: leave it.
+      const near = events
+        .filter((e) => e.shopId === shop.id && e.game === game && e.weekday === s.weekday && !e.origin && isActive(e, today)
+          && Math.abs(minutes(e.start) - minutes(s.time)) <= SAME_NIGHT_MINUTES)
+        .sort((a, b) => Math.abs(minutes(a.start) - minutes(s.time)) - Math.abs(minutes(b.start) - minutes(s.time)))[0];
+      if (near) {
+        if (near.fee == null && s.fee) {
+          near.fee = s.fee;
+          const said = `Fee from the ${label(game)} locator, which lists this night at ${fmtTime(s.time)}.`;
+          near.notes = near.notes ? `${near.notes} ${said}` : said;
+          r.filledFees.push(`${shop.name} ${WD[s.weekday]} ${fmtTime(near.start)}: ${s.fee} (locator lists it at ${fmtTime(s.time)})`);
+          lines.push(`cost for ${WD[s.weekday]} ${fmtTime(near.start)} is ${s.fee} (from the locator)`);
+        }
+        r.timeDiffs.push(`${shop.name} ${WD[s.weekday]}: locator ${fmtTime(s.time)}${s.fee ? ` ${s.fee}` : ""} "${s.title}", our calendar ${fmtTime(near.start)}${near.fee ? ` ${near.fee}` : ""}`);
         continue;
       }
       if (curated) { r.curatedDiffs.push(`${shop.name}: locator lists ${WD[s.weekday]} ${fmtTime(s.time)} ${s.fee ?? "(no fee)"} "${s.title}" (seen ${s.seen}x, last ${s.lastSeen}) - not on our calendar`); continue; }
@@ -355,6 +387,7 @@ function main() {
     + sec("Fees filled on hand-entered rows", r.filledFees) + sec("Fee changes (old row ended, new row added)", r.replaced)
     + sec("Weekly nights ended (no longer listed)", r.ended)
     + sec("NEEDS A HUMAN: locator nights missing at hand-entered shops", r.curatedDiffs)
+    + sec("Time differs from locator (time not changed)", r.timeDiffs)
     + sec("Weekly titles cleaned of a date", r.retitled)
     + sec("Skipped (bad address data)", r.skipped) + sec("Skipped (outside region)", r.outOfRegion) + sec("Existing shops linked to the locator", r.linked) + "\n";
   console.log(report);

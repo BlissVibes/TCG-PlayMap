@@ -166,6 +166,66 @@ describe("merge: Lorcana from Ravensburger Play", () => {
     expect(r.curatedDiffs).toEqual([expect.stringMatching(/Tiny Card Cafe: locator lists Tue 6 PM \$8/)]);
   });
 
+  it("a hand night at the same time, within 2 h, and 3 h away: present, 'time differs', NEEDS A HUMAN", () => {
+    const hand = (start: string) => ({ id: `tiny-tue-lorcana-${start}`, shopId: "tiny-card-cafe", game: "lorcana", kind: "tournament", weekday: 2, start, fee: "$10", confidence: "scraped" });
+    const lorRows = (events: any[]) => events.filter((e: any) => e.game === "lorcana");
+
+    // Exact match (locator Tue 6 PM, ours Tue 6 PM): nothing to say.
+    const exact = run([store()], { shops: [shop()], events: [riftRow, hand("18:00")] });
+    expect(lorRows(exact.events)).toEqual([hand("18:00")]);
+    expect([exact.r.newWeekly, exact.r.curatedDiffs, exact.r.timeDiffs]).toEqual([[], [], []]);
+
+    // Within 2 h, either side (sign-in vs round one): the same night. Not added, not changed, listed quietly.
+    for (const start of ["17:00", "18:10", "20:00"]) {
+      const near = run([store()], { shops: [shop()], events: [riftRow, hand(start)] });
+      expect(lorRows(near.events), start).toEqual([hand(start)]);
+      expect(near.r.newWeekly, start).toEqual([]);
+      expect(near.r.curatedDiffs, start).toEqual([]);
+      expect(near.r.timeDiffs, start).toEqual([expect.stringMatching(/^Tiny Card Cafe Tue: locator 6 PM \$8 "Weekly Play", our calendar .* \$10$/)]);
+      expect(near.log, start).toEqual([]);
+    }
+
+    // 3 h apart: a different night. A person owns Lorcana here, so it is reported, not added.
+    const far = run([store()], { shops: [shop()], events: [riftRow, hand("21:00")] });
+    expect(lorRows(far.events)).toEqual([hand("21:00")]);
+    expect(far.r.timeDiffs).toEqual([]);
+    expect(far.r.curatedDiffs).toEqual([expect.stringMatching(/Tiny Card Cafe: locator lists Tue 6 PM \$8/)]);
+  });
+
+  it("a near match fills a MISSING fee and says where it came from; time, title and an existing fee stay", () => {
+    const hand = { id: "tiny-tue-lorcana", shopId: "tiny-card-cafe", game: "lorcana", kind: "play", title: "Lorcana League", weekday: 2, start: "19:00", confidence: "scraped", notes: "Sign-in 6:30." };
+    const a = run([store()], { shops: [shop()], events: [riftRow, hand] });
+    const row = a.events.find((e: any) => e.id === "tiny-tue-lorcana")!;
+    expect(row).toEqual({ ...hand, fee: "$8", notes: "Sign-in 6:30. Fee from the Lorcana locator, which lists this night at 6 PM." });
+    expect(a.r.filledFees).toEqual(["Tiny Card Cafe Tue 7 PM: $8 (locator lists it at 6 PM)"]);
+    expect(a.r.timeDiffs).toHaveLength(1);
+    expect(a.r.newWeekly).toEqual([]);
+    expect(a.log).toEqual([expect.objectContaining({ action: "added", game: "lorcana", summary: expect.stringContaining("cost for Tue 7 PM is $8 (from the locator)") })]);
+    // Second run: the fee is there now, so nothing is written again (no second note).
+    const b = run([store()], { shops: a.shops, events: a.events });
+    expect(b.events).toEqual(a.events);
+    expect(b.r.filledFees).toEqual([]);
+    expect(b.log).toEqual([]);
+    // A fee a person entered is never replaced, and no note is added.
+    const c = run([store()], { shops: [shop()], events: [riftRow, { ...hand, fee: "$5" }] });
+    expect(c.events.find((e: any) => e.id === "tiny-tue-lorcana")).toEqual({ ...hand, fee: "$5" });
+    // No notes yet: the sentence stands alone.
+    const { notes: _n, ...bare } = hand;
+    const d = run([store()], { shops: [shop()], events: [riftRow, bare] });
+    expect(d.events.find((e: any) => e.id === "tiny-tue-lorcana")!.notes).toBe("Fee from the Lorcana locator, which lists this night at 6 PM.");
+  });
+
+  it("'time differs' needs the same weekday and game, and a row a person entered", () => {
+    const base = { id: "x", shopId: "tiny-card-cafe", game: "lorcana", kind: "tournament", weekday: 2, start: "18:30", confidence: "scraped" };
+    // Another weekday, another game, an ended row, an importer's own row: none of them is "the same night".
+    for (const other of [{ ...base, weekday: 3 }, { ...base, game: "mtg" }, { ...base, validUntil: "2026-09-01" }]) {
+      const r = run([store()], { shops: [shop()], events: [riftRow, other] }).r;
+      expect(r.timeDiffs).toEqual([]);
+    }
+    const own = run([store()], { shops: [shop()], events: [riftRow, { ...base, origin: "ravensburger-play" }] });
+    expect(own.r.timeDiffs).toEqual([]);
+  });
+
   it("fills a missing fee on a hand-entered Lorcana row in the same slot, and never overwrites one", () => {
     const hand = { id: "tiny-tue-lorcana", shopId: "tiny-card-cafe", game: "lorcana", kind: "play", weekday: 2, start: "18:00", confidence: "scraped" };
     const a = run([store()], { shops: [shop()], events: [hand] });
