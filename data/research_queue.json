@@ -2507,5 +2507,31 @@
     "addedBy": "osm-triage",
     "checked": "2026-10-10",
     "notes": "Own Shopify site sells event tickets (collections/store-events): One Piece Play and Riftbound Play $10 (seen Tue Aug 18, Aug 25, Sep 15, Sep 22, Oct 6), Pokémon Delta Reign prerelease Oct 27 and Oct 29 $35, Radiance Pre-Rift $35. Titles carry dates but no start times, so no rows written. Looks like alternating Tuesday One Piece / Riftbound play; confirm days and times by phone or social."
+  },
+  {
+    "shopId": "at-ease-games",
+    "name": "At Ease Games",
+    "city": "San Diego",
+    "website": "https://ateasegames.com/",
+    "socials": {},
+    "sourceUrl": "https://calendar.google.com/calendar/ical/ateasegames%40gmail.com/public/basic.ics",
+    "status": "done",
+    "added": "2026-10-11",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-11",
+    "notes": "Own public Google Calendar (ateasegames@gmail.com, embedded on /events): 4 weekly TCG rows with fees where printed (FNM draft $20, Standard $5, SWU casual free, Pokémon open play no fee). Commander Day, Warhammer, D&D and board games skipped."
+  },
+  {
+    "shopId": "knowhere-games-and-comics",
+    "name": "Knowhere Games & Comics",
+    "city": "San Marcos",
+    "website": "https://www.knowheregamesandcomics.com",
+    "socials": {},
+    "sourceUrl": "https://www.knowheregamesandcomics.com/events-at-knowhere",
+    "status": "done",
+    "added": "2026-10-11",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-11",
+    "notes": "Own events page, October 2026 grid parsed: 7 weekly TCG rows, no fees printed; days with 'Show all' may hide more. Riftbound skipped (importer)."
   }
 ]

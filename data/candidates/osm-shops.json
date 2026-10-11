@@ -1525,7 +1525,12 @@
         "milesFromLaCenter": 108,
         "triageScore": 5,
         "triageOrder": 26,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Uncle Don's Hobbies (Palm Desert): uncledonshobbies.com now serves unrelated Japanese-language content (domain looks repurposed); nothing readable.",
+        "evidenceUrl": "http://www.uncledonshobbies.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Sky High Comics",
@@ -1609,7 +1614,12 @@
         "milesFromLaCenter": 114,
         "triageScore": 3,
         "triageOrder": 36,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "The Recyard (San Diego): phone only; nothing found.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "The Card Shoppe",
@@ -1630,7 +1640,12 @@
         "milesFromLaCenter": 118,
         "triageScore": 8,
         "triageOrder": 8,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "The Card Shoppe (El Cajon): no website; phone only; nothing found.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Kart1 Go kart Supplier",
@@ -1735,7 +1750,12 @@
         "milesFromLaCenter": 69,
         "triageScore": 5,
         "triageOrder": 24,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Graham Crackers Comics, Temecula store: comics shop (grahamcrackers.com/tmstore.htm); no card-game events found on the page read.",
+        "evidenceUrl": "https://www.grahamcrackers.com/tmstore.htm",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Game & Graze",
@@ -1882,7 +1902,12 @@
         "milesFromLaCenter": 88,
         "triageScore": 6,
         "triageOrder": 18,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "tcg",
+        "evidence": "Knowhere Games & Comics (San Marcos, 88 mi): events page grid parsed, 7 weekly TCG rows. Shop row added.",
+        "evidenceUrl": "https://www.knowheregamesandcomics.com/events-at-knowhere",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Brickmania",
@@ -2013,7 +2038,13 @@
         "milesFromLaCenter": 96,
         "triageScore": 1,
         "triageOrder": 46,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Same business as 'Tesoro Cards & Games' (shoptesoro.online, Escondido).",
+        "evidenceUrl": "https://www.shoptesoro.online/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11",
+        "duplicateOf": "node/14001015673"
       },
       {
         "name": "At Ease Games",
@@ -2034,7 +2065,12 @@
         "milesFromLaCenter": 102,
         "triageScore": 9,
         "triageOrder": 4,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "tcg",
+        "evidence": "At Ease Games (San Diego, 102 mi): store Google Calendar parsed, 4 weekly TCG rows. Shop row added.",
+        "evidenceUrl": "https://calendar.google.com/calendar/ical/ateasegames%40gmail.com/public/basic.ics",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "SD Sports Cards",
@@ -2097,7 +2133,12 @@
         "milesFromLaCenter": 112,
         "triageScore": 2,
         "triageOrder": 44,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Dhampire (San Diego): toys shop (dhampiretoys.com); not researched further.",
+        "evidenceUrl": "https://www.dhampiretoys.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Tesoro Cards & Games",
@@ -2118,7 +2159,12 @@
         "milesFromLaCenter": 91,
         "triageScore": 7,
         "triageOrder": 12,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Tesoro Cards & Games (Escondido): shoptesoro.online home page has almost no text (script-rendered); nothing readable.",
+        "evidenceUrl": "https://www.shoptesoro.online/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Cutie Surprises",
@@ -2223,7 +2269,12 @@
         "milesFromLaCenter": 119,
         "triageScore": 6,
         "triageOrder": 20,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "La Bella Cafe & Games (Chula Vista): site is behind a Cloudflare challenge page; nothing readable.",
+        "evidenceUrl": "https://www.labellas.com",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Hobby Town",

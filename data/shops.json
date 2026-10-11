@@ -5728,5 +5728,60 @@
       "checked": "2026-10-10",
       "note": "OpenStreetMap lead, store's own site"
     }
+  },
+  {
+    "id": "at-ease-games",
+    "name": "At Ease Games",
+    "address": "8400 Miramar Rd, Suite 250",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "92126",
+    "lat": 32.8920149,
+    "lon": -117.141249,
+    "tz": "America/Los_Angeles",
+    "website": "https://ateasegames.com/",
+    "phone": "(858) 549-4263",
+    "hours": "Mon-Thu 12-11 PM · Fri-Sun 10 AM-11 PM (per OpenStreetMap, not confirmed)",
+    "games": [
+      "pokemon",
+      "swu",
+      "mtg"
+    ],
+    "notes": "Found via OpenStreetMap; schedule from the store's public Google Calendar (checked 2026-10-11). Patreon members play free or at a discount. Also Commander Day (Tue and Sat, all day, $5, no start time), Warhammer leagues, D&D and board game night (not listed).",
+    "active": true,
+    "source": {
+      "url": "https://calendar.google.com/calendar/ical/ateasegames%40gmail.com/public/basic.ics",
+      "checked": "2026-10-11",
+      "note": "OpenStreetMap lead, store's Google Calendar"
+    }
+  },
+  {
+    "id": "knowhere-games-and-comics",
+    "name": "Knowhere Games & Comics",
+    "address": "125 Vallecitos de Oro, Suite J",
+    "city": "San Marcos",
+    "state": "CA",
+    "zip": "92069",
+    "lat": 33.1405252,
+    "lon": -117.18083,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.knowheregamesandcomics.com",
+    "phone": "(760) 891-8333",
+    "hours": "Mon 2-8 PM · Tue closed · Wed-Thu 12-8 PM · Fri 12-10 PM · Sat 12-8 PM · Sun 12-6 PM (per OpenStreetMap)",
+    "games": [
+      "pokemon",
+      "mtg",
+      "shadowverse",
+      "weiss",
+      "godzilla",
+      "hololive"
+    ],
+    "notes": "Found via OpenStreetMap; schedule from the October 2026 grid on the store's events page (checked 2026-10-11; some days show 'Show all', so more nights may exist). Riftbound Nexus Nights (Fri 7 PM) belong to the Riftbound importer. Also D&D, Pathfinder and HeroClix (not listed).",
+    "active": true,
+    "source": {
+      "url": "https://www.knowheregamesandcomics.com/events-at-knowhere",
+      "checked": "2026-10-11",
+      "note": "OpenStreetMap lead, store's events page"
+    }
   }
 ]
