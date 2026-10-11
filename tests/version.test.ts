@@ -34,8 +34,8 @@ describe("version", () => {
 
 describe("version rule: site changes bump, shop updates do not", () => {
   it("knows which paths are data", () => {
-    for (const p of ["data/events.json", "data/candidates/lorcana-ravensburger.json", "docs/SOURCES.md", "README.md", "./data/shops.json"]) expect(isDataPath(p), p).toBe(true);
-    for (const p of ["lib/games.ts", "components/Calendar.tsx", "scripts/candidates/merge.mjs", "tests/data.test.ts", "CLAUDE.md", ".github/workflows/pages.yml", "database/x.json", "docs.md"]) expect(isDataPath(p), p).toBe(false);
+    for (const p of ["data/events.json", "data/candidates/lorcana-ravensburger.json", "docs/SOURCES.md", "README.md", "./data/shops.json", "CLAUDE.md"]) expect(isDataPath(p), p).toBe(true);
+    for (const p of ["lib/games.ts", "components/Calendar.tsx", "scripts/candidates/merge.mjs", "tests/data.test.ts", "CLAUDE.md.bak", "scripts/CLAUDE.md", ".github/workflows/pages.yml", "database/x.json", "docs.md"]) expect(isDataPath(p), p).toBe(false);
   });
 
   it("a research batch (data only) must NOT bump", () => {
@@ -54,6 +54,14 @@ describe("version rule: site changes bump, shop updates do not", () => {
     expect(versionRuleProblem(batch, true, null)).toMatch(/--data-bump/);
     // The reason never excuses a site change that forgot to bump.
     expect(versionRuleProblem(["components/Calendar.tsx"], false, "Mark said so")).toMatch(/without a version bump/);
+  });
+
+  it("an edit to the project rules (CLAUDE.md) is documentation: it must not bump, alone or with data", () => {
+    expect(versionRuleProblem(["CLAUDE.md"], false)).toBeNull();
+    expect(versionRuleProblem(["CLAUDE.md", "docs/ROADMAP.md", "data/events.json"], false)).toBeNull();
+    expect(versionRuleProblem(["CLAUDE.md", VERSION_FILE], true)).toMatch(/data-only change .* bumped the version/);
+    // Alongside a real site change the bump is still required.
+    expect(versionRuleProblem(["CLAUDE.md", "components/Calendar.tsx"], false)).toMatch(/without a version bump: components\/Calendar\.tsx/);
   });
 
   it("a site change must bump, alone or alongside data", () => {

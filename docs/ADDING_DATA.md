@@ -42,8 +42,8 @@ shop has events and no log entry at all.
 
 **A data change does not bump the version** (Mark, 2026-10-10: "we dont need
 to update the version for every single shop update. its to be saved for
-feature updates and changes."). If your commit touches only `data/`, `docs/`
-or `README.md`, do not edit `lib/version.ts`; `tests/version.test.ts` fails
+feature updates and changes."). If your commit touches only `data/`, `docs/`,
+`README.md` or `CLAUDE.md`, do not edit `lib/version.ts`; `tests/version.test.ts` fails
 a data-only commit that bumps. Name the shops in the commit subject instead:
 `Research batch 23: Game Empire, Brute Force Games; 3 blocked`.
 

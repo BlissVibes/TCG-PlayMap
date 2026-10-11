@@ -17,7 +17,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.6.9";
+export const VERSION = "0.1.7.0";
 
 export interface ChangeEntry {
   version: string;
@@ -33,6 +33,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.7.0",
+    date: "2026-10-11",
+    changes: ["Internal: editing the project's working rules no longer counts as a site change."],
+  },
   {
     version: "0.1.6.9",
     date: "2026-10-11",

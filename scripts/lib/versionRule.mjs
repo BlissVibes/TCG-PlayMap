@@ -15,7 +15,9 @@
  *     says so in its `dataBump` field, written by
  *     `node scripts/bump_version.mjs "<line>" --data-bump "<why Mark asked>"`.
  *     Nobody else sets that field.
- * Data paths: data/**, docs/**, README.md. lib/version.ts is the bump itself
+ * Data paths: data/**, docs/**, README.md and CLAUDE.md (the project's working
+ * rules are documentation: editing them changes nothing a visitor sees; added
+ * 2026-10-11). lib/version.ts is the bump itself
  * and counts on neither side. Adding a game to lib/games.ts is a site change
  * (a new chip, a new colour) and bumps.
  *
@@ -29,7 +31,7 @@ export const VERSION_FILE = "lib/version.ts";
 /** Is this path data, which never moves the site version? */
 export function isDataPath(path) {
   const p = String(path).replace(/\\/g, "/").replace(/^\.\//, "");
-  return p === "README.md" || p.startsWith("data/") || p.startsWith("docs/");
+  return p === "README.md" || p === "CLAUDE.md" || p.startsWith("data/") || p.startsWith("docs/");
 }
 
 /**
