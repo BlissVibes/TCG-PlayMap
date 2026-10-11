@@ -6,7 +6,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { buildSlots, feeText, splitAddress } from "../scripts/riftbound/pull.mjs";
-import { matchShop, merge, normPhone, slug } from "../scripts/candidates/merge.mjs";
+import { DEFAULT_REGION, matchShop, merge, normPhone, outsideRegion, slug } from "../scripts/candidates/merge.mjs";
 import { nextVersion } from "../scripts/bump_version.mjs";
 import { validateData } from "../lib/data";
 
@@ -91,6 +91,46 @@ describe("merge: new shops", () => {
     const second = run([store()], { shops: first.shops, events: first.events });
     expect(second.events).toEqual(first.events);
     expect(second.log).toEqual([]);
+  });
+});
+
+describe("merge: only stores inside the region", () => {
+  // 2026-10-10: a "within N miles of LA" locator search returned a store in
+  // Roanoke, Virginia. It became an active shop the LA map could not pin.
+  const roanoke = { name: "Star City Comics & Games", address: "5728 Williamson Rd", city: "Roanoke", state: "VA", zip: "24012", lat: 37.33, lng: -79.95 };
+  const lancaster = { name: "High Desert Cards", address: "44000 10th St W", city: "Lancaster", state: "CA", zip: "93534", lat: 34.6868, lng: -118.1542 };
+
+  it("rejects Roanoke VA and says why, accepts Lancaster CA", () => {
+    expect(outsideRegion(roanoke)).toMatch(/state is VA.*21\d\d mi/);
+    expect(outsideRegion(lancaster)).toBeNull();
+  });
+
+  it("checks distance on its own: far away with no state, or with a wrong 'CA'", () => {
+    expect(outsideRegion({ ...roanoke, state: null })).toMatch(/21\d\d mi.*limit 120 mi/);
+    expect(outsideRegion({ ...roanoke, state: "CA" })).toMatch(/limit 120 mi/);
+    expect(outsideRegion({ ...lancaster, state: null })).toBeNull();
+    expect(outsideRegion({ ...lancaster, state: " ca " })).toBeNull();
+  });
+
+  it("checks the state on its own: a nearby point labelled another state", () => {
+    expect(outsideRegion({ ...lancaster, state: "NV" })).toMatch(/state is NV/);
+  });
+
+  it("draws the line at the region radius, and a candidate file can carry its own region", () => {
+    const at = (mi: number) => ({ state: "CA", lat: DEFAULT_REGION.lat + mi / 69.09, lng: DEFAULT_REGION.lon });
+    expect(outsideRegion(at(DEFAULT_REGION.miles - 3))).toBeNull();
+    expect(outsideRegion(at(DEFAULT_REGION.miles + 3))).toMatch(/limit 120 mi/);
+    expect(outsideRegion(roanoke, { name: "Roanoke", lat: 37.27, lon: -79.94, miles: 50, states: ["VA"] })).toBeNull();
+  });
+
+  it("merge creates nothing for an out-of-region store and reports it with the distance", () => {
+    const { r, shops, events, log, queue } = run([store({ ...roanoke, sourceId: "store-15595" }), store()]);
+    expect(shops.map((x: any) => x.id)).toEqual(["fire-and-dice", "tiny-card-cafe"]);
+    expect(events.some((e: any) => /star-city/.test(e.shopId))).toBe(false);
+    expect(log.some((l: any) => /star-city/.test(l.shopId))).toBe(false);
+    expect(queue).toHaveLength(1);
+    expect(r.outOfRegion).toEqual([expect.stringMatching(/^Star City Comics & Games \(5728 Williamson Rd, Roanoke\): state is VA.*mi/)]);
+    expect(r.skipped).toEqual([]);
   });
 });
 

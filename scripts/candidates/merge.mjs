@@ -27,6 +27,9 @@
  *   - New shops are created with `origin`, and a research-queue entry so a
  *     human or a cheaper model can fill in their OTHER games
  *     (docs/SHOP_RESEARCH.md).
+ *   - REGION: a store outside the region (see outsideRegion) is never created,
+ *     whatever the locator returned; it is listed under "Skipped (outside
+ *     region)" with its distance.
  *   - SAFETY: if the pull holds far fewer weekly nights than are already
  *     loaded from this source, it is treated as a broken pull (an API outage
  *     returns "nothing", not an error) and nothing is ended. --force overrides.
@@ -84,13 +87,39 @@ export function matchShop(shops, cand, game) {
   return shops.find((s) => slug(s.name) === slug(cand.name)) ?? null;
 }
 
+/**
+ * The region this calendar covers. A locator answers a "within N miles" search
+ * with whatever it likes: the 2026-10-10 pull came back with a store in
+ * Roanoke, Virginia (2,146 mi) which became an active shop the LA map could not
+ * pin, and the browser acceptance check (a pin per shop) went red.
+ * The furthest genuine store in that pull was 68 mi from the centre (Yucaipa);
+ * 120 mi takes in Santa Barbara, Lancaster, Palm Springs and San Diego's north
+ * edge and nothing in another state. A candidate file may carry its own
+ * `region: { lat, lon, miles, states }` when a pull covers somewhere else.
+ */
+export const DEFAULT_REGION = { name: "Greater Los Angeles", lat: 34.0522, lon: -118.2437, miles: 120, states: ["CA"] };
+
+/**
+ * Why a candidate store is outside the region, or null when it belongs.
+ * Two independent checks: the state when the source gives one, and the distance.
+ */
+export function outsideRegion(cand, region = DEFAULT_REGION) {
+  const st = String(cand.state ?? "").trim().toUpperCase();
+  const d = miles(region.lat, region.lon, cand.lat, cand.lng);
+  const far = Number.isFinite(d) ? `${Math.round(d)} mi from ${region.name ?? "the region centre"}` : "distance unknown";
+  const states = (region.states ?? []).map((x) => String(x).toUpperCase());
+  if (st && states.length && !states.includes(st)) return `state is ${st}, not ${states.join("/")} (${far})`;
+  if (!Number.isFinite(d) || d > region.miles) return `${far}, limit ${region.miles} mi`;
+  return null;
+}
+
 const isActive = (e, today) => !e.validUntil || e.validUntil >= today;
 
 // ── the merge ────────────────────────────────────────────────────────────────
 export function merge({ cands, shops, events, log, queue, today, force = false }) {
   const origin = cands.source;
   const yesterday = addDays(today, -1);
-  const r = { newShops: [], newWeekly: [], newSpecial: [], filledFees: [], ended: [], replaced: [], curatedDiffs: [], skipped: [], linked: [] };
+  const r = { newShops: [], newWeekly: [], newSpecial: [], filledFees: [], ended: [], replaced: [], curatedDiffs: [], skipped: [], outOfRegion: [], linked: [] };
   const logLines = [];
 
   // Safety: a pull that suddenly has far fewer nights is a broken pull.
@@ -111,6 +140,12 @@ export function merge({ cands, shops, events, log, queue, today, force = false }
     if (!c.recurring.length && !c.special.length) continue;
     if (!c.name || !/^\d{5}$/.test(c.zip ?? "") || !Number.isFinite(c.lat) || !Number.isFinite(c.lng) || (c.lat === 0 && c.lng === 0)) {
       r.skipped.push(`${c.name || "?"}: missing ZIP or coordinates (${c.address ?? "no address"}, ${c.city ?? "?"})`);
+      continue;
+    }
+
+    const away = outsideRegion(c, cands.region ?? DEFAULT_REGION);
+    if (away) {
+      r.outOfRegion.push(`${c.name} (${c.address ?? "no address"}, ${c.city ?? "?"}): ${away}`);
       continue;
     }
 
@@ -272,7 +307,7 @@ function main() {
     + sec("Fees filled on hand-entered rows", r.filledFees) + sec("Fee changes (old row ended, new row added)", r.replaced)
     + sec("Weekly nights ended (no longer listed)", r.ended)
     + sec("NEEDS A HUMAN: locator nights missing at hand-entered shops", r.curatedDiffs)
-    + sec("Skipped (bad address data)", r.skipped) + sec("Existing shops linked to the locator", r.linked) + "\n";
+    + sec("Skipped (bad address data)", r.skipped) + sec("Skipped (outside region)", r.outOfRegion) + sec("Existing shops linked to the locator", r.linked) + "\n";
   console.log(report);
   if (opt("report")) writeFileSync(opt("report"), report);
 
