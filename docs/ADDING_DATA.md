@@ -47,6 +47,12 @@ or `README.md`, do not edit `lib/version.ts`; `tests/version.test.ts` fails
 a data-only commit that bumps. Name the shops in the commit subject instead:
 `Research batch 23: Game Empire, Brute Force Games; 3 blocked`.
 
+The one exception is Mark's: if he says a particular data update should carry
+a version because it is different somehow, bump it with
+`node scripts/bump_version.mjs "<line>" --data-bump "<why he asked>"`. The
+reason is stored on the changelog entry and the test accepts it. Do not use
+that flag on your own judgement.
+
 The version moves when the SITE changes: anything outside those paths,
 including a new game in `lib/games.ts`. Then run
 `node scripts/bump_version.mjs "<what changed, for the person using the site>"`

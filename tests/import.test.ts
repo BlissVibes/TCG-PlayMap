@@ -4,10 +4,13 @@
  * each ownership rule here was broken deliberately while writing this and the
  * matching test failed.
  */
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { describe, it, expect } from "vitest";
 import { buildSlots, feeText, parseArgs, splitAddress } from "../scripts/riftbound/pull.mjs";
 import { cleanWeeklyTitle, DEFAULT_REGION, matchShop, merge, normPhone, outsideRegion, slug } from "../scripts/candidates/merge.mjs";
-import { nextVersion } from "../scripts/bump_version.mjs";
+import { bumpVersion, nextVersion } from "../scripts/bump_version.mjs";
 import { validateData } from "../lib/data";
 
 describe("riftbound pull: arguments are read before any request", () => {
@@ -259,6 +262,24 @@ describe("small helpers", () => {
     expect([normPhone("+1 818 914 4512"), normPhone("6692326666"), normPhone("12345")]).toEqual(["(818) 914-4512", "(669) 232-6666", null]);
     expect([nextVersion("0.1.1.0"), nextVersion("0.1.1.9"), nextVersion("0.9.9.9")]).toEqual(["0.1.1.1", "0.1.2.0", "1.0.0.0"]);
   });
+  it("writes the bump into a version file, with Mark's reason only when one is given", () => {
+    const dir = mkdtempSync(join(tmpdir(), "tcg-bump-"));
+    const file = join(dir, "version.ts");
+    const start = 'export const VERSION = "0.1.6.9";\n\nexport const CHANGELOG: ChangeEntry[] = [\n  {\n    version: "0.1.6.9",\n    date: "2026-10-10",\n    changes: ["x"],\n  },\n];\n';
+    try {
+      writeFileSync(file, start);
+      expect(bumpVersion("A site change.", "2026-10-11", file)).toBe("0.1.7.0");
+      let src = readFileSync(file, "utf8");
+      expect(src).toContain('export const VERSION = "0.1.7.0";');
+      expect(src).toContain('    version: "0.1.7.0",\n    date: "2026-10-11",\n    changes: ["A site change."],\n  },');
+      expect(src).not.toContain("dataBump");
+      expect(bumpVersion("San Diego shops added.", "2026-10-12", file, "Mark 2026-10-12: wants this one visible as a release")).toBe("0.1.7.1");
+      src = readFileSync(file, "utf8");
+      expect(src).toContain('    changes: ["San Diego shops added."],\n    dataBump: "Mark 2026-10-12: wants this one visible as a release",\n  },');
+      expect(src.indexOf("0.1.7.1")).toBeLessThan(src.indexOf('version: "0.1.7.0"'));   // newest first
+    } finally { rmSync(dir, { recursive: true, force: true }); }
+  });
+
   it("matchShop prefers the stored locator id over distance", () => {
     const shops = [{ ...handShop(), sourceIds: { riftbound: "abc" } }];
     expect(matchShop(shops, { sourceId: "abc", name: "Different Name", lat: 0, lng: 0 }, "riftbound")?.id).toBe("fire-and-dice");

@@ -4,10 +4,19 @@ Inherited from Collectify-Wrapper where they earned their keep; shortened to
 what applies to a static site with JSON data. Read `docs/ROADMAP.md` before
 proposing structure — the phases are already laid out.
 
-1. **Version bump on every commit.** Bump `VERSION` in `lib/version.ts` by
-   0.0.0.1 (odometer, `MAJOR.MINOR.PATCH.BUILD`) and add a user-facing
-   CHANGELOG line in the same edit. `tests/version.test.ts` enforces it and the
-   Pages workflow runs tests before building, so a missed bump is a failed
+1. **Version bump on site-code commits only.** (Mark, 2026-10-10: "bump only
+   on site-code commits, data shares dont need updates unless i manually say
+   so due to it being different somehow".) A commit that changes the site
+   (anything outside `data/`, `docs/` and `README.md`; a new game in
+   `lib/games.ts` counts) bumps `VERSION` in `lib/version.ts` by 0.0.0.1
+   (odometer, `MAJOR.MINOR.PATCH.BUILD`) with a user-facing CHANGELOG line in
+   the same commit: `node scripts/bump_version.mjs "<line>"`, BEFORE the gates.
+   A commit that only changes data (shops, schedules, the queue, docs) does
+   NOT bump; its subject names the shops. The only exception is Mark saying a
+   particular data update should carry a version: then bump with
+   `--data-bump "<why he asked>"`, never on your own judgement.
+   `tests/version.test.ts` enforces both directions and the Pages workflow
+   runs tests before building, so a wrong bump or a missed one is a failed
    deploy.
 
 2. **Two logs, never mixed.** Changes to the SITE go in `lib/version.ts`.
@@ -44,7 +53,9 @@ proposing structure — the phases are already laid out.
    agent session - the API paths are blocked by the proxy - so ask Mark for
    those and never burn calls retrying them.
    `curl -s https://blissvibes.github.io/TCG-PlayMap/version.json` must show
-   the version just shipped, then
+   what was just shipped: the new `version` for a site change; for a data
+   push the version does not move, so `dataUpdated`, `shops` and `events`
+   there must match the commit. Then
    `npm run acceptance -- https://blissvibes.github.io/TCG-PlayMap/`. When Firestore arrives, add a health check that
    fails on zero shops — "the request succeeded and the map is empty" is the
    failure mode that has never once been a crash.

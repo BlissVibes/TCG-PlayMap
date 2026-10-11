@@ -1,11 +1,15 @@
 /**
  * The site version and its CODE change log.
  *
- * VERSIONING RULE (binding, carried over from Collectify-Wrapper): the scheme
- * is MAJOR.MINOR.PATCH.BUILD, every commit bumps the last segment by one,
- * odometer-style (0.1.0.9 -> 0.1.1.0), in the SAME commit as the change, with
- * a CHANGELOG entry written for the person using the site. tests/version.test.ts
- * asserts VERSION against the top entry so the two cannot drift.
+ * VERSIONING RULE (binding; Mark, 2026-10-10): the scheme is
+ * MAJOR.MINOR.PATCH.BUILD, odometer-style (0.1.0.9 -> 0.1.1.0). The version is
+ * for the SITE: a commit that changes site code bumps the last segment by one,
+ * in the same commit, with a CHANGELOG entry written for the person using the
+ * site. A commit that only changes data (shops, schedules, docs) does NOT bump,
+ * unless Mark says that one should because it is different somehow; that entry
+ * then carries `dataBump` with his reason. tests/version.test.ts enforces all
+ * of it (scripts/lib/versionRule.mjs) and asserts VERSION against the top entry
+ * so the two cannot drift.
  *
  * THIS IS NOT THE CALENDAR LOG. Changes to what is ON the calendar - a shop
  * added, Pokémon night moving from Thursday to Wednesday - go in
@@ -13,16 +17,27 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.6.1";
+export const VERSION = "0.1.6.2";
 
 export interface ChangeEntry {
   version: string;
   date: string;      // YYYY-MM-DD
   changes: string[];
+  /**
+   * Only on a version given to a DATA-only update, and only because Mark asked
+   * for it ("different somehow"): why. tests/version.test.ts refuses a
+   * data-only bump without it. Never set for a site change.
+   */
+  dataBump?: string;
 }
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.6.2",
+    date: "2026-10-10",
+    changes: ["A data update can carry a version only when Mark asks for it; the rule is now written into the project instructions."],
+  },
   {
     version: "0.1.6.1",
     date: "2026-10-10",

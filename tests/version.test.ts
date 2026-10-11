@@ -46,6 +46,16 @@ describe("version rule: site changes bump, shop updates do not", () => {
     expect(versionRuleProblem(["docs/SOURCES.md", VERSION_FILE], true)).toMatch(/data-only/);
   });
 
+  it("a data-only bump is allowed only with Mark's reason on the entry", () => {
+    const batch = ["data/events.json", "data/shops.json", VERSION_FILE];
+    expect(versionRuleProblem(batch, true, "Mark 2026-11-01: first San Diego coverage, wants it visible as a release")).toBeNull();
+    expect(versionRuleProblem(batch, true, "")).toMatch(/data-only/);
+    expect(versionRuleProblem(batch, true, "   ")).toMatch(/data-only/);
+    expect(versionRuleProblem(batch, true, null)).toMatch(/--data-bump/);
+    // The reason never excuses a site change that forgot to bump.
+    expect(versionRuleProblem(["components/Calendar.tsx"], false, "Mark said so")).toMatch(/without a version bump/);
+  });
+
   it("a site change must bump, alone or alongside data", () => {
     expect(versionRuleProblem(["components/Calendar.tsx"], false)).toMatch(/site files changed without a version bump: components\/Calendar\.tsx/);
     expect(versionRuleProblem(["components/Calendar.tsx", VERSION_FILE], true)).toBeNull();
@@ -87,7 +97,8 @@ describe("version rule: site changes bump, shop updates do not", () => {
       return;
     }
     const now = versionIn(readFileSync(VERSION_FILE, "utf8"));
-    const problem = versionRuleProblem(paths, before !== now);
+    // A data-only bump is allowed only when the NEW top entry says Mark asked for it.
+    const problem = versionRuleProblem(paths, before !== now, before !== now ? CHANGELOG[0].dataBump : null);
     expect(problem, `${subject}: ${problem}`).toBeNull();
   });
 });
