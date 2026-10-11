@@ -1736,10 +1736,12 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/319da76c-77ec-47b5-bbe5-8e75bcf87edf",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No site or social found. Only a third-party Giftly page says it has a game room and weekly tournaments (MTG, Pokémon, Lorcana, SWU, HeroClix) with no days, times or fees.",
+    "checked": "2026-10-11",
+    "needsMark": "phone"
   },
   {
     "shopId": "bards-and-cards-game-shop",
@@ -1855,10 +1857,11 @@
       "instagram": "https://www.instagram.com/comicculttorrance"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/4339c19a-f0b2-4e75-8907-434194ddeba9",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Facebook page (read in browser) is comic posts only, address 1047 W Carson St, phone (310) 328-5830; Instagram page would not load. No TCG schedule found.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "comic-cult-hd",
@@ -1943,10 +1946,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": null,
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No website or social found; web search returns nothing for this store.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "green-tower-games",
@@ -2148,10 +2152,12 @@
       "instagram": "https://www.instagram.com/pokestopsencino/"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/01af436c-b1c4-4db1-9b91-7644cd615a5a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site shows store hours only (Tue-Sat 12-6, Sun 5 PM, Mon closed); Instagram bio lists Pokémon, Lorcana, MTG, One Piece, Digimon, DBZ; its Tournaments story highlight is from July and posts are retail. No current schedule public.",
+    "checked": "2026-10-11",
+    "needsMark": "phone"
   },
   {
     "shopId": "ready-set-game",
@@ -2231,10 +2237,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/af985791-7956-49f9-a89c-df52a980498d",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No website or social found; web search returns nothing for this store.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "spikes-lounge",

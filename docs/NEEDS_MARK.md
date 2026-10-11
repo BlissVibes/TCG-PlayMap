@@ -31,15 +31,17 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | The Game Chest, Long Beach | Long Beach | https://discord.gg/ZvBeX83hak | 1 | Fifth Game Chest location (Linktree). Chain Instagram has no TCG schedule; events are in per-store Discords. Invite recorded on the shop row, not opened. |
 | The Game Chest, Manhattan Beach | Manhattan Beach | https://discord.gg/d5V9PQD77H | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
 
-## Phone: call the shop for a time or a fee (3)
+## Phone: call the shop for a time or a fee (5)
 
 | Shop | City | Phone | Events | Notes |
 |---|---|---|---|---|
+| Atomic Comics | Artesia | no phone recorded | 2 | No site or social found. Only a third-party Giftly page says it has a game room and weekly tournaments (MTG, Pokémon, Lorcana, SWU, HeroClix) with no days, times or fees. |
+| Pokestops | Encino | (747) 373-0417 | 2 | Site shows store hours only (Tue-Sat 12-6, Sun 5 PM, Mon closed); Instagram bio lists Pokémon, Lorcana, MTG, One Piece, Digimon, DBZ; its Tournaments story highlight is from July and posts are retail. No current schedule public. |
 | Shadow Realm Collectibles LLC | Bell Gardens | (562) 381-0062 | 2 | No website or social found; web search returns nothing for this store. Only a phone number. |
 | Table 1 Gaming | Bell | (323) 744-2021 | 1 | No website or social found; web search returns nothing for this store. Only a phone number. |
 | Turn Zero Games | Los Angeles | (213) 384-3466 | 1 | Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop. Chrome pass 2026-10-10: socials found on the site (instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games), not yet read. |
 
-## Blocked, no handle: no website and no socials (28)
+## Blocked, no handle: no website and no socials (30)
 
 Research found nothing to read and nothing to follow. Call the shop, or decide it is not worth chasing.
 
@@ -55,6 +57,7 @@ Research found nothing to read and nothing to follow. Call the shop, or decide i
 | Finch and Sparrow Games | Signal Hill | (562) 249-8172 | 3 | No website or socials; search found nothing. |
 | Game Citi | Fullerton | (949) 283-0398 | 2 | No website or socials; search found nothing under this name. |
 | Genki Stuff | Lakewood | (562) 425-4350 | 1 | No website or socials; search found nothing. |
+| GGW toys | Torrance | (310) 487-5054 | 3 | No website or social found; web search returns nothing for this store. |
 | Hidden Collectibles | Orange | (714) 900-4372 | 8 | No website or socials; search found nothing. |
 | Hobby Overflow Card Store | Cypress | (562) 643-9977 | 6 | No website or socials; search found nothing. |
 | Junkyard Cards | Long Beach | (562) 480-1341 | 1 | No website; search found only a directory listing. |
@@ -67,6 +70,7 @@ Research found nothing to read and nothing to follow. Call the shop, or decide i
 | Miss Play TCG | Diamond Bar | (626) 536-7689 | 3 | No website and no listing or events found by web search. Nothing readable. |
 | Perfect Rares LLC | Artesia | (562) 210-5208 | 1 | No website; web search finds no listing for the shop. |
 | Poke Wars | Placentia | (714) 262-1945 | 1 | No website; a directory lists the shop (Placentia) with no events. Nothing readable. |
+| South Bay Collectibles | Harbor City | none listed | 1 | No website or social found; web search returns nothing for this store. |
 | Sugoi Stuff | Garden Grove | (562) 394-5080 | 2 | No website; directory blurb only. Gundam lead (leads-gundam.json) unconfirmed. |
 | The Graveyard TCG | South Gate | (323) 835-5989 | 1 | No website; web search finds no listing. Nothing readable. |
 | The Light | Ontario | (909) 395-0935 | 7 | No website. Directories call it a tournament-focused hub (Pokemon, Lorcana, Yu-Gi-Oh!, Magic nights) with hours unverified (one says closed Wed/Thu), but give no days, times or fees. Nothing readable from the shop itself. |
