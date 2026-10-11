@@ -376,5 +376,9 @@
   {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"game-ogre","summary":"Pokémon: league Tue 4 PM (cost not listed); Delta Reign prerelease Sat Oct 31 1 PM ($35)."},
   {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"game-ogre","summary":"Lorcana: league Wed 4 PM ($6) through Oct 14; Hyperia City prerelease Wed Oct 21 3-7 PM ($40)."},
   {"date":"2026-10-10","action":"added","game":"swu","shopId":"game-ogre","summary":"Star Wars Unlimited: booster draft Thu 7 PM ($20) from Oct 15."},
-  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"gather-and-play-cafe-a-board-game-cafe","summary":"Pokémon: open play Sat noon (cost not listed)."}
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"gather-and-play-cafe-a-board-game-cafe","summary":"Pokémon: open play Sat noon (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"haiku-pop-gaming-and-collectibles","summary":"Gundam: Sun 3 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"haiku-pop-gaming-and-collectibles","summary":"One Piece: Sun 3:30 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"azuki","shopId":"haiku-pop-gaming-and-collectibles","summary":"Azuki: Wed 6 PM ($7), Fri 6:30 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"haiku-pop-gaming-and-collectibles","summary":"Magic: Friday Night Magic Fri 6 PM (cost not listed); Reality Fracture store championship Sat Oct 17 2 PM; Reality Echoes draft Sat Oct 24 1 PM."}
 ]

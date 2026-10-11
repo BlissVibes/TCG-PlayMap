@@ -1585,7 +1585,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): closed Mon; Tue-Thu 3-9 PM, Fri 3-10 PM, Sat-Sun 12-8 PM. The Events page (grailandgrade.com/pages/events) shows no events; schedule is on Discord. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/134079ab-f115-4739-81d8-d24d29cb862d",
@@ -1615,7 +1615,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (gxgamers.com) renders client-side with no readable text; Discord not read. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/6274e25c-d450-4cf7-ad07-c104eaef94c2",
@@ -1645,9 +1645,13 @@
       "x": "TheHaikuPOP"
     },
     "games": [
+      "azuki",
+      "gundam",
+      "mtg",
+      "onepiece",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon-Sat 11 AM-9 PM, Sun 11 AM-7 PM. Schedule from the store's event calendar API (haikugaming.com/events, checked 2026-10-10). NOT listed because the calendar's day disagrees with the event text: Yu-Gi-Oh! weekly ($7; calendar Sat 1 PM, text says Sunday 1 PM), Lorcana weekly ($10; calendar Tue 6:30 PM, text says Thursday 6 PM), One Piece Thursday series ($10, calendar Thu 6:30 PM, text once says Sunday). Also free Learn to Play nights, HeroClix, Dice Throne, board game night (not listed). Riftbound Mon night is the importer's.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/e89ce134-7318-4b14-a1c8-ac3b63e78e99",
@@ -1673,7 +1677,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials; web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/7df01900-5d19-4f2f-a12a-4fa5cbff03d6",
@@ -1699,7 +1703,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials; web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/766d50f6-1578-456d-afde-04567d8dfafb",

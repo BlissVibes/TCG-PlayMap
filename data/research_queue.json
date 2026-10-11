@@ -640,10 +640,11 @@
       "discord": "https://discord.gg/VS5YjB7rpH"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/134079ab-f115-4739-81d8-d24d29cb862d",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Events page empty; Discord only. Hours added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "gxgamers",
@@ -654,10 +655,11 @@
       "discord": "https://discord.gg/DrsMGW3puc"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/6274e25c-d450-4cf7-ad07-c104eaef94c2",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Square/JS site with no readable content; Discord only.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "haiku-pop-gaming-and-collectibles",
@@ -670,10 +672,11 @@
       "x": "TheHaikuPOP"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/e89ce134-7318-4b14-a1c8-ac3b63e78e99",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site calendar API (haikugaming.com/api/ecomm/events?startDate&endDate, JSON). Dates are UTC; converted to Los Angeles time. Event titles/descriptions are template-copied and disagree with the calendar's day for Yu-Gi-Oh (Sat vs Sunday), Lorcana (Tue vs Thursday) and One Piece Thursday (text says Sunday). Only series where calendar and text agree were added (Gundam Sun, One Piece Sun, Azuki Wed/Fri) plus FNM and two MTG dated events from the calendar. Needs a human/phone call to settle the three conflicting series.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "hidden-collectibles",
@@ -682,10 +685,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/7df01900-5d19-4f2f-a12a-4fa5cbff03d6",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "hobby-overflow-card-store",
@@ -694,10 +698,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/766d50f6-1578-456d-afde-04567d8dfafb",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "its-time-sports-cards-tcg-and-esports",
