@@ -37,8 +37,9 @@
     "newLikely": 153,
     "newUnlikely": 190,
     "newChain": 121,
-    "newLikelyPossibleDuplicates": 8,
-    "newLikelyWithin60mi": 100
+    "newLikelyPossibleDuplicates": 0,
+    "newLikelyWithin60mi": 100,
+    "newLikelyConfirmedDuplicates": 6
   },
   "leads": {
     "likely": [
@@ -238,12 +239,12 @@
         "bucket": "likely",
         "nearestKnownCity": "La Habra",
         "nearestKnownMi": 0.9,
-        "possibleDuplicateOf": {
+        "milesFromLaCenter": 20,
+        "duplicateOf": {
           "id": "shuffle-and-cut-games",
-          "miles": 2.01,
-          "why": "same name, different coordinates"
-        },
-        "milesFromLaCenter": 20
+          "confirmed": true,
+          "evidence": "OSM node is the old La Habra address (2121 E Lambert Rd #305); the store's own site says 1033 E Imperial Hwy E3, Brea, which is our pin."
+        }
       },
       {
         "name": "My-D Pins and Collectibles",
@@ -467,11 +468,7 @@
         "nearestKnownCity": "Lawndale",
         "nearestKnownMi": 0.1,
         "milesFromLaCenter": 14,
-        "possibleDuplicateOf": {
-          "id": "collector-legion",
-          "miles": 0.05,
-          "why": "another known shop within 300 ft"
-        }
+        "distinctFromKnown": "Retro Games Plus at 4429 Redondo Beach Blvd is a separate shop next to Collector Legion (4451)."
       },
       {
         "name": "Warhammer",
@@ -530,7 +527,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Santa Ana",
         "nearestKnownMi": 0.9,
-        "milesFromLaCenter": 30
+        "milesFromLaCenter": 30,
+        "duplicateOf": {
+          "id": "card-game-coliseum",
+          "confirmed": true,
+          "evidence": "OSM node is ~4.5 mi north (Tustin side); the store's Facebook says 2717 S Orange Ave, Santa Ana, matching our row. Our pin is within about 0.3 mi of the street-level geocode (no unit-level hit), so left as is."
+        }
       },
       {
         "name": "CBC Apparel and Collectibles, LLC",
@@ -631,17 +633,16 @@
         "nearestKnownCity": "Torrance",
         "nearestKnownMi": 0.1,
         "milesFromLaCenter": 16,
-        "possibleDuplicateOf": {
-          "id": "the-game-chest-torrance",
-          "miles": 0.11,
-          "why": "similar name nearby"
-        },
         "triage": "tcg",
         "evidence": "Same place as the shop already on the map: The Game Chest Torrance (0.11 mi away); no new row.",
         "evidenceUrl": null,
         "triagedBy": "sonnet2",
         "triagedOn": "2026-10-10",
-        "duplicateOf": "the-game-chest-torrance"
+        "duplicateOf": {
+          "id": "the-game-chest-torrance",
+          "confirmed": true,
+          "evidence": "Same shop; OSM point is 0.11 mi from our pin, inside the same Del Amo shopping center."
+        }
       },
       {
         "name": "Game Boss",
@@ -868,10 +869,10 @@
         "nearestKnownCity": "Manhattan Beach",
         "nearestKnownMi": 0.1,
         "milesFromLaCenter": 14,
-        "possibleDuplicateOf": {
+        "duplicateOf": {
           "id": "the-game-chest-manhattan-beach",
-          "miles": 0.05,
-          "why": "similar name nearby"
+          "confirmed": true,
+          "evidence": "Same shop; OSM point 0.05 mi from our pin (our pin agrees with it; Nominatim's street hit is a Tesla charger in the same lot)."
         }
       },
       {
@@ -1035,16 +1036,12 @@
         "nearestKnownCity": "Torrance",
         "nearestKnownMi": 0.1,
         "milesFromLaCenter": 16,
-        "possibleDuplicateOf": {
-          "id": "the-game-chest-torrance",
-          "miles": 0.06,
-          "why": "another known shop within 300 ft"
-        },
         "triage": "no-tcg",
         "evidence": "Chalice Collectibles Torrance: Funko Pop and collectibles Shopify store; no card games.",
         "evidenceUrl": "https://www.chalicecollectibles.com",
         "triagedBy": "sonnet2",
-        "triagedOn": "2026-10-10"
+        "triagedOn": "2026-10-10",
+        "distinctFromKnown": "Chalice Collectibles at 3525 W Carson St is a separate shop from The Game Chest Torrance (21540 Hawthorne)."
       },
       {
         "name": "Kouhigh Toys",
@@ -2407,10 +2404,10 @@
         "nearestKnownCity": "Canoga Park",
         "nearestKnownMi": 2,
         "milesFromLaCenter": 21,
-        "possibleDuplicateOf": {
+        "duplicateOf": {
           "id": "fire-and-dice",
-          "miles": 2.84,
-          "why": "similar name within 3 mi"
+          "confirmed": true,
+          "evidence": "OSM node is a Vanowen St, Winnetka address; the store's Linktree says 9036 Tampa Ave, Northridge, which is our pin."
         }
       },
       {
@@ -2813,11 +2810,7 @@
         "nearestKnownCity": "Alhambra",
         "nearestKnownMi": 0.1,
         "milesFromLaCenter": 7,
-        "possibleDuplicateOf": {
-          "id": "the-game-cellar",
-          "miles": 2.16,
-          "why": "similar name within 3 mi"
-        }
+        "distinctFromKnown": "Comic Cellar (Alhambra) is not The Game Cellar (San Gabriel)."
       },
       {
         "name": "The Stone Femme Studio Rock Shop",
@@ -2892,11 +2885,6 @@
         "osmShop": "games",
         "osmAmenity": null,
         "bucket": "likely",
-        "possibleDuplicateOf": {
-          "id": "dark-side-games",
-          "miles": 0.07,
-          "why": "similar name nearby"
-        },
         "nearestKnownCity": "Duarte",
         "nearestKnownMi": 0.1,
         "milesFromLaCenter": 16,
@@ -2905,7 +2893,11 @@
         "evidenceUrl": null,
         "triagedBy": "sonnet2",
         "triagedOn": "2026-10-10",
-        "duplicateOf": "dark-side-games"
+        "duplicateOf": {
+          "id": "dark-side-games",
+          "confirmed": true,
+          "evidence": "Same shop; 0.07 mi from our pin, Nominatim agrees with our pin."
+        }
       },
       {
         "name": "Chalice Collectibles",
