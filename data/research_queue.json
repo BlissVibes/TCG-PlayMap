@@ -153,10 +153,11 @@
       "x": "boomloot"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/9ed70f27-2425-4773-97bf-d88386cf3c1a",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site: only monthly Pokémon League Challenge/Cup tickets (/collections/events). Added the Oct 24 Cup. No weekly nights published. Possible Pokémon league cadence is monthly; Gundam is sold but no events seen.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "brookhurst-hobbies",
@@ -168,10 +169,11 @@
       "facebook": "https://www.facebook.com/BrookhurstHobbies"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/4ad61c44-a0ae-49e2-bfb5-459e16259d51",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site event tickets (brookhursthobbies.com/brookhurst-club-events/): date-titled products with 'starts at <time>' and price on each product page. Weekly = same title/time in consecutive weeks. Entries through Nov 7 read. Riftbound Thu 5:30 PM ($10) shown by the store matches the importer's night.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "buddies-collectibles",
@@ -180,10 +182,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/7afa63a0-df9d-45d7-bfd9-3d1613847b05",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials in locator; web search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "campos-card-boutique",
@@ -192,10 +195,11 @@
     "website": "https://camposcardboutique.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/5a5f8c4a-eb93-49b0-8fe3-937b2ebaa5b5",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Site has hours only; events on Instagram/Facebook (login-walled). Hours/phone added to shop notes.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "card-addiction",
@@ -206,10 +210,11 @@
       "facebook": "https://www.facebook.com/CardAddictionGames"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/f4cf0879-3973-42ef-88de-b96f8019ebdf",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; Facebook only (login-walled); search found no schedule, only a directory blurb.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "card-cave",

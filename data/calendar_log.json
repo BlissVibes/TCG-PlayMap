@@ -350,5 +350,10 @@
   {"date":"2026-10-10","action":"added","game":"hololive","shopId":"arcane-maid-cafe","summary":"hololive OCG: Sun 1 PM ($10); Live Start Battle Sun Oct 25 ($20), Bloom Cup Sun Nov 1 ($15), Diva Fever cup Sun Nov 22 ($15)."},
   {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"arcane-maid-cafe","summary":"One Piece: Tue 7 PM ($10); EB-05 event Tue Nov 10 ($20); OP-18 release Nov 21 and Nov 24 ($40)."},
   {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"arcane-maid-cafe","summary":"Pokémon: Thu 7 PM play night ($5)."},
-  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"arcane-maid-cafe","summary":"Gundam: Fri 7 PM ($10) from Oct 23; GD06 release event Fri Nov 6 ($40)."}
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"arcane-maid-cafe","summary":"Gundam: Fri 7 PM ($10) from Oct 23; GD06 release event Fri Nov 6 ($40)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"brookhurst-hobbies","summary":"Gundam: Sun 3:30 PM ($5), Thu 6 PM ($5)."},
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"brookhurst-hobbies","summary":"One Piece: Sun noon ($5)."},
+  {"date":"2026-10-10","action":"added","game":"cookierun","shopId":"brookhurst-hobbies","summary":"Cookie Run: Fri 6 PM ($5)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"brookhurst-hobbies","summary":"Magic: Friday Night Magic Fri 7 PM ($17.95); Star Trek prerelease Fri Nov 6 7 PM and Sat Nov 7 2 PM ($40)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"boomloot","summary":"Pokémon League Cup Sat Oct 24 3 PM ($20)."}
 ]

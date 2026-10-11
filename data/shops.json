@@ -581,9 +581,10 @@
       "x": "boomloot"
     },
     "games": [
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Tue-Fri 11 AM-6 PM, Sat 11 AM-4 PM (opens earlier on event days). Only a monthly Pokémon League Challenge/Cup is published, as one-off tickets; no weekly nights found. Only the October Cup is listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/9ed70f27-2425-4773-97bf-d88386cf3c1a",
@@ -612,9 +613,13 @@
       "facebook": "https://www.facebook.com/BrookhurstHobbies"
     },
     "games": [
+      "cookierun",
+      "gundam",
+      "mtg",
+      "onepiece",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Store hours (own site): Mon-Thu 11 AM-7 PM, Fri 11 AM-8 PM, Sat 10 AM-8 PM, Sun 11 AM-7 PM. Events are held at The Brookhurst Club, 12072 Brookhurst St (next door to the shop at 12188). Schedule from the store's event tickets (checked 2026-10-10, through Nov 7). Also Warhammer, D&D and painting nights, not listed. Riftbound (Thu) is loaded by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/4ad61c44-a0ae-49e2-bfb5-459e16259d51",
@@ -639,7 +644,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. No phone listed on the locator.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website; web search found nothing. Only Riftbound listed. No phone listed on the locator.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/7afa63a0-df9d-45d7-bfd9-3d1613847b05",
@@ -666,7 +671,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Wed-Fri 2-8 PM, Sat-Sun 11 AM-8 PM, closed Mon-Tue. Phone (424) 347-9015. The site lists no events; schedule is on Instagram/Facebook (not readable). Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/5a5f8c4a-eb93-49b0-8fe3-937b2ebaa5b5",
@@ -695,7 +700,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1538 N State College Blvd, open 2 PM-midnight, runs Magic, Pokémon, Yu-Gi-Oh!, Lorcana; no schedule found. Facebook not readable. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/f4cf0879-3973-42ef-88de-b96f8019ebdf",
