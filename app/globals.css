@@ -139,12 +139,16 @@ input, select { font: inherit; }
 .daybody { padding: 6px; display: flex; flex-direction: column; gap: 6px; }
 .empty { color: var(--muted); font-size: 12px; padding: 8px 10px; }
 
+/* A block is ONE compact line (wrapping to two in a narrow column); tapping it
+   opens .more underneath. See the header of components/Calendar.tsx. */
+.daybody { gap: 4px; }
 .block {
-  display: grid; grid-template-columns: 22px 1fr; gap: 6px; align-items: start;
+  display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: 2px 6px; align-items: start;
   border: 1px solid var(--border2); border-left: 4px solid var(--chip);
-  border-radius: 8px; padding: 6px 8px 6px 6px; background: var(--bg);
+  border-radius: 7px; padding: 3px 3px 3px 5px; background: var(--bg);
   font-size: 12px; line-height: 1.35;
 }
+.block.open { padding-bottom: 6px; background: var(--panel); border-color: var(--border); border-left-color: var(--chip); }
 .block.mine { border-color: var(--chip); background: color-mix(in srgb, var(--chip) 12%, var(--panel)); }
 .block.greyed { opacity: .35; filter: grayscale(.6); }
 .block .pick {
@@ -153,19 +157,33 @@ input, select { font: inherit; }
   display: grid; place-items: center;
 }
 .block .pick[aria-pressed="true"] { background: var(--chip); border-color: var(--chip); color: #fff; }
-.block .body { min-width: 0; text-align: left; background: transparent; border: 0; padding: 0; color: inherit; cursor: pointer; }
-.block .line1 { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
-.block .time { font-weight: 650; }
-.block .shop { color: var(--text2); display: block; }
+.block .body {
+  min-width: 0; text-align: left; background: transparent; border: 0; padding: 0; color: inherit; cursor: pointer;
+  font: inherit; display: flex; flex-wrap: wrap; gap: 0 4px; align-items: center;
+}
+.block .when { display: inline-flex; align-items: center; gap: 3px; white-space: nowrap; }
+.block .time { font-weight: 650; white-space: nowrap; }
+/* Takes the rest of the line, or drops to a second line of its own in a narrow column. */
+.block .shop { color: var(--text2); flex: 1 1 40px; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.block.open .shop { white-space: normal; }
+.block .more { grid-column: 2; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .block .meta { color: var(--muted); }
+.block .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.block .tomap { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; cursor: pointer; white-space: nowrap; }
+.block .tomap:hover { text-decoration: underline; }
+.iconbtn.details[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
 .block .trophy { color: var(--trophy); }
-.block .partial { margin-left: 5px; font-size: 10px; font-style: italic; color: var(--muted); border: 1px dashed var(--border); border-radius: 4px; padding: 0 4px; white-space: nowrap; }
+.block .partial { font-size: 10px; font-style: italic; color: var(--muted); border: 1px dashed var(--border); border-radius: 4px; padding: 0 4px; white-space: nowrap; }
 .block .fee { font-weight: 650; font-size: 11px; padding: 0 5px; border-radius: 5px; border: 1px solid var(--border); color: var(--text); background: var(--panel); }
-.block .fee.unknown { font-weight: 400; color: var(--muted); font-style: italic; }
+.block .fee.unknown { font-weight: 400; color: var(--muted); font-style: italic; font-size: 10px; }
+/* Compact: a long fee ("$25 (Draft), $10 (Standard Showdown)") is cut with an
+   ellipsis so the block stays two lines at most; opened, it is shown whole. */
+.block .fee { flex: 0 0 auto; max-width: 86px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.block.open .fee { max-width: none; white-space: normal; }
 .cell .mini .mfee { font-weight: 650; }
 .popup .pfee { font-weight: 650; }
-.block .conf { color: var(--muted); font-size: 10px; margin-left: 4px; }
-.block .acts { grid-column: 2; display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; }
+.block .conf { color: var(--muted); font-size: 10px; }
+.block .acts { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; }
 .block .acts a { text-decoration: none; white-space: nowrap; }
 .block .acts a:hover { text-decoration: underline; }
 .popup .phone { margin: -2px 0 6px; font-size: 13px; }
@@ -216,7 +234,10 @@ footer { padding: 10px 16px; color: var(--muted); font-size: 11px; border-top: 1
 
 @media (max-width: 760px) {
   .week { grid-template-columns: 1fr; }
-  .day { min-height: 0; }
+  /* Stacked: today first, then the days after it, then the days gone by. */
+  .day { min-height: 0; order: var(--ord, 0); }
+  .day.past { opacity: .8; }
+  .day.past .dayhdr b::after { content: " · earlier this week"; font-weight: 400; font-size: 11px; color: var(--muted); }
   .cell { min-height: 56px; }
   /* Too narrow for words: every event is still drawn, as a colour bar, and
      the full blocks for the selected day are listed under the grid. */
@@ -232,6 +253,7 @@ footer { padding: 10px 16px; color: var(--muted); font-size: 11px; border-top: 1
 .setup .actions { display: flex; gap: 8px; margin-top: 14px; }
 .setup .primary { background: var(--accent); color: var(--accent-text); border: 0; border-radius: 8px; padding: 8px 16px; font-weight: 600; }
 .setup .primary:disabled { opacity: .6; }
+.setup .row.nudge { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 8px; }
 .setup .ghost { background: transparent; color: var(--text2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; }
 .chip.hide[aria-pressed="true"] { background: #6b7280; border-color: #6b7280; color: #fff; text-decoration: line-through; }
 

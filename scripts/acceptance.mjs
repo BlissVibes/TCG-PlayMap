@@ -54,6 +54,10 @@ try {
   await page.selectOption("#setup-radius", "250");
   await page.getByRole("button", { name: "Next" }).click();
   await page.waitForSelector('.setup [aria-label="Your TCGs"]', { timeout: 15000 });
+  // The main button steers towards picking games; it must not skip the step.
+  await page.getByRole("button", { name: "Pick my games" }).click();
+  check("setup's main button nudges a TCG pick instead of showing everything",
+    (await page.locator('.setup [aria-label="Your TCGs"]').count()) === 1 && (await page.getByRole("button", { name: "Show everything" }).count()) === 1);
   await page.locator('.setup .chip.game[title="Pokémon TCG"]').click();
   await page.getByRole("button", { name: /^Next/ }).click();
   await page.locator('.setup .chip.hide[title="Hide Yu-Gi-Oh!"]').click();
@@ -80,6 +84,20 @@ try {
   check("every block shows its cost (or 'Cost not listed')", feeShown === blocks, `${feeShown}/${blocks}`);
   check("week view renders event blocks", blocks > 0, `${blocks} blocks`);
   check("some blocks are tournaments (trophy)", (await page.locator(".block .trophy").count()) > 0);
+
+  // Blocks are compact until tapped (0.1.3.1): one or two lines, details closed.
+  const compact = await page.evaluate(() => {
+    const b = [...document.querySelectorAll(".block")].map((x) => x.getBoundingClientRect().height);
+    return { open: document.querySelectorAll(".block .more").length, avg: Math.round(b.reduce((a, c) => a + c, 0) / b.length), max: Math.round(Math.max(...b)), page: document.documentElement.scrollHeight };
+  });
+  check("blocks are compact until tapped", compact.open === 0 && compact.max <= 48, `avg ${compact.avg}px, tallest ${compact.max}px, page ${compact.page}px`);
+  await page.locator(".block .body").first().click();
+  check("tapping a block opens its details in place",
+    (await page.locator(".block").first().locator('a[aria-label^="Directions to"]').count()) === 1 && (await page.locator(".block .more").count()) === 1);
+  await page.locator(".block .body").first().click();
+  // "Details" opens every block: the checks below look at all of them.
+  await page.getByRole("button", { name: "Details" }).click();
+  check("'Details' opens every block", (await page.locator(".block .more").count()) === blocks, `${await page.locator(".block .more").count()}/${blocks}`);
 
   // Every block offers a call link (when the shop has a phone) and directions.
   const firstBlock = page.locator(".block").first();
@@ -137,7 +155,9 @@ try {
   // Block -> map jump opens that shop's popup.
   await page.getByRole("tab", { name: "Calendar" }).click();
   const shopName = (await page.locator(".block .shop").first().innerText()).split(" · ")[0];
+  // The calendar remounts on a tab switch, so blocks are compact again: open one first.
   await page.locator(".block .body").first().click();
+  await page.locator(".block .tomap").first().click();
   await page.waitForSelector(".leaflet-popup h3", { timeout: 15000 }).catch(() => {});
   const popup = await page.locator(".leaflet-popup h3").first().innerText().catch(() => "");
   check("clicking a block opens that shop on the map", popup === shopName, `${popup || "no popup"} vs ${shopName}`);
@@ -159,6 +179,49 @@ try {
   check("log tab lists calendar log lines", (await page.locator(".logline").count()) > 0);
 
   check("no uncaught page errors", pageErrors.length === 0, pageErrors.join(" | "));
+  await ctx.close();
+
+  // ── The same visit on a phone (390 wide). The week's columns stack, so the
+  // order of days, the length of the page and the popup's fit are all
+  // different problems from the desktop ones above. ──
+  const pctx = await browser.newContext({ viewport: { width: 390, height: 844 }, ignoreHTTPSErrors: true, hasTouch: true, isMobile: true });
+  const ph = await pctx.newPage();
+  await ph.route(/tile\.openstreetmap\.org/, (r) => r.fulfill({ status: 200, contentType: "image/png", body: TILE }));
+  const phErrors = [];
+  ph.on("pageerror", (e) => phErrors.push(e.message));
+  await ph.goto(target, { waitUntil: "load" });
+  await ph.waitForSelector(".setup", { timeout: 30000 });
+  await ph.fill("#setup-zip", "91303");
+  await ph.selectOption("#setup-radius", "250");
+  await ph.getByRole("button", { name: "Next" }).click();
+  await ph.waitForSelector('.setup [aria-label="Your TCGs"]', { timeout: 15000 });
+  await ph.getByRole("button", { name: "Show everything" }).click();
+  await ph.getByRole("button", { name: /^Done/ }).click();
+  await ph.waitForSelector(".block", { timeout: 15000 });
+  const pw = await ph.evaluate(() => {
+    const days = [...document.querySelectorAll(".week .day")].map((d) => ({ today: d.classList.contains("today"), top: d.getBoundingClientRect().top }));
+    const first = days.slice().sort((a, b) => a.top - b.top)[0];
+    return { hasToday: days.some((d) => d.today), todayFirst: !!first?.today, blocks: document.querySelectorAll(".block").length,
+      fees: document.querySelectorAll(".block .fee").length, page: document.documentElement.scrollHeight, wide: document.documentElement.scrollWidth };
+  });
+  check("phone: today is the first day in the stacked week", pw.hasToday && pw.todayFirst);
+  check("phone: every block shows its cost", pw.blocks > 0 && pw.fees === pw.blocks, `${pw.fees}/${pw.blocks}`);
+  check("phone: the page does not scroll sideways", pw.wide <= 390, `${pw.wide}px wide; ${pw.blocks} blocks in ${pw.page}px = ${(pw.page / 844).toFixed(1)} screens`);
+  const pName = await ph.locator(".block .shop").first().innerText();
+  await ph.locator(".block .body").first().click();
+  await ph.locator(".block .tomap").first().click();
+  await ph.waitForSelector(".leaflet-popup h3", { timeout: 15000 }).catch(() => {});
+  await ph.waitForTimeout(500);
+  const pPop = await ph.evaluate(() => {
+    const p = document.querySelector(".leaflet-popup")?.getBoundingClientRect(), m = document.querySelector(".map").getBoundingClientRect();
+    return p ? { name: document.querySelector(".leaflet-popup h3").textContent, ok: p.top >= m.top - 1 && p.bottom <= m.bottom + 1 && p.left >= m.left - 1 && p.right <= m.right + 1,
+      d: `popup ${Math.round(p.width)}x${Math.round(p.height)} in map ${Math.round(m.width)}x${Math.round(m.height)}` } : { name: "", ok: false, d: "no popup" };
+  });
+  check("phone: a block's 'Show on map' opens that shop", pName.startsWith(pPop.name) && pPop.name !== "", `${pPop.name || "no popup"} vs ${pName}`);
+  check("phone: the popup fits inside the map", pPop.ok, pPop.d);
+  const pHeld = Number(await ph.locator(".map").getAttribute("data-markers"));
+  check("phone: map holds a marker per shop", pHeld === shopCount, `${pHeld} markers, ${shopCount} shops`);
+  check("phone: no uncaught page errors", phErrors.length === 0, phErrors.join(" | "));
 } finally {
   await browser.close();
   server?.kill();

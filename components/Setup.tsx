@@ -39,6 +39,8 @@ export function Setup({ initial, availableGames, onDone }: {
   const [hidden, setHidden] = useState<GameId[]>(initial.hiddenGames);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
+  /** "Pick my games" pressed with nothing picked: point at the chips. */
+  const [nudge, setNudge] = useState(false);
 
   const games = [
     ...GAME_IDS.filter((g) => availableGames.has(g)),
@@ -93,8 +95,8 @@ export function Setup({ initial, availableGames, onDone }: {
       {step === 2 && (
         <>
           <h2>Which TCGs do you play?</h2>
-          <p className="hint">These become your default calendar. Pick none to see everything. You can pick other games any time.</p>
-          <div className="row" role="group" aria-label="Your TCGs">
+          <p className="hint">Tap the games you play and the calendar opens on just those. With every game on, a week is hundreds of events. You can change this any time.</p>
+          <div className={`row${nudge && !myGames.length ? " nudge" : ""}`} role="group" aria-label="Your TCGs">
             {games.map((g) => (
               <button key={g} className="chip game" aria-pressed={myGames.includes(g)} title={GAMES[g].label}
                 style={{ ["--chip" as any]: GAMES[g].color }} onClick={() => toggle(myGames, setMyGames, g)}>
@@ -102,9 +104,16 @@ export function Setup({ initial, availableGames, onDone }: {
               </button>
             ))}
           </div>
+          {nudge && !myGames.length && <p className="hint" role="status">Tap one or more games above, then Next.</p>}
           <div className="actions">
             <button className="ghost" onClick={() => setStep(1)}>Back</button>
-            <button className="primary" onClick={() => setStep(3)}>{myGames.length ? `Next (${myGames.length} picked)` : "Next (show me everything)"}</button>
+            {/* The main button steers towards picking (Mark, 2026-10-10); everything-at-once is still one tap away. */}
+            {myGames.length
+              ? <button className="primary" onClick={() => setStep(3)}>{`Next (${myGames.length} picked)`}</button>
+              : <>
+                <button className="primary" onClick={() => setNudge(true)}>Pick my games</button>
+                <button className="ghost" onClick={() => setStep(3)}>Show everything</button>
+              </>}
           </div>
         </>
       )}

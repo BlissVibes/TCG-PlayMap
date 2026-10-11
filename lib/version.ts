@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.3.0";
+export const VERSION = "0.1.3.1";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.3.1",
+    date: "2026-10-10",
+    changes: ["Calendar: each event is now one compact line (time, game, shop, cost); tap it for the event name, phone, directions and the map. On a phone the week starts with today. Setup now asks you to pick your games first."],
+  },
   {
     version: "0.1.3.0",
     date: "2026-10-10",

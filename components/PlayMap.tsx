@@ -268,6 +268,12 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
     const m = markers.current.get(focus.shopId);
     if (!m) return;
     lastFocusNonce.current = focus.nonce;
+    // A jump beats a deferred "frame everything": when the map is first shown
+    // BY a jump, the tab-appeared effect above would start an animated fit at
+    // 0 ms and this jump would land in the middle of it. Cancel it now, before
+    // its timer fires. (Found by the phone acceptance pass, where the first
+    // look at the map is a block's "Show on map".)
+    pendingFit.current = false;
     const t = setTimeout(() => {
       if (!map.current) return;
       pendingFit.current = false;
@@ -276,9 +282,14 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
       map.current.setView(m.getLatLng(), 15, { animate: false });
       // Zoom 15 is past clustering, but let the cluster layer confirm the pin
       // is really on the map before opening its popup.
+      // Zoom 15 is past clustering, so the pin is normally on the map already.
+      // If the cluster layer has not placed it yet, ask it to, and do not rely
+      // on its callback alone: it waits for an animation that may never run.
       const pins = map.current._pins;
-      if (pins.zoomToShowLayer) pins.zoomToShowLayer(m, () => m.openPopup());
-      else m.openPopup();
+      const open = () => { if (map.current && m._map && !m.isPopupOpen()) m.openPopup(); };
+      if (m._map) open();
+      else if (pins.zoomToShowLayer) { pins.zoomToShowLayer(m, open); setTimeout(open, 450); }
+      else open();
     }, 60);
     return () => clearTimeout(t);
   }, [focus, visible, ready, shops]);
