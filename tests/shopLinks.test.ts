@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { appleDirectionsUrl, directionsUrl, shopDestination, telHref } from "../lib/shopLinks";
 import { shortTime } from "../lib/schedule";
-import { jsonDataSource } from "../lib/data";
+import { jsonDataSource } from "../lib/dataCommitted";
 
 const kf = { name: "King Fandom", address: "21425 Sherman Way", city: "Canoga Park", state: "CA", zip: "91303" };
 

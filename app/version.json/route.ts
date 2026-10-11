@@ -7,19 +7,14 @@
  * calendar-log date) and the shop and event counts, read from the same files
  * the page is built from.
  */
-import LOG from "@/data/calendar_log.json";
-import EVENTS from "@/data/events.json";
-import SHOPS from "@/data/shops.json";
 import { dataUpdated } from "@/lib/data";
+import { jsonDataSource } from "@/lib/dataCommitted";
 import { VERSION } from "@/lib/version";
 
 export const dynamic = "force-static";
 
-export function GET() {
-  return Response.json({
-    version: VERSION,
-    dataUpdated: dataUpdated(LOG as { date: string }[]),
-    shops: (SHOPS as unknown[]).length,
-    events: (EVENTS as unknown[]).length,
-  });
+export async function GET() {
+  // Build time only (force-static): the committed files, read directly.
+  const { shops, events, log } = await jsonDataSource.load();
+  return Response.json({ version: VERSION, dataUpdated: dataUpdated(log), shops: shops.length, events: events.length });
 }

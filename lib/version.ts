@@ -17,7 +17,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.6.2";
+export const VERSION = "0.1.6.3";
 
 export interface ChangeEntry {
   version: string;
@@ -33,6 +33,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.6.3",
+    date: "2026-10-10",
+    changes: ["The page loads faster: shop and schedule data is now fetched separately instead of being built into the page. If it fails to load, the page says so and offers a retry."],
+  },
   {
     version: "0.1.6.2",
     date: "2026-10-10",

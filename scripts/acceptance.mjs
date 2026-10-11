@@ -224,6 +224,32 @@ try {
   const pHeld = Number(await ph.locator(".map").getAttribute("data-markers"));
   check("phone: map holds a marker per shop", pHeld === shopCount, `${pHeld} markers, ${shopCount} shops`);
   check("phone: no uncaught page errors", phErrors.length === 0, phErrors.join(" | "));
+  await pctx.close();
+
+  // ── The data is fetched at runtime (0.1.6.3). When that fetch fails the page
+  // must SAY so. "The request failed and the calendar is quietly empty" is the
+  // same lie as the zero-pin map of 2026-09-30. ──
+  const ectx = await browser.newContext({ viewport: { width: 1400, height: 900 }, ignoreHTTPSErrors: true });
+  const ep = await ectx.newPage();
+  await ep.route(/tile\.openstreetmap\.org/, (r) => r.fulfill({ status: 200, contentType: "image/png", body: TILE }));
+  let blockData = true, dataRequests = 0;
+  await ep.route(/\/data\/[a-z_]+\.json/, (r) => { dataRequests++; return blockData ? r.abort() : r.continue(); });
+  await ep.goto(target, { waitUntil: "load" });
+  await ep.waitForSelector('.loadstate.failed[role="alert"]', { timeout: 20000 }).catch(() => {});
+  const failedView = {
+    alert: await ep.locator('.loadstate.failed[role="alert"]').count(),
+    blocks: await ep.locator(".block").count(),
+    footer: await ep.locator("footer").innerText(),
+  };
+  check("the data is fetched, not bundled into the page", dataRequests >= 3, `${dataRequests} requests to /data/*.json`);
+  check("a failed data load is shown as an error, not as an empty calendar",
+    failedView.alert === 1 && failedView.blocks === 0 && /schedules not loaded/.test(failedView.footer) && !/\b0 shops/.test(failedView.footer),
+    failedView.footer.slice(0, 70));
+  blockData = false;
+  await ep.getByRole("button", { name: "Try again" }).click();
+  await ep.waitForFunction(() => /\d+ shops/.test(document.querySelector("footer")?.textContent ?? ""), null, { timeout: 20000 }).catch(() => {});
+  const recovered = await ep.locator("footer").innerText();
+  check("'Try again' loads the schedules", Number(/(\d+) shops/.exec(recovered)?.[1] ?? 0) === shopCount && (await ep.locator(".loadstate").count()) === 0, recovered.slice(0, 60));
 } finally {
   await browser.close();
   server?.kill();

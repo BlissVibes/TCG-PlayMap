@@ -1,7 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { effectiveGames, gameMode, sanitizePrefs } from "../lib/prefs";
 import { occursOn, type PlayEvent } from "../lib/schedule";
-import { jsonDataSource, validateData } from "../lib/data";
+import { validateData } from "../lib/data";
+import { jsonDataSource } from "../lib/dataCommitted";
 import type { GameId } from "../lib/games";
 
 const ALL: GameId[] = ["pokemon", "mtg", "riftbound", "gundam"];

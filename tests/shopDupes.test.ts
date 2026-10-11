@@ -5,7 +5,7 @@
  * passes on today's data and would pass on anything proves nothing.
  */
 import { describe, it, expect } from "vitest";
-import { jsonDataSource } from "../lib/data";
+import { jsonDataSource } from "../lib/dataCommitted";
 import { findDuplicateShops, normAddress, sameShopReason, SAME_POINT_MI } from "../scripts/lib/shopDupes.mjs";
 import { miles } from "../scripts/candidates/merge.mjs";
 

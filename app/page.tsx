@@ -16,7 +16,7 @@ import { Filters } from "@/components/Filters";
 import { LogTab } from "@/components/LogTab";
 import { PlayMap, type FocusRequest } from "@/components/PlayMap";
 import { Setup } from "@/components/Setup";
-import { dataUpdated, getDataSource, type PlayMapData } from "@/lib/data";
+import { DataLoadError, dataUpdated, getDataSource, type PlayMapData } from "@/lib/data";
 import { geocodeZip, normalizeZip } from "@/lib/geo";
 import { GAME_IDS, GAMES, type GameId } from "@/lib/games";
 import { DEFAULT_PREFS, effectiveGames, gameMode, loadPrefs, savePrefs, type Prefs } from "@/lib/prefs";
@@ -46,6 +46,21 @@ export default function Page() {
   const [err, setErr] = useState<string | null>(null);
   const [focus, setFocus] = useState<FocusRequest | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  /** Why the data did not load, in words for the visitor; null while loading or once loaded. */
+  const [loadErr, setLoadErr] = useState<string | null>(null);
+
+  /**
+   * Fetch the data (it is no longer inside this script, see lib/data.ts). A
+   * failure is SHOWN, with a retry: an empty calendar that looks like "nothing
+   * is on this week" is the one thing this page must never draw by accident.
+   */
+  const loadData = useCallback(() => {
+    setLoadErr(null);
+    getDataSource().load().then(setData).catch((e: unknown) => {
+      console.error("schedule data failed to load:", e instanceof DataLoadError ? `${e.message} [${e.detail}]` : e);
+      setLoadErr(e instanceof DataLoadError ? e.message : "Could not load the schedule data.");
+    });
+  }, []);
 
   // Load prefs and data after mount (localStorage is browser-only).
   useEffect(() => {
@@ -53,8 +68,8 @@ export default function Page() {
     setToday(t); setAnchor(t);
     setPrefs(loadPrefs());
     setMounted(true);
-    getDataSource().load().then(setData);
-  }, []);
+    loadData();
+  }, [loadData]);
   useEffect(() => { if (mounted) savePrefs(prefs); }, [prefs, mounted]);
 
   const update = useCallback((patch: Partial<Prefs>) => setPrefs((p) => ({ ...p, ...patch })), []);
@@ -215,6 +230,15 @@ export default function Page() {
         />
       )}
 
+      {!data && (loadErr
+        ? (
+          <div className="loadstate failed" role="alert">
+            <b>{loadErr}</b> The calendar and map are empty because the schedules did not load, not because nothing is on.
+            <button className="iconbtn" onClick={loadData}>Try again</button>
+          </div>
+        )
+        : mounted && <div className="loadstate" role="status">Loading schedules…</div>)}
+
       {/* The map stays mounted while hidden so Leaflet is not rebuilt on every tab switch. */}
       <div style={{ display: tab === "map" ? "contents" : "none" }}>
         {mounted && (
@@ -231,7 +255,8 @@ export default function Page() {
         />
       )}
 
-      {tab === "calendar" && prefs.setupDone && (
+      {/* No calendar until there is data: seven columns of "Nothing listed" would read as fact. */}
+      {tab === "calendar" && prefs.setupDone && data && (
         <Calendar view={view} setView={setView} anchor={anchor} setAnchor={setAnchor} today={today}
           occurrences={calendarOccs} myEvents={mySet} handShops={handShops} myOnly={prefs.myOnly} togglePick={togglePick}
           showDistance={prefs.showDistance && !!prefs.origin} onShowShop={showShop} />
@@ -240,7 +265,7 @@ export default function Page() {
       {tab === "log" && data && <LogTab log={data.log} shops={shops} onShowShop={showShop} />}
 
       <footer>
-        TCG PlayMap v{VERSION} · {shops.length} shops · {events.length} events ·
+        TCG PlayMap v{VERSION} · {data ? <>{shops.length} shops · {events.length} events</> : loadErr ? "schedules not loaded" : "loading schedules…"} ·
         {data && dataUpdated(data.log) ? <> <span className="dataupd">data updated {shortDay(dataUpdated(data.log)!)}</span> ·</> : null}
         {" "}Schedules read from each store&apos;s own site; always check with the store before driving.
       </footer>

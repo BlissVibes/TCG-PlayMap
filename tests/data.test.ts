@@ -4,7 +4,8 @@
  * nothing - mutation-check it).
  */
 import { describe, it, expect } from "vitest";
-import { dataUpdated, jsonDataSource, validateData, type PlayMapData } from "../lib/data";
+import { checkLoaded, DataLoadError, dataUpdated, fetchDataSource, validateData, type PlayMapData } from "../lib/data";
+import { jsonDataSource } from "../lib/dataCommitted";
 
 describe("committed data", () => {
   it("passes validation", async () => {
@@ -36,6 +37,52 @@ describe("committed data", () => {
     const { events, log } = await jsonDataSource.load();
     const logged = new Set(log.map((l) => l.shopId));
     for (const e of events) expect(logged.has(e.shopId), `no log entry for ${e.shopId}`).toBe(true);
+  });
+});
+
+describe("loading the data at runtime", () => {
+  const good = async () => { const d = await jsonDataSource.load(); return { shops: d.shops, events: d.events, calendar_log: d.log } as Record<string, unknown>; };
+  /** A stand-in for fetch: serves `files` by name, records what was asked for. */
+  const fakeFetch = (files: Record<string, unknown>, asked: string[] = [], status = 200) => (async (url: string) => {
+    asked.push(url);
+    const name = /\/data\/([a-z_]+)\.json/.exec(url)?.[1] ?? "";
+    const body = files[name];
+    return { ok: status === 200 && body !== undefined, status: body === undefined ? 404 : status, json: async () => { if (body === "BROKEN") throw new SyntaxError("Unexpected token <"); return body; } } as Response;
+  }) as unknown as typeof fetch;
+
+  it("fetches the three files under the base path, stamped, and returns valid data", async () => {
+    const asked: string[] = [];
+    const data = await fetchDataSource("/TCG-PlayMap", "abc123", fakeFetch(await good(), asked)).load();
+    expect(asked.sort()).toEqual(["/TCG-PlayMap/data/calendar_log.json?v=abc123", "/TCG-PlayMap/data/events.json?v=abc123", "/TCG-PlayMap/data/shops.json?v=abc123"]);
+    expect(data.shops.length).toBeGreaterThan(0);
+    expect(validateData(data)).toEqual([]);
+    // No base path and no stamp (local dev before a build): plain URLs.
+    const plain: string[] = [];
+    await fetchDataSource("", "", fakeFetch(await good(), plain)).load();
+    expect(plain).toContain("/data/shops.json");
+  });
+
+  it("THROWS, never returns an empty set, when a file is missing, unreachable or not JSON", async () => {
+    const g = await good();
+    await expect(fetchDataSource("", "s", fakeFetch({ ...g, events: undefined })).load()).rejects.toThrow(DataLoadError);
+    await expect(fetchDataSource("", "s", fakeFetch(g, [], 503)).load()).rejects.toThrow(/Could not load/);
+    await expect(fetchDataSource("", "s", fakeFetch({ ...g, shops: "BROKEN" })).load()).rejects.toThrow(/did not load properly/);
+    const offline = (async () => { throw new TypeError("Failed to fetch"); }) as unknown as typeof fetch;
+    await expect(fetchDataSource("", "s", offline).load()).rejects.toThrow(/Check your connection/);
+  });
+
+  it("THROWS when the files arrive but are empty, the wrong shape, or fail validation", async () => {
+    const g = await good();
+    // "The request succeeded and the map is empty" is the failure this exists for.
+    await expect(fetchDataSource("", "s", fakeFetch({ ...g, shops: [] })).load()).rejects.toThrow(/came back empty/);
+    await expect(fetchDataSource("", "s", fakeFetch({ ...g, events: [] })).load()).rejects.toThrow(/came back empty/);
+    await expect(fetchDataSource("", "s", fakeFetch({ ...g, shops: { error: "nope" } })).load()).rejects.toThrow(/did not load properly/);
+    const bad = structuredClone(g) as any;
+    bad.events[0].shopId = "nowhere";
+    await expect(fetchDataSource("", "s", fakeFetch(bad)).load()).rejects.toThrow(/failed its checks/);
+    expect(() => checkLoaded({ shops: g.shops, events: g.events, log: null })).toThrow(DataLoadError);
+    // The detail (which row, which URL) is kept for the console, not shown to visitors.
+    try { checkLoaded({ shops: bad.shops, events: bad.events, log: bad.calendar_log }); } catch (e) { expect((e as DataLoadError).detail).toMatch(/unknown shopId nowhere/); }
   });
 });
 

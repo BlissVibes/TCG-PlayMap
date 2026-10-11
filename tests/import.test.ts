@@ -4,13 +4,14 @@
  * each ownership rule here was broken deliberately while writing this and the
  * matching test failed.
  */
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it, expect } from "vitest";
 import { buildSlots, feeText, parseArgs, splitAddress } from "../scripts/riftbound/pull.mjs";
 import { cleanWeeklyTitle, DEFAULT_REGION, matchShop, merge, normPhone, outsideRegion, slug } from "../scripts/candidates/merge.mjs";
 import { bumpVersion, nextVersion } from "../scripts/bump_version.mjs";
+import { copyData, DATA_FILES } from "../scripts/copy_data.mjs";
 import { validateData } from "../lib/data";
 
 describe("riftbound pull: arguments are read before any request", () => {
@@ -253,6 +254,33 @@ describe("merge: the importer's own rows over time", () => {
     const many = Array.from({ length: 12 }, (_, i) => store({ sourceId: `u${i}`, name: `Shop ${i}`, lat: 34 + i / 100, zip: "91203" }));
     const b = run(many);
     expect(() => merge({ cands: cands(many.slice(0, 2)), shops: b.shops, events: b.events, log: [], queue: [], today: TODAY })).toThrow(/broken pull/);
+  });
+});
+
+describe("copy_data: the files the site fetches", () => {
+  it("copies the three data files, compacted, and stamps them by content", () => {
+    const root = mkdtempSync(join(tmpdir(), "tcg-copy-"));
+    try {
+      mkdirSync(join(root, "data"));
+      const write = (shops: object[]) => {
+        writeFileSync(join(root, "data", "shops.json"), JSON.stringify(shops, null, 2));
+        writeFileSync(join(root, "data", "events.json"), '[\n  { "id": "e1",   "shopId": "a" }\n]\n');
+        writeFileSync(join(root, "data", "calendar_log.json"), "[]");
+      };
+      write([{ id: "a" }]);
+      const first = copyData(root);
+      expect(first).toMatch(/^[0-9a-f]{12}$/);
+      for (const f of DATA_FILES) expect(() => JSON.parse(readFileSync(join(root, "public", "data", f), "utf8"))).not.toThrow();
+      expect(readFileSync(join(root, "public", "data", "events.json"), "utf8")).toBe('[{"id":"e1","shopId":"a"}]');
+      expect(copyData(root)).toBe(first);                  // same data, same stamp
+      write([{ id: "a" }, { id: "b" }]);
+      expect(copyData(root)).not.toBe(first);              // new data, new stamp: no stale cache
+      // A broken file stops the build instead of shipping.
+      writeFileSync(join(root, "data", "shops.json"), "[{ oops");
+      expect(() => copyData(root)).toThrow();
+      writeFileSync(join(root, "data", "shops.json"), '{"not":"an array"}');
+      expect(() => copyData(root)).toThrow(/not a JSON array/);
+    } finally { rmSync(root, { recursive: true, force: true }); }
   });
 });
 

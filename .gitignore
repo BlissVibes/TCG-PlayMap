@@ -1,6 +1,8 @@
 node_modules/
 .next/
 out/
+# Copied from data/ on every build (scripts/copy_data.mjs)
+public/data/
 *.tsbuildinfo
 .DS_Store
 .env*.local

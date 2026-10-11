@@ -2,30 +2,27 @@
  * THE DATA SOURCE - one seam between "where the data lives" and everything
  * that reads it.
  *
- * TODAY the data is three committed JSON files under data/ and this module
- * imports them at build time. That is deliberate: it lets the site be a static
- * GitHub Page with nothing to run and nothing to pay for while the shape of
- * the data is still being worked out by hand.
+ * The data is three JSON files committed under data/. Until 0.1.6.3 this
+ * module imported them, which compiled every shop and event into the page's
+ * JavaScript: 837 KB (112 KB gzipped) at 184 shops, growing with every
+ * research batch. Now the build copies them to /data/*.json
+ * (scripts/copy_data.mjs) and the page FETCHES them at runtime. The UI only
+ * ever calls `getDataSource().load()`, so that change was this file and the
+ * page's loading / error states.
  *
- * LATER (docs/ROADMAP.md, phase 2) the same three collections move to
- * Firestore - `shops`, `events`, `calendar_log`, document ids equal to the
- * `id` fields here - and a second DataSource reads them. The UI only ever
- * calls `getDataSource().load()`, so the switch is one line in this file and
- * zero lines anywhere else. That is the entire reason this indirection exists
- * for what is currently three imports.
+ * `validateData` runs on every load, not only in the tests. Every failure
+ * mode in Collectify's docs/FEED_FAILURES.md was "the read succeeded and
+ * returned something wrong" - a row with a game nobody spelled right, a shop
+ * at (0,0), an event pointing at a renamed shop id. And a load that fails, or
+ * comes back empty, THROWS: the page shows an error with a retry. It must
+ * never draw an empty map and call it the truth (CLAUDE.md rule 6).
  *
- * `validateData` is the guard both sources share. Every failure mode listed in
- * Collectify's docs/FEED_FAILURES.md was "the read succeeded and returned
- * something wrong" - a row with a game nobody spelled right, a shop at (0,0),
- * an event pointing at a shop id that was renamed. The tests run it against
- * the committed JSON; the Firestore source will run it against every read.
+ * This file imports no data. Tests and build-time code that want the committed
+ * files directly use lib/dataCommitted.ts.
  */
 
 import { isGameId } from "./games";
 import { isDateStr, isTimeStr, type PlayEvent, type Shop } from "./schedule";
-import SHOPS from "@/data/shops.json";
-import EVENTS from "@/data/events.json";
-import LOG from "@/data/calendar_log.json";
 
 /**
  * One line of the CALENDAR LOG: what changed on the calendar, for which game,
@@ -122,21 +119,55 @@ export function dataUpdated(log: readonly Pick<CalendarLogEntry, "date">[]): str
   return newest;
 }
 
-/** The committed-JSON source. What the GitHub Page runs on. */
-export const jsonDataSource: DataSource = {
-  async load() {
-    return {
-      shops: SHOPS as Shop[],
-      events: EVENTS as PlayEvent[],
-      log: LOG as CalendarLogEntry[],
-    };
-  },
-};
+/** A load that failed, came back empty, or failed validation. `message` is for the visitor. */
+export class DataLoadError extends Error {
+  /** Detail for the console, never shown: URLs, statuses, validation lines. */
+  detail: string;
+  constructor(message: string, detail = "") { super(message); this.name = "DataLoadError"; this.detail = detail; }
+}
 
 /**
- * The one place that decides where data comes from. When the Firestore source
- * exists, it is selected here (by NEXT_PUBLIC_DATA_SOURCE) and nowhere else.
+ * Turn three fetched payloads into usable data, or throw. "The request
+ * succeeded" is not enough: each must be an array, there must be shops and
+ * events, and the set must pass validateData.
  */
+export function checkLoaded(raw: { shops: unknown; events: unknown; log: unknown }): PlayMapData {
+  for (const k of ["shops", "events", "log"] as const) {
+    if (!Array.isArray(raw[k])) throw new DataLoadError("The schedule data did not load properly.", `${k} is not an array`);
+  }
+  const data = raw as PlayMapData;
+  if (data.shops.length === 0 || data.events.length === 0) {
+    throw new DataLoadError("The schedule data came back empty.", `${data.shops.length} shops, ${data.events.length} events`);
+  }
+  const errs = validateData(data);
+  if (errs.length) throw new DataLoadError("The schedule data failed its checks.", errs.slice(0, 20).join("; "));
+  return data;
+}
+
+/**
+ * The data as static files next to the page: `<base>/data/shops.json?v=<stamp>`
+ * and friends. `stamp` is the build's hash of the data (scripts/copy_data.mjs),
+ * so a cached copy from an older build is never paired with this page.
+ */
+export function fetchDataSource(base: string, stamp: string, fetchImpl: typeof fetch = fetch): DataSource {
+  const url = (name: string) => `${base}/data/${name}.json${stamp ? `?v=${stamp}` : ""}`;
+  const get = async (name: string): Promise<unknown> => {
+    let res: Response;
+    try { res = await fetchImpl(url(name)); }
+    catch (e) { throw new DataLoadError("Could not reach the schedule data. Check your connection.", `${url(name)}: ${String(e)}`); }
+    if (!res.ok) throw new DataLoadError("Could not load the schedule data.", `${url(name)}: HTTP ${res.status}`);
+    try { return await res.json(); }
+    catch (e) { throw new DataLoadError("The schedule data did not load properly.", `${url(name)}: ${String(e)}`); }
+  };
+  return {
+    async load() {
+      const [shops, events, log] = await Promise.all([get("shops"), get("events"), get("calendar_log")]);
+      return checkLoaded({ shops, events, log });
+    },
+  };
+}
+
+/** The one place that decides where data comes from. */
 export function getDataSource(): DataSource {
-  return jsonDataSource;
+  return fetchDataSource(process.env.NEXT_PUBLIC_BASE_PATH || "", process.env.NEXT_PUBLIC_DATA_STAMP || "");
 }
