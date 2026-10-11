@@ -40,6 +40,8 @@ export interface PlayMapProps {
   myEvents: ReadonlySet<string>;
   /** Shops where a person has entered a night; the rest of the importer-made shops are "partial". */
   handShops: ReadonlySet<string>;
+  /** Shops with no event row at all: a muted pin, and a popup that says to call. */
+  noSchedule: ReadonlySet<string>;
   /**
    * Whether the map tab is showing. The map stays mounted while hidden (so
    * Leaflet is not rebuilt on every tab switch), but a hidden container has
@@ -66,7 +68,8 @@ function initials(name: string): string {
 }
 
 /** `incomplete` = scheduleIncomplete(shop, handShops), decided by the caller, which holds the events. */
-export function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<string>, incomplete = false): string {
+/** `noSchedule` = the shop has no event row at all (not merely nothing this week). */
+export function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<string>, incomplete = false, noSchedule = false): string {
   const listed = (shop.games ?? []).map((g: GameId) => GAMES[g]?.label ?? g).join(", ");
   const byDay = new Map<number, Occurrence[]>();
   for (const o of occs) {
@@ -95,15 +98,17 @@ export function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<
     <h3>${esc(shop.name)}</h3>
     <div class="addr">${esc(shop.address)}, ${esc(shop.city)} ${esc(shop.zip)}${shop.hours ? `<br>${esc(shop.hours)}` : ""}</div>
     ${tel ? `<div class="phone"><a href="${tel}">📞 ${esc(shop.phone!)}</a></div>` : ""}
-    ${days ? `<ul>${days}</ul>` : (shop.notes ? "" : `<div class="addr">No events on the calendar yet.</div>`)}
-    ${incomplete ? `<div class="partial">Only locator-listed nights so far${listed ? ` (${esc(listed)})` : ""} - other games not checked yet.</div>` : ""}
+    ${days ? `<ul>${days}</ul>`
+      : noSchedule ? `<div class="nosched">No schedule published yet — call the store.</div>`
+      : (shop.notes ? "" : `<div class="addr">No events on the calendar yet.</div>`)}
+    ${incomplete && !noSchedule ? `<div class="partial">Only locator-listed nights so far${listed ? ` (${esc(listed)})` : ""} - other games not checked yet.</div>` : ""}
     ${/* Always, not only when there are no events: the notes are where "schedule not
          researched yet" and "events are posted on Instagram" live. */ shop.notes ? `<div class="notes">${esc(shop.notes)}</div>` : ""}
     <div class="links" style="margin-top:8px">${links}</div>
   </div>`;
 }
 
-export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents, handShops, visible }: PlayMapProps) {
+export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents, handShops, noSchedule, visible }: PlayMapProps) {
   const el = useRef<HTMLDivElement | null>(null);
   const map = useRef<any>(null);
   const markers = useRef<Map<string, any>>(new Map());
@@ -217,15 +222,17 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
     for (const s of shops) {
       const occs = byShop.get(s.id) ?? [];
       const trophy = occs.some((o) => o.event.kind === "tournament");
-      const dim = occs.length === 0;
-      const html = `<div class="pin${dim ? " dim" : ""}" title="${esc(s.name)}">${esc(initials(s.name))}${trophy ? '<span class="badge">🏆</span>' : ""}</div>`;
+      // "none": we have no schedule for this shop at all. "dim": it has one, but nothing in the week / games shown.
+      const none = noSchedule.has(s.id);
+      const dim = !none && occs.length === 0;
+      const html = `<div class="pin${none ? " none" : dim ? " dim" : ""}" title="${esc(s.name)}${none ? " (no schedule yet)" : ""}">${esc(initials(s.name))}${trophy ? '<span class="badge">🏆</span>' : ""}</div>`;
       // `trophy` and `shopName` ride on the marker so a cluster can show them.
       const m = L.marker([s.lat, s.lon], {
         icon: L.divIcon({ html, className: "", iconSize: [30, 30], iconAnchor: [15, 15], popupAnchor: [0, -14] }),
         trophy, shopName: s.name,
       });
       // Built when opened, not for every shop on every redraw.
-      m.bindPopup(() => popupHtml(s, occs, myEvents, scheduleIncomplete(s, handShops)), { maxWidth, minWidth: Math.min(220, maxWidth) });
+      m.bindPopup(() => popupHtml(s, occs, myEvents, scheduleIncomplete(s, handShops), none), { maxWidth, minWidth: Math.min(220, maxWidth) });
       markers.current.set(s.id, m);
       made.push(m);
     }
@@ -249,7 +256,7 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
   };
 
   // Draw once the map exists, and redraw whenever the inputs change.
-  useEffect(() => { if (ready) draw(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [ready, shops, occurrences, origin, radiusMi, myEvents, handShops]);
+  useEffect(() => { if (ready) draw(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [ready, shops, occurrences, origin, radiusMi, myEvents, handShops, noSchedule]);
 
   // The tab just appeared: the container has a size for the first time, or a
   // new one. Fit if a fit was deferred, otherwise just re-measure.

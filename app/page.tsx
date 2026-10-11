@@ -21,7 +21,7 @@ import { geocodeZip, normalizeZip } from "@/lib/geo";
 import { GAME_IDS, GAMES, type GameId } from "@/lib/games";
 import { DEFAULT_PREFS, effectiveGames, gameMode, loadPrefs, savePrefs, type Prefs } from "@/lib/prefs";
 import {
-  addDays, filterOccurrences, occurrencesInRange, shopPassesFilter, shopsWithHandRows, startOfWeek, toDateStr,
+  addDays, filterOccurrences, occurrencesInRange, shopPassesFilter, shopsWithHandRows, shopsWithoutSchedule, startOfWeek, toDateStr,
   type EventKind, type ScheduleFilter,
 } from "@/lib/schedule";
 import { VERSION } from "@/lib/version";
@@ -124,11 +124,19 @@ export default function Page() {
     const s = startOfWeek(today);
     return filterOccurrences(occurrencesInRange(events, shops, s, addDays(s, 6), prefs.origin), filter);
   }, [events, shops, today, prefs.origin, filter]);
-  /** Shops in range that run at least one visible game (a Riftbound-only shop is not a pin for a Pokémon player). */
+  /** Shops we have a row for but no schedule at all: drawn muted, never hidden. */
+  const noSchedule = useMemo(() => shopsWithoutSchedule(shops, events), [shops, events]);
+  /**
+   * The pins: every active shop in range that runs at least one visible game (a
+   * Riftbound-only shop is not a pin for a Pokémon player), PLUS every active
+   * shop in range with no schedule at all. Until 0.1.6.6 those were left off,
+   * so a shop found and added without events simply was not on the map; we
+   * cannot say what it runs, so no game filter can rule it out.
+   */
   const mapShops = useMemo(() => {
     const running = new Set(events.filter((e) => visibleGames.has(e.game) && (!filter.kind || e.kind === filter.kind)).map((e) => e.shopId));
-    return shops.filter((s) => s.active && running.has(s.id) && shopPassesFilter(s, filter));
-  }, [shops, events, visibleGames, filter]);
+    return shops.filter((s) => s.active && (running.has(s.id) || noSchedule.has(s.id)) && shopPassesFilter(s, filter));
+  }, [shops, events, visibleGames, filter, noSchedule]);
   /** Every game worth a row in Settings: in the data, or chosen/hidden before. */
   const settingsGames = useMemo(() => GAME_IDS.filter((g) => availableGames.has(g) || prefs.myGames.includes(g) || prefs.hiddenGames.includes(g)),
     [availableGames, prefs.myGames, prefs.hiddenGames]);
@@ -243,7 +251,7 @@ export default function Page() {
       <div style={{ display: tab === "map" ? "contents" : "none" }}>
         {mounted && (
           <PlayMap shops={mapShops} occurrences={weekOccs} origin={prefs.origin}
-            radiusMi={prefs.radiusMi} focus={focus} myEvents={mySet} handShops={handShops} visible={tab === "map"} />
+            radiusMi={prefs.radiusMi} focus={focus} myEvents={mySet} handShops={handShops} noSchedule={noSchedule} visible={tab === "map"} />
         )}
       </div>
 

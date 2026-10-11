@@ -249,6 +249,54 @@ try {
   await ep.getByRole("button", { name: "Try again" }).click();
   await ep.waitForFunction(() => /\d+ shops/.test(document.querySelector("footer")?.textContent ?? ""), null, { timeout: 20000 }).catch(() => {});
   const recovered = await ep.locator("footer").innerText();
+  // ── A shop with a row but no schedule must still be ON the map (0.1.6.6):
+  // a muted pin, and a popup that says to call. The live data may have none, so
+  // one is added to the shops file on its way to the page; nothing is written.
+  const sctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, ignoreHTTPSErrors: true });
+  const sp = await sctx.newPage();
+  await sp.route(/tile\.openstreetmap\.org/, (r) => r.fulfill({ status: 200, contentType: "image/png", body: TILE }));
+  let realShops = 0;
+  await sp.route(/\/data\/shops\.json/, async (route) => {
+    const res = await route.fetch();
+    const shops = await res.json();
+    realShops = shops.length;
+    // Gorman, on the Grapevine: about 30 miles from the nearest real shop, so its pin stands alone at any zoom.
+    shops.push({
+      id: "acceptance-eventless-shop", name: "Acceptance Eventless Shop", address: "49669 Gorman Post Rd", city: "Gorman", state: "CA", zip: "93243",
+      lat: 34.7961, lon: -118.8526, tz: "America/Los_Angeles", phone: "(661) 555-0100", games: [], active: true,
+      notes: "Synthetic shop used by the acceptance check.", source: { checked: "2026-10-11", note: "acceptance" },
+    });
+    await route.fulfill({ response: res, json: shops });
+  });
+  await sp.goto(target, { waitUntil: "load" });
+  await sp.waitForSelector(".setup", { timeout: 30000 });
+  await sp.fill("#setup-zip", "91303");
+  await sp.selectOption("#setup-radius", "250");
+  await sp.getByRole("button", { name: "Next" }).click();
+  await sp.waitForSelector('.setup [aria-label="Your TCGs"]', { timeout: 15000 });
+  await sp.locator('.setup .chip.game[title="Pokémon TCG"]').click();      // a game filter must not hide a shop we know nothing about
+  await sp.getByRole("button", { name: /^Next/ }).click();
+  await sp.getByRole("button", { name: /^Done/ }).click();
+  await sp.waitForSelector(".block", { timeout: 15000 });
+  await sp.getByRole("tab", { name: "Map" }).click();
+  await sp.waitForSelector(".leaflet-container", { timeout: 20000 });
+  await sp.waitForFunction(() => document.querySelectorAll(".pin").length > 0, null, { timeout: 15000 }).catch(() => {});
+  await sp.waitForTimeout(700);
+  const mutedPins = await sp.locator('.pin.none[title^="Acceptance Eventless Shop"]').count();
+  check("a shop with no schedule is still on the map, as a muted pin, under a game filter", realShops === shopCount && mutedPins === 1, `${mutedPins} muted pin(s); ${await sp.locator(".map").getAttribute("data-markers")} markers with Pokémon only`);
+  await sp.locator('.pin.none[title^="Acceptance Eventless Shop"]').click({ timeout: 10000 }).catch(() => {});
+  await sp.waitForSelector(".leaflet-popup h3", { timeout: 10000 }).catch(() => {});
+  const noSched = await sp.locator(".leaflet-popup").innerText().catch(() => "");
+  check("its popup says there is no schedule and to call the store", /No schedule published yet — call the store/.test(noSched) && /\(661\) 555-0100/.test(noSched) && /Synthetic shop/.test(noSched),
+    noSched.replace(/\s+/g, " ").slice(0, 110));
+  await sp.getByRole("tab", { name: "Calendar" }).click();
+  await sp.getByRole("button", { name: "Show all TCGs" }).click();
+  await sp.getByRole("tab", { name: "Map" }).click();
+  await sp.waitForTimeout(700);
+  const allMarkers = Number(await sp.locator(".map").getAttribute("data-markers"));
+  check("with every game shown, the map holds a marker for every active shop including it", allMarkers === shopCount + 1, `${allMarkers} markers, ${shopCount} real shops + 1`);
+  await sctx.close();
+
   check("'Try again' loads the schedules", Number(/(\d+) shops/.exec(recovered)?.[1] ?? 0) === shopCount && (await ep.locator(".loadstate").count()) === 0, recovered.slice(0, 60));
 } finally {
   await browser.close();

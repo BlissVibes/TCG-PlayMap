@@ -105,6 +105,9 @@ input, select { font: inherit; }
   border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.4); position: relative;
 }
 .pin.dim { background: #8a90a0; }
+/* No schedule at all: hollow and dashed, so it reads as "a shop, details unknown" beside the solid pins. */
+.pin.none { background: var(--panel); color: var(--muted); border: 2px dashed #8a90a0; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
+.popup .nosched { margin-top: 6px; font-weight: 600; color: var(--text2); }
 .pin.cluster {
   width: 38px; height: 38px; font-size: 14px; background: var(--text); color: var(--bg);
   border: 3px solid color-mix(in srgb, var(--accent) 70%, #fff); cursor: zoom-in;

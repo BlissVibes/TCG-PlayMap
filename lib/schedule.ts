@@ -245,6 +245,17 @@ export function shopsWithHandRows(events: readonly Pick<PlayEvent, "shopId" | "o
 }
 
 /**
+ * Shops with no event row at all: we know the shop exists (a person or the
+ * OpenStreetMap discovery found it) and nothing about when it runs anything.
+ * They are still drawn on the map (Mark's goal is every TCG shop on it), as a
+ * muted pin whose popup says to call the store.
+ */
+export function shopsWithoutSchedule(shops: readonly Pick<Shop, "id">[], events: readonly Pick<PlayEvent, "shopId">[]): Set<string> {
+  const has = new Set(events.map((e) => e.shopId));
+  return new Set(shops.filter((s) => !has.has(s.id)).map((s) => s.id));
+}
+
+/**
  * Is this shop's schedule known to be incomplete? True for a shop a bulk
  * importer created (it has an `origin`) at which every night on the calendar
  * also came from an importer: nobody has looked at the shop's own schedule.

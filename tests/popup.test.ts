@@ -6,7 +6,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { popupHtml } from "../components/PlayMap";
-import { scheduleIncomplete, shopsWithHandRows, type Occurrence, type PlayEvent, type Shop } from "../lib/schedule";
+import { scheduleIncomplete, shopsWithHandRows, shopsWithoutSchedule, type Occurrence, type PlayEvent, type Shop } from "../lib/schedule";
 
 const shop = (over: Partial<Shop> = {}): Shop => ({
   id: "tiny", name: "Tiny Card Cafe", address: "1 Elm St", city: "Glendale", state: "CA", zip: "91203", lat: 34.15, lon: -118.25,
@@ -41,6 +41,40 @@ describe("scheduleIncomplete", () => {
   it("is never true for a hand-entered shop", () => {
     expect(scheduleIncomplete({ id: "tiny" }, shopsWithHandRows([]))).toBe(false);
     expect(scheduleIncomplete({ id: "tiny" }, shopsWithHandRows([rift]))).toBe(false);
+  });
+});
+
+describe("shops with no schedule", () => {
+  it("are the shops with no event row at all, whatever kind of row the others have", () => {
+    const shops = [{ id: "a" }, { id: "b" }, { id: "c" }];
+    const events = [{ shopId: "a" }, { shopId: "a" }, { shopId: "c", validUntil: "2020-01-01" }];
+    expect([...shopsWithoutSchedule(shops, events)]).toEqual(["b"]);       // an ended row still means we once had a schedule
+    expect([...shopsWithoutSchedule(shops, [])].sort()).toEqual(["a", "b", "c"]);
+    expect(shopsWithoutSchedule([], events).size).toBe(0);
+  });
+
+  it("get a popup that says to call the store, above the notes, with phone and directions", () => {
+    const s = shop({ id: "insomniac-collectibles", name: "Insomniac Collectibles", phone: "(310) 555-0100", notes: "Found on OpenStreetMap; sells Pokémon and One Piece singles.", origin: undefined });
+    const html = popupHtml(s, [], new Set(), false, true);
+    expect(html).toContain("No schedule published yet — call the store.");
+    expect(html.indexOf("No schedule published yet")).toBeLessThan(html.indexOf('class="notes"'));
+    expect(html).toContain("tel:");
+    expect(html).toContain("Directions");
+    expect(html).not.toContain("No events on the calendar yet.");
+    // No notes either: the line still stands on its own.
+    expect(popupHtml(shop({ notes: undefined }), [], new Set(), false, true)).toContain("No schedule published yet — call the store.");
+  });
+
+  it("does not claim 'locator-listed nights' for an imported shop that has no nights at all", () => {
+    const html = popupHtml(shop({ origin: "ravensburger-play" }), [], new Set(), true, true);
+    expect(html).toContain("No schedule published yet");
+    expect(html).not.toMatch(/locator-listed/);
+  });
+
+  it("a shop WITH a schedule but nothing this week does not get the call-the-store line", () => {
+    expect(popupHtml(shop(), [], new Set(), false, false)).not.toContain("No schedule published yet");
+    const s = shop();
+    expect(popupHtml(s, [occ(s)], new Set(), false, true)).not.toContain("No schedule published yet");   // events shown win
   });
 });
 
