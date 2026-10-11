@@ -291,10 +291,11 @@
     "website": "https://collectorlegion.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/c75083b8-4ffa-41dd-9490-1c53678c2edc",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site event tickets: only dated special events (Pokémon Delta Reign prerelease Oct 24 $35 added; Riftbound is importer's). Google Calendar feed (info@collectorlegion.com) public but every event titled 'Busy'. No weekly nights published.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "collectors-lounge",
@@ -303,10 +304,11 @@
     "website": "http://collectorslounge.us/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/27c45d67-446d-4a70-9850-d67485ff2fb2",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Site is a GoDaddy page; tournament schedule is only on Discord/Instagram (links on homepage). Hours/phone added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "comic-quest-lake-forest-ca",
@@ -315,10 +317,11 @@
     "website": "https://www.comicquest.org",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/3109bbd9-6c45-4df9-b570-145e68ca7f9a",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site calendar via The Events Calendar REST API (comicquest.org/wp-json/tribe/events/v1/events), read through Nov 8. Weekly: Mon SWU/Gundam/Riftbound night, Tue Lorcana, Fri FNM. Fees only where the descriptions give one (prereleases, FNM free). Their Riftbound Mon night (and prerelease dates) left to the importer.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "critical-hit-games",
@@ -327,10 +330,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/cbb6082f-8cfa-47da-8a63-f14ab071e9aa",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; web search found only an aggregator listing. A Limitless organizer 'Critical Hit' (play.limitlesstcg.com/organizer/2447) exists but its location is unconfirmed, so not used.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "danimalz-trading-cards-and-collectibles",
@@ -339,10 +343,11 @@
     "website": "https://www.instagram.com/danimalztradingcards/?hl=en",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/aa8dbdae-3994-4795-bec7-aef9597be5a7",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram only (login-walled); web search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "dark-side-games",

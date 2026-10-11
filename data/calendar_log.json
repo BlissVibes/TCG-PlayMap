@@ -355,5 +355,10 @@
   {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"brookhurst-hobbies","summary":"One Piece: Sun noon ($5)."},
   {"date":"2026-10-10","action":"added","game":"cookierun","shopId":"brookhurst-hobbies","summary":"Cookie Run: Fri 6 PM ($5)."},
   {"date":"2026-10-10","action":"added","game":"mtg","shopId":"brookhurst-hobbies","summary":"Magic: Friday Night Magic Fri 7 PM ($17.95); Star Trek prerelease Fri Nov 6 7 PM and Sat Nov 7 2 PM ($40)."},
-  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"boomloot","summary":"Pokémon League Cup Sat Oct 24 3 PM ($20)."}
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"boomloot","summary":"Pokémon League Cup Sat Oct 24 3 PM ($20)."},
+  {"date":"2026-10-10","action":"added","game":"swu","shopId":"comic-quest-lake-forest-ca","summary":"Star Wars Unlimited: Mon 6 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"comic-quest-lake-forest-ca","summary":"Gundam: Mon 6 PM (cost not listed); GD06 release Fri Oct 23 10:30 AM."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"comic-quest-lake-forest-ca","summary":"Lorcana: Tue 6 PM league night (cost not listed); Hyperia City prerelease Sat Oct 17 10 AM and 2 PM, Tue Oct 20 6 PM ($39.99)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"comic-quest-lake-forest-ca","summary":"Magic: Friday Night Magic Fri 6 PM (free); Star Trek prerelease Fri Nov 6 6 PM, Sat Nov 7 and Sun Nov 8 noon."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"collector-legion","summary":"Pokémon Delta Reign prerelease Sat Oct 24 1 PM ($35)."}
 ]

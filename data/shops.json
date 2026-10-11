@@ -863,9 +863,10 @@
     "website": "https://collectorlegion.com",
     "phone": "(310) 504-0353",
     "games": [
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): weekdays 12-10 PM, weekends 12-8 PM. Only dated special events are published (event tickets at collectorlegion.com/catalog/events-special_events/3693); the store's Google Calendar shows 'Busy' blocks with no titles. No weekly nights found. Riftbound prerelease is covered by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/c75083b8-4ffa-41dd-9490-1c53678c2edc",
@@ -892,7 +893,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 12-10 PM. 9975 Walker St, phone (714) 349-0799. The site only links Discord/Instagram for the tournament schedule. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/27c45d67-446d-4a70-9850-d67485ff2fb2",
@@ -917,9 +918,13 @@
     "website": "https://www.comicquest.org",
     "phone": "(949) 951-9668",
     "games": [
-      "riftbound"
+      "gundam",
+      "lorcana",
+      "mtg",
+      "riftbound",
+      "swu"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon-Tue 11 AM-9 PM, Wed 10 AM-10 PM, Thu-Fri 11 AM-10 PM, Sat 10 AM-8 PM, Sun 10 AM-7 PM. Schedule from the store's own events calendar (comicquest.org/events, checked 2026-10-10, through Nov 8). Also runs Warhammer, Kill Team, D&D, board game meetups and Tactical Thursday (miniatures), not listed. Riftbound Mon night is on the same TCG night as SWU and Gundam; Riftbound listing comes from the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/3109bbd9-6c45-4df9-b570-145e68ca7f9a",
@@ -945,7 +950,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1003 W 6th St, Magic and Pokémon shop, weekends open late. No website; search found no schedule. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/cbb6082f-8cfa-47da-8a63-f14ab071e9aa",
@@ -972,7 +977,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/aa8dbdae-3994-4795-bec7-aef9597be5a7",
