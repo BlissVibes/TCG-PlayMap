@@ -757,7 +757,12 @@
         "milesFromLaCenter": 24,
         "triageScore": 0,
         "triageOrder": 52,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "'Bait' (Diamond Bar Blvd): no website or listing found; not researched further.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "So Cal Coins",
@@ -1365,7 +1370,12 @@
         "milesFromLaCenter": 42,
         "triageScore": 0,
         "triageOrder": 58,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Gold Cards & Coins: no address, website or listing found; name suggests sports cards and coins.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Coast Philatelics",
@@ -1956,7 +1966,12 @@
         "milesFromLaCenter": 53,
         "triageScore": 0,
         "triageOrder": 60,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Rizosports (Riverside): name suggests sports cards; no website or listing found.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Board Game Library",
@@ -2465,7 +2480,12 @@
         "milesFromLaCenter": 55,
         "triageScore": 2,
         "triageOrder": 42,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Mero Games (The Collection at RiverPark, Oxnard): an aggregator says retro video games, Pokémon cards and Funkos; no website, phone or events found.",
+        "evidenceUrl": "https://www.atly.com/location/MeroGames",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Arsenal Comics And Games",
@@ -2743,7 +2763,12 @@
         "milesFromLaCenter": 34,
         "triageScore": 2,
         "triageOrder": 40,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "Brighton: national handbag and jewellery chain (store page).",
+        "evidenceUrl": "https://www.brighton.com/pages/store-simi-valley-ca-340071",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Fire & Dice Games",
@@ -2808,7 +2833,12 @@
         "milesFromLaCenter": 20,
         "triageScore": 2,
         "triageOrder": 38,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Game Tower (San Fernando): a place-listing aggregator says retro and modern video games, consoles and trading cards with an arcade and card-game play area that hosts buy/sell/trade events; no website, phone or hours found. Worth a Chrome look.",
+        "evidenceUrl": "https://www.atly.com/location/GameTower",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "The Collective Shop",
@@ -3057,7 +3087,12 @@
         "milesFromLaCenter": 45,
         "triageScore": -2,
         "triageOrder": 68,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "'Coins and Comics' at 620 W Lancaster Blvd: no listing; a bullion guide lists PNS Coins & Collectibles (a coin shop) at that address, so the business may have changed.",
+        "evidenceUrl": "https://www.jmbullion.com/?p=156314",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Manaforge Games",
@@ -3120,7 +3155,12 @@
         "milesFromLaCenter": 32,
         "triageScore": 0,
         "triageOrder": 54,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Time Blast (Montclair Place): search finds nothing.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Tiger Lily Collectables",
@@ -3141,7 +3181,12 @@
         "milesFromLaCenter": 34,
         "triageScore": 0,
         "triageOrder": 56,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Tiger Lily Collectables: no address, website or listing found.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Alhambra Wheel and Hobby",
@@ -3347,7 +3392,12 @@
         "milesFromLaCenter": 12,
         "triageScore": 0,
         "triageOrder": 50,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "K+Pop in the Westfield Santa Anita mall: K-pop merchandise by name; not researched further.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Hypnotized Hobbies",
