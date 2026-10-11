@@ -1472,10 +1472,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/487457bc-afde-4464-8dd8-7ebdbd76ece0",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; web search finds no listing. Nothing readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-light",
@@ -1484,10 +1485,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/6dfe07b0-cfa4-4edd-bbed-e7b1e3449cc6",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website. Directories call it a tournament-focused hub (Pokemon, Lorcana, Yu-Gi-Oh!, Magic nights) with hours unverified (one says closed Wed/Thu), but give no days, times or fees. Nothing readable from the shop itself.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-olympus-project",
@@ -1496,10 +1498,11 @@
     "website": "https://www.instagram.com/olympusprojectwhittier/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/be779a4d-9d25-4906-86c0-ae82cd8c4caf",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram only (login-walled); web search finds nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "thecollectorskut",
@@ -1510,10 +1513,11 @@
       "discord": "https://discord.gg/ueP9PQz49c"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/c3fe6b90-870c-42de-afb9-f2df9f0f19d7",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; Discord invite only (not readable); web search finds nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "three-js-sports-cards",
@@ -1522,10 +1526,11 @@
     "website": "https://www.team3j.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/83a836e6-f84f-4ce0-8083-4f4c2f95d22a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Sports-card shop; team3j.com is a script-rendered Weebly page with no readable text or events.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "tilted-gaming",
