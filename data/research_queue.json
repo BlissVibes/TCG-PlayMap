@@ -1484,10 +1484,10 @@
       "facebook": "https://www.facebook.com/GameHubLA"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/41b2e33f-5ff9-47f6-81b1-e33f9e65869a",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Linktree only (linktr.ee/gamehub.cb): Discord, Facebook, Instagram (login-walled), Ravensburger Play Hub store page (events render client-side), melee.gg organisation 9898 for Star Wars Unlimited (403 to scripts) and the Riftbound locator (importer). Needs a browser/Discord read; no schedule readable here.",
+    "notes": "Browser pass: Ravensburger Play Hub page shows 'Saturday Morning Weekly Play' Oct 17 11 AM $5 (1 row). Melee.gg Star Wars Unlimited org, Instagram and Discord not read. Rest of schedule unknown; partial.",
     "checked": "2026-10-10"
   },
   {
@@ -1554,7 +1554,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Sports-card shop; team3j.com is a script-rendered Weebly page with no readable text or events.",
+    "notes": "Sports-card shop; skipped.",
     "checked": "2026-10-10"
   },
   {
@@ -1605,10 +1605,10 @@
     "website": "https://top-deck-keep.shoplightspeed.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/828d4aeb-03b7-4cdb-8a2f-2b2862f4f8bf",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Own Lightspeed shop sells dated event tickets but only 9 are listed and none has a start time (so no rows): Beyblade X tournament 10/10 $10; Lorcana Hyperia City prerelease 10/18 $30; Lorcana scaling case tournament 10/24 $25; Pokemon Delta Reign prerelease 10/24 $30; MTG Hobbit 2-slot Standard RCQ 11/14 $30; Riftbound Pre-Rift 10/16 3 PM and 7 PM, 10/17, 10/18 $30 (importer-owned). The /event-calendar page is script-rendered. Weekly nights not published. Enough here for a quick follow-up if the store posts times.",
+    "notes": "Browser pass: the Event Calendar page embeds a public Google Calendar (read via summarise.py); the Lightspeed ticket pages had no start times. 28 dated rows (Oct 16 - Dec 5), no weekly nights.",
     "checked": "2026-10-10"
   },
   {
@@ -1647,7 +1647,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop.",
+    "notes": "Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop. Chrome pass 2026-10-10: socials found on the site (instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games), not yet read.",
     "checked": "2026-10-10",
     "needsMark": "phone"
   },

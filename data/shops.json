@@ -3398,9 +3398,10 @@
       "facebook": "https://www.facebook.com/GameHubLA"
     },
     "games": [
+      "lorcana",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Ravensburger Play Hub page read in a browser 2026-10-10 (one upcoming Lorcana event); the Star Wars Unlimited Melee organization and Instagram/Discord were not read.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/41b2e33f-5ff9-47f6-81b1-e33f9e65869a",
@@ -3535,7 +3536,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Sports-card shop; skipped in the Chrome pass.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/83a836e6-f84f-4ce0-8083-4f4c2f95d22a",
@@ -3653,9 +3654,20 @@
     "website": "https://top-deck-keep.shoplightspeed.com/",
     "phone": "(951) 977-9955",
     "games": [
-      "riftbound"
+      "cyberpunk",
+      "dbs_fusion",
+      "digimon",
+      "fab",
+      "grand_archive",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "riftbound",
+      "union_arena"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Dated events from the store's public Google Calendar (read in a browser 2026-10-10); no weekly nights are listed (monthly Pokémon Day and League Challenges only).",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/828d4aeb-03b7-4cdb-8a2f-2b2862f4f8bf",
@@ -3746,7 +3758,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Socials (not read): instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/92efaa6d-2354-4148-b3ff-7d29cfd15a18",

@@ -577,5 +577,7 @@
   {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"topspot-cards","summary":"onepiece: 1 weekly and 3 dated events added from the store's calendar (cost not listed)."},
   {"date":"2026-10-10","action":"added","game":"dbs_fusion","shopId":"topspot-cards","summary":"dbs_fusion: 0 weekly and 1 dated events added from the store's calendar (fees $20)."},
   {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"topspot-cards","summary":"pokemon: 0 weekly and 2 dated events added from the store's calendar (cost not listed)."},
-  {"date":"2026-10-10","action":"added","game":"union_arena","shopId":"topspot-cards","summary":"union_arena: 0 weekly and 1 dated events added from the store's calendar (fees $25)."}
+  {"date":"2026-10-10","action":"added","game":"union_arena","shopId":"topspot-cards","summary":"union_arena: 0 weekly and 1 dated events added from the store's calendar (fees $25)."},
+  {"date":"2026-10-10","action":"added","game":null,"shopId":"top-deck-keep","summary":"Top Deck Keep: 28 dated events added (Oct 16 - Dec 5: Lorcana, Gundam, Cyberpunk, Digimon, One Piece, Union Arena, Magic, Grand Archive and more), fees where listed."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"the-game-hub-and-comic-bug","summary":"Lorcana: Saturday morning weekly play 11 AM ($5)."}
 ]
