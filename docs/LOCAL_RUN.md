@@ -172,8 +172,12 @@ The page has one section per `needsMark` value, each line with the invite
 link, phone number or place to look, the shop's event count and the entry's
 notes; and a last section, "Blocked, no handle", for blocked shops with no
 website and no socials, to call or to drop. It is generated: never edit it by
-hand. **Re-run the script in the same commit as any change to `needsMark` or
-to a blocked entry's notes** (a data commit, so no version bump).
+hand. **Re-run the script in the same commit as any change to the queue, a
+shop's phone or socials, or the events** (a data commit, so no version bump).
+Since 0.1.6.9 `npm test` enforces it: `tests/needsMark.test.ts` rebuilds the
+page from `data/` and fails with "run node scripts/needs_mark.mjs and commit
+the page" when the committed one differs. The dated "Re-check soon" section is
+left out of that comparison.
 
 - `discord`: join or open the shop's Discord server and read its schedule
   channel.

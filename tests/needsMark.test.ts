@@ -1,8 +1,9 @@
 /**
  * Mark's follow-up page (scripts/needs_mark.mjs), on made-up queue rows.
  */
+import { readFileSync } from "node:fs";
 import { describe, it, expect } from "vitest";
-import { handleFor, needsMarkDoc, parseArgs, RECHECK_DAYS, recheckRows } from "../scripts/needs_mark.mjs";
+import { handleFor, needsMarkDoc, parseArgs, queueSections, RECHECK_DAYS, recheckRows } from "../scripts/needs_mark.mjs";
 
 const q = (over: Record<string, unknown> = {}) => ({
   shopId: "aki", name: "Aki Collectibles", city: "San Gabriel", website: null, socials: {}, sourceUrl: null,
@@ -84,6 +85,31 @@ describe("needs_mark: the page", () => {
     expect(handleFor("phone", q(), { id: "zed" })).toBe("no phone recorded");
     expect(handleFor("image", q({ website: "https://shop.test" }), undefined)).toBe("https://shop.test");
     expect(handleFor("image", q(), undefined)).toBe("see notes");
+  });
+});
+
+describe("needs_mark: the committed page matches the committed data", () => {
+  it("docs/NEEDS_MARK.md is what the script generates from data/ (the dated 'Re-check soon' section aside)", () => {
+    // The page went stale within two research batches of being added (2026-10-11):
+    // the queue changed and nobody re-ran the script. Now that fails here.
+    const read = (f: string) => JSON.parse(readFileSync(f, "utf8"));
+    const fresh = needsMarkDoc({ queue: read("data/research_queue.json"), shops: read("data/shops.json"), events: read("data/events.json") });
+    const committed = readFileSync("docs/NEEDS_MARK.md", "utf8");
+    expect(queueSections(committed) === queueSections(fresh.markdown),
+      "docs/NEEDS_MARK.md is out of date with data/research_queue.json (or shops / events): run node scripts/needs_mark.mjs and commit the page").toBe(true);
+  });
+
+  it("compares only the data-driven part: the dated section and its changes are ignored", () => {
+    const base = needsMarkDoc({ queue, shops, events });
+    const dayA = needsMarkDoc({ queue, shops, events: [...events, { id: "w", shopId: "aki", game: "mtg", weekday: 1, start: "18:00", validUntil: "2026-10-20" }], today: "2026-10-11" });
+    const dayB = needsMarkDoc({ queue, shops, events, today: "2026-12-25" });
+    expect(dayA.markdown).toContain("## Re-check soon");
+    expect(queueSections(dayB.markdown)).toBe(queueSections(base.markdown));
+    expect(queueSections(base.markdown)).not.toContain("Re-check soon");
+    // ...but a real change to the queue-driven part is seen (the extra event row changes Aki's event count).
+    expect(queueSections(dayA.markdown)).not.toBe(queueSections(base.markdown));
+    const moved = needsMarkDoc({ queue: [...queue, q({ shopId: "new", name: "New Discord Shop", needsMark: "discord" })], shops, events, today: "2026-12-25" });
+    expect(queueSections(moved.markdown)).not.toBe(queueSections(dayB.markdown));
   });
 });
 

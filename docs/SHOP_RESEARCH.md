@@ -168,8 +168,12 @@ npm run build > /tmp/b.log 2>&1; B=$?
 is for changes to the site. Do not run `bump_version.mjs` and do not stage
 `lib/version.ts`; the version test fails a data-only commit that bumps.
 
+Before the gates, run `node scripts/needs_mark.mjs`: it rewrites
+`docs/NEEDS_MARK.md` from the queue, and `npm test` fails if that page does not
+match the data you are committing.
+
 Stage by explicit path (`data/events.json data/shops.json
-data/calendar_log.json data/research_queue.json`). The commit subject names
+data/calendar_log.json data/research_queue.json docs/NEEDS_MARK.md`). The commit subject names
 the shops and carries no version: `Research batch 23: Game Empire (4 weekly
 nights), Brute Force Games; 3 blocked`.
 

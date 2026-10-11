@@ -121,7 +121,7 @@ export function needsMarkDoc({ queue, shops, events, today }) {
     const rows = recheckRows(events, shops, today);
     counts.recheckRows = rows.length;
     counts.recheckShops = new Set(rows.map((r) => r.shop.id)).size;
-    out.push(`## Re-check soon: weekly nights that end by ${addDays(today, RECHECK_DAYS)} (${rows.length} at ${counts.recheckShops} shops)`, "",
+    out.push(`${RECHECK_HEADING}: weekly nights that end by ${addDays(today, RECHECK_DAYS)} (${rows.length} at ${counts.recheckShops} shops)`, "",
       `As of ${today}, looking ${RECHECK_DAYS} days ahead. Each of these nights has an end date on its row and leaves the calendar after`,
       "it. Open the source, see whether the store has published the next month, and extend the row or let it end.", "");
     if (!rows.length) out.push("Nothing ends in that window.", "");
@@ -137,6 +137,21 @@ export function needsMarkDoc({ queue, shops, events, today }) {
     if (rows.length) out.push("");
   }
   return { markdown: out.join("\n"), counts };
+}
+
+/** The heading the date-dependent section starts with. Everything before it comes from the data alone. */
+export const RECHECK_HEADING = "## Re-check soon";
+
+/**
+ * The part of the page that depends only on the data: everything before the
+ * "Re-check soon" section. tests/needsMark.test.ts compares this part of the
+ * committed page with a fresh build, so a queue change that forgot to re-run
+ * the script fails the gates; the dated section is left out of that
+ * comparison, or the test would go red every morning.
+ */
+export function queueSections(markdown) {
+  const i = String(markdown).indexOf(`\n${RECHECK_HEADING}`);
+  return (i < 0 ? String(markdown) : String(markdown).slice(0, i)).trimEnd();
 }
 
 /** Arguments are read first; anything unrecognised stops the run. */
