@@ -223,10 +223,11 @@
     "website": "https://www.instagram.com/card_cave_tcg/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/79649264-eefc-4683-8fff-e5cd1193600b",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Website is an Instagram page (login-walled); web search found only a directory blurb. Needs Instagram read.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "card-game-coliseum",
@@ -235,10 +236,11 @@
     "website": "https://www.facebook.com/cgcoliseum",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/8bd3702a-8e79-4182-9aeb-fb351ed5a5b7",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Facebook only (login-walled); search found only a directory blurb. Needs Facebook read.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "cardboard-games",
@@ -247,10 +249,11 @@
     "website": "https://cardboardgames.store",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/de624c19-dac3-47ec-8c95-80aff03d04ea",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own events page read: only paid specials (Riftbound Radiance Pre-Rift Oct 16-22 etc. are importer territory; past Magic/Lorcana prereleases). No weekly schedule and no non-Riftbound upcoming events published on the site.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "chrono-and-cosmo",
@@ -262,10 +265,11 @@
       "facebook": "https://www.facebook.com/profile.php?id=61585629095919"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d41ef1a3-e23a-4953-bc2d-a4450ff12bd9",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Site returns 403 (TCGplayer storefront JS app) on every path; Discord/Facebook not read; search found only a directory listing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "collectible-exchange",
@@ -274,10 +278,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/2c17e28a-c945-466c-9b61-b0fa6e90b26e",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials in locator; search found only a directory listing (says call or Instagram).",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "collector-legion",
