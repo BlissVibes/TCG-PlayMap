@@ -108,6 +108,8 @@ input, select { font: inherit; }
 .popup ul { margin: 6px 0 0; padding: 0; list-style: none; }
 .popup li { margin: 2px 0; }
 .popup .links a { margin-right: 8px; font-size: 12px; }
+.popup .notes { color: var(--muted); font-size: 12px; margin-top: 8px; padding-top: 6px; border-top: 1px solid var(--border2); }
+.popup .partial { color: var(--text2); font-size: 12px; font-style: italic; margin-top: 8px; }
 .gchip {
   display: inline-block; padding: 1px 6px; border-radius: 6px; font-size: 11px;
   font-weight: 650; color: #fff; background: var(--chip); vertical-align: middle;
@@ -149,6 +151,7 @@ input, select { font: inherit; }
 .block .shop { color: var(--text2); display: block; }
 .block .meta { color: var(--muted); }
 .block .trophy { color: var(--trophy); }
+.block .partial { margin-left: 5px; font-size: 10px; font-style: italic; color: var(--muted); border: 1px dashed var(--border); border-radius: 4px; padding: 0 4px; white-space: nowrap; }
 .block .fee { font-weight: 650; font-size: 11px; padding: 0 5px; border-radius: 5px; border: 1px solid var(--border); color: var(--text); background: var(--panel); }
 .block .fee.unknown { font-weight: 400; color: var(--muted); font-style: italic; }
 .cell .mini .mfee { font-weight: 650; }

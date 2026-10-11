@@ -6,7 +6,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { buildSlots, feeText, splitAddress } from "../scripts/riftbound/pull.mjs";
-import { DEFAULT_REGION, matchShop, merge, normPhone, outsideRegion, slug } from "../scripts/candidates/merge.mjs";
+import { cleanWeeklyTitle, DEFAULT_REGION, matchShop, merge, normPhone, outsideRegion, slug } from "../scripts/candidates/merge.mjs";
 import { nextVersion } from "../scripts/bump_version.mjs";
 import { validateData } from "../lib/data";
 
@@ -90,6 +90,55 @@ describe("merge: new shops", () => {
     const first = run([store()]);
     const second = run([store()], { shops: first.shops, events: first.events });
     expect(second.events).toEqual(first.events);
+    expect(second.log).toEqual([]);
+  });
+});
+
+describe("weekly titles", () => {
+  it("drops the date a weekly title was copied from (the three seen on 2026-10-10)", () => {
+    expect(cleanWeeklyTitle("9/30 Nexus Night")).toBe("Nexus Night");
+    expect(cleanWeeklyTitle("10/10/26 Lake Forest Riftbound Vendetta Summoner Skirmish 2 Saturday 10 AM")).toBe("Lake Forest Riftbound Vendetta Summoner Skirmish 2");
+    expect(cleanWeeklyTitle("9/06/26 Fountain Valley Riftbound Nexus Night Sunday 12 PM")).toBe("Fountain Valley Riftbound Nexus Night");
+  });
+
+  it("handles every other dated shape in the real pull", () => {
+    expect(cleanWeeklyTitle("9/15/26 Lake Forest Riftbound Nexus Night Tuesday 630 PM")).toBe("Lake Forest Riftbound Nexus Night");
+    expect(cleanWeeklyTitle("Boomloot Wednesday Nexus Nights 09/09")).toBe("Boomloot Wednesday Nexus Nights");
+    expect(cleanWeeklyTitle("Sunday Nexus Night (09/13) @Main Street Cards")).toBe("Sunday Nexus Night @Main Street Cards");
+    expect(cleanWeeklyTitle("AHF - 9/8 Tue Nexus Night BO1")).toBe("AHF - Tue Nexus Night BO1");
+    expect(cleanWeeklyTitle("GXGAMERS Wed 09/17 RIFTBOUND Nexus Night 1v1")).toBe("GXGAMERS Wed RIFTBOUND Nexus Night 1v1");
+    expect(cleanWeeklyTitle("September 08, 2026,Top Deck Keep,Constructed")).toBe("Top Deck Keep, Constructed");
+  });
+
+  it("falls back to the game's night name when nothing meaningful is left, keeping a short tag", () => {
+    expect(cleanWeeklyTitle("9/30")).toBe("Riftbound Nexus Night");
+    expect(cleanWeeklyTitle("10/7/26 Sat 6 PM")).toBe("Riftbound Nexus Night");
+    expect(cleanWeeklyTitle("9/9 1v1")).toBe("Riftbound Nexus Night - 1v1");
+  });
+
+  it("leaves a clean title alone, and is idempotent", () => {
+    for (const t of ["Friday Evening Nexus Nights - 1v1", "CBG Riftbound Nexus Night (Season 4.2 Week 1)", "NEXUS FRIDAY (But on a Tuesday)",
+      "Nexus Tabletop Games Saturday Nexus 1v1 Bo3", "Drewbee's Nexus Night - Free Entry", "Monday Night Riftbound at DCG", "Nexus Night @ The Light"]) {
+      expect(cleanWeeklyTitle(t)).toBe(t);
+    }
+    for (const t of ["9/30 Nexus Night", "September 08, 2026,Top Deck Keep,Constructed", "9/9 1v1", "Sunday Nexus Night (09/13) @Main Street Cards"]) {
+      const once = cleanWeeklyTitle(t);
+      expect(cleanWeeklyTitle(once)).toBe(once);
+    }
+  });
+
+  it("merge writes the cleaned title, and fixes rows it already owns without touching anything else", () => {
+    const first = run([store({ recurring: [slot(1, "18:00", "$10", { title: "9/30 Nexus Night" })] })]);
+    expect(first.events.find((e: any) => e.shopId === "tiny-card-cafe")!.title).toBe("Nexus Night");
+    // An older run left a dated title behind, on our row and on a hand-entered one.
+    const stale = structuredClone(first.events);
+    stale.find((e: any) => e.shopId === "tiny-card-cafe")!.title = "9/30 Nexus Night";
+    stale.find((e: any) => e.id === "fd-wed-riftbound")!.title = "9/30 Hand Typed";
+    const second = run([store({ recurring: [slot(1, "18:00", "$10", { title: "10/7 Nexus Night" })] })], { shops: first.shops, events: stale });
+    expect(second.r.retitled).toHaveLength(1);
+    expect(second.events.find((e: any) => e.shopId === "tiny-card-cafe")!.title).toBe("Nexus Night");
+    expect(second.events.find((e: any) => e.id === "fd-wed-riftbound")!.title).toBe("9/30 Hand Typed");   // not ours
+    expect(second.events).toHaveLength(first.events.length);
     expect(second.log).toEqual([]);
   });
 });

@@ -17,7 +17,7 @@ import { useMemo, useState } from "react";
 import { GAMES } from "@/lib/games";
 import {
   addDays, feeLabel, formatTime, groupByDate, MONTH_LABELS, monthGrid, parseDateStr, shortTime, weekDates,
-  WEEKDAY_LABELS, WEEKDAY_SHORT, type Occurrence,
+  scheduleIncomplete, WEEKDAY_LABELS, WEEKDAY_SHORT, type Occurrence,
 } from "@/lib/schedule";
 import { directionsUrl, telHref } from "@/lib/shopLinks";
 
@@ -71,7 +71,11 @@ function Block({ o, mine, greyed, showDistance, togglePick, onShowShop }: {
             </span>
           )}
         </div>
-        <span className="shop">{o.shop.name}{dist}</span>
+        <span className="shop">{o.shop.name}{dist}
+          {scheduleIncomplete(o.shop) && (
+            <span className="partial" title={`Only ${g.label} is listed for this shop so far - it may run other games. See the shop on the map for what we know.`}>partial</span>
+          )}
+        </span>
         {extra && <span className="meta">{extra}</span>}
       </button>
       {/* Outside the body button: a link cannot live inside a button. */}

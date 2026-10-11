@@ -234,6 +234,18 @@ export function isTimeStr(t: unknown): t is string {
   return !!m && Number(m[1]) < 24 && Number(m[2]) < 60;
 }
 
+/**
+ * Is this shop's schedule known to be incomplete? True for a shop a bulk
+ * importer created (it has an `origin`) that still lists only the one game
+ * that importer covers. 2026-10-10: 103 of the 120 shops from the Riftbound
+ * locator showed one or two nights and read as "this store runs one night a
+ * week". Research adding a second game clears it; the shop's `notes` say what
+ * is and is not known, and the map popup always prints them.
+ */
+export function scheduleIncomplete(shop: Pick<Shop, "origin" | "games">): boolean {
+  return !!shop.origin && (shop.games?.length ?? 0) <= 1;
+}
+
 // ─── Expansion ────────────────────────────────────────────────────────────────
 
 /** Does this event happen on this date? (Ignores the shop's active flag.) */

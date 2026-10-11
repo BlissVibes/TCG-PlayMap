@@ -27,6 +27,9 @@
  *   - New shops are created with `origin`, and a research-queue entry so a
  *     human or a cheaper model can fill in their OTHER games
  *     (docs/SHOP_RESEARCH.md).
+ *   - TITLES: a weekly night's title is cleaned of the date it was copied
+ *     from (scripts/lib/weeklyTitle.mjs) when the row is written, and again on
+ *     every run for rows this script owns, so old rows are fixed by re-running.
  *   - REGION: a store outside the region (see outsideRegion) is never created,
  *     whatever the locator returned; it is listed under "Skipped (outside
  *     region)" with its distance.
@@ -38,6 +41,9 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { bumpVersion } from "../bump_version.mjs";
 import { isMain } from "../lib/isMain.mjs";
+import { cleanWeeklyTitle } from "../lib/weeklyTitle.mjs";
+
+export { cleanWeeklyTitle };
 
 const WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -119,7 +125,7 @@ const isActive = (e, today) => !e.validUntil || e.validUntil >= today;
 export function merge({ cands, shops, events, log, queue, today, force = false }) {
   const origin = cands.source;
   const yesterday = addDays(today, -1);
-  const r = { newShops: [], newWeekly: [], newSpecial: [], filledFees: [], ended: [], replaced: [], curatedDiffs: [], skipped: [], outOfRegion: [], linked: [] };
+  const r = { newShops: [], newWeekly: [], newSpecial: [], filledFees: [], ended: [], replaced: [], curatedDiffs: [], skipped: [], outOfRegion: [], linked: [], retitled: [] };
   const logLines = [];
 
   // Safety: a pull that suddenly has far fewer nights is a broken pull.
@@ -130,6 +136,15 @@ export function merge({ cands, shops, events, log, queue, today, force = false }
   if (suspicious && !force) {
     throw new Error(`refusing: the pull has ${pulledWeekly} weekly nights but ${loadedWeekly.length} are loaded from ${origin}. `
       + `That looks like a broken pull, not ${loadedWeekly.length - pulledWeekly} shops dropping out. Re-run, or pass --force after checking.`);
+  }
+
+  // Weekly rows we own whose title still carries a date: fix in place. Wording
+  // only - day, time and fee are untouched - so no calendar-log line (rule 4
+  // is about what the schedule says, and it says the same thing).
+  for (const e of events) {
+    if (e.origin !== origin || e.weekday == null || !e.title) continue;
+    const clean = cleanWeeklyTitle(e.title, e.game);
+    if (clean !== e.title) { r.retitled.push(`${e.id}: "${e.title}" -> "${clean}"`); e.title = clean; }
   }
 
   const seenSlots = new Set();   // `${shopId}|${game}|${weekday}|${start}` present in this pull
@@ -267,7 +282,7 @@ function weeklyRow(shop, game, s, origin, today, suffix, cands) {
   const startedInWindow = windowFrom && s.firstSeen > addDays(windowFrom, 7);
   return {
     id: `${shop.id}-${game.slice(0, 2)}-${WD[s.weekday].toLowerCase()}-${s.time.replace(":", "")}${suffix}`,
-    shopId: shop.id, game, kind: s.kind, title: s.title, weekday: s.weekday, start: s.time,
+    shopId: shop.id, game, kind: s.kind, title: cleanWeeklyTitle(s.title, game), weekday: s.weekday, start: s.time,
     ...(s.fee ? { fee: s.fee } : {}),
     ...(startedInWindow ? { validFrom: s.firstSeen } : {}),
     confidence: "scraped", origin,
@@ -307,12 +322,13 @@ function main() {
     + sec("Fees filled on hand-entered rows", r.filledFees) + sec("Fee changes (old row ended, new row added)", r.replaced)
     + sec("Weekly nights ended (no longer listed)", r.ended)
     + sec("NEEDS A HUMAN: locator nights missing at hand-entered shops", r.curatedDiffs)
+    + sec("Weekly titles cleaned of a date", r.retitled)
     + sec("Skipped (bad address data)", r.skipped) + sec("Skipped (outside region)", r.outOfRegion) + sec("Existing shops linked to the locator", r.linked) + "\n";
   console.log(report);
   if (opt("report")) writeFileSync(opt("report"), report);
 
   if (!has("apply")) { console.log("Dry run - nothing written. Re-run with --apply."); return; }
-  const changed = r.newShops.length + r.newWeekly.length + r.newSpecial.length + r.filledFees.length + r.replaced.length + r.ended.length + r.linked.length;
+  const changed = r.newShops.length + r.newWeekly.length + r.newSpecial.length + r.filledFees.length + r.replaced.length + r.ended.length + r.linked.length + r.retitled.length;
   if (!changed) { console.log("No changes."); return; }
   writeFileSync("data/shops.json", prettyFile(shops));
   writeFileSync("data/events.json", rowsFile(events));

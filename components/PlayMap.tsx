@@ -18,7 +18,7 @@
 import { useEffect, useRef, useState } from "react";
 import { loadLeaflet, TILE_ATTRIBUTION, TILE_URL } from "@/lib/leafletCdn";
 import { GAMES } from "@/lib/games";
-import { feeLabel, formatTime, WEEKDAY_SHORT, weekdayOf, type Occurrence, type Shop } from "@/lib/schedule";
+import { feeLabel, formatTime, scheduleIncomplete, WEEKDAY_SHORT, weekdayOf, type Occurrence, type Shop } from "@/lib/schedule";
 import type { GeoOrigin } from "@/lib/geo";
 import { appleDirectionsUrl, directionsUrl, telHref } from "@/lib/shopLinks";
 
@@ -54,7 +54,7 @@ function initials(name: string): string {
   return (words.length >= 2 ? words[0][0] + words[1][0] : (words[0] ?? "?").slice(0, 2)).toUpperCase();
 }
 
-function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<string>): string {
+export function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<string>): string {
   const byDay = new Map<number, Occurrence[]>();
   for (const o of occs) {
     const wd = weekdayOf(o.date);
@@ -82,7 +82,10 @@ function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<string>
     <h3>${esc(shop.name)}</h3>
     <div class="addr">${esc(shop.address)}, ${esc(shop.city)} ${esc(shop.zip)}${shop.hours ? `<br>${esc(shop.hours)}` : ""}</div>
     ${tel ? `<div class="phone"><a href="${tel}">📞 ${esc(shop.phone!)}</a></div>` : ""}
-    ${days ? `<ul>${days}</ul>` : `<div class="addr">${esc(shop.notes ?? "No events on the calendar yet.")}</div>`}
+    ${days ? `<ul>${days}</ul>` : (shop.notes ? "" : `<div class="addr">No events on the calendar yet.</div>`)}
+    ${scheduleIncomplete(shop) ? `<div class="partial">Only ${esc(GAMES[shop.games?.[0] ?? "other"]?.label ?? "one game")} is listed here so far. This shop may run other games.</div>` : ""}
+    ${/* Always, not only when there are no events: the notes are where "schedule not
+         researched yet" and "events are posted on Instagram" live. */ shop.notes ? `<div class="notes">${esc(shop.notes)}</div>` : ""}
     <div class="links" style="margin-top:8px">${links}</div>
   </div>`;
 }
