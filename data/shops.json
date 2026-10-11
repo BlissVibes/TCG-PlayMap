@@ -3069,7 +3069,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 7441 Garden Grove Blvd Ste G, 714-643-7740; closed Mon, Tue-Fri 2-8 PM, weekends noon-8 PM; weekly Pokémon/One Piece tournaments with no days. In data/candidates/leads-gundam.json as a lead only. No website. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/53456cd4-464f-4a51-b738-db02bffdebd4",
@@ -3096,7 +3096,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled). Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/91a961c4-69af-4b73-8fcf-8133e50e144b",
@@ -3123,7 +3123,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (tcgparadise.net) lists Pokémon league, One Piece locals, Lorcana play night and sports card breaks with 'Schedule at Grand Opening' (opening was Aug 29, page not updated); 530 Santa Monica Blvd, (310) 310-8826, open 7 days. No days or times published. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/f20847bc-b273-4e79-a4a3-fd48969e3a6b",
@@ -3151,9 +3151,16 @@
       "discord": "https://discord.com/invite/dfavB9t9sX"
     },
     "games": [
-      "riftbound"
+      "cyberpunk",
+      "digimon",
+      "gundam",
+      "lorcana",
+      "other",
+      "pokemon",
+      "riftbound",
+      "union_arena"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): daily 2-7 PM (events run past retail hours). Schedule from the store's own events page (tcg-tavern.com/events, synced from its calendar; first 10 days read on 2026-10-10). Only series seen twice or titled 'Weekly' are listed. Also seen once in that window, so NOT listed: Yu-Gi-Oh! Tue/Fri, MTG Commander and Standard Thu, Naruto Thu, One Piece Sat, Dragon Ball Super Sat (which DBS game is unclear), D&D Wed. Riftbound Mon/Wed Nexus Nights come from the importer. Phone (949) 688-0820.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/1f312479-930d-46af-824e-a81d94754ea9",
@@ -3184,7 +3191,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Instagram, Facebook and Discord only. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/ef0a85e0-6fac-49d4-bbad-441e72c2ff9f",

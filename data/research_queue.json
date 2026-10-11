@@ -1344,10 +1344,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/53456cd4-464f-4a51-b738-db02bffdebd4",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; directory blurb only. Gundam lead (leads-gundam.json) unconfirmed.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "sugoistuff-tcg",
@@ -1356,10 +1357,11 @@
     "website": "https://www.instagram.com/sugoistuff.tcg/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/91a961c4-69af-4b73-8fcf-8133e50e144b",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram only; for the Chrome pass.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "tcg-paradise-and-collectibles",
@@ -1368,10 +1370,11 @@
     "website": "https://tcgparadise.net",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/f20847bc-b273-4e79-a4a3-fd48969e3a6b",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Site says the weekly schedule drops at the Aug 29 grand opening but was never updated; no days/times. Needs a phone call or its social pages.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "tcg-tavern",
@@ -1382,10 +1385,11 @@
       "discord": "https://discord.com/invite/dfavB9t9sX"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/1f312479-930d-46af-824e-a81d94754ea9",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own events page (Next.js, text list; per-event pages say 'Weekly ...'). Read the first ~10 days only; 8 weekly series listed. No fees published anywhere (registration platforms hold them). Single-sighting nights listed in the shop notes could be added after a second look.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-crimson-guild-socal",
@@ -1397,10 +1401,11 @@
       "facebook": "https://www.facebook.com/profile.php?id=61577244981570"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/ef0a85e0-6fac-49d4-bbad-441e72c2ff9f",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram/Facebook/Discord; for the Chrome pass (Instagram/Facebook), Discord is Mark's.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-game-chest-irvine",
