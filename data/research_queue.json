@@ -1060,10 +1060,11 @@
       "discord": "https://discord.gg/NhQKsceN"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/7f58d4d7-c9f1-4fd8-bd0b-e65e752be6ce",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram only (login-walled); web search finds nothing about the shop.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "paper-heros-comics",
@@ -1074,10 +1075,11 @@
       "facebook": "https://www.facebook.com/paperheroscomics"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/716a260e-7b59-4a45-95a2-772cda261722",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Comics shop; own site is a CrystalCommerce store whose /calendar page is empty and publishes no tournament schedule. Hours (messy on the site) not copied. Sister store Paper Hero's Games Huntington Beach has a full calendar and is done.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "paper-heros-games-huntington-beach",
@@ -1086,10 +1088,11 @@
     "website": "https://paperherosgames4.crystalcommerce.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/91355277-c79a-4a47-8e91-97aefeafaeb7",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own public Google Calendar (id dc7938e9...@group.calendar.google.com, linked from the store's /calendar page): 16 weekly rows, 22 dated rows through Nov 30; fees only on Standard Showdown/Modern/Commander $5, Cyberpunk $10-$40, Lorcana prerelease $40 (the calendar does not print fees elsewhere). Riftbound, D&D, board games, Warhammer, Netrunner, Daggerheart skipped. Hours not found.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "perfect-rares-llc",
@@ -1098,10 +1101,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b1431ea1-9d9a-4ef5-b79e-a94d7f760286",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; web search finds no listing for the shop.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "phantom-cards-and-collectibles",
@@ -1112,10 +1116,11 @@
       "discord": "https://discord.gg/JKh7vpzh8j"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/479fd507-7a62-4621-8b29-ee960b4ab8ea",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website. A third-party directory (thecardshopfinder.com) says events run almost every night (Pokemon, Yu-Gi-Oh!, Dragon Ball, Flesh and Blood) at 232 E 2nd St but gives no days, times or fees; schedule is likely on their Discord/Instagram. Nothing readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "poke-wars",

@@ -2524,9 +2524,19 @@
     "website": "https://paperherosgames4.crystalcommerce.com/",
     "phone": "(661) 459-0099",
     "games": [
-      "riftbound"
+      "cyberpunk",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "palworld",
+      "pokemon",
+      "riftbound",
+      "swu",
+      "union_arena",
+      "yugioh"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Schedule from the store's public Google Calendar (checked 2026-10-10). Also D&D Adventure League (Tue), board game meetup (Mon), Warhammer meetup (Sun), Netrunner and Daggerheart nights - not listed. Riftbound nights (Sun 6 PM, Sat Oct 17 6 PM) belong to the Riftbound importer. Most nights publish no entry fee. Store hours not found.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/91355277-c79a-4a47-8e91-97aefeafaeb7",
