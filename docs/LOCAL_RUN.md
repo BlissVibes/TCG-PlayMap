@@ -157,7 +157,16 @@ are that list, and `docs/NEEDS_MARK.md` is that list on one page:
 ```
 node scripts/needs_mark.mjs            # rewrite docs/NEEDS_MARK.md from data/research_queue.json
 node scripts/needs_mark.mjs --check    # write nothing; exit 1 if the page is out of date
+node scripts/needs_mark.mjs --date 2026-11-01   # as it would read on that day (looks 21 days ahead of it)
 ```
+
+Its last section, **"Re-check soon"**, lists weekly nights whose `validUntil`
+falls in the next 21 days, grouped by shop, with the source to open and the
+row's note. That is where a row capped at the end of a month ("only October
+is published, recheck in November") comes back to someone's attention before
+it drops off the calendar. This section depends on the day the script runs,
+so the page goes stale by date as well as by data: re-run it at the start of
+any research session.
 
 The page has one section per `needsMark` value, each line with the invite
 link, phone number or place to look, the shop's event count and the entry's

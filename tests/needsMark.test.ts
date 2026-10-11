@@ -2,7 +2,7 @@
  * Mark's follow-up page (scripts/needs_mark.mjs), on made-up queue rows.
  */
 import { describe, it, expect } from "vitest";
-import { handleFor, needsMarkDoc, parseArgs } from "../scripts/needs_mark.mjs";
+import { handleFor, needsMarkDoc, parseArgs, RECHECK_DAYS, recheckRows } from "../scripts/needs_mark.mjs";
 
 const q = (over: Record<string, unknown> = {}) => ({
   shopId: "aki", name: "Aki Collectibles", city: "San Gabriel", website: null, socials: {}, sourceUrl: null,
@@ -87,10 +87,63 @@ describe("needs_mark: the page", () => {
   });
 });
 
+describe("needs_mark: re-check soon", () => {
+  const TODAY = "2026-10-11";
+  const wk = (id: string, shopId: string, weekday: number, start: string, validUntil: string | undefined, extra: Record<string, unknown> = {}) => ({
+    id, shopId, game: "pokemon", kind: "tournament", weekday, start, ...(validUntil ? { validUntil } : {}), confidence: "scraped",
+    source: { url: `https://example.test/${shopId}`, checked: "2026-10-10" }, ...extra,
+  });
+  const evs = [
+    wk("z-thu", "zed", 4, "18:00", "2026-10-31", { title: "Pokémon League", notes: "Only October is published | recheck in November." }),
+    wk("z-mon", "zed", 1, "19:30", "2026-10-31", { source: { url: "https://example.test/zed", checked: "2026-10-10", note: "October calendar" } }),
+    wk("a-sat", "aki", 6, "13:00", "2026-11-01"),                       // exactly 21 days out: in
+    wk("a-sun", "aki", 0, "13:00", "2026-11-02"),                       // 22 days out: not yet
+    wk("a-today", "aki", 2, "17:00", "2026-10-11"),                     // ends today: still running, so in
+    wk("a-gone", "aki", 3, "17:00", "2026-10-10"),                      // already ended: nothing to re-check
+    wk("t-open", "turn", 5, "18:00", undefined),                        // open-ended
+    { id: "t-dated", shopId: "turn", game: "mtg", kind: "tournament", date: "2026-10-20", start: "12:00", validUntil: "2026-10-20", confidence: "scraped" },   // not weekly
+    wk("ghost", "not-in-shops", 1, "18:00", "2026-10-15", { source: undefined }),
+  ];
+
+  it("picks weekly rows ending from today to 21 days out, both ends included", () => {
+    expect(RECHECK_DAYS).toBe(21);
+    expect(recheckRows(evs, shops, TODAY).map((r: any) => r.event.id)).toEqual(["a-today", "a-sat", "ghost", "z-mon", "z-thu"]);   // by shop name, then weekday
+    expect(recheckRows(evs, shops, "2026-10-12").map((r: any) => r.event.id)).toEqual(["a-sun", "a-sat", "ghost", "z-mon", "z-thu"]);   // Sunday first, like the calendar
+    expect(recheckRows(evs, shops, "2027-01-01")).toEqual([]);
+  });
+
+  it("writes them grouped by shop with the night, end date, source and note, and says what date it ran for", () => {
+    const { markdown, counts } = needsMarkDoc({ queue, shops, events: evs, today: TODAY });
+    expect(counts).toMatchObject({ recheckRows: 5, recheckShops: 3 });
+    expect(markdown).toContain("## Re-check soon: weekly nights that end by 2026-11-01 (5 at 3 shops)");
+    expect(markdown).toContain("As of 2026-10-11, looking 21 days ahead.");
+    expect(markdown).toContain("### Zed Games (Azusa)");
+    expect(markdown).toContain("| Thu 6 PM Pokémon League | pokemon | 2026-10-31 | https://example.test/zed | Only October is published \\| recheck in November. |");
+    expect(markdown).toContain("| Mon 7:30 PM | pokemon | 2026-10-31 | https://example.test/zed | October calendar |");       // falls back to the source note
+    expect(markdown).toContain("### not-in-shops");
+    expect(markdown).toContain("| Mon 6 PM | pokemon | 2026-10-15 | no source URL |  |");
+    expect(markdown).not.toContain("a-gone");
+    expect(markdown.match(/^### /gm)).toHaveLength(3);
+    // Same data, same date: same bytes. A different date is a different page.
+    expect(needsMarkDoc({ queue, shops, events: [...evs].reverse(), today: TODAY }).markdown).toBe(markdown);
+    expect(needsMarkDoc({ queue, shops, events: evs, today: "2026-10-12" }).markdown).not.toBe(markdown);
+  });
+
+  it("says so when nothing ends in the window, and leaves the section out when no date is given", () => {
+    const none = needsMarkDoc({ queue, shops, events: [evs[6]], today: TODAY });
+    expect(none.markdown).toContain("(0 at 0 shops)");
+    expect(none.markdown).toContain("Nothing ends in that window.");
+    expect(needsMarkDoc({ queue, shops, events: evs }).markdown).not.toContain("Re-check soon");
+  });
+});
+
 describe("needs_mark: arguments", () => {
   it("accepts --out and --check, refuses anything else", () => {
-    expect(parseArgs([])).toEqual({ out: "docs/NEEDS_MARK.md", check: false });
-    expect(parseArgs(["--check", "--out", "x.md"])).toEqual({ out: "x.md", check: true });
+    expect(parseArgs([])).toEqual({ out: "docs/NEEDS_MARK.md", check: false, date: null });
+    expect(parseArgs(["--check", "--out", "x.md"])).toEqual({ out: "x.md", check: true, date: null });
+    expect(parseArgs(["--date", "2026-10-11"]).date).toBe("2026-10-11");
+    expect(parseArgs(["--date", "tomorrow"]).error).toMatch(/--date/);
+    expect(parseArgs(["--date"]).error).toMatch(/--date/);
     expect(parseArgs(["--help"]).help).toBe(true);
     expect(parseArgs(["--write"]).error).toMatch(/--write/);
     expect(parseArgs(["--out"]).error).toMatch(/--out/);

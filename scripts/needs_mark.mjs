@@ -2,7 +2,7 @@
 /**
  * WRITE docs/NEEDS_MARK.md: MARK'S FOLLOW-UP LIST, FROM THE RESEARCH QUEUE.
  *
- *   node scripts/needs_mark.mjs [--out docs/NEEDS_MARK.md] [--check]
+ *   node scripts/needs_mark.mjs [--out docs/NEEDS_MARK.md] [--check] [--date YYYY-MM-DD]
  *
  * Research sessions leave a `needsMark` value on a queue entry when only a
  * person can finish the shop: "discord" (sessions never open Discord), "phone"
@@ -11,9 +11,16 @@
  * This collects them into one page, one section per value, plus the blocked
  * shops that have no website and no socials at all, for Mark to call or drop.
  *
- * The page is GENERATED. Edit the queue, not the page, then re-run this.
- * Same data in, same bytes out: rows are sorted, and nothing in the output
- * depends on today's date, so re-running without a data change changes nothing.
+ * It also lists what to RE-CHECK SOON: weekly nights whose `validUntil` falls
+ * within the next RECHECK_DAYS days. A store that publishes one month at a time
+ * gets its rows capped at the end of that month ("only October is published,
+ * recheck in November"); without this list, those nights would simply vanish
+ * from the calendar on the 1st with nobody told to look again.
+ *
+ * The page is GENERATED. Edit the data, not the page, then re-run this.
+ * Same data and same date in, same bytes out: rows are sorted. The re-check
+ * section depends on the run date (Los Angeles), which the page states;
+ * --date fixes it, for tests and for looking ahead.
  * --check writes nothing and exits 1 when the page is out of date.
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -25,6 +32,27 @@ export const KNOWN = {
   phone: { title: "Phone: call the shop for a time or a fee", link: "Phone" },
   image: { title: "Image: a schedule graphic nobody could read", link: "Where" },
 };
+
+/** How far ahead the re-check section looks. */
+export const RECHECK_DAYS = 21;
+const WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const addDays = (d, n) => { const x = new Date(`${d}T12:00:00Z`); x.setUTCDate(x.getUTCDate() + n); return x.toISOString().slice(0, 10); };
+const clock = (t) => { const [h, m] = String(t).split(":").map(Number); return `${h % 12 || 12}${m ? `:${String(m).padStart(2, "0")}` : ""} ${h >= 12 ? "PM" : "AM"}`; };
+
+/**
+ * Weekly rows ending within `days` of `today`, both ends included. A row that
+ * already ended is not here (nothing to re-check; the calendar log has it).
+ * Sorted by shop name, then weekday, then start.
+ */
+export function recheckRows(events, shops, today, days = RECHECK_DAYS) {
+  const until = addDays(today, days);
+  const shopById = new Map(shops.map((s) => [s.id, s]));
+  return events
+    .filter((e) => e.weekday != null && e.validUntil && e.validUntil >= today && e.validUntil <= until)
+    .map((e) => ({ event: e, shop: shopById.get(e.shopId) ?? { id: e.shopId, name: e.shopId } }))
+    .sort((a, b) => String(a.shop.name).localeCompare(String(b.shop.name), "en", { sensitivity: "base" }) || String(a.shop.id).localeCompare(String(b.shop.id))
+      || a.event.weekday - b.event.weekday || String(a.event.start).localeCompare(String(b.event.start)) || String(a.event.id).localeCompare(String(b.event.id)));
+}
 
 const cell = (s) => String(s ?? "").replace(/\s+/g, " ").replace(/\|/g, "\\|").trim();
 const byName = (a, b) => String(a.name).localeCompare(String(b.name), "en", { sensitivity: "base" }) || String(a.shopId).localeCompare(String(b.shopId));
@@ -41,10 +69,10 @@ export function handleFor(kind, entry, shop) {
 }
 
 /**
- * @param {{ queue: any[], shops: any[], events: any[] }} data
+ * @param {{ queue: any[], shops: any[], events: any[], today?: string }} data  today: YYYY-MM-DD; without it the re-check section is left out
  * @returns {{ markdown: string, counts: Record<string, number> }}
  */
-export function needsMarkDoc({ queue, shops, events }) {
+export function needsMarkDoc({ queue, shops, events, today }) {
   const shopById = new Map(shops.map((s) => [s.id, s]));
   const eventCount = new Map();
   for (const e of events) eventCount.set(e.shopId, (eventCount.get(e.shopId) ?? 0) + 1);
@@ -89,30 +117,51 @@ export function needsMarkDoc({ queue, shops, events }) {
     "| Shop | City | Phone | Events | Notes |", "|---|---|---|---|---|",
     ...noHandle.map((q) => { const shop = shopById.get(q.shopId); return `| ${cell(q.name)} | ${cell(q.city ?? shop?.city)} | ${cell(shop?.phone ?? "none listed")} | ${eventCount.get(q.shopId) ?? 0} | ${cell(q.notes)} |`; }),
     "");
+  if (today) {
+    const rows = recheckRows(events, shops, today);
+    counts.recheckRows = rows.length;
+    counts.recheckShops = new Set(rows.map((r) => r.shop.id)).size;
+    out.push(`## Re-check soon: weekly nights that end by ${addDays(today, RECHECK_DAYS)} (${rows.length} at ${counts.recheckShops} shops)`, "",
+      `As of ${today}, looking ${RECHECK_DAYS} days ahead. Each of these nights has an end date on its row and leaves the calendar after`,
+      "it. Open the source, see whether the store has published the next month, and extend the row or let it end.", "");
+    if (!rows.length) out.push("Nothing ends in that window.", "");
+    let last = null;
+    for (const { event: e, shop } of rows) {
+      if (shop.id !== last) {
+        if (last !== null) out.push("");
+        out.push(`### ${cell(shop.name)}${shop.city ? ` (${cell(shop.city)})` : ""}`, "", "| Night | Game | Ends | Source | Note |", "|---|---|---|---|---|");
+        last = shop.id;
+      }
+      out.push(`| ${WD[e.weekday]} ${clock(e.start)}${e.title ? ` ${cell(e.title)}` : ""} | ${cell(e.game)} | ${e.validUntil} | ${cell(e.source?.url ?? "no source URL")} | ${cell(e.notes ?? e.source?.note ?? "")} |`);
+    }
+    if (rows.length) out.push("");
+  }
   return { markdown: out.join("\n"), counts };
 }
 
 /** Arguments are read first; anything unrecognised stops the run. */
 export function parseArgs(argv) {
-  /** @type {{ out: string, check: boolean, help?: boolean, error?: string }} */
-  const opts = { out: "docs/NEEDS_MARK.md", check: false };
+  /** @type {{ out: string, check: boolean, date: string|null, help?: boolean, error?: string }} */
+  const opts = { out: "docs/NEEDS_MARK.md", check: false, date: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--help" || a === "-h") return { ...opts, help: true };
     if (a === "--check") opts.check = true;
     else if (a === "--out" && argv[i + 1] && !argv[i + 1].startsWith("--")) opts.out = argv[++i];
+    else if (a === "--date" && /^\d{4}-\d{2}-\d{2}$/.test(argv[i + 1] ?? "") && !Number.isNaN(Date.parse(`${argv[i + 1]}T12:00:00Z`))) opts.date = argv[++i];
     else return { ...opts, error: `unrecognised or incomplete argument: ${a}` };
   }
   return opts;
 }
 
 function main() {
-  const usage = "usage: node scripts/needs_mark.mjs [--out docs/NEEDS_MARK.md] [--check]";
+  const usage = "usage: node scripts/needs_mark.mjs [--out docs/NEEDS_MARK.md] [--check] [--date YYYY-MM-DD]";
   const opts = parseArgs(process.argv.slice(2));
   if (opts.help) { console.log(usage); return; }
   if (opts.error) { console.error(`${opts.error}\n${usage}`); process.exit(2); }
   const read = (f) => JSON.parse(readFileSync(f, "utf8"));
-  const { markdown, counts } = needsMarkDoc({ queue: read("data/research_queue.json"), shops: read("data/shops.json"), events: read("data/events.json") });
+  const today = opts.date ?? new Intl.DateTimeFormat("en-CA", { timeZone: "America/Los_Angeles" }).format(new Date());
+  const { markdown, counts } = needsMarkDoc({ queue: read("data/research_queue.json"), shops: read("data/shops.json"), events: read("data/events.json"), today });
   const summary = Object.entries(counts).map(([k, n]) => `${k} ${n}`).join(", ");
   const current = existsSync(opts.out) ? readFileSync(opts.out, "utf8") : null;
   if (opts.check) {

@@ -81,3 +81,37 @@ Research found nothing to read and nothing to follow. Call the shop, or decide i
 | Top Choice Gaming LLC | Redlands | (626) 723-6904 | 7 | No website; web search finds no listing (19 E Citrus Ave is also a music venue address). Nothing readable. |
 | Viking TCG LLC | La Crescenta | (818) 935-8541 | 2 | No website; web search finds no listing. |
 | Warpact Games LLC | Lancaster | (661) 241-8151 | 3 | No website; web search finds no listing. |
+
+## Re-check soon: weekly nights that end by 2026-11-01 (9 at 4 shops)
+
+As of 2026-10-11, looking 21 days ahead. Each of these nights has an end date on its row and leaves the calendar after
+it. Open the source, see whether the store has published the next month, and extend the row or let it end.
+
+### Game Ogre (Thousand Oaks)
+
+| Night | Game | Ends | Source | Note |
+|---|---|---|---|---|
+| Wed 4 PM Disney Lorcana Attack of the Vine! League | lorcana | 2026-10-14 | https://calendar.google.com/calendar/ical/h45bp3hd925lo21qu6mt3nmsec%40group.calendar.google.com/public/basic.ics | Includes one booster pack. Calendar skips every Wednesday after Oct 14 (league ends). |
+
+### Paper Hero's Games (Sherman Oaks)
+
+| Night | Game | Ends | Source | Note |
+|---|---|---|---|---|
+| Sat 5 PM Cyberpunk Beta Weekly Tournament | cyberpunk | 2026-10-31 | https://calendar.google.com/calendar/ical/paperherosgames%40gmail.com/public/basic.ics | Two Cyberpunk Beta packs per player; no prizing. Replaced by the Weekly Brawl from Nov 14. |
+
+### Revenge Of (Los Angeles)
+
+| Night | Game | Ends | Source | Note |
+|---|---|---|---|---|
+| Fri 6 PM Draft | mtg | 2026-10-31 | https://revengeof.com/pages/events | Store lists no entry fee on the calendar. Oct 16 is billed as the Howdy Pardner tournament draft. |
+| Sat 6 PM Casual Commander Night | mtg | 2026-10-31 | https://revengeof.com/pages/events | Store lists no entry fee on the calendar. Oct 17 is the Lorcana prerelease instead. |
+
+### Tapped Out Gaming (Valencia)
+
+| Night | Game | Ends | Source | Note |
+|---|---|---|---|---|
+| Sun 1:30 PM One Piece TCG | onepiece | 2026-10-31 | https://www.facebook.com/tappedoutgaming | Sign up on Bandai+. |
+| Mon 6:30 PM Gundam TCG | gundam | 2026-10-31 | https://www.facebook.com/tappedoutgaming | Sign up on Bandai+. |
+| Wed 4:30 PM Commander Night | mtg | 2026-10-31 | https://www.facebook.com/tappedoutgaming | 4:30-9 PM, no entry fee. |
+| Thu 6:45 PM Pokémon TCG Standard | pokemon | 2026-10-22 | https://www.facebook.com/tappedoutgaming | Store's October 2026 event calendar graphic, posted 2026-10-01 on its Facebook page, read in a browser 2026-10-11; only October is published |
+| Fri 6 PM Reality Fracture Draft | mtg | 2026-10-31 | https://www.facebook.com/tappedoutgaming | Oct 23 is the Reality Echoes special draft, also $25. |
