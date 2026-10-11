@@ -917,10 +917,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/0d5ddd52-d72d-47ba-a0c5-d6f2a801d77c",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site (megacity.one/mc1, cert is a mismatched Squarespace one, read with curl -k) lists hours, address, pull-list sign-up only; no events page. Third-party directory says 'MTG Tournaments' with no day/time/fee. Hours and website added to the shop row.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "minera-sports-cards-and-collectibles",
@@ -929,10 +930,11 @@
     "website": "https://www.instagram.com/minerasportscards_com/?hl=en",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d62aef4b-b6f3-4a19-a842-20e1beb749bf",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Sports-card and collectibles shop (city of Hawthorne store-opening page); Instagram only, no website, no events found by search. No TCG schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "miss-play-tcg",
@@ -941,10 +943,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/a1bc6c91-4635-4562-b04a-88b7f8766cef",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website and no listing or events found by web search. Nothing readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "mons-tcg",
@@ -955,10 +958,11 @@
       "facebook": "https://www.facebook.com/mons_tcg"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/9d6781b1-70ef-4383-9e82-fe427dedc6f4",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram and Facebook only (login-walled from this session); web search finds nothing. No schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "mooncards",
@@ -969,10 +973,11 @@
       "discord": "https://discord.gg/GzdD8tCX3R"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/aea4a388-b7c0-4d26-b43c-08d1e5a4b544",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Website moon-cards.com fails the TLS handshake from curl and WebFetch (SSLV3_ALERT_HANDSHAKE_FAILURE), so nothing could be read; the Discord invite is not readable without login. Needs Mark to look at the site/Discord.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "nav-toys-and-collectibles",

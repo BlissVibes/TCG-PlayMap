@@ -2175,7 +2175,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Comics shop (on Melrose since 1992 per a directory). Store page lists hours and a pull-list sign-up only; a directory lists 'MTG tournaments' with no day, time or fee. Other games and events not published.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/0d5ddd52-d72d-47ba-a0c5-d6f2a801d77c",
@@ -2185,7 +2185,9 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "0d5ddd52-d72d-47ba-a0c5-d6f2a801d77c"
-    }
+    },
+    "hours": "Mon, Thu-Sat 11 AM-7 PM · Tue-Wed 10 AM-7 PM · Sun 11 AM-7 PM",
+    "website": "https://www.megacity.one/"
   },
   {
     "id": "minera-sports-cards-and-collectibles",
