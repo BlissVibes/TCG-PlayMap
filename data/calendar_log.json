@@ -788,5 +788,17 @@
   {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"av-pop-shop","summary":"Tue 6 PM (cost not listed)."},
   {"date":"2026-10-11","action":"added","game":"gundam","shopId":"av-pop-shop","summary":"Wed 7 PM (cost not listed); Fri 7 PM (cost not listed)."},
   {"date":"2026-10-11","action":"added","game":"onepiece","shopId":"av-pop-shop","summary":"Thu 6 PM (cost not listed); Sun 3 PM (cost not listed)."},
-  {"date":"2026-10-11","action":"added","game":"dbs_fusion","shopId":"av-pop-shop","summary":"Fri 7 PM (cost not listed)."}
+  {"date":"2026-10-11","action":"added","game":"dbs_fusion","shopId":"av-pop-shop","summary":"Fri 7 PM (cost not listed)."},
+  {"date":"2026-10-11","action":"added","game":null,"shopId":"arsenal-comics-and-games-ventura","summary":"Arsenal Comics and Games (Ventura) added to the map from an OpenStreetMap lead."},
+  {"date":"2026-10-11","action":"added","game":null,"shopId":"arsenal-comics-and-games-newbury-park","summary":"Arsenal Comics and Games (Newbury Park) added to the map from an OpenStreetMap lead."},
+  {"date":"2026-10-11","action":"added","game":"mtg","shopId":"arsenal-comics-and-games-ventura","summary":"Magic: draft every Friday 6:30 PM ($25)."},
+  {"date":"2026-10-11","action":"added","game":"mtg","shopId":"arsenal-comics-and-games-newbury-park","summary":"Magic: draft every Friday 6:30 PM ($25)."},
+  {"date":"2026-10-11","action":"added","game":"mtg","shopId":"spellbound-larp-and-games","summary":"Magic: Casual Commander Mon and Fri 7 PM, Chaos Draft Sat 1 PM (cost not listed)."},
+  {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"treasure-chest-collectibles","summary":"Pokémon: Delta Reign prerelease Tue Oct 27 6 PM ($35)."},
+  {"date":"2026-10-11","action":"added","game":"mtg","shopId":"the-game-hub-and-comic-bug","summary":"Magic: Commander Night Wed 6 PM ($5), Draft Fri 6 PM ($25)."},
+  {"date":"2026-10-11","action":"added","game":"lorcana","shopId":"the-game-hub-and-comic-bug","summary":"Lorcana: Draft Night Thu 6 PM ($25)."},
+  {"date":"2026-10-11","action":"added","game":"swu","shopId":"the-game-hub-and-comic-bug","summary":"Star Wars Unlimited: Sat 2 PM ($5)."},
+  {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"the-game-hub-and-comic-bug","summary":"Pokémon: Learn to Play Mon and Fri 4 PM ($25)."},
+  {"date":"2026-10-11","action":"added","game":null,"shopId":"burbank-sportscards","summary":"Burbank Sportscards (Burbank) added to the map from an OpenStreetMap lead."},
+  {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"burbank-sportscards","summary":"Pokémon: Delta Reign pre-release Tue Oct 27 6:15 PM; monthly tournament first Tuesday 7 PM (Nov 3, Dec 1) (cost not listed)."}
 ]

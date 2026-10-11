@@ -41,9 +41,9 @@
     "newLikelyWithin60mi": 100,
     "newLikelyConfirmedDuplicates": 6,
     "triaged": {
-      "unknown": 49,
-      "no-tcg": 20,
-      "tcg": 6
+      "unknown": 81,
+      "no-tcg": 53,
+      "tcg": 15
     },
     "triageQueue": 74
   },
@@ -68,7 +68,10 @@
         "milesFromLaCenter": 14,
         "triageScore": 8,
         "triageOrder": 7,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "triageEvidence": "No website; only a weak directory listing (562-531-1413) for 4105 South St, Lakewood; needs a call or a Chrome look at its social pages",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Tiddlywinks Toys and Games",
@@ -110,7 +113,11 @@
         "milesFromLaCenter": 19,
         "triageScore": 10,
         "triageOrder": 1,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Model/hobby shop (plastic models, slot cars, LEGO, Gundam model kits); site mentions Pokémon twice but has no events, tournaments or play area",
+        "triageUrl": "https://pchobbies.com",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Cards & Gifts",
@@ -532,7 +539,11 @@
         "distinctFromKnown": "Retro Games Plus at 4429 Redondo Beach Blvd is a separate shop next to Collector Legion (4451).",
         "triageScore": 7,
         "triageOrder": 9,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "triageEvidence": "Video-game chain; its Store Events page lists weekly Magic events only for its Connecticut (Newington) stores, nothing for the Lawndale store",
+        "triageUrl": "https://retrogamesplus.com/trade-events/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Warhammer",
@@ -643,7 +654,11 @@
         "milesFromLaCenter": 37,
         "triageScore": 0,
         "triageOrder": 57,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Fishing tackle shop",
+        "triageUrl": "https://www.jdsbiggame.com/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Pop Monster",
@@ -687,7 +702,11 @@
         "milesFromLaCenter": 48,
         "triageScore": 2,
         "triageOrder": 41,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Antiques mall",
+        "triageUrl": "https://www.landmarkantiques.com/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Game Chest",
@@ -900,7 +919,10 @@
         "milesFromLaCenter": 27,
         "triageScore": 0,
         "triageOrder": 53,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Prepaid phone card/gift card store (OSM shop=gift_card)",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Ageless Cards",
@@ -1019,7 +1041,10 @@
         "milesFromLaCenter": 34,
         "triageScore": 0,
         "triageOrder": 55,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Name suggests art/canvas supplies; no TCG signal",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Frank & Son Collectible Show",
@@ -1040,7 +1065,11 @@
         "milesFromLaCenter": 19,
         "triageScore": 6,
         "triageOrder": 15,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Collectibles show/venue (City of Industry), not a card-game shop",
+        "triageUrl": "https://www.frankandsonshow.net",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Rizo Sports",
@@ -1124,7 +1153,10 @@
         "milesFromLaCenter": 18,
         "triageScore": 0,
         "triageOrder": 51,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "triageEvidence": "Gacha/capsule-toy name, Rosecrans Ave address only; no site or phone",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Treasure Chest Collectibles",
@@ -1216,7 +1248,11 @@
         "milesFromLaCenter": 16,
         "triageScore": 2,
         "triageOrder": 37,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Blind boxes and plush toy shop (site title); site shows Pokémon/Gundam only as merchandise",
+        "triageUrl": "https://www.kouhightoys.com",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Insomniac Collectibles",
@@ -1333,7 +1369,11 @@
         "milesFromLaCenter": 24,
         "triageScore": -2,
         "triageOrder": 67,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Gifts/pop-up shop (holiday pop gifts site)",
+        "triageUrl": "https://hisarmsforarms.wixsite.com/holidaypopgifts",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Hero Workshop",
@@ -1401,7 +1441,10 @@
         "milesFromLaCenter": 32,
         "triageScore": -5,
         "triageOrder": 73,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Stamp dealer by name",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Neko Stop",
@@ -1843,7 +1886,8 @@
         "evidenceUrl": "https://tcsrockets.com/",
         "triagedBy": "sonnet2",
         "triagedOn": "2026-10-11",
-        "pending": "chrome"
+        "pending": "chrome",
+        "triageEvidence": " Chrome 2026-10-11: events calendar shows Riftbound only (importer's); no shop row added."
       },
       {
         "name": "Gepetto's",
@@ -2027,7 +2071,10 @@
         "milesFromLaCenter": 46,
         "triageScore": 0,
         "triageOrder": 59,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Sports cards/memorabilia by name (Riverside, 46 mi)",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Rizosports",
@@ -2665,7 +2712,11 @@
         "milesFromLaCenter": 59,
         "triageScore": 5,
         "triageOrder": 23,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "tcg",
+        "triageEvidence": "Own site says 'Magic Fridays, New Comic book Wednesdays, Open Board Gaming'; (805) 499-6197; ComicHub events page gives no readable times, so Friday Night Magic time/fee still to research",
+        "triageUrl": "https://arsenalcomicsandgames.com",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Ojai Valley Electronics & Hobby",
@@ -2707,7 +2758,11 @@
         "milesFromLaCenter": 13,
         "triageScore": 5,
         "triageOrder": 21,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Retro video game store; site has no TCG, tournament or event text",
+        "triageUrl": "http://www.gamedude.com/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Melrose Tarot Card & Palm Readings",
@@ -2749,7 +2804,10 @@
         "milesFromLaCenter": 36,
         "triageScore": 7,
         "triageOrder": 11,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Games Workshop retail store (Warhammer miniatures), no trading card game",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "UCLA Game Lab",
@@ -2770,7 +2828,11 @@
         "milesFromLaCenter": 11,
         "triageScore": 1,
         "triageOrder": 45,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "University game-design lab",
+        "triageUrl": "https://games.ucla.edu/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Gillio & Associates",
@@ -2837,7 +2899,11 @@
         "milesFromLaCenter": 39,
         "triageScore": 4,
         "triageOrder": 27,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "triageEvidence": "Same business as the Ventura shop; local guides disagree on this location's address (1610 Newbury Rd vs 2333 Michael Dr), so it may be an old or moved location; the Ventura store's site is the only one confirmed",
+        "triageUrl": "https://arsenalcomicsandgames.com",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Game Realms",
@@ -2971,7 +3037,10 @@
         "milesFromLaCenter": 34,
         "triageScore": 3,
         "triageOrder": 35,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "triageEvidence": "Simi Valley video-game store (phone +1 805-581-1779), no website; TCG play not known",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Game Tower",
@@ -3134,7 +3203,11 @@
         "milesFromLaCenter": 31,
         "triageScore": 3,
         "triageOrder": 33,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Anime, comics and collectibles shop; site has no TCG or event text",
+        "triageUrl": "https://www.halo13anime.com/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Cantrip Candles",
@@ -3201,7 +3274,11 @@
         "milesFromLaCenter": 10,
         "triageScore": 3,
         "triageOrder": 31,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Burbank comic book and action-figure store; site shows no TCG, tournament or league text",
+        "triageUrl": "https://www.blastfromthepast.tv/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Burbank Sportscards",
@@ -3225,7 +3302,8 @@
         "evidenceUrl": "https://www.burbankchamber.org/directory/burbank-sportscards",
         "triagedBy": "sonnet2",
         "triagedOn": "2026-10-10",
-        "pending": "chrome"
+        "pending": "chrome",
+        "triageEvidence": " Chrome 2026-10-11: shop row added burbank-sportscards."
       },
       {
         "name": "Coins and Comics",
@@ -3293,7 +3371,10 @@
         "milesFromLaCenter": 33,
         "triageScore": 2,
         "triageOrder": 39,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "triageEvidence": "Upland video-game store, no website or phone",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Time Blast",
@@ -3435,7 +3516,10 @@
         "milesFromLaCenter": 11,
         "triageScore": -4,
         "triageOrder": 71,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "triageEvidence": "Rock and mineral shop by name",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Minerals of Love",

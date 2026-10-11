@@ -3511,9 +3511,12 @@
     },
     "games": [
       "lorcana",
-      "riftbound"
+      "mtg",
+      "pokemon",
+      "riftbound",
+      "swu"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Ravensburger Play Hub page read in a browser 2026-10-10 (one upcoming Lorcana event); the Star Wars Unlimited Melee organization and Instagram/Discord were not read.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Ravensburger Play Hub page read in a browser 2026-10-10 (one upcoming Lorcana event); the Star Wars Unlimited Melee organization and Instagram/Discord were not read. Weekly nights from the 2026-10-06 Instagram schedule carousel (Chrome pass 2026-10-11): Wed MTG Commander, Thu Lorcana draft, Fri MTG draft and Learn to Play Pokémon (Mon and Fri), Sat Lorcana and Star Wars Unlimited; Riftbound Thu/Sat 6:30/2:30 PM are the importer's; Sun D&D noon not listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/41b2e33f-5ff9-47f6-81b1-e33f9e65869a",
@@ -5178,7 +5181,7 @@
     "games": [
       "lorcana"
     ],
-    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. Own Square site (read in a browser 2026-10-11) lists only a Dec 2025 community card show; Instagram @SPIKES_LOUNGE not read. Instagram @spikes_lounge (read 2026-10-11): 'Lorcana Pack Rush' Saturdays 4 PM, $10 entry, 'starting this Saturday' (post 2026-10-08; cadence not stated, not listed); Community Card Show Fri Oct 16; announced WPN status (official Magic play).",
     "active": true,
     "source": {
       "url": "https://tcg.ravensburgerplay.com/stores/813131dd-5ca5-4009-a312-404a4a79f8f7",
@@ -5188,7 +5191,8 @@
     "origin": "ravensburger-play",
     "sourceIds": {
       "lorcana": "813131dd-5ca5-4009-a312-404a4a79f8f7"
-    }
+    },
+    "hours": "Mon-Sat 12-10 PM · Sun 3:30-9:30 PM (Instagram store-hours post, newer than the website's hours)"
   },
   {
     "id": "table-1-gaming",
@@ -5627,7 +5631,7 @@
       "mtg",
       "pokemon"
     ],
-    "notes": "Found via OpenStreetMap; schedule research pending. Comics shop; the store's site says it has weekly events including Magic: The Gathering, Pokémon and Roblox but its Upcoming Events list was empty on 2026-10-10. Sister store in Manhattan Beach is The Game Hub & Comic Bug. Saturday hours not captured.",
+    "notes": "Found via OpenStreetMap; schedule research pending. Comics shop; the store's site says it has weekly events including Magic: The Gathering, Pokémon and Roblox but its Upcoming Events list was empty on 2026-10-10. Sister store in Manhattan Beach is The Game Hub & Comic Bug. Saturday hours not captured. Instagram (read 2026-10-11): the weekly-schedule carousel at @thecomicbug is for the Manhattan Beach Game Hub store, not Culver City; no TCG schedule found for the Culver City shop.",
     "active": true,
     "source": {
       "url": "https://www.thecomicbug.com/locations/",
@@ -5651,7 +5655,7 @@
     "games": [
       "mtg"
     ],
-    "notes": "Found via OpenStreetMap; schedule research pending. LARP gear, board games, TTRPGs and Magic/TCG singles and sealed; offers game nights, table reservations and ticketed events. Its events calendar is a script-rendered Styled Calendar embed and the event-tickets collection was empty on 2026-10-10.",
+    "notes": "Found via OpenStreetMap; schedule research pending. LARP gear, board games, TTRPGs and Magic/TCG singles and sealed; offers game nights, table reservations and ticketed events. Its events calendar is a script-rendered Styled Calendar embed and the event-tickets collection was empty on 2026-10-10. Weekly Magic nights read from its Styled Calendar in a browser 2026-10-11.",
     "active": true,
     "source": {
       "url": "https://larpandgames.com/",
@@ -5673,7 +5677,7 @@
     "phone": "(562) 382-0549",
     "hours": "Mon-Thu 12-9 PM · Fri 12-10 PM · Sat 10 AM-10 PM · Sun 10 AM-9 PM",
     "games": [],
-    "notes": "Found via OpenStreetMap; schedule research pending. Trading card and collectibles store with a gaming center for tournaments (own site); no event schedule on the site as of 2026-10-10.",
+    "notes": "Found via OpenStreetMap; schedule research pending. Trading card and collectibles store with a gaming center for tournaments (own site); no event schedule on the site as of 2026-10-10. Instagram (read 2026-10-11) shows an old 'Pokémon Tournament Wednesdays 6:30 PM $5 entry' post (about early 2024), not used.",
     "active": true,
     "source": {
       "url": "https://collectiblecardsbellflower.com/",
@@ -5721,7 +5725,7 @@
       "onepiece",
       "riftbound"
     ],
-    "notes": "Found via OpenStreetMap; schedule research pending. Hours per OSM: Thu-Tue 2-10 PM (not confirmed on the site). Event tickets sold on the site: One Piece Play and Riftbound Play ($10), Pokémon Delta Reign prereleases Oct 27 and 29 ($35); ticket pages give dates but no start times.",
+    "notes": "Found via OpenStreetMap; schedule research pending. Hours per OSM: Thu-Tue 2-10 PM (not confirmed on the site). Event tickets sold on the site: One Piece Play and Riftbound Play ($10), Pokémon Delta Reign prereleases Oct 27 and 29 ($35); ticket pages give dates but no start times. Event tickets read 2026-10-11; One Piece Play $10 on scattered Tuesdays at 6 PM (check-in 5:45).",
     "active": true,
     "source": {
       "url": "https://treasurechestcollectibles.com/collections/store-events",
@@ -5859,6 +5863,84 @@
       "url": "https://businessinlancasterca.org/avpopshop/",
       "checked": "2026-10-11",
       "note": "City of Lancaster business profile; schedule supplied by Mark"
+    }
+  },
+  {
+    "id": "arsenal-comics-and-games-ventura",
+    "name": "Arsenal Comics and Games",
+    "address": "3431 Telegraph Rd",
+    "city": "Ventura",
+    "state": "CA",
+    "zip": "93003",
+    "lat": 34.2730918,
+    "lon": -119.2491936,
+    "tz": "America/Los_Angeles",
+    "website": "https://arsenalcomicsandgames.com",
+    "phone": "(805) 499-6197",
+    "socials": {
+      "instagram": "https://www.instagram.com/arsenalcomicsandgames/",
+      "facebook": "https://www.facebook.com/arsenalcomicsandgames"
+    },
+    "games": [
+      "mtg"
+    ],
+    "notes": "Found via OpenStreetMap; schedule research pending. Store of Arsenal Comics and Games (second store: Newbury Park). Magic draft every Friday per the shop's Instagram (post 2026-09-30). Store hours for this location not found (the Newbury Park store lists daily 12-6 PM).",
+    "active": true,
+    "source": {
+      "url": "https://arsenalcomicsandgames.com",
+      "checked": "2026-10-11",
+      "note": "OpenStreetMap lead, store own site and Instagram"
+    }
+  },
+  {
+    "id": "arsenal-comics-and-games-newbury-park",
+    "name": "Arsenal Comics and Games",
+    "address": "1610-1 Newbury Rd",
+    "city": "Newbury Park",
+    "state": "CA",
+    "zip": "91320",
+    "lat": 34.1833518,
+    "lon": -118.9155482,
+    "tz": "America/Los_Angeles",
+    "website": "https://arsenalcomicsandgames.com",
+    "phone": "(805) 499-6197",
+    "hours": "Daily 12-6 PM",
+    "socials": {
+      "instagram": "https://www.instagram.com/arsenalcomicsandgames/",
+      "facebook": "https://www.facebook.com/arsenalcomicsandgames"
+    },
+    "games": [
+      "mtg"
+    ],
+    "notes": "Found via OpenStreetMap; schedule research pending. Store of Arsenal Comics and Games (second store: Ventura); the store's own site and ComicHub page list this address and hours (12-6 PM daily). Magic draft every Friday per the shop's Instagram (post 2026-09-30).",
+    "active": true,
+    "source": {
+      "url": "https://arsenalcomicsandgames.com",
+      "checked": "2026-10-11",
+      "note": "OpenStreetMap lead, store own site and Instagram"
+    }
+  },
+  {
+    "id": "burbank-sportscards",
+    "name": "Burbank Sportscards",
+    "address": "935 N Hollywood Way",
+    "city": "Burbank",
+    "state": "CA",
+    "zip": "91505",
+    "lat": 34.1663878,
+    "lon": -118.3463625,
+    "tz": "America/Los_Angeles",
+    "website": "https://burbankcards.com/",
+    "phone": "(818) 843-2600",
+    "games": [
+      "pokemon"
+    ],
+    "notes": "Found via OpenStreetMap; schedule research pending. Cards store (sports cards plus Pokémon, Magic, Yu-Gi-Oh!, One Piece, Lorcana). Its Events Calendar (read in a browser 2026-10-11) lists Saturday raffles (community event), a Pokémon Delta Reign pre-release Oct 27 and a monthly Pokémon tournament on the first Tuesday; entry fees are on the event detail pages, not read.",
+    "active": true,
+    "source": {
+      "url": "https://burbankcards.com/pages/events-calendar",
+      "checked": "2026-10-11",
+      "note": "OpenStreetMap lead, store's own events calendar"
     }
   }
 ]

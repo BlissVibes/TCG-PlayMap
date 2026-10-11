@@ -1487,8 +1487,8 @@
     "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Browser pass: Ravensburger Play Hub page shows 'Saturday Morning Weekly Play' Oct 17 11 AM $5 (1 row). Melee.gg Star Wars Unlimited org, Instagram and Discord not read. Rest of schedule unknown; partial.",
-    "checked": "2026-10-10"
+    "notes": "Chrome pass 2026-10-11: weekly schedule carousel on Instagram (instagram.com/p/DeIVUnfmdhG/, about 2026-10-06); 6 weekly rows with prices, plus the Sat Lorcana row from the Play Hub page. Riftbound is the importer's; Melee/Discord not read.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "the-graveyard-tcg",
@@ -2242,10 +2242,11 @@
       "instagram": "https://www.instagram.com/spikes_lounge"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/813131dd-5ca5-4009-a312-404a4a79f8f7",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Chrome pass: own site spikes-hobby-lounge.square.site shows hours and one past event (Community Card Show Dec 12 2025), no schedule. Instagram @SPIKES_LOUNGE and its Eventbrite organizer page (eventbrite.com/o/spike-115698029411) not read yet. Instagram read 2026-10-11: Lorcana Pack Rush Sat 4 PM $10 (post 2026-10-08, 'starting this Saturday', cadence unstated); store is now WPN (Magic play to come); updated hours added to the shop row. Needs a follow-up once the weekly schedule is posted.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "table-1-gaming",
@@ -2454,8 +2455,8 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "osm-triage",
-    "checked": "2026-10-10",
-    "notes": "Own site (WordPress + The Events Calendar): tribe events API returns 0 upcoming events and the Upcoming Events section is empty; homepage says 'weekly events including Magic the Gathering, Pokémon, and Roblox' with no days, times or fees. Facebook is where they post (login-walled). Needs a browser/Facebook read."
+    "checked": "2026-10-11",
+    "notes": "Own site (WordPress + The Events Calendar): tribe events API returns 0 upcoming events and the Upcoming Events section is empty; homepage says 'weekly events including Magic the Gathering, Pokémon, and Roblox' with no days, times or fees. Facebook is where they post (login-walled). Needs a browser/Facebook read. Chrome pass 2026-10-11: Instagram @thecomicbug shows no Culver City TCG schedule (its weekly carousel is for the Manhattan Beach Game Hub, which is a separate shop row)."
   },
   {
     "shopId": "spellbound-larp-and-games",
@@ -2464,11 +2465,11 @@
     "website": "https://larpandgames.com/",
     "socials": {},
     "sourceUrl": "https://larpandgames.com/pages/events",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "osm-triage",
-    "checked": "2026-10-10",
-    "notes": "Own Shopify site: /pages/events embeds a Styled Calendar (embed.styledcalendar.com/#gljThOg4rJ1QwcYfgo0m, script-rendered) and /collections/event-tickets is empty; there is also a Discord. Needs a browser read of the calendar."
+    "checked": "2026-10-11",
+    "notes": "Chrome pass: the Events page's Styled Calendar renders in a browser. Weekly Magic nights added: Mon 7 PM Casual Commander, Fri 7 PM Casual Commander ('7PM every Friday'), Sat 1-5 PM Chaos Draft. No fees shown in the event popups. Also Sun miniature paint night, Wed board game night and Thu TTRPG night (not listed)."
   },
   {
     "shopId": "insomniac-collectibles",
@@ -2477,10 +2478,11 @@
     "website": "https://collectiblecardsbellflower.com/",
     "socials": {},
     "sourceUrl": "https://collectiblecardsbellflower.com/",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "osm-triage",
-    "notes": "Own site mentions a gaming center and 'Gaming Events' but publishes no schedule on the pages read (Home). Check the Gaming page and socials."
+    "notes": "Chrome pass: /gaming page has no schedule; Instagram @insomniac_collectibles (111 posts, newest tiles from early 2024 era) shows 'Pokémon Tournament Wednesdays 6:30 PM, $5 entry', too old to use. Needs a call.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "card-arena",
@@ -2502,11 +2504,11 @@
     "website": "https://treasurechestcollectibles.com/",
     "socials": {},
     "sourceUrl": "https://treasurechestcollectibles.com/collections/store-events",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "osm-triage",
-    "checked": "2026-10-10",
-    "notes": "Own Shopify site sells event tickets (collections/store-events): One Piece Play and Riftbound Play $10 (seen Tue Aug 18, Aug 25, Sep 15, Sep 22, Oct 6), Pokémon Delta Reign prerelease Oct 27 and Oct 29 $35, Radiance Pre-Rift $35. Titles carry dates but no start times, so no rows written. Looks like alternating Tuesday One Piece / Riftbound play; confirm days and times by phone or social."
+    "checked": "2026-10-11",
+    "notes": "Chrome/curl pass: store-events ticket products (products.json) have times in the descriptions: check-in 5:45 PM, start 6 PM. One Piece Play $10 (3 rounds, pool prizing) is sold for scattered Tuesdays (8/18, 9/22, 10/6), not every week, so no weekly row; Delta Reign prerelease Tue Oct 27 6 PM $35 added. Riftbound pre-rift/play events are the importer's."
   },
   {
     "shopId": "at-ease-games",
@@ -2573,5 +2575,57 @@
     "addedBy": "mark",
     "checked": "2026-10-11",
     "notes": "Schedule supplied by Mark 2026-10-11 (6 weekly nights, no fees). Friday 'Dragon Ball' entered as Fusion World, to confirm Masters vs Fusion World. Rows marked verified as Mark-supplied."
+  },
+  {
+    "shopId": "arsenal-comics-and-games-ventura",
+    "name": "Arsenal Comics and Games",
+    "city": "Ventura",
+    "website": "https://arsenalcomicsandgames.com",
+    "socials": {},
+    "sourceUrl": "https://www.instagram.com/p/Dd7L-mQSMV_/",
+    "status": "done",
+    "added": "2026-10-11",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-11",
+    "notes": "Chrome pass: the shop's Instagram post of 2026-09-30 (instagram.com/p/Dd7L-mQSMV_/) says Magic draft EVERY Friday at both stores, Reality Fracture now, 6:30 PM, $25 per player. ComicHub events page lists no events. No other nights found."
+  },
+  {
+    "shopId": "arsenal-comics-and-games-newbury-park",
+    "name": "Arsenal Comics and Games",
+    "city": "Newbury Park",
+    "website": "https://arsenalcomicsandgames.com",
+    "socials": {},
+    "sourceUrl": "https://www.instagram.com/p/Dd7L-mQSMV_/",
+    "status": "done",
+    "added": "2026-10-11",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-11",
+    "notes": "Chrome pass: the shop's Instagram post of 2026-09-30 (instagram.com/p/Dd7L-mQSMV_/) says Magic draft EVERY Friday at both stores, Reality Fracture now, 6:30 PM, $25 per player. ComicHub events page lists no events. No other nights found."
+  },
+  {
+    "shopId": "burbank-sportscards",
+    "name": "Burbank Sportscards",
+    "city": "Burbank",
+    "website": "https://burbankcards.com/",
+    "socials": {},
+    "sourceUrl": "https://burbankcards.com/pages/events-calendar",
+    "status": "done",
+    "added": "2026-10-11",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-11",
+    "notes": "Chrome pass: own Events Calendar. Dated Pokémon events added (Delta Reign pre-release Oct 27 6:15 PM; monthly Pokémon tournaments Nov 3 and Dec 1, 7-9:30 PM). Weekly Saturday raffles are not play events. No fees on the list view; detail pages not read."
+  },
+  {
+    "shopId": "tcs-rockets",
+    "name": "TC's Rockets",
+    "city": "San Diego",
+    "website": "https://tcsrockets.com/",
+    "socials": {},
+    "sourceUrl": "https://tcsrockets.com/events/",
+    "status": "blocked",
+    "added": "2026-10-11",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-11",
+    "notes": "Chrome pass: Event Calendar lists only Riftbound (recurring Summoner's Skirmish $10; pre-release Oct 16 $30), which the Riftbound importer owns. No other TCG events visible; far from LA centre. Shop row NOT added: it has no events we may list (Riftbound is the importer's) and the map only draws shops with at least one event. Re-add if a non-Riftbound schedule turns up."
   }
 ]
