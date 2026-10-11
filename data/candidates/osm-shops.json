@@ -41,10 +41,11 @@
     "newLikelyWithin60mi": 100,
     "newLikelyConfirmedDuplicates": 6,
     "triaged": {
-      "unknown": 14,
+      "unknown": 49,
       "no-tcg": 20,
       "tcg": 6
-    }
+    },
+    "triageQueue": 74
   },
   "leads": {
     "likely": [
@@ -64,7 +65,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Long Beach",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 14
+        "milesFromLaCenter": 14,
+        "triageScore": 8,
+        "triageOrder": 7,
+        "triageOwner": "s1"
       },
       {
         "name": "Tiddlywinks Toys and Games",
@@ -82,7 +86,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Santa Ana",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 29
+        "milesFromLaCenter": 29,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Pacific Coast Hobbies",
@@ -100,7 +107,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Harbor City",
         "nearestKnownMi": 0.3,
-        "milesFromLaCenter": 19
+        "milesFromLaCenter": 19,
+        "triageScore": 10,
+        "triageOrder": 1,
+        "triageOwner": "s1"
       },
       {
         "name": "Cards & Gifts",
@@ -118,7 +128,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Lakewood",
         "nearestKnownMi": 1.7,
-        "milesFromLaCenter": 18
+        "milesFromLaCenter": 18,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "It's Game Time",
@@ -178,7 +191,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Garden Grove",
         "nearestKnownMi": 2.7,
-        "milesFromLaCenter": 27
+        "milesFromLaCenter": 27,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Amerasia Mỹ–Á Trading Company",
@@ -196,7 +212,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Garden Grove",
         "nearestKnownMi": 2.7,
-        "milesFromLaCenter": 26
+        "milesFromLaCenter": 26,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "MVP Sportscards",
@@ -214,7 +233,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Mission Viejo",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 44
+        "milesFromLaCenter": 44,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Dream World Comics",
@@ -232,7 +254,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 2.8,
-        "milesFromLaCenter": 11
+        "milesFromLaCenter": 11,
+        "triageScore": 6,
+        "triageOrder": 14,
+        "triageOwner": "s2"
       },
       {
         "name": "Shuffle and Cut Games",
@@ -273,7 +298,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Garden Grove",
         "nearestKnownMi": 1.6,
-        "milesFromLaCenter": 25
+        "milesFromLaCenter": 25,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Comics Toons 'n' Toys",
@@ -291,7 +319,10 @@
         "bucket": "likely",
         "nearestKnownCity": "TUSTIN",
         "nearestKnownMi": 0.5,
-        "milesFromLaCenter": 33
+        "milesFromLaCenter": 33,
+        "triageScore": 3,
+        "triageOrder": 34,
+        "triageOwner": "s2"
       },
       {
         "name": "Game Geeks",
@@ -309,7 +340,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Santa Ana",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 31
+        "milesFromLaCenter": 31,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Bros Game Shop",
@@ -463,7 +497,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Anaheim",
         "nearestKnownMi": 1.4,
-        "milesFromLaCenter": 22
+        "milesFromLaCenter": 22,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Retro Games Plus",
@@ -482,7 +519,10 @@
         "nearestKnownCity": "Lawndale",
         "nearestKnownMi": 0.1,
         "milesFromLaCenter": 14,
-        "distinctFromKnown": "Retro Games Plus at 4429 Redondo Beach Blvd is a separate shop next to Collector Legion (4451)."
+        "distinctFromKnown": "Retro Games Plus at 4429 Redondo Beach Blvd is a separate shop next to Collector Legion (4451).",
+        "triageScore": 7,
+        "triageOrder": 9,
+        "triageOwner": "s1"
       },
       {
         "name": "Warhammer",
@@ -523,7 +563,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Manhattan Beach Blvd.",
         "nearestKnownMi": 1.7,
-        "milesFromLaCenter": 16
+        "milesFromLaCenter": 16,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Card Game Coliseum",
@@ -587,7 +630,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Newport Beach",
         "nearestKnownMi": 4.2,
-        "milesFromLaCenter": 37
+        "milesFromLaCenter": 37,
+        "triageScore": 0,
+        "triageOrder": 57,
+        "triageOwner": "s1"
       },
       {
         "name": "Pop Monster",
@@ -628,7 +674,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Mission Viejo",
         "nearestKnownMi": 3.2,
-        "milesFromLaCenter": 48
+        "milesFromLaCenter": 48,
+        "triageScore": 2,
+        "triageOrder": 41,
+        "triageOwner": "s1"
       },
       {
         "name": "Game Chest",
@@ -674,7 +723,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Artesia",
         "nearestKnownMi": 0.7,
-        "milesFromLaCenter": 16
+        "milesFromLaCenter": 16,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Bait",
@@ -692,7 +744,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Diamond Bar",
         "nearestKnownMi": 0.6,
-        "milesFromLaCenter": 24
+        "milesFromLaCenter": 24,
+        "triageScore": 0,
+        "triageOrder": 52,
+        "triageOwner": "s2"
       },
       {
         "name": "So Cal Coins",
@@ -710,7 +765,10 @@
         "bucket": "likely",
         "nearestKnownCity": "TUSTIN",
         "nearestKnownMi": 0.5,
-        "milesFromLaCenter": 32
+        "milesFromLaCenter": 32,
+        "triageScore": -5,
+        "triageOrder": 72,
+        "triageOwner": "s2"
       },
       {
         "name": "Jumpstart Games",
@@ -751,7 +809,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Torrance",
         "nearestKnownMi": 1.5,
-        "milesFromLaCenter": 18
+        "milesFromLaCenter": 18,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Vintage Productions",
@@ -769,7 +830,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Huntington Beach",
         "nearestKnownMi": 2.4,
-        "milesFromLaCenter": 26
+        "milesFromLaCenter": 26,
+        "triageScore": 3,
+        "triageOrder": 32,
+        "triageOwner": "s2"
       },
       {
         "name": "Grotto Treasures",
@@ -787,7 +851,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Chino Hills",
         "nearestKnownMi": 1.5,
-        "milesFromLaCenter": 31
+        "milesFromLaCenter": 31,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Phone Card Xpress",
@@ -805,7 +872,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Garden Grove",
         "nearestKnownMi": 2.3,
-        "milesFromLaCenter": 27
+        "milesFromLaCenter": 27,
+        "triageScore": 0,
+        "triageOrder": 53,
+        "triageOwner": "s1"
       },
       {
         "name": "Ageless Cards",
@@ -846,7 +916,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Mission Viejo",
         "nearestKnownMi": 3.1,
-        "milesFromLaCenter": 44
+        "milesFromLaCenter": 44,
+        "triageScore": 10,
+        "triageOrder": 2,
+        "triageOwner": "s2"
       },
       {
         "name": "Card Arena",
@@ -864,7 +937,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Baldwin Park",
         "nearestKnownMi": 4.5,
-        "milesFromLaCenter": 17
+        "milesFromLaCenter": 17,
+        "triageScore": 7,
+        "triageOrder": 10,
+        "triageOwner": "s2"
       },
       {
         "name": "Game Chest",
@@ -905,7 +981,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Irvine",
         "nearestKnownMi": 1.8,
-        "milesFromLaCenter": 34
+        "milesFromLaCenter": 34,
+        "triageScore": 0,
+        "triageOrder": 55,
+        "triageOwner": "s1"
       },
       {
         "name": "Frank & Son Collectible Show",
@@ -923,7 +1002,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Diamond Bar",
         "nearestKnownMi": 4.3,
-        "milesFromLaCenter": 19
+        "milesFromLaCenter": 19,
+        "triageScore": 6,
+        "triageOrder": 15,
+        "triageOwner": "s1"
       },
       {
         "name": "Rizo Sports",
@@ -941,7 +1023,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Mission Viejo",
         "nearestKnownMi": 4.3,
-        "milesFromLaCenter": 42
+        "milesFromLaCenter": 42,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "GAME-ER",
@@ -959,7 +1044,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Chino",
         "nearestKnownMi": 2,
-        "milesFromLaCenter": 32
+        "milesFromLaCenter": 32,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Torpedo Comics",
@@ -977,7 +1065,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Irvine",
         "nearestKnownMi": 3,
-        "milesFromLaCenter": 40
+        "milesFromLaCenter": 40,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Gacha Planet",
@@ -995,7 +1086,10 @@
         "bucket": "likely",
         "nearestKnownCity": "La Mirada",
         "nearestKnownMi": 2,
-        "milesFromLaCenter": 18
+        "milesFromLaCenter": 18,
+        "triageScore": 0,
+        "triageOrder": 51,
+        "triageOwner": "s1"
       },
       {
         "name": "Treasure Chest Collectibles",
@@ -1013,7 +1107,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Lake Forest",
         "nearestKnownMi": 1.1,
-        "milesFromLaCenter": 42
+        "milesFromLaCenter": 42,
+        "triageScore": 6,
+        "triageOrder": 16,
+        "triageOwner": "s2"
       },
       {
         "name": "Pokémon Card Machine",
@@ -1031,7 +1128,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Fountain Valley",
         "nearestKnownMi": 2.3,
-        "milesFromLaCenter": 32
+        "milesFromLaCenter": 32,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Chalice Collectibles",
@@ -1073,7 +1173,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Torrance",
         "nearestKnownMi": 0.1,
-        "milesFromLaCenter": 16
+        "milesFromLaCenter": 16,
+        "triageScore": 2,
+        "triageOrder": 37,
+        "triageOwner": "s1"
       },
       {
         "name": "Insomniac Collectibles",
@@ -1137,7 +1240,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Torrance",
         "nearestKnownMi": 0.7,
-        "milesFromLaCenter": 14
+        "milesFromLaCenter": 14,
+        "triageScore": 5,
+        "triageOrder": 22,
+        "triageOwner": "s2"
       },
       {
         "name": "Comic Bug",
@@ -1178,7 +1284,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Anaheim",
         "nearestKnownMi": 0.6,
-        "milesFromLaCenter": 24
+        "milesFromLaCenter": 24,
+        "triageScore": -2,
+        "triageOrder": 67,
+        "triageOwner": "s1"
       },
       {
         "name": "Hero Workshop",
@@ -1217,7 +1326,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Lake Forest",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 42
+        "milesFromLaCenter": 42,
+        "triageScore": 0,
+        "triageOrder": 58,
+        "triageOwner": "s2"
       },
       {
         "name": "Coast Philatelics",
@@ -1235,7 +1347,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Newport Beach",
         "nearestKnownMi": 2.1,
-        "milesFromLaCenter": 32
+        "milesFromLaCenter": 32,
+        "triageScore": -5,
+        "triageOrder": 73,
+        "triageOwner": "s1"
       },
       {
         "name": "Neko Stop",
@@ -1298,7 +1413,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 3,
-        "milesFromLaCenter": 108
+        "milesFromLaCenter": 108,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Clairemont Sports Cards",
@@ -1316,7 +1434,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 2.6,
-        "milesFromLaCenter": 105
+        "milesFromLaCenter": 105,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Play N Trade Video Games",
@@ -1334,7 +1455,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 2.3,
-        "milesFromLaCenter": 104
+        "milesFromLaCenter": 104,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Uncle Don's Hobbies",
@@ -1352,7 +1476,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Palm Desert",
         "nearestKnownMi": 5.4,
-        "milesFromLaCenter": 108
+        "milesFromLaCenter": 108,
+        "triageScore": 5,
+        "triageOrder": 26,
+        "triageOwner": "s2"
       },
       {
         "name": "Sky High Comics",
@@ -1370,7 +1497,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Vista",
         "nearestKnownMi": 5.7,
-        "milesFromLaCenter": 87
+        "milesFromLaCenter": 87,
+        "triageScore": 2,
+        "triageOrder": 43,
+        "triageOwner": "s1"
       },
       {
         "name": "Coin-Op Game Room",
@@ -1388,7 +1518,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 1.7,
-        "milesFromLaCenter": 111
+        "milesFromLaCenter": 111,
+        "triageScore": 1,
+        "triageOrder": 48,
+        "triageOwner": "s2"
       },
       {
         "name": "NEX Auto Hobby",
@@ -1406,7 +1539,10 @@
         "bucket": "likely",
         "nearestKnownCity": "National City",
         "nearestKnownMi": 3.1,
-        "milesFromLaCenter": 115
+        "milesFromLaCenter": 115,
+        "triageScore": -1,
+        "triageOrder": 66,
+        "triageOwner": "s2"
       },
       {
         "name": "The Recyard",
@@ -1424,7 +1560,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 2.8,
-        "milesFromLaCenter": 114
+        "milesFromLaCenter": 114,
+        "triageScore": 3,
+        "triageOrder": 36,
+        "triageOwner": "s2"
       },
       {
         "name": "The Card Shoppe",
@@ -1442,7 +1581,10 @@
         "bucket": "likely",
         "nearestKnownCity": "La Mesa",
         "nearestKnownMi": 5.5,
-        "milesFromLaCenter": 118
+        "milesFromLaCenter": 118,
+        "triageScore": 8,
+        "triageOrder": 8,
+        "triageOwner": "s2"
       },
       {
         "name": "Kart1 Go kart Supplier",
@@ -1460,7 +1602,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Vista",
         "nearestKnownMi": 4.3,
-        "milesFromLaCenter": 85
+        "milesFromLaCenter": 85,
+        "triageScore": 5,
+        "triageOrder": 25,
+        "triageOwner": "s1"
       },
       {
         "name": "Coin-Op Game Room",
@@ -1478,7 +1623,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 0.1,
-        "milesFromLaCenter": 112
+        "milesFromLaCenter": 112,
+        "triageScore": 1,
+        "triageOrder": 49,
+        "triageOwner": "s1"
       },
       {
         "name": "Olhausen Gamerooms and Outdoors",
@@ -1496,7 +1644,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 1.4,
-        "milesFromLaCenter": 105
+        "milesFromLaCenter": 105,
+        "triageScore": 9,
+        "triageOrder": 5,
+        "triageOwner": "s1"
       },
       {
         "name": "Warhammer",
@@ -1514,7 +1665,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Murrieta",
         "nearestKnownMi": 1,
-        "milesFromLaCenter": 69
+        "milesFromLaCenter": 69,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Graham Crackers Comics",
@@ -1532,7 +1686,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Murrieta",
         "nearestKnownMi": 0.5,
-        "milesFromLaCenter": 69
+        "milesFromLaCenter": 69,
+        "triageScore": 5,
+        "triageOrder": 24,
+        "triageOwner": "s2"
       },
       {
         "name": "Game & Graze",
@@ -1550,7 +1707,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Murrieta",
         "nearestKnownMi": 0.9,
-        "milesFromLaCenter": 68
+        "milesFromLaCenter": 68,
+        "triageScore": 9,
+        "triageOrder": 3,
+        "triageOwner": "s1"
       },
       {
         "name": "TC's Rockets",
@@ -1568,7 +1728,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 2.4,
-        "milesFromLaCenter": 110
+        "milesFromLaCenter": 110,
+        "triageScore": -3,
+        "triageOrder": 70,
+        "triageOwner": "s2"
       },
       {
         "name": "Gepetto's",
@@ -1586,7 +1749,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 3,
-        "milesFromLaCenter": 108
+        "milesFromLaCenter": 108,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Calico Games",
@@ -1604,7 +1770,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 1.1,
-        "milesFromLaCenter": 103
+        "milesFromLaCenter": 103,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Kpop Pink Store",
@@ -1622,7 +1791,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Temecula",
         "nearestKnownMi": 0.3,
-        "milesFromLaCenter": 72
+        "milesFromLaCenter": 72,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Comics & Anime",
@@ -1640,7 +1812,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Temecula",
         "nearestKnownMi": 0.3,
-        "milesFromLaCenter": 72
+        "milesFromLaCenter": 72,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Knowhere Games & Comics",
@@ -1658,7 +1833,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Escondido",
         "nearestKnownMi": 5.3,
-        "milesFromLaCenter": 88
+        "milesFromLaCenter": 88,
+        "triageScore": 6,
+        "triageOrder": 18,
+        "triageOwner": "s2"
       },
       {
         "name": "Brickmania",
@@ -1676,7 +1854,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 3.4,
-        "milesFromLaCenter": 102
+        "milesFromLaCenter": 102,
+        "triageScore": 6,
+        "triageOrder": 19,
+        "triageOwner": "s1"
       },
       {
         "name": "GameZone",
@@ -1694,7 +1875,10 @@
         "bucket": "likely",
         "nearestKnownCity": "La Mesa",
         "nearestKnownMi": 3.7,
-        "milesFromLaCenter": 114
+        "milesFromLaCenter": 114,
+        "triageScore": 4,
+        "triageOrder": 29,
+        "triageOwner": "s1"
       },
       {
         "name": "Rizosports",
@@ -1712,7 +1896,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Riverside",
         "nearestKnownMi": 0.4,
-        "milesFromLaCenter": 46
+        "milesFromLaCenter": 46,
+        "triageScore": 0,
+        "triageOrder": 59,
+        "triageOwner": "s1"
       },
       {
         "name": "Rizosports",
@@ -1730,7 +1917,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Riverside",
         "nearestKnownMi": 1.4,
-        "milesFromLaCenter": 53
+        "milesFromLaCenter": 53,
+        "triageScore": 0,
+        "triageOrder": 60,
+        "triageOwner": "s2"
       },
       {
         "name": "Board Game Library",
@@ -1748,7 +1938,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 1.7,
-        "milesFromLaCenter": 111
+        "milesFromLaCenter": 111,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Tesoro",
@@ -1766,7 +1959,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Escondido",
         "nearestKnownMi": 4.3,
-        "milesFromLaCenter": 96
+        "milesFromLaCenter": 96,
+        "triageScore": 1,
+        "triageOrder": 46,
+        "triageOwner": "s2"
       },
       {
         "name": "At Ease Games",
@@ -1784,7 +1980,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 2.5,
-        "milesFromLaCenter": 102
+        "milesFromLaCenter": 102,
+        "triageScore": 9,
+        "triageOrder": 4,
+        "triageOwner": "s2"
       },
       {
         "name": "SD Sports Cards",
@@ -1802,7 +2001,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 3.5,
-        "milesFromLaCenter": 100
+        "milesFromLaCenter": 100,
+        "triageScore": 7,
+        "triageOrder": 13,
+        "triageOwner": "s1"
       },
       {
         "name": "RipzNHits",
@@ -1820,7 +2022,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 3.2,
-        "milesFromLaCenter": 102
+        "milesFromLaCenter": 102,
+        "triageScore": 1,
+        "triageOrder": 47,
+        "triageOwner": "s1"
       },
       {
         "name": "Dhampire",
@@ -1838,7 +2043,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 0.3,
-        "milesFromLaCenter": 112
+        "milesFromLaCenter": 112,
+        "triageScore": 2,
+        "triageOrder": 44,
+        "triageOwner": "s2"
       },
       {
         "name": "Tesoro Cards & Games",
@@ -1856,7 +2064,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Escondido",
         "nearestKnownMi": 0.8,
-        "milesFromLaCenter": 91
+        "milesFromLaCenter": 91,
+        "triageScore": 7,
+        "triageOrder": 12,
+        "triageOwner": "s2"
       },
       {
         "name": "Cutie Surprises",
@@ -1874,7 +2085,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 1.4,
-        "milesFromLaCenter": 106
+        "milesFromLaCenter": 106,
+        "triageScore": -1,
+        "triageOrder": 64,
+        "triageOwner": "s2"
       },
       {
         "name": "Card Op Coin Laundry",
@@ -1892,7 +2106,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Diego",
         "nearestKnownMi": 2.2,
-        "milesFromLaCenter": 107
+        "milesFromLaCenter": 107,
+        "triageScore": -1,
+        "triageOrder": 65,
+        "triageOwner": "s1"
       },
       {
         "name": "Red Card Parking",
@@ -1910,7 +2127,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Temecula",
         "nearestKnownMi": 5.3,
-        "milesFromLaCenter": 77
+        "milesFromLaCenter": 77,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Wynola Junction Antiques & Collectibles",
@@ -1928,7 +2148,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Escondido",
         "nearestKnownMi": 25.9,
-        "milesFromLaCenter": 113
+        "milesFromLaCenter": 113,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "La Bella Cafe & Games",
@@ -1946,7 +2169,10 @@
         "bucket": "likely",
         "nearestKnownCity": "National City",
         "nearestKnownMi": 1.5,
-        "milesFromLaCenter": 119
+        "milesFromLaCenter": 119,
+        "triageScore": 6,
+        "triageOrder": 20,
+        "triageOwner": "s2"
       },
       {
         "name": "Hobby Town",
@@ -1964,7 +2190,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Temecula",
         "nearestKnownMi": 0.5,
-        "milesFromLaCenter": 73
+        "milesFromLaCenter": 73,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Just Imagine",
@@ -1982,7 +2211,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Ridgecrest",
         "nearestKnownMi": 2,
-        "milesFromLaCenter": 114
+        "milesFromLaCenter": 114,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "S&M Coins and Collectibles",
@@ -2000,7 +2232,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Ridgecrest",
         "nearestKnownMi": 1.2,
-        "milesFromLaCenter": 113
+        "milesFromLaCenter": 113,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "North Shore Antiques & Collectibles",
@@ -2018,7 +2253,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Highland",
         "nearestKnownMi": 17.5,
-        "milesFromLaCenter": 76
+        "milesFromLaCenter": 76,
+        "triageScore": -2,
+        "triageOrder": 69,
+        "triageOwner": "s1"
       },
       {
         "name": "Redlands Vinyl Records & Collectibles",
@@ -2036,7 +2274,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Redlands",
         "nearestKnownMi": 0.1,
-        "milesFromLaCenter": 61
+        "milesFromLaCenter": 61,
+        "triageScore": -1,
+        "triageOrder": 61,
+        "triageOwner": "s1"
       },
       {
         "name": "Linebreakers Games, Cards & Comics",
@@ -2054,7 +2295,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Hesperia",
         "nearestKnownMi": 4.4,
-        "milesFromLaCenter": 64
+        "milesFromLaCenter": 64,
+        "triageScore": 6,
+        "triageOrder": 17,
+        "triageOwner": "s1"
       },
       {
         "name": "Santa Fe Trading Company",
@@ -2072,7 +2316,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Hesperia",
         "nearestKnownMi": 4.4,
-        "milesFromLaCenter": 63
+        "milesFromLaCenter": 63,
+        "triageScore": -1,
+        "triageOrder": 62,
+        "triageOwner": "s2"
       },
       {
         "name": "Santa Fe Trading Company",
@@ -2090,7 +2337,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Hesperia",
         "nearestKnownMi": 4.4,
-        "milesFromLaCenter": 63
+        "milesFromLaCenter": 63,
+        "triageScore": -1,
+        "triageOrder": 63,
+        "triageOwner": "s1"
       },
       {
         "name": "Kpop And Hello Cutie",
@@ -2108,7 +2358,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Ventura",
         "nearestKnownMi": 0.8,
-        "milesFromLaCenter": 59
+        "milesFromLaCenter": 59,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Chalice Collectibles",
@@ -2126,7 +2379,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Ventura",
         "nearestKnownMi": 0.8,
-        "milesFromLaCenter": 59
+        "milesFromLaCenter": 59,
+        "triageScore": 4,
+        "triageOrder": 28,
+        "triageOwner": "s2"
       },
       {
         "name": "Jellyfish Ventura Vintage Boutique",
@@ -2144,7 +2400,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Ventura",
         "nearestKnownMi": 2.1,
-        "milesFromLaCenter": 62
+        "milesFromLaCenter": 62,
+        "triageScore": -5,
+        "triageOrder": 74,
+        "triageOwner": "s2"
       },
       {
         "name": "Mero Games",
@@ -2162,7 +2421,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Oxnard",
         "nearestKnownMi": 2.9,
-        "milesFromLaCenter": 55
+        "milesFromLaCenter": 55,
+        "triageScore": 2,
+        "triageOrder": 42,
+        "triageOwner": "s2"
       },
       {
         "name": "Arsenal Comics And Games",
@@ -2180,7 +2442,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Ventura",
         "nearestKnownMi": 0.6,
-        "milesFromLaCenter": 59
+        "milesFromLaCenter": 59,
+        "triageScore": 5,
+        "triageOrder": 23,
+        "triageOwner": "s1"
       },
       {
         "name": "Ojai Valley Electronics & Hobby",
@@ -2198,7 +2463,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Ventura",
         "nearestKnownMi": 12.1,
-        "milesFromLaCenter": 63
+        "milesFromLaCenter": 63,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Game Dude",
@@ -2216,7 +2484,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Sun valley",
         "nearestKnownMi": 2.6,
-        "milesFromLaCenter": 13
+        "milesFromLaCenter": 13,
+        "triageScore": 5,
+        "triageOrder": 21,
+        "triageOwner": "s1"
       },
       {
         "name": "Melrose Tarot Card & Palm Readings",
@@ -2255,7 +2526,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Thousand Oaks",
         "nearestKnownMi": 3.8,
-        "milesFromLaCenter": 36
+        "milesFromLaCenter": 36,
+        "triageScore": 7,
+        "triageOrder": 11,
+        "triageOwner": "s1"
       },
       {
         "name": "UCLA Game Lab",
@@ -2273,7 +2547,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 2.1,
-        "milesFromLaCenter": 11
+        "milesFromLaCenter": 11,
+        "triageScore": 1,
+        "triageOrder": 45,
+        "triageOwner": "s1"
       },
       {
         "name": "Gillio & Associates",
@@ -2337,7 +2614,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Camarillo",
         "nearestKnownMi": 6.5,
-        "milesFromLaCenter": 39
+        "milesFromLaCenter": 39,
+        "triageScore": 4,
+        "triageOrder": 27,
+        "triageOwner": "s1"
       },
       {
         "name": "Game Realms",
@@ -2398,7 +2678,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Canoga Park",
         "nearestKnownMi": 1.5,
-        "milesFromLaCenter": 21
+        "milesFromLaCenter": 21,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Brighton Collectibles",
@@ -2416,7 +2699,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Simi Valley",
         "nearestKnownMi": 2.4,
-        "milesFromLaCenter": 34
+        "milesFromLaCenter": 34,
+        "triageScore": 2,
+        "triageOrder": 40,
+        "triageOwner": "s2"
       },
       {
         "name": "Fire & Dice Games",
@@ -2457,7 +2743,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Simi Valley",
         "nearestKnownMi": 2.5,
-        "milesFromLaCenter": 34
+        "milesFromLaCenter": 34,
+        "triageScore": 3,
+        "triageOrder": 35,
+        "triageOwner": "s1"
       },
       {
         "name": "Game Tower",
@@ -2475,7 +2764,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Sun valley",
         "nearestKnownMi": 6.1,
-        "milesFromLaCenter": 20
+        "milesFromLaCenter": 20,
+        "triageScore": 2,
+        "triageOrder": 38,
+        "triageOwner": "s2"
       },
       {
         "name": "The Collective Shop",
@@ -2493,7 +2785,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Canoga Park",
         "nearestKnownMi": 2.4,
-        "milesFromLaCenter": 21
+        "milesFromLaCenter": 21,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "Sports Source 2",
@@ -2580,7 +2875,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 1.4,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triageScore": 3,
+        "triageOrder": 30,
+        "triageOwner": "s2"
       },
       {
         "name": "Halo 13",
@@ -2598,7 +2896,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Santa Clarita",
         "nearestKnownMi": 2.7,
-        "milesFromLaCenter": 31
+        "milesFromLaCenter": 31,
+        "triageScore": 3,
+        "triageOrder": 33,
+        "triageOwner": "s1"
       },
       {
         "name": "Cantrip Candles",
@@ -2662,7 +2963,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 0.8,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triageScore": 3,
+        "triageOrder": 31,
+        "triageOwner": "s1"
       },
       {
         "name": "Burbank Sportscards",
@@ -2704,7 +3008,10 @@
         "bucket": "likely",
         "nearestKnownCity": "LANCASTER",
         "nearestKnownMi": 0.2,
-        "milesFromLaCenter": 45
+        "milesFromLaCenter": 45,
+        "triageScore": -2,
+        "triageOrder": 68,
+        "triageOwner": "s2"
       },
       {
         "name": "Manaforge Games",
@@ -2722,7 +3029,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Dimas",
         "nearestKnownMi": 4.9,
-        "milesFromLaCenter": 21
+        "milesFromLaCenter": 21,
+        "triage": "unknown",
+        "triageEvidence": "no handle",
+        "triageDate": "2026-10-11"
       },
       {
         "name": "M&M Video Games",
@@ -2740,7 +3050,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Montclair",
         "nearestKnownMi": 1.1,
-        "milesFromLaCenter": 33
+        "milesFromLaCenter": 33,
+        "triageScore": 2,
+        "triageOrder": 39,
+        "triageOwner": "s1"
       },
       {
         "name": "Time Blast",
@@ -2758,7 +3071,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Montclair",
         "nearestKnownMi": 0.2,
-        "milesFromLaCenter": 32
+        "milesFromLaCenter": 32,
+        "triageScore": 0,
+        "triageOrder": 54,
+        "triageOwner": "s2"
       },
       {
         "name": "Tiger Lily Collectables",
@@ -2776,7 +3092,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Ontario",
         "nearestKnownMi": 2,
-        "milesFromLaCenter": 34
+        "milesFromLaCenter": 34,
+        "triageScore": 0,
+        "triageOrder": 56,
+        "triageOwner": "s2"
       },
       {
         "name": "Alhambra Wheel and Hobby",
@@ -2863,7 +3182,10 @@
         "bucket": "likely",
         "nearestKnownCity": "La Crescenta",
         "nearestKnownMi": 0.8,
-        "milesFromLaCenter": 11
+        "milesFromLaCenter": 11,
+        "triageScore": -4,
+        "triageOrder": 71,
+        "triageOwner": "s1"
       },
       {
         "name": "Minerals of Love",
@@ -2976,7 +3298,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Arcadia",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 12
+        "milesFromLaCenter": 12,
+        "triageScore": 0,
+        "triageOrder": 50,
+        "triageOwner": "s2"
       },
       {
         "name": "Hypnotized Hobbies",
@@ -3017,7 +3342,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Arcadia",
         "nearestKnownMi": 1.5,
-        "milesFromLaCenter": 12
+        "milesFromLaCenter": 12,
+        "triageScore": 8,
+        "triageOrder": 6,
+        "triageOwner": "s2"
       }
     ],
     "unlikely": [
