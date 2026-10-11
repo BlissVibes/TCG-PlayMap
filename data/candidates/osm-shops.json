@@ -39,7 +39,12 @@
     "newChain": 121,
     "newLikelyPossibleDuplicates": 0,
     "newLikelyWithin60mi": 100,
-    "newLikelyConfirmedDuplicates": 6
+    "newLikelyConfirmedDuplicates": 6,
+    "triaged": {
+      "unknown": 14,
+      "no-tcg": 20,
+      "tcg": 6
+    }
   },
   "leads": {
     "likely": [
@@ -131,7 +136,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 1.6,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triage": "unknown",
+        "triageEvidence": "No address/site in OSM; web search found no listing",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Alfa Games Inc.",
@@ -149,7 +157,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 1.6,
-        "milesFromLaCenter": 2
+        "milesFromLaCenter": 2,
+        "triage": "unknown",
+        "triageEvidence": "No website or phone; web search found nothing at 955 S Alameda St (tagged video_games)",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "J&R Video Games",
@@ -385,7 +396,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 3,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triage": "unknown",
+        "triageEvidence": "No address/site in OSM; comic shop, TCG not known",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Make Asobi",
@@ -1182,7 +1196,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 3.1,
-        "milesFromLaCenter": 9
+        "milesFromLaCenter": 9,
+        "triage": "unknown",
+        "triageEvidence": "No address/site in OSM; web search only finds a Portland shop of that name",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Gold Cards & Coins",
@@ -1236,7 +1253,11 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 0.1,
-        "milesFromLaCenter": 0
+        "milesFromLaCenter": 0,
+        "triage": "no-tcg",
+        "triageEvidence": "Japanese goods store in Japanese Village Plaza; site mentions Pokémon merchandise but no events, tournaments or play area",
+        "triageUrl": "https://nekostop.com/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Box Breaks: Sports Cards & Memorabilia",
@@ -2213,7 +2234,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 0.1,
-        "milesFromLaCenter": 6
+        "milesFromLaCenter": 6,
+        "triage": "no-tcg",
+        "triageEvidence": "Tarot reader, not trading cards",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Games Workshop",
@@ -2331,7 +2355,11 @@
         "bucket": "likely",
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 0.8,
-        "milesFromLaCenter": 9
+        "milesFromLaCenter": 9,
+        "triage": "unknown",
+        "triageEvidence": "game-realms.com now serves an unrelated gambling page (domain taken over), so the shop may be gone; tagged video_games; phone +1-818-841-1545",
+        "triageUrl": "https://www.game-realms.com",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "JVK Die Cast & Hobbies",
@@ -2349,7 +2377,10 @@
         "bucket": "likely",
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 1.2,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triage": "no-tcg",
+        "triageEvidence": "Die-cast model shop by name (OSM shop=toys)",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Collector's Paradise",
@@ -2810,7 +2841,11 @@
         "nearestKnownCity": "Alhambra",
         "nearestKnownMi": 0.1,
         "milesFromLaCenter": 7,
-        "distinctFromKnown": "Comic Cellar (Alhambra) is not The Game Cellar (San Gabriel)."
+        "distinctFromKnown": "Comic Cellar (Alhambra) is not The Game Cellar (San Gabriel).",
+        "triage": "no-tcg",
+        "triageEvidence": "Comic shop; homepage has no TCG, tournament or event text",
+        "triageUrl": "https://comiccellar.com/",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "The Stone Femme Studio Rock Shop",
@@ -2846,7 +2881,10 @@
         "bucket": "likely",
         "nearestKnownCity": "San Gabriel",
         "nearestKnownMi": 0.9,
-        "milesFromLaCenter": 8
+        "milesFromLaCenter": 8,
+        "triage": "no-tcg",
+        "triageEvidence": "Mineral/crystal shop by name",
+        "triageDate": "2026-10-10"
       },
       {
         "name": "Airsoft N Hobby",
@@ -8890,6 +8928,16 @@
       "name": "Project CCG",
       "knownAs": "project-ccg-la",
       "why": "34 ft apart (limit 158 ft)"
+    }
+  ],
+  "extraLeadsFromSearch": [
+    {
+      "name": "Spikes Lounge",
+      "city": "Commerce (per Eventbrite listing)",
+      "evidence": "Eventbrite organizer page: community hobby shop (tabletop, TCG, miniatures) with recurring Pokémon community card shows May-Aug 2026; no street address or website found; needs a Chrome read of the organizer page",
+      "url": "https://www.eventbrite.com/o/spike-115698029411",
+      "triage": "unknown",
+      "foundDate": "2026-10-10"
     }
   ]
 }
