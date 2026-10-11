@@ -428,9 +428,14 @@
       "discord": "https://discord.gg/Sp8hcrWUXp"
     },
     "games": [
+      "cookierun",
+      "cyberpunk",
+      "mtg",
+      "onepiece",
+      "palworld",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (directory listing, unverified): Mon-Thu 8:30 AM-5 PM, Fri-Sat 8:30 AM-7 PM, Sun 8:30 AM-5 PM. Game nights are posted on Instagram (@experience_anteiku) and Discord, which were not readable. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (directory listing, unverified): Mon-Thu 8:30 AM-5 PM, Fri-Sat 8:30 AM-7 PM, Sun 8:30 AM-5 PM. Game nights are posted on Instagram (@experience_anteiku) and Discord, which were not readable. Only Riftbound listed. Weekly nights from graphics on the Instagram feed (read in a browser 2026-10-10; 'Every <day>'); Riftbound Thu and Sun Nexus Nights are the importer's. Café also runs Cookie Run on Fridays.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/d9657ba7-9489-4d0b-aea4-24bd9d183865",
@@ -1010,9 +1015,11 @@
     "website": "https://www.instagram.com/danimalztradingcards/?hl=en",
     "phone": "(562) 377-7488",
     "games": [
+      "gundam",
+      "onepiece",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); search found nothing. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); search found nothing. Only Riftbound listed. Own event calendar site danimalztradingcards.lovable.app (read 2026-10-10): only dated events, no weekly nights. Hours Mon-Sat 11 AM-7 PM, Sun 11 AM-5 PM; phone (562) 377-7488; Del Amo Blvd address.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/aa8dbdae-3994-4795-bec7-aef9597be5a7",
@@ -1176,7 +1183,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1047 W 6th St Ste E; reported Friday Pokémon, Saturday Lorcana/Union Arena, Sunday One Piece/Magic, not confirmed. Website is an Instagram page (login-walled). Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1047 W 6th St Ste E; reported Friday Pokémon, Saturday Lorcana/Union Arena, Sunday One Piece/Magic, not confirmed. Website is an Instagram page (login-walled). Only Riftbound listed. Instagram (read 2026-10-10): hobby store, phone (951) 475-7227, drewbees.com in bio; no schedule graphic in the first posts or highlights. Posts about a card show festival Oct 10.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/87c19443-c9a1-44e1-b68d-e105d63ec791",
@@ -1205,9 +1212,17 @@
       "facebook": "https://www.facebook.com/dxnprovision/"
     },
     "games": [
-      "riftbound"
+      "dbs_fusion",
+      "digimon",
+      "gundam",
+      "lorcana",
+      "onepiece",
+      "palworld",
+      "pokemon",
+      "riftbound",
+      "union_arena"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Instagram, Facebook and Discord only; none readable; web search found nothing. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Instagram, Facebook and Discord only; none readable; web search found nothing. Only Riftbound listed. Weekly schedule from the pinned Instagram post of 2026-09-08 (read in a browser 2026-10-10). Not listed: Pokémon Champions (video game) nights, Magic Thu/Fri open play (no time), Riftbound Tue/Fri (importer). Instagram bio hours: Mon-Fri 4-10 PM, Sat-Sun from 11 AM.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/b0bfb8c0-5b38-4df7-9a2c-69a4e5f7e4b5",
@@ -1800,9 +1815,13 @@
       "discord": "https://discord.com/invite/mVaqJPgtkA"
     },
     "games": [
-      "riftbound"
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "riftbound",
+      "yugioh"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 11893 Valley View St, about noon-10 PM daily, phone 714-750-6162, says it hosts tournaments and league nights with no days. Website is an Instagram page (login-walled). Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 11893 Valley View St, about noon-10 PM daily, phone 714-750-6162, says it hosts tournaments and league nights with no days. Website is an Instagram page (login-walled). Only Riftbound listed. Weekly schedule from the pinned Instagram post of 2026-05-21 (20 weeks old when read 2026-10-10; recent Commander sign-up posts match it). Riftbound Tue/Thu/Sat/Sun slots on it are the importer's. Special events are announced separately.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/27cde07f-4a41-4342-b640-73b9eb46b2b7",
@@ -1829,7 +1848,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); web search found nothing. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); web search found nothing. Only Riftbound listed. Instagram (read 2026-10-10): a pinned 'Weekly Schedule' graphic is dated 2025-11-02, almost a year old, so no nights are listed. It showed Mon Magic Commander, Tue Digimon, Wed One Piece + Riftbound, Thu One Piece, Fri One Piece + Commander, Sat Gundam/Riftbound/One Piece/Commander, Sun Gundam + One Piece (all 7 PM, weekend afternoons). Newer posts: Pokémon League Challenge Sundays 7:30 PM ($5), tournaments with $5-$50 entry. Needs a phone call to confirm. Open daily 2 PM-midnight per bio.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/8f9dd9b0-e319-46d4-a452-1df611dc79fa",
@@ -1911,7 +1930,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); Discord not read; web search found nothing. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); Discord not read; web search found nothing. Only Riftbound listed. Instagram (read 2026-10-10): no weekly schedule; one-off Pokémon League Cup Sat Oct 10 1 PM ($20) and a Magic RCQ.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/9155fc75-a1c9-447a-b065-f3b8a7931496",
@@ -3080,9 +3099,14 @@
     "website": "https://instagram.com/stormxtcg89",
     "phone": "(805) 216-3112",
     "games": [
+      "azuki",
+      "gundam",
+      "mtg",
+      "onepiece",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled). Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled). Only Riftbound listed. Weekly schedule from the pinned 'Weekly Locals' Instagram graphic of 2026-07-12; closed Mondays. The Riftbound Fri 6:30 PM slot on it is the importer's. A newer pinned 'Updated store hours' post exists but its text was not readable at grid size.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/4f66bec8-fda4-4527-9f9f-da472e4d7d92",
@@ -3133,9 +3157,13 @@
     "website": "https://www.instagram.com/sugoistuff.tcg/",
     "phone": "(714) 322-2824",
     "games": [
+      "digimon",
+      "gundam",
+      "onepiece",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled). Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled). Only Riftbound listed. Weekly schedule from the pinned Instagram post of 2026-08-21; Tuesday is 'TBA', Wednesday Riftbound is the importer's.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/91a961c4-69af-4b73-8fcf-8133e50e144b",
@@ -3228,9 +3256,14 @@
       "facebook": "https://www.facebook.com/profile.php?id=61577244981570"
     },
     "games": [
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Instagram, Facebook and Discord only. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Instagram, Facebook and Discord only. Only Riftbound listed. Weekly schedule from the pinned Instagram 'Local Events' post of 2026-05-17 (20 weeks old when read 2026-10-10), plus the newer 'Crimson's Locals' graphic for the Pokémon fee. Riftbound Wed/Sun slots on it are the importer's.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/ef0a85e0-6fac-49d4-bbad-441e72c2ff9f",

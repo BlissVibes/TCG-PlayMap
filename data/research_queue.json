@@ -54,8 +54,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "No website (Discord only); web search found no schedule. Needs Discord/Instagram read.",
-    "checked": "2026-10-10"
+    "notes": "Discord only (https://discord.gg/NeWkG2A4bb); not opened per Mark. Needs Mark.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "all-ways-gaming",
@@ -69,8 +70,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "No website or socials besides Discord; web search found nothing. Needs Discord read.",
-    "checked": "2026-10-10"
+    "notes": "Discord only (https://discord.gg/4DfG8xse); not opened per Mark. Needs Mark.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "anteiku-cafe",
@@ -81,10 +83,10 @@
       "discord": "https://discord.gg/Sp8hcrWUXp"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d9657ba7-9489-4d0b-aea4-24bd9d183865",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Schedule only on Instagram/Discord; login-walled. Web search found no schedule.",
+    "notes": "Browser pass: Instagram feed graphics saying 'Every <day>' (post dates not read). 5 weekly rows + Cyberpunk prerelease Oct 30. Palworld $3 read from small print; CookieRun free entry.",
     "checked": "2026-10-10"
   },
   {
@@ -213,7 +215,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "No website; Facebook only (login-walled); search found no schedule, only a directory blurb.",
+    "notes": "Browser pass: Facebook page rendered blank in Chrome; nothing read.",
     "checked": "2026-10-10"
   },
   {
@@ -344,10 +346,10 @@
     "website": "https://www.instagram.com/danimalztradingcards/?hl=en",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/aa8dbdae-3994-4795-bec7-aef9597be5a7",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram only (login-walled); web search found nothing.",
+    "notes": "Browser pass: store's own event calendar site (danimalztradingcards.lovable.app); only dated events (OP Pirates Party Oct 10, Gundam Oct 24; Riftbound is the importer's). Times on that site look timezone-garbled for one Riftbound entry; the two rows added read 1:00 PM. Hours added.",
     "checked": "2026-10-10"
   },
   {
@@ -427,7 +429,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram page (login-walled); only an unverified directory blurb about a weekly pattern.",
+    "notes": "Browser pass: Instagram shows no schedule graphic in the first posts or highlights.",
     "checked": "2026-10-10"
   },
   {
@@ -440,10 +442,10 @@
       "facebook": "https://www.facebook.com/dxnprovision/"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b0bfb8c0-5b38-4df7-9a2c-69a4e5f7e4b5",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram/Facebook/Discord only (login-walled); search found nothing.",
+    "notes": "Browser pass: pinned Instagram schedule post (instagram.com/p/DdC7B1EOGg4/, 2026-09-08). 16 weekly rows, no fees. Discord left unopened.",
     "checked": "2026-10-10"
   },
   {
@@ -471,8 +473,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Discord only; search found nothing.",
-    "checked": "2026-10-10"
+    "notes": "Discord only (https://discord.gg/96WQDhtPc); not opened per Mark. Needs Mark.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "finch-and-sparrow-games",
@@ -512,8 +515,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Discord only; search found nothing.",
-    "checked": "2026-10-10"
+    "notes": "Discord only (https://discord.gg/N9TT7eYa); not opened per Mark. Needs Mark.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "game-citi",
@@ -586,7 +590,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Website is down (store migrating its site and point-of-sale); events via Discord/Instagram.",
+    "notes": "Browser pass: Facebook page shows only the profile (phone (626) 219-2889); no schedule posts visible; site down for migration.",
     "checked": "2026-10-10"
   },
   {
@@ -616,8 +620,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Site's TLS certificate fails from here (curl exit 60); not read. Directory/search found no schedule.",
-    "checked": "2026-10-10"
+    "notes": "Own site fails its TLS certificate check (not bypassed); Discord invite https://discord.gg/WgDPx2s2u5 not opened. Needs Mark.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "genki-stuff",
@@ -644,8 +649,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Events page empty; Discord only. Hours added.",
-    "checked": "2026-10-10"
+    "notes": "Discord only (https://discord.gg/VS5YjB7rpH); not opened per Mark. Needs Mark.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "gxgamers",
@@ -730,10 +736,10 @@
       "discord": "https://discord.com/invite/mVaqJPgtkA"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/27cde07f-4a41-4342-b640-73b9eb46b2b7",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram page (login-walled); Discord not read; search found only an unverified directory blurb.",
+    "notes": "Browser pass: pinned Instagram schedule post (instagram.com/p/DYoKqwstdyA/, 2026-05-21, 20 weeks old but consistent with Oct posts). 19 weekly rows, no fees. Discord left unopened.",
     "checked": "2026-10-10"
   },
   {
@@ -746,7 +752,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram only (login-walled); search found nothing.",
+    "notes": "Browser pass: pinned weekly schedule is dated 2025-11-02 (~11 months old) so not used; its grid is recorded in shop notes. Needs a call or a fresher post.",
     "checked": "2026-10-10"
   },
   {
@@ -787,7 +793,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram page (login-walled); search found nothing.",
+    "notes": "Browser pass: Instagram shows only one-off events (League Cup Oct 10 $20, RCQ); no weekly schedule. Discord not opened.",
     "checked": "2026-10-10"
   },
   {
@@ -1323,8 +1329,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "events.js-driven page, nothing readable; Discord not read.",
-    "checked": "2026-10-10"
+    "notes": "Own site loads events with JavaScript (not readable); Discord (https://discord.gg/sna7e3RznH) not opened. Needs Mark.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "stormxtcg-camarillo",
@@ -1333,10 +1340,10 @@
     "website": "https://instagram.com/stormxtcg89",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/4f66bec8-fda4-4527-9f9f-da472e4d7d92",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram only (login-walled).",
+    "notes": "Browser pass: pinned 'Weekly Locals' Instagram post (instagram.com/p/Das7WtyJ1G_/, 2026-07-12). 9 weekly rows, no fees. Discord (discord.gg/QZMxAR3GNq) left unopened.",
     "checked": "2026-10-10"
   },
   {
@@ -1359,10 +1366,10 @@
     "website": "https://www.instagram.com/sugoistuff.tcg/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/91a961c4-69af-4b73-8fcf-8133e50e144b",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram only; for the Chrome pass.",
+    "notes": "Browser pass: pinned Instagram 'Weekly Schedule' (instagram.com/p/DcUOyr8yAe4/, 2026-08-21). 6 weekly rows, no fees; Saturday reads 'DBZ/ Digimon', listed as Digimon only.",
     "checked": "2026-10-10"
   },
   {
@@ -1403,11 +1410,12 @@
       "facebook": "https://www.facebook.com/profile.php?id=61577244981570"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/ef0a85e0-6fac-49d4-bbad-441e72c2ff9f",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram/Facebook/Discord; for the Chrome pass (Instagram/Facebook), Discord is Mark's.",
-    "checked": "2026-10-10"
+    "notes": "Browser pass: pinned Instagram 'Local Events' post (instagram.com/p/DYbp8i_G8mC/, 2026-05-17, 'starting May 19th'). 13 weekly rows; Pokémon $7 from the newer Locals graphic. Discord left unopened.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-game-chest-irvine",
