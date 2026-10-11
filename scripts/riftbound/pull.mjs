@@ -26,6 +26,7 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
+import { isMain } from "../lib/isMain.mjs";
 
 const API = "https://api.riftbound.uvsgames.com/api/v2";
 const LOCATOR = "https://locator.riftbound.uvsgames.com";
@@ -236,6 +237,6 @@ async function main() {
   console.log(`\n${rows.length} stores (${payload.storesWithWeekly} with a weekly night), ${events.size} events, ${requests} requests -> ${out}`);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   main().catch((e) => { console.error(String(e.stack || e)); process.exit(1); });
 }

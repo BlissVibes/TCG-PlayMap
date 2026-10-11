@@ -7,6 +7,7 @@
  *   node scripts/bump_version.mjs "What changed, written for players." [YYYY-MM-DD]
  */
 import { readFileSync, writeFileSync } from "node:fs";
+import { isMain } from "./lib/isMain.mjs";
 
 export function nextVersion(v) {
   const p = v.split(".").map(Number);
@@ -29,7 +30,7 @@ export function bumpVersion(line, date, path = "lib/version.ts") {
   return next;
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   const [line, date] = process.argv.slice(2);
   if (!line) { console.error('usage: bump_version.mjs "changelog line" [YYYY-MM-DD]'); process.exit(2); }
   const today = date ?? new Intl.DateTimeFormat("en-CA", { timeZone: "America/Los_Angeles" }).format(new Date());

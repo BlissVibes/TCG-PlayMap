@@ -34,6 +34,7 @@
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { bumpVersion } from "../bump_version.mjs";
+import { isMain } from "../lib/isMain.mjs";
 
 const WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -294,4 +295,4 @@ function main() {
   console.log("Written: data/shops.json, data/events.json, data/calendar_log.json, data/research_queue.json");
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) main();
+if (isMain(import.meta.url)) main();

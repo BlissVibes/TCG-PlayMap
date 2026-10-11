@@ -30,6 +30,7 @@
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { isMain } from "../lib/isMain.mjs";
 
 // ── Arguments ────────────────────────────────────────────────────────────────
 const argv = process.argv.slice(2);
@@ -262,6 +263,6 @@ async function main() {
   console.log(`Raw responses: ${outDir}/ (not committed). Summary: data/candidates/bandai-tcgplus.json - commit and push that one file.`);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   main().catch((e) => { console.error(String(e.message || e)); process.exit(1); });
 }
