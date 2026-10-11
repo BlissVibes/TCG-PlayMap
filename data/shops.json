@@ -338,9 +338,11 @@
       "discord": "https://discord.gg/vgmbRWnjJM"
     },
     "games": [
-      "riftbound"
+      "mtg",
+      "riftbound",
+      "swu"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon-Thu 12:30-9:30 PM, Fri-Sat 12:30-11:30 PM, Sun 2-8 PM. Event calendar widget on the site is empty; game nights are posted on Instagram/Discord (not readable here). Only Riftbound is listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon-Thu 12:30-9:30 PM, Fri-Sat 12:30-11:30 PM, Sun 2-8 PM. Event calendar widget on the site is empty; game nights are posted on Instagram/Discord (not readable here). Only Riftbound is listed. Weekly Friday Commander from the store's own event calendar (read in a browser 2026-10-10). Also Riftbound Sat Nexus Night (importer) and Thursday Star Wars Unlimited open play nights on some weeks.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/b6749f89-571e-490c-b74d-eed06c89eb54",
@@ -487,9 +489,13 @@
       "discord": "https://discord.gg/BMZH5zxX5S"
     },
     "games": [
+      "gundam",
+      "mtg",
+      "onepiece",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 11 AM-9 PM every day. Actual address is 7517 Fallbrook Ave, West Hills (the locator says Los Angeles). Events calendar is a JavaScript widget that could not be read; events need sign-up on the website. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 11 AM-9 PM every day. Actual address is 7517 Fallbrook Ave, West Hills (the locator says Los Angeles). Events calendar is a JavaScript widget that could not be read; events need sign-up on the website. Only Riftbound listed. Weekly nights from the store's own event pages (read in a browser 2026-10-10). Also Hyperia prerelease Sat Oct 17, Pokémon prereleases Oct 24 and 30, Gundam GD06 release Sun Nov 1, Star Trek prereleases Nov 6-7 (times and fees not read), plus D&D/RPG nights, not listed. Events need website sign-up. Riftbound Tue Nexus Night is the importer's.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/bf1396b2-f027-45b3-afe5-31c5d9ce47ac",
@@ -818,9 +824,24 @@
       "facebook": "https://www.facebook.com/profile.php?id=61585629095919"
     },
     "games": [
-      "riftbound"
+      "azuki",
+      "cookierun",
+      "dbs_fusion",
+      "fab",
+      "grand_archive",
+      "gundam",
+      "hololive",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "other",
+      "palworld",
+      "pokemon",
+      "riftbound",
+      "union_arena",
+      "yugioh"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (chronoandcosmo.com) is a TCGplayer storefront that returns 403 to scripts. Directory listing (unverified): open 3 PM Tue-Sun, closed Mon; says it runs nightly tournaments (Magic, Pokémon, One Piece, Flesh and Blood, Union Arena, Gundam). Discord/Facebook not read. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (chronoandcosmo.com) is a TCGplayer storefront that returns 403 to scripts. Directory listing (unverified): open 3 PM Tue-Sun, closed Mon; says it runs nightly tournaments (Magic, Pokémon, One Piece, Flesh and Blood, Union Arena, Gundam). Discord/Facebook not read. Only Riftbound listed. Schedule from the store's TCGplayer Pro events calendar (chronoandcosmo.tcgplayerpro.com/weekly-and-special-events), read in a browser 2026-10-10; Chrono Player Pass holders get free entry to 'weekly' events. Specials (prereleases, release events, Victory 7, Store Championships) not listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/d41ef1a3-e23a-4953-bc2d-a4450ff12bd9",
@@ -899,10 +920,15 @@
     "website": "http://collectorslounge.us/",
     "phone": "(714) 349-0799",
     "games": [
+      "gundam",
       "lorcana",
-      "riftbound"
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "riftbound",
+      "yugioh"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 12-10 PM. 9975 Walker St, phone (714) 349-0799. The site only links Discord/Instagram for the tournament schedule. Only Riftbound listed. Instagram bio (2026-10-10): 10 AM-10 PM Mon-Fri, 12-10 PM Sat-Sun, and 'New Location Pending' (the store may be moving). Weekly tournament schedule is on Discord/Linktree (linktr.ee/CollectorsLoungeCa); only the Lorcana Hyperia prerelease weekend is listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site and Instagram bio, 2026-10-10): own site 12-10 PM; bio 10 AM-10 PM Mon-Fri, 12-10 PM Sat-Sun. 9975 Walker St, phone (714) 349-0799. New Location Pending (bio, 2026-10-10): the store may be moving. Weekly schedule from the undated Collector's Lounge Tournament Schedule graphic in the gallery on collectorslounge.us (read 2026-10-10); the Riftbound Mon 6:30 PM and Fri 7 PM slots on it are the importer's. Entry fees are not shown; special events are announced on Discord/Instagram. Lorcana Hyperia prerelease dates are from the 2026-10-02 Instagram post.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/27c45d67-446d-4a70-9850-d67485ff2fb2",
@@ -1297,7 +1323,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (flatearthgames.square.site) is a JavaScript store page with no readable events or hours. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (flatearthgames.square.site) is a JavaScript store page with no readable events or hours. Only Riftbound listed. Browser read 2026-10-10: Hours daily 1-10 PM, phone (951) 992-8710, 12125 Day St Ste K407 (Moreno Valley). The site's home page lists Warhammer products only and no events.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/abd454ec-267b-47dd-b137-247a845e3cf1",
@@ -1624,7 +1650,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (gxgamers.com) renders client-side with no readable text; Discord not read. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (gxgamers.com) renders client-side with no readable text; Discord not read. Only Riftbound listed. Browser read 2026-10-10: hours Mon, Wed-Fri 5:30-10 PM, Sat-Sun 5-10 PM, closed Tue; 1251 S Alvarado St Ste C-5, (323) 230-0185. The site lists products only, no events (Discord).",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/6274e25c-d450-4cf7-ad07-c104eaef94c2",

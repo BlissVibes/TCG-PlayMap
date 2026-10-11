@@ -36,10 +36,10 @@
       "discord": "https://discord.gg/vgmbRWnjJM"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b6749f89-571e-490c-b74d-eed06c89eb54",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Site calendar widget empty (no calendar configured); no events page text. Schedule lives on Instagram/Discord. Store hours added to shop notes.",
+    "notes": "Browser pass: own event calendar page renders in Chrome. Friday Commander weekly (5 PM) and Oct 11 SWU prerelease added; no fees listed.",
     "checked": "2026-10-10"
   },
   {
@@ -109,10 +109,10 @@
       "discord": "https://discord.gg/BMZH5zxX5S"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/bf1396b2-f027-45b3-afe5-31c5d9ce47ac",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Events calendar is a Speaz JS widget (izyrent.speaz.com), not readable; Discord not read. Hours added.",
+    "notes": "Browser pass: event calendar plus event pages (time, price). 5 weekly rows. Start times in rows are registration times; round start in notes. Specials need times/fees (not read).",
     "checked": "2026-10-10"
   },
   {
@@ -265,10 +265,10 @@
       "facebook": "https://www.facebook.com/profile.php?id=61585629095919"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d41ef1a3-e23a-4953-bc2d-a4450ff12bd9",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Site returns 403 (TCGplayer storefront JS app) on every path; Discord/Facebook not read; search found only a directory listing.",
+    "notes": "Browser pass: store's TCGplayer Pro calendar (chronoandcosmo.tcgplayerpro.com/weekly-and-special-events; the custom domain 403s scripts but loads in Chrome). 17 weekly series; fee read from each event's detail ($5 on all 15 checked; Sunday Pokémon and Saturday Commander details not read). Specials not added. Discord link on site left unopened.",
     "checked": "2026-10-10"
   },
   {
@@ -307,7 +307,7 @@
     "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram @collectors.lounge: no schedule pinned; Lorcana Hyperia prerelease dates/fee read from the 2026-10-02 post (instagram.com/p/DeAd_D_kjG2/). Weekly nights are on Discord (discord.gg/mRBj4Bgpzs) and the store's Linktree; bio says 'New Location Pending'.",
+    "notes": "Browser pass: schedule graphic found in the site's gallery (collectorslounge.us 'Tournament schedule and photos'; undated image). 18 weekly rows, no fees. Instagram bio says 'New Location Pending' - confirm the shop hasn't moved. Discord (discord.gg/mRBj4Bgpzs) left unopened.",
     "checked": "2026-10-10",
     "needsMark": "discord"
   },
@@ -497,7 +497,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Square Online site renders client-side; no events or hours readable.",
+    "notes": "Browser pass: Square page shows hours/phone only, no events; no socials in the locator.",
     "checked": "2026-10-10"
   },
   {
@@ -659,8 +659,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Square/JS site with no readable content; Discord only.",
-    "checked": "2026-10-10"
+    "notes": "Browser pass: site shows products and hours only; schedule is on Discord (https://discord.gg/DrsMGW3puc), not opened.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "haiku-pop-gaming-and-collectibles",
