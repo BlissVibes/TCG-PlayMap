@@ -770,5 +770,6 @@
   {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"the-game-hub-and-comic-bug","summary":"Lorcana: Thu 6 PM ($25) draft."},
   {"date":"2026-10-10","action":"changed","game":"lorcana","shopId":"collectors-lounge","summary":"Lorcana entry fees added: Sun, Thu and Sat nights are $10 per the Ravensburger Play listing."},
   {"date":"2026-10-10","action":"changed","game":"lorcana","shopId":"its-time-sports-cards-tcg-and-esports","summary":"Lorcana Thursday night entry fee added: $10 per the Ravensburger Play listing."},
-  {"date":"2026-10-10","action":"changed","game":"lorcana","shopId":"paper-heros-games-huntington-beach","summary":"Lorcana Wednesday night entry fee added: $10 per the Ravensburger Play listing."}
+  {"date":"2026-10-10","action":"changed","game":"lorcana","shopId":"paper-heros-games-huntington-beach","summary":"Lorcana Wednesday night entry fee added: $10 per the Ravensburger Play listing."},
+  {"date":"2026-10-10","action":"added","game":"weiss","shopId":"card-arena","summary":"Weiss Schwarz: Fri 7 PM (cost not listed)."}
 ]

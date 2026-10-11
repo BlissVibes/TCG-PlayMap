@@ -5680,5 +5680,53 @@
       "checked": "2026-10-10",
       "note": "OpenStreetMap lead, store's own site"
     }
+  },
+  {
+    "id": "card-arena",
+    "name": "Card Arena",
+    "address": "16350 Valley Blvd",
+    "city": "City of Industry",
+    "state": "CA",
+    "zip": "91744",
+    "lat": 34.0147657,
+    "lon": -117.9447188,
+    "tz": "America/Los_Angeles",
+    "website": "https://cardarenausa.com/",
+    "hours": "Fri 3-10 PM · Sat 2-10 PM · Sun 2-9 PM",
+    "games": [
+      "weiss"
+    ],
+    "notes": "Found via OpenStreetMap; schedule research pending. Weiss Schwarz, Magic, Yu-Gi-Oh and Pokémon; the homepage lists the hours and a Friday night Weiss tournament but also carries 2024 news, so confirm. Coordinates from OpenStreetMap (the geocoder only found 'Old Valley Blvd'). No phone listed.",
+    "active": true,
+    "source": {
+      "url": "https://cardarenausa.com/",
+      "checked": "2026-10-10",
+      "note": "OpenStreetMap lead, store's own site"
+    }
+  },
+  {
+    "id": "treasure-chest-collectibles",
+    "name": "Treasure Chest Collectibles",
+    "address": "22706 Aspan St, Suite 303",
+    "city": "Lake Forest",
+    "state": "CA",
+    "zip": "92630",
+    "lat": 33.6323902,
+    "lon": -117.7149135,
+    "tz": "America/Los_Angeles",
+    "website": "https://treasurechestcollectibles.com/",
+    "phone": "(949) 215-3233",
+    "games": [
+      "pokemon",
+      "onepiece",
+      "riftbound"
+    ],
+    "notes": "Found via OpenStreetMap; schedule research pending. Hours per OSM: Thu-Tue 2-10 PM (not confirmed on the site). Event tickets sold on the site: One Piece Play and Riftbound Play ($10), Pokémon Delta Reign prereleases Oct 27 and 29 ($35); ticket pages give dates but no start times.",
+    "active": true,
+    "source": {
+      "url": "https://treasurechestcollectibles.com/collections/store-events",
+      "checked": "2026-10-10",
+      "note": "OpenStreetMap lead, store's own site"
+    }
   }
 ]

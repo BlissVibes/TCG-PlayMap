@@ -257,7 +257,12 @@
         "milesFromLaCenter": 11,
         "triageScore": 6,
         "triageOrder": 14,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "Dream World Comics: comics shop site; no card games on the page.",
+        "evidenceUrl": "https://dreamworldcomicbooks.com",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Shuffle and Cut Games",
@@ -322,7 +327,12 @@
         "milesFromLaCenter": 33,
         "triageScore": 3,
         "triageOrder": 34,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Comics Toons 'n' Toys (Tustin, 36-year comics shop): reviews mention some trading cards but nothing about card-game play.",
+        "evidenceUrl": "https://kvibber.com/reviews/business/comics-toons-toys/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Game Geeks",
@@ -833,7 +843,12 @@
         "milesFromLaCenter": 26,
         "triageScore": 3,
         "triageOrder": 32,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Vintage Productions (Huntington Beach): site is behind a Cloudflare challenge page; nothing readable.",
+        "evidenceUrl": "https://www.vintageproductions.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Grotto Treasures",
@@ -919,7 +934,12 @@
         "milesFromLaCenter": 44,
         "triageScore": 10,
         "triageOrder": 2,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "Games Workshop Warhammer store (miniatures, not a TCG).",
+        "evidenceUrl": "https://www.warhammer.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Card Arena",
@@ -940,7 +960,12 @@
         "milesFromLaCenter": 17,
         "triageScore": 7,
         "triageOrder": 10,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "tcg",
+        "evidence": "Card Arena (Shopify site): specialises in Weiss Schwarz, Magic, Yu-Gi-Oh and Pokémon; homepage says Friday Night Weiss Tournaments at 7 PM and lists Fri 3-10 PM, Sat 2-10 PM, Sun 2-9 PM hours (page also carries 2024 news, so confirm). Shop row added.",
+        "evidenceUrl": "https://cardarenausa.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Game Chest",
@@ -1110,7 +1135,12 @@
         "milesFromLaCenter": 42,
         "triageScore": 6,
         "triageOrder": 16,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "tcg",
+        "evidence": "Treasure Chest Collectibles (Lake Forest): Shopify site sells Pokémon and other TCG sealed product and sells entry tickets for One Piece Play, Riftbound Play and prereleases ($10 play, $35 prerelease) through a Store Events collection. Shop row added; ticket pages carry dates but no start times.",
+        "evidenceUrl": "https://treasurechestcollectibles.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Pokémon Card Machine",
@@ -1243,7 +1273,13 @@
         "milesFromLaCenter": 14,
         "triageScore": 5,
         "triageOrder": 22,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "tcg",
+        "evidence": "8 Ball Cards Games (18158 Crenshaw Blvd, Torrance, 310-220-1688, Mon-Fri 11-6 per its eBay seller page): card retail (eBay seller 888tcg); no website or events found. Pending the Chrome pass.",
+        "evidenceUrl": "https://www.ebay.com/usr/888tcg",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10",
+        "pending": "chrome"
       },
       {
         "name": "Comic Bug",
@@ -2382,7 +2418,12 @@
         "milesFromLaCenter": 59,
         "triageScore": 4,
         "triageOrder": 28,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "Chalice Collectibles: Funko Pop and collectibles Shopify store; no card games.",
+        "evidenceUrl": "https://chalicecollectibles.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Jellyfish Ventura Vintage Boutique",
@@ -2878,7 +2919,12 @@
         "milesFromLaCenter": 10,
         "triageScore": 3,
         "triageOrder": 30,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Halo 13 (Burbank): anime, comics and collectibles shop; site is script-rendered and shows no card-game text.",
+        "evidenceUrl": "https://www.halo13anime.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Halo 13",
@@ -3345,7 +3391,12 @@
         "milesFromLaCenter": 12,
         "triageScore": 8,
         "triageOrder": 6,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Calipokehouse's own site says the Arcadia store (660 W Huntington Dr) is 'Coming Soon - Opening Fall 2026'; it is an online TCG seller (Riftbound, Pokémon) for now. Revisit once open.",
+        "evidenceUrl": "https://calipokehouse.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       }
     ],
     "unlikely": [

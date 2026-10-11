@@ -2481,5 +2481,31 @@
     "added": "2026-10-10",
     "addedBy": "osm-triage",
     "notes": "Own site mentions a gaming center and 'Gaming Events' but publishes no schedule on the pages read (Home). Check the Gaming page and socials."
+  },
+  {
+    "shopId": "card-arena",
+    "name": "Card Arena",
+    "city": "City of Industry",
+    "website": "https://cardarenausa.com/",
+    "socials": {},
+    "sourceUrl": "https://cardarenausa.com/",
+    "status": "done",
+    "added": "2026-10-10",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-10",
+    "notes": "Own Shopify homepage: Friday Night Weiss Tournaments at 7 PM, hours Fri-Sun. One weekly row, no fee published. Page also holds 2024 news posts, so the statement may be stale; Facebook/Instagram linked but login-walled."
+  },
+  {
+    "shopId": "treasure-chest-collectibles",
+    "name": "Treasure Chest Collectibles",
+    "city": "Lake Forest",
+    "website": "https://treasurechestcollectibles.com/",
+    "socials": {},
+    "sourceUrl": "https://treasurechestcollectibles.com/collections/store-events",
+    "status": "blocked",
+    "added": "2026-10-10",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-10",
+    "notes": "Own Shopify site sells event tickets (collections/store-events): One Piece Play and Riftbound Play $10 (seen Tue Aug 18, Aug 25, Sep 15, Sep 22, Oct 6), Pokémon Delta Reign prerelease Oct 27 and Oct 29 $35, Radiance Pre-Rift $35. Titles carry dates but no start times, so no rows written. Looks like alternating Tuesday One Piece / Riftbound play; confirm days and times by phone or social."
   }
 ]
