@@ -5832,5 +5832,33 @@
       "checked": "2026-10-11",
       "note": "OpenStreetMap lead, aggregator listing"
     }
+  },
+  {
+    "id": "av-pop-shop",
+    "name": "AV Pop Shop",
+    "address": "44154 10th St W",
+    "city": "Lancaster",
+    "state": "CA",
+    "zip": "93534",
+    "lat": 34.6854245,
+    "lon": -118.1475391,
+    "tz": "America/Los_Angeles",
+    "website": "https://businessinlancasterca.org/avpopshop/",
+    "socials": {
+      "instagram": "https://www.instagram.com/avpopshop/"
+    },
+    "games": [
+      "pokemon",
+      "gundam",
+      "onepiece",
+      "dbs_fusion"
+    ],
+    "notes": "Schedule supplied by Mark 2026-10-11. Family-owned Antelope Valley shop for Funko Pops, anime collectibles and figures (City of Lancaster business profile); on Instagram @avpopshop. No phone listed. Hours not found. Not the same shop as Warpact Games (44244 10th St W, a few blocks north).",
+    "active": true,
+    "source": {
+      "url": "https://businessinlancasterca.org/avpopshop/",
+      "checked": "2026-10-11",
+      "note": "City of Lancaster business profile; schedule supplied by Mark"
+    }
   }
 ]

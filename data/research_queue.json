@@ -2558,5 +2558,20 @@
     "added": "2026-10-11",
     "addedBy": "osm-triage",
     "notes": "No website. Only an aggregator listing (trading card store, Tuesday 6 PM casual Commander). Needs the Chrome pass or a phone call."
+  },
+  {
+    "shopId": "av-pop-shop",
+    "name": "AV Pop Shop",
+    "city": "Lancaster",
+    "website": "https://businessinlancasterca.org/avpopshop/",
+    "socials": {
+      "instagram": "https://www.instagram.com/avpopshop/"
+    },
+    "sourceUrl": "https://www.instagram.com/avpopshop/",
+    "status": "done",
+    "added": "2026-10-11",
+    "addedBy": "mark",
+    "checked": "2026-10-11",
+    "notes": "Schedule supplied by Mark 2026-10-11 (6 weekly nights, no fees). Friday 'Dragon Ball' entered as Fusion World, to confirm Masters vs Fusion World. Rows marked verified as Mark-supplied."
   }
 ]
