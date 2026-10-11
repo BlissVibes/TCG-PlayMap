@@ -48,6 +48,15 @@ not scrape it from a cloud session. Bandai's guest API returns 403, and its
 terms forbid automated access. Use the shop's own sources, or the leads in
 `data/candidates/` from Mark's Mac pull.
 
+**Calendar and description disagree: list neither.** Haiku POP's calendar
+feed (2026-10-10) put Yu-Gi-Oh! on one day while the same event's
+template-copied description named another, and likewise Lorcana. When a
+store's own two statements about a night contradict each other and nothing
+else settles it, add no row for that night and write both versions in the
+queue entry's `notes`. Picking one sends half the readers to a closed door.
+(Paper Hero's SWU fee, "$10" in the title and "$5" in the text, was a cost
+and not a day: there the row went in with the fee flagged in its notes.)
+
 ## Calendar grids: the trap
 
 A month grid read by a summariser can come back shifted by a day. On
@@ -55,6 +64,49 @@ A month grid read by a summariser can come back shifted by a day. On
 Sunday; it was a Tuesday, so every game landed on the wrong night, and a false
 "conflict" went into the calendar log. **Always pull the raw text and anchor
 the weekday to a real date** (`date -d 2026-10-13 +%A`).
+
+## The Chrome pass (local sessions with Claude in Chrome only)
+
+Step 5 of `docs/LOCAL_RUN.md`. A cloud session cannot do this; skip the
+section. The four rules there are binding: **read-only, your own tab, Discord
+never opened, `needsMark` on what is left.**
+
+What only drew in a browser on 2026-10-10, and how to read it:
+
+| what you find | where it showed up | how to read it |
+|---|---|---|
+| **Google Calendar embed** on the store's `/calendar` or events page | Paper Hero's Huntington Beach, Next-Gen Games, Emerald Knights, Game Ogre | **The best source there is.** The embed's `src=` id may only appear after the page's scripts run. Once you have it, leave the browser: fetch the `.ics` feed and use `scripts/ics/summarise.py` (step 2 of "Where to look"). Fees are often in the event description, not the title. |
+| **TCGplayer Pro store calendar**, `<store>.tcgplayerpro.com/weekly-and-special-events` (or the store's own domain on that storefront) | Chrono & Cosmo | `curl` gets 403 on every path. In a browser the month grid draws; the fee is inside each event's popup, so open the events. |
+| **Elfsight event calendar widget** | It's Time Sports Cards | The page's own data holds only placeholder events; the real ones arrive after load. Read the drawn widget. |
+| **Speaz calendar widget** (`*.speaz.com`) | BGE's Tabletop | Same: nothing in the HTML, read what is drawn. |
+| **Wix and Square site shells** | several | The HTML is an empty shell. Let the page finish loading and read the events section. A Wix events page shows one upcoming date per series, so a weekly rhythm is **not** proven by it; say so in `notes`. |
+| **Custom domains that answer `curl` with 403** | several | A bot check, not a refusal. The page loads normally in a browser. |
+| **Instagram: a pinned "weekly schedule" post** | many of the Instagram-only shops | Check the pinned posts and the highlights first. Open the image at full size before reading it. |
+
+Reading a schedule graphic:
+- **Full size, never the thumbnail.** A 6 and an 8, or 5:30 and 6:30, are the
+  same blur in a grid tile.
+- **Anchor the weekdays to the post's date.** "This week" on a post from
+  three weeks ago is three weeks old. Note the post date in the row's
+  `source.note`, and if the post is more than about two months old with
+  nothing newer, treat it as a lead: `needsMark: "phone"`.
+- A graphic rarely states fees. Leave `fee` out and say so (rule 9).
+
+## The `needsMark` field
+
+A queue entry that a session cannot finish, and that a person could, carries
+`needsMark` with one of:
+
+| value | meaning |
+|---|---|
+| `"discord"` | The schedule is only on the shop's Discord. Sessions never open Discord. |
+| `"phone"` | The nights are known but a start time or fee is not published; someone has to call. |
+| `"image"` | The schedule is an image that could not be read (too small, cropped, login wall). |
+
+Set it together with `status: "blocked"` and say in `notes` exactly what is
+missing ("Wed Pokémon confirmed on Instagram, no time given"). Remove the
+field when the shop becomes `done`. Mark works this list himself (step 6 of
+`docs/LOCAL_RUN.md`).
 
 ## Writing it down
 

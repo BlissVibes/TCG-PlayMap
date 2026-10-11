@@ -20,11 +20,12 @@ note anything that changed (and log it in `data/calendar_log.json`).
 
 | source | games | access | status |
 |---|---|---|---|
-| Riftbound locator API — `api.riftbound.uvsgames.com/api/v2/game-stores/?game_id=3&latitude=…&longitude=…&num_miles=…` and `/api/v2/events/?game_slug=riftbound&latitude=…&start_date_after=…&start_date_before=…` | Riftbound | **Open, no login.** Locator robots.txt allows all but `/players/`; the API host has no robots.txt. Terms not linked from the locator; not reviewed. | 2026-10-09: 171 Greater-LA stores, 118 with a recurring weekly night. Store-entered events → `scraped`. |
+| Riftbound locator API (loaded 2026-10-10: 120 shops, 160 weekly nights, 36 specials; one out-of-region store skipped) — `api.riftbound.uvsgames.com/api/v2/game-stores/?game_id=3&latitude=…&longitude=…&num_miles=…` and `/api/v2/events/?game_slug=riftbound&latitude=…&start_date_after=…&start_date_before=…` | Riftbound | **Open, no login.** Locator robots.txt allows all but `/players/`; the API host has no robots.txt. Terms not linked from the locator; not reviewed. | 2026-10-09: 171 Greater-LA stores, 118 with a recurring weekly night. Store-entered events → `scraped`. |
 | Bandai TCG+ — `api.bandai-tcg-plus.com/api/user/event/list` | Gundam, DBS Fusion World, One Piece, Union Arena, Digimon, Naruto | **Guests get 403.** Terms (lp.bandai-tcg-plus.com/terms/en/ §5, §7) forbid automated access and copying. | **Mark's decision, 2026-10-09:** pull anyway, lightly, from his Mac with a secondary account — one initial population of which shops run these games, then occasional pulls for special events. `scripts/bandai/` (README there). Output is leads only. |
 | Wizards store & event locator — `locator.wizards.com/store/<id>` | Magic | Events are rendered in the page HTML. | Used for Paper Hero's. Also lists nearby stores. |
 | Shop Google Calendars — `calendar.google.com/calendar/ical/<id>/public/basic.ics` | everything the shop runs | Public iCal feed; recurrence included. | Best per-shop source when it exists. Paper Hero's (both LA stores) publishes one. |
 | Gundam official 2024 trial-event store list (PDF) | Gundam | Public PDF. | ~40 Greater-LA stores; 2 years old → leads only. |
+| TCGplayer Pro store calendars — `<store>.tcgplayerpro.com/weekly-and-special-events` | everything the shop runs | **Browser only.** `curl` gets 403 on every path (JS storefront). In a browser the calendar draws, and each event's fee is in its popup. | 2026-10-10: found during the research run (Chrono & Cosmo was blocked on it from `curl`). Read in the Chrome pass, `docs/SHOP_RESEARCH.md`. One shop at a time; there is no cross-store feed. |
 
 ## What was tried and did not work
 

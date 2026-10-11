@@ -53,6 +53,31 @@ The log has to be able to say what the calendar used to say.
 This is separate from the site changelog in `lib/version.ts`, which records
 changes to the site itself.
 
+## Research queue entry (`data/research_queue.json`)
+
+Not shown on the site and not validated by `validateData`. It is the work
+list for filling in the shops a bulk importer created: one entry per shop,
+written by `scripts/candidates/merge.mjs` when it creates the shop and
+edited by research sessions afterwards (`docs/SHOP_RESEARCH.md`).
+
+| field | type | notes |
+|---|---|---|
+| `shopId` | Shop.id | one entry per shop; the importer never adds a second |
+| `name`, `city` | string | copied from the shop when queued, for reading the list |
+| `website` | string \| null | from the source that created the shop |
+| `socials` | object | e.g. `{ "discord": "…", "instagram": "…" }`; may be empty |
+| `sourceUrl` | string \| null | the shop's page on the bulk source |
+| `status` | `todo` \| `done` \| `blocked` | `blocked` = looked, schedule not readable; say why in `notes` |
+| `added` | YYYY-MM-DD | when the importer queued it |
+| `addedBy` | string | the importer's `origin`, e.g. `riftbound-locator` |
+| `checked` | YYYY-MM-DD | optional; when a session last worked the entry |
+| `notes` | string | which source was used, or what could not be read |
+| `needsMark` | `"discord"` \| `"phone"` \| `"image"` | optional; only a person can finish this entry, and how. Set with `status: "blocked"`, removed when the shop is `done`. Sessions never open Discord, so a Discord-only schedule is always `"discord"`. |
+
+The map's "partial" mark does not read this file. It comes from the shop row
+itself: `scheduleIncomplete(shop)` in `lib/schedule.ts` is true while a shop
+has an `origin` and at most one game.
+
 ## Occurrence (derived, never stored)
 
 `occurrencesInRange(events, shops, from, to, origin)` expands weekly rows into
