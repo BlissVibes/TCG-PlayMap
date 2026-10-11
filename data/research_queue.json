@@ -8,10 +8,11 @@
       "discord": "https://discord.gg/5UYzdyn"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/4e0cb63b-8b69-4b71-b3dd-fa5f239f352d",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site tournament-ticket catalog (ahiddenfortress.com/catalog/tournament/1513, 8 pages): no current weekly schedule (weekly tickets are 2022). Added dated Lorcana Hyperia prerelease rows. Gundam 1st Anniversary and One Piece Store Championship Oct 2026 tickets have no date on the page. Discord not read. Earlier lead (Dragon Ball Tue 6:30 PM $5) is a 2022-era ticket, left out as stale.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "a-g-collectibles",
@@ -20,10 +21,11 @@
     "website": "https://www.agcollectibles.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b4c79293-697d-4278-9d67-1651b123aa63",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Wix events page (agcollectibles.com/events-1), data read from embedded JSON. Only the next date per series is shown, so only dated rows added; no fees published. Recurring-looking series (Lorcana League Wed 5:30 PM, Commander Night Fri 5:30 PM, Modern Fri 6 PM, Pony Day Tue 6 PM) need cadence confirmed by the store.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "akh-trading-card-co",
@@ -34,10 +36,11 @@
       "discord": "https://discord.gg/vgmbRWnjJM"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b6749f89-571e-490c-b74d-eed06c89eb54",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Site calendar widget empty (no calendar configured); no events page text. Schedule lives on Instagram/Discord. Store hours added to shop notes.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "aki-collectibles",
@@ -48,10 +51,11 @@
       "discord": "https://discord.gg/NeWkG2A4bb"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/fc4a9db9-2f79-4e5f-b879-8d4490d754ac",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website (Discord only); web search found no schedule. Needs Discord/Instagram read.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "all-ways-gaming",
@@ -62,10 +66,11 @@
       "discord": "https://discord.gg/4DfG8xse"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/fc57b5f7-5fba-4ad7-b20b-2ae55551d37f",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials besides Discord; web search found nothing. Needs Discord read.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "anteiku-cafe",

@@ -332,5 +332,12 @@
   {"date":"2026-10-10","action":"added","game":null,"shopId":"warpact-games-llc","summary":"Warpact Games LLC (Lancaster) added to the map from the official Riftbound store locator."},
   {"date":"2026-10-10","action":"added","game":"riftbound","shopId":"warpact-games-llc","summary":"Riftbound from the official locator: weekly Tue 5:30 PM ($5)."},
   {"date":"2026-10-10","action":"added","game":null,"shopId":"wildcardcyclone","summary":"WildCardCyclone (Temple City) added to the map from the official Riftbound store locator."},
-  {"date":"2026-10-10","action":"added","game":"riftbound","shopId":"wildcardcyclone","summary":"Riftbound from the official locator: weekly Sun 2 PM ($10), Thu 7 PM ($10)."}
+  {"date":"2026-10-10","action":"added","game":"riftbound","shopId":"wildcardcyclone","summary":"Riftbound from the official locator: weekly Sun 2 PM ($10), Thu 7 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"a-hidden-fortress","summary":"Lorcana: Hyperia City prerelease Fri Oct 16 7 PM, Sat Oct 17 noon and 3 PM ($40 each)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"a-g-collectibles","summary":"Lorcana League Wed Oct 14 5:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"a-g-collectibles","summary":"Magic: Commander Night Fri Oct 16 5:30 PM and Modern Tournament Fri Oct 16 6 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"dbs_fusion","shopId":"a-g-collectibles","summary":"Dragon Ball Fusion World FB11 release event Sat Oct 17 2 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"a-g-collectibles","summary":"Gundam: GD06 release event Sat Oct 31 2 PM; November shop tournament Sun Nov 1 2 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"weiss","shopId":"a-g-collectibles","summary":"Weiss Schwarz: November shop tournament Sun Nov 1 1 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"palworld","shopId":"a-g-collectibles","summary":"Palworld: shop tournament Sun Nov 1 1 PM and Legends Awaken release tournament Sun Nov 1 2 PM (cost not listed)."}
 ]

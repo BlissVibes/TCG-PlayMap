@@ -274,9 +274,10 @@
       "discord": "https://discord.gg/5UYzdyn"
     },
     "games": [
+      "lorcana",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Tue-Fri 2-8 PM, Sat 12-8 PM, Sun 11 AM-4 PM, closed Monday. No weekly nights currently published: the site's tournament-ticket catalog only holds undated or old entries (2022 weekly Digimon/Dragon Ball tickets are stale). Only dated events are listed. Also sells Gundam, Riftbound, One Piece, Flesh and Blood; has Gundam 1st Anniversary and One Piece Store Championship (Oct 2026) tickets whose dates are not shown, so not listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/4e0cb63b-8b69-4b71-b3dd-fa5f239f352d",
@@ -301,9 +302,15 @@
     "website": "https://www.agcollectibles.com/",
     "phone": "(909) 758-0090",
     "games": [
-      "riftbound"
+      "dbs_fusion",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "palworld",
+      "riftbound",
+      "weiss"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Schedule from the store's Wix events page (checked 2026-10-10): it shows one upcoming date per series, so weekly cadence is NOT confirmed. Lorcana League (Wed), Commander Night and Modern Tournament (Fri), Pony Day (Tue, My Little Pony), Union Arena, One Piece and Dragon Ball store tournaments are marked 'Multiple Dates' and probably recur; confirm with the store. The events page publishes no entry fees. Riftbound is loaded by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/b4c79293-697d-4278-9d67-1651b123aa63",
@@ -333,7 +340,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon-Thu 12:30-9:30 PM, Fri-Sat 12:30-11:30 PM, Sun 2-8 PM. Event calendar widget on the site is empty; game nights are posted on Instagram/Discord (not readable here). Only Riftbound is listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/b6749f89-571e-490c-b74d-eed06c89eb54",
