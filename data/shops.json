@@ -4147,7 +4147,11 @@
       "x": "https://x.com/bardsandcards"
     },
     "games": [
-      "lorcana"
+      "gundam",
+      "lorcana",
+      "mtg",
+      "neuroscape",
+      "swu"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -4257,7 +4261,13 @@
     "website": "https://www.bruteforcemtg.com/",
     "phone": "(619) 230-5655",
     "games": [
-      "lorcana"
+      "fab",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "swu"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -4545,7 +4555,12 @@
     "website": "https://www.gameempire.com",
     "phone": "(858) 576-1525",
     "games": [
-      "lorcana"
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "swu"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,

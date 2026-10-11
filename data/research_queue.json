@@ -1757,10 +1757,11 @@
       "x": "https://x.com/bardsandcards"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7d6b8fe3-8086-4ae4-904a-f6472729b0c2",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own event-reservation products (collection JSON) with dates and prices: dated rows added through Nov 7; Lorcana/Riftbound/D&D skipped. No weekly nights published.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "baseball-and-games",
@@ -1810,10 +1811,11 @@
     "website": "https://www.bruteforcemtg.com/",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/bc77372a-da6a-4944-b2a0-c3ee6e4bfbbd",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Public Google Calendar embedded on /events (read as iCal): weekly + dated rows; Lorcana/Riftbound skipped; fees only where stated.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "cardboardia",
@@ -1902,10 +1904,11 @@
     "website": "https://www.ditzhobbygames.com/",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/314c8dfa-cd57-4620-afe4-763a44ea06ce",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site is a shop page with no events text.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "evolution-collection",
@@ -1943,10 +1946,11 @@
     "website": "https://www.gameempire.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/21c4b7f0-209b-4d0f-b1c2-316efeca3a37",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Public Google Calendar embedded on /calendar.html (read as iCal): weekly rows; Lorcana, HeroClix, 40K, D&D, board nights skipped.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "ggw-toys",
@@ -2367,10 +2371,11 @@
     "website": "https://www.instagram.com/thegrandlinesd?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/31aa8d24-5a2f-416d-9666-aff172fb7afd",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Instagram bio only (One Piece, Riftbound, Pokémon, Patreon link); no schedule found.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "the-hungry-dragon",
