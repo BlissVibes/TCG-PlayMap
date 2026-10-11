@@ -371,5 +371,10 @@
   {"date":"2026-10-10","action":"added","game":"gundam","shopId":"emerald-knights-comics-and-games","summary":"Gundam: Fri 6 PM ($12)."},
   {"date":"2026-10-10","action":"added","game":"swu","shopId":"emerald-knights-comics-and-games","summary":"Star Wars Unlimited: Sun noon casual league ($7)."},
   {"date":"2026-10-10","action":"added","game":"mtg","shopId":"game-n-grounds","summary":"Magic: Commander Wed 5 PM (cost not listed)."},
-  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"game-nights","summary":"Magic: Commander Wed 6 PM ($7)."}
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"game-nights","summary":"Magic: Commander Wed 6 PM ($7)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"game-ogre","summary":"Magic: Commander Tue and Thu noon, Standard Showdown Thu 7 PM ($10), FNM draft Fri 7:30 PM; Reality Echoes draft Fri Oct 16 ($20), Chaos draft Fri Oct 30 ($20), store championship Thu Nov 5 ($10), Commander parties; Star Trek sealed league Fridays from Nov 13."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"game-ogre","summary":"Pokémon: league Tue 4 PM (cost not listed); Delta Reign prerelease Sat Oct 31 1 PM ($35)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"game-ogre","summary":"Lorcana: league Wed 4 PM ($6) through Oct 14; Hyperia City prerelease Wed Oct 21 3-7 PM ($40)."},
+  {"date":"2026-10-10","action":"added","game":"swu","shopId":"game-ogre","summary":"Star Wars Unlimited: booster draft Thu 7 PM ($20) from Oct 15."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"gather-and-play-cafe-a-board-game-cafe","summary":"Pokémon: open play Sat noon (cost not listed)."}
 ]

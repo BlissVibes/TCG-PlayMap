@@ -565,10 +565,11 @@
       "facebook": "https://www.facebook.com/TheGameOgre"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/96e5c562-0fb5-480e-943a-0457a5620ecf",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Embedded public Google Calendar (via scripts/ics/summarise.py) plus the ics DESCRIPTION text for fees. 7 weekly series + 11 dated. Fees only where the event text states one. Skipped: board game/D&D/Warhammer series, 'Learn How to Play' Wed 1 PM (instructional), Riftbound (importer), Star Trek prerelease Nov 6 (no start time).",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "games-for-meeple",
@@ -581,10 +582,11 @@
       "x": "gamesformeeple"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/82a1bcba-5477-4b86-b805-3282a3486cbd",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Website is down (store migrating its site and point-of-sale); events via Discord/Instagram.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "gather-and-play-cafe-a-board-game-cafe",
@@ -595,10 +597,11 @@
       "facebook": "https://www.facebook.com/profile.php?id=61575271396413"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/60c92996-46d8-4fdb-9b10-197be37bfb6b",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site homepage: Pokémon open play every Saturday 12-2 PM added; Riftbound Wed Nexus Nights is importer's. No fees or other TCG nights published; Facebook/Instagram not read.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "geeky-teas-and-games",
@@ -609,10 +612,11 @@
       "discord": "https://discord.gg/WgDPx2s2u5"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/126bfb72-6978-471d-b75b-60910720f796",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Site's TLS certificate fails from here (curl exit 60); not read. Directory/search found no schedule.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "genki-stuff",
@@ -621,10 +625,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b17c4608-fed4-4ec0-96b8-cc436cb82cd4",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "grail-and-grade-llc",

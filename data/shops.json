@@ -1430,9 +1430,13 @@
       "facebook": "https://www.facebook.com/TheGameOgre"
     },
     "games": [
-      "riftbound"
+      "lorcana",
+      "mtg",
+      "pokemon",
+      "riftbound",
+      "swu"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Schedule from the store's public Google Calendar (checked 2026-10-10). Also runs board game night (Mon), D&D Adventurers League (Sat), Warhammer 40K/Age of Sigmar leagues (Sun), not listed. Riftbound Sun Nexus Night and Pre-Rift/Skirmish events come from the importer. Magic Star Trek prerelease Fri Nov 6 is on the calendar with no start time, so it is not listed. Phone (818) 852-7270.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/96e5c562-0fb5-480e-943a-0457a5620ecf",
@@ -1464,7 +1468,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site is down while the store moves to a new website and point-of-sale system (checked 2026-10-10); events are on Discord/Instagram. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/82a1bcba-5477-4b86-b805-3282a3486cbd",
@@ -1492,9 +1496,10 @@
       "facebook": "https://www.facebook.com/profile.php?id=61575271396413"
     },
     "games": [
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Board game cafe. Own site (gatherandplay.com) shows Pokémon open play Sat 12-2 PM and Riftbound Nexus Nights on Wednesdays 5-8 PM (importer owns Riftbound). Hours and fees not found.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/60c92996-46d8-4fdb-9b10-197be37bfb6b",
@@ -1524,7 +1529,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (geekyteas.com) fails its TLS certificate check from here, so it was not read. Chamber directory: 900 W Alameda Ave, (818) 639-2283, lists Magic tournaments with no days. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/126bfb72-6978-471d-b75b-60910720f796",
@@ -1550,7 +1555,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials in the locator; web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/b17c4608-fed4-4ec0-96b8-cc436cb82cd4",
