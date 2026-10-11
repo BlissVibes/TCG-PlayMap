@@ -800,5 +800,6 @@
   {"date":"2026-10-11","action":"added","game":"swu","shopId":"the-game-hub-and-comic-bug","summary":"Star Wars Unlimited: Sat 2 PM ($5)."},
   {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"the-game-hub-and-comic-bug","summary":"Pokémon: Learn to Play Mon and Fri 4 PM ($25)."},
   {"date":"2026-10-11","action":"added","game":null,"shopId":"burbank-sportscards","summary":"Burbank Sportscards (Burbank) added to the map from an OpenStreetMap lead."},
-  {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"burbank-sportscards","summary":"Pokémon: Delta Reign pre-release Tue Oct 27 6:15 PM; monthly tournament first Tuesday 7 PM (Nov 3, Dec 1) (cost not listed)."}
+  {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"burbank-sportscards","summary":"Pokémon: Delta Reign pre-release Tue Oct 27 6:15 PM; monthly tournament first Tuesday 7 PM (Nov 3, Dec 1) (cost not listed)."},
+  {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "revenge-of", "summary": "Magic: Friday draft 6 PM; Casual Commander Night Saturday 6 PM (October 2026 calendar graphic; cost not listed)."}
 ]

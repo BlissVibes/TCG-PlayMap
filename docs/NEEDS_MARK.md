@@ -7,7 +7,7 @@ What the values mean and who sets them: `docs/SHOP_RESEARCH.md`, "The `needsMark
 "Events" is the number of event rows the shop has on the calendar today. 0 means the shop is a
 pin with no schedule; more than 0 usually means only an importer's nights are listed.
 
-## Discord: open the server and read its schedule channel (16)
+## Discord: open the server and read its schedule channel (19)
 
 | Shop | City | Invite | Events | Notes |
 |---|---|---|---|---|
@@ -20,18 +20,23 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Grail And Grade LLC | Los Angeles | https://discord.gg/VS5YjB7rpH | 6 | Discord only (https://discord.gg/VS5YjB7rpH); not opened per Mark. Needs Mark. |
 | GXGAMERS | LOS ANGELES | https://discord.gg/DrsMGW3puc | 4 | Browser pass: site shows products and hours only; schedule is on Discord (https://discord.gg/DrsMGW3puc), not opened. |
 | Mooncards | Montclair | https://discord.gg/GzdD8tCX3R | 1 | moon-cards.com fails TLS from curl/WebFetch (SSLV3_ALERT_HANDSHAKE_FAILURE) and shows a certificate error page in Chrome (not clicked through); http://moon-cards.com redirects to www.moon-cards.com and serves a 404. Only the Discord (discord.gg/GzdD8tCX3R) remains and is not readable without joining. Needs Mark. |
+| Out of the Box Goods LLC | Pasadena | https://discord.gg/yCP9BNub | 6 | Site (kuson.group) says only 'Events Mon-Fri starting at 6:00PM' with no game or format; hours Mon-Sat 10-3. Discord invite already on the shop row; not opened. |
 | Pandy's Cards and Collectibles | La Habra | https://discord.gg/NhQKsceN | 1 | Browser pass: Instagram/Linktree show hours only; events are on Discord (https://discord.gg/NhQKsceN), not opened. |
 | STORMXTCG | Ventura | https://discord.gg/sna7e3RznH | 2 | Own site loads events with JavaScript (not readable); Discord (https://discord.gg/sna7e3RznH) not opened. Needs Mark. |
 | THE CRIMSON GUILD (SoCal) | SOUTH EL MONTE | https://discord.gg/XbtBekNFjz | 15 | Browser pass: pinned Instagram 'Local Events' post (instagram.com/p/DYbp8i_G8mC/, 2026-05-17, 'starting May 19th'). 13 weekly rows; Pokémon $7 from the newer Locals graphic. Discord left unopened. |
+| The Game Cellar | San Gabriel | https://discord.gg/HMX6hP9BgW | 2 | Instagram bio lists Pokémon/Magic/Yu-Gi-Oh; linktr.ee/thegamecellar has Discord invite (recorded) + Facebook; no schedule on public pages. Discord not opened. |
 | The Game Chest Irvine | Irvine | https://discord.gg/A23t4qy8Ap | 4 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
 | The Game Chest Promenade | Rolling Hills Estates | https://discord.gg/dtW6852uc2 | 2 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
 | THE GAME CHEST Torrance | Torrance | https://discord.gg/9yktRVe8qj | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
+| The Game Chest, Long Beach | Long Beach | https://discord.gg/ZvBeX83hak | 1 | Fifth Game Chest location (Linktree). Chain Instagram has no TCG schedule; events are in per-store Discords. Invite recorded on the shop row, not opened. |
 | The Game Chest, Manhattan Beach | Manhattan Beach | https://discord.gg/d5V9PQD77H | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
 
-## Phone: call the shop for a time or a fee (1)
+## Phone: call the shop for a time or a fee (3)
 
 | Shop | City | Phone | Events | Notes |
 |---|---|---|---|---|
+| Shadow Realm Collectibles LLC | Bell Gardens | (562) 381-0062 | 2 | No website or social found; web search returns nothing for this store. Only a phone number. |
+| Table 1 Gaming | Bell | (323) 744-2021 | 1 | No website or social found; web search returns nothing for this store. Only a phone number. |
 | Turn Zero Games | Los Angeles | (213) 384-3466 | 1 | Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop. Chrome pass 2026-10-10: socials found on the site (instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games), not yet read. |
 
 ## Blocked, no handle: no website and no socials (28)

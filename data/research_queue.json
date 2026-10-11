@@ -2048,10 +2048,12 @@
       "discord": "https://discord.gg/yCP9BNub"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/b1f6843e-024d-4945-930d-a02735f6ae59",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site (kuson.group) says only 'Events Mon-Fri starting at 6:00PM' with no game or format; hours Mon-Sat 10-3. Discord invite already on the shop row; not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "pair-a-dice-games",
@@ -2174,10 +2176,11 @@
       "instagram": "https://www.instagram.com/revengeof_comicsandpinball"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/4a3762fe-13e2-4ad3-ad9e-11761c056cb9",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Magic draft Fri 6 PM + Casual Commander Sat 6 PM from Oct 2026 calendar graphic on /pages/events (read in browser); Lorcana owned by importer. Weekday free play Wed 6-9 PM not added (no game).",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "s-rank-games",
@@ -2214,10 +2217,12 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/3d755bc6-2eae-44c8-9fb1-d1eae950cf78",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No website or social found; web search returns nothing for this store. Only a phone number.",
+    "checked": "2026-10-11",
+    "needsMark": "phone"
   },
   {
     "shopId": "south-bay-collectibles",
@@ -2255,10 +2260,12 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/1b289804-a121-4a08-9271-00c8ab92e996",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No website or social found; web search returns nothing for this store. Only a phone number.",
+    "checked": "2026-10-11",
+    "needsMark": "phone"
   },
   {
     "shopId": "tapped-out-gaming",
@@ -2300,10 +2307,12 @@
       "instagram": "https://www.instagram.com/thegamecellar"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/8dff7158-27a5-4085-8295-13215d93d2ce",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Instagram bio lists Pokémon/Magic/Yu-Gi-Oh; linktr.ee/thegamecellar has Discord invite (recorded) + Facebook; no schedule on public pages. Discord not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-game-chest-long-beach",
@@ -2312,10 +2321,12 @@
     "website": "https://www.instagram.com/thegamechest/",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/6fdd2f58-05f2-4ba5-bd12-3b7c292833d5",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Fifth Game Chest location (Linktree). Chain Instagram has no TCG schedule; events are in per-store Discords. Invite recorded on the shop row, not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-grand-line-trading-post",

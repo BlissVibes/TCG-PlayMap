@@ -5052,9 +5052,10 @@
       "instagram": "https://www.instagram.com/revengeof_comicsandpinball"
     },
     "games": [
-      "lorcana"
+      "lorcana",
+      "mtg"
     ],
-    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Comics and pinball shop. Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10; Magic schedule read from the store's own October 2026 calendar graphic.",
     "active": true,
     "source": {
       "url": "https://tcg.ravensburgerplay.com/stores/4a3762fe-13e2-4ad3-ad9e-11761c056cb9",
@@ -5309,12 +5310,14 @@
     "tz": "America/Los_Angeles",
     "phone": "(626) 406-4182",
     "socials": {
-      "instagram": "https://www.instagram.com/thegamecellar"
+      "instagram": "https://www.instagram.com/thegamecellar",
+      "discord": "https://discord.gg/HMX6hP9BgW",
+      "facebook": "http://www.facebook.com/TheGameCellar"
     },
     "games": [
       "lorcana"
     ],
-    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. Instagram bio lists Pokémon, Magic and Yu-Gi-Oh; schedule is not on the website or Instagram bio (events likely in Discord, not opened).",
     "active": true,
     "source": {
       "url": "https://tcg.ravensburgerplay.com/stores/8dff7158-27a5-4085-8295-13215d93d2ce",
@@ -5351,6 +5354,9 @@
     "origin": "ravensburger-play",
     "sourceIds": {
       "lorcana": "6fdd2f58-05f2-4ba5-bd12-3b7c292833d5"
+    },
+    "socials": {
+      "discord": "https://discord.gg/ZvBeX83hak"
     }
   },
   {
