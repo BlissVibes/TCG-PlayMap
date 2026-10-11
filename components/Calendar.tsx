@@ -42,6 +42,8 @@ export interface CalendarProps {
   /** Already filtered by ZIP/radius/game/kind. */
   occurrences: Occurrence[];
   myEvents: ReadonlySet<string>;
+  /** Shops where a person has entered a night; other importer-made shops get the "partial" mark. */
+  handShops: ReadonlySet<string>;
   myOnly: boolean;
   togglePick: (eventId: string) => void;
   showDistance: boolean;
@@ -53,15 +55,14 @@ function shortDate(d: string): string {
   return `${MONTH_LABELS[dt.getMonth()].slice(0, 3)} ${dt.getDate()}`;
 }
 
-function Block({ o, mine, greyed, open, showDistance, togglePick, toggleOpen, onShowShop }: {
-  o: Occurrence; mine: boolean; greyed: boolean; open: boolean; showDistance: boolean;
+function Block({ o, mine, greyed, open, partial, showDistance, togglePick, toggleOpen, onShowShop }: {
+  o: Occurrence; mine: boolean; greyed: boolean; open: boolean; partial: boolean; showDistance: boolean;
   togglePick: (id: string) => void; toggleOpen: () => void; onShowShop: (shopId: string) => void;
 }) {
   const g = GAMES[o.event.game];
   const extra = [o.event.title, o.event.format].filter(Boolean).join(" · ");
   const dist = showDistance && o.distanceMi != null ? ` · ${o.distanceMi.toFixed(1)} mi` : "";
   const tel = telHref(o.shop.phone);
-  const partial = scheduleIncomplete(o.shop);
   return (
     <div className={`block${open ? " open" : ""}${mine ? " mine" : ""}${greyed ? " greyed" : ""}`}
       style={{ ["--chip" as any]: g.color }} data-event={o.event.id} data-date={o.date}>
@@ -91,7 +92,7 @@ function Block({ o, mine, greyed, open, showDistance, togglePick, toggleOpen, on
                 </span>
               )}
               {partial && (
-                <span className="partial" title={`Only ${g.label} is listed for this shop so far - it may run other games. See the shop on the map for what we know.`}>partial schedule</span>
+                <span className="partial" title="Only nights from a publisher's store locator are listed for this shop so far - it may run other games. See the shop on the map for what we know.">partial schedule</span>
               )}
             </span>
           )}
@@ -150,6 +151,7 @@ export function Calendar(p: CalendarProps) {
     return (
       <Block key={key} o={o} mine={isMine(o)} greyed={isGreyed(o)}
         open={(allOpen || openByDefault) !== flipped.has(key)} toggleOpen={() => flip(key)}
+        partial={scheduleIncomplete(o.shop, p.handShops)}
         showDistance={p.showDistance} togglePick={p.togglePick} onShowShop={p.onShowShop} />
     );
   });

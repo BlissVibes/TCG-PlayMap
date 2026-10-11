@@ -21,7 +21,7 @@ import { geocodeZip, normalizeZip } from "@/lib/geo";
 import { GAME_IDS, GAMES, type GameId } from "@/lib/games";
 import { DEFAULT_PREFS, effectiveGames, gameMode, loadPrefs, savePrefs, type Prefs } from "@/lib/prefs";
 import {
-  addDays, filterOccurrences, occurrencesInRange, shopPassesFilter, startOfWeek, toDateStr,
+  addDays, filterOccurrences, occurrencesInRange, shopPassesFilter, shopsWithHandRows, startOfWeek, toDateStr,
   type EventKind, type ScheduleFilter,
 } from "@/lib/schedule";
 import { VERSION } from "@/lib/version";
@@ -79,6 +79,8 @@ export default function Page() {
   const visibleGames = useMemo(() => effectiveGames(prefs, availableGames),
     [prefs.games, prefs.myGames, prefs.hiddenGames, prefs.showAll, availableGames]); // eslint-disable-line react-hooks/exhaustive-deps
   const mySet = useMemo(() => new Set(prefs.myEvents), [prefs.myEvents]);
+  /** Shops where a person has entered a night: an importer-made shop NOT in here is marked "partial". */
+  const handShops = useMemo(() => shopsWithHandRows(events), [events]);
   const filter: ScheduleFilter = useMemo(() => ({
     origin: prefs.origin, radiusMi: prefs.radiusMi, games: visibleGames, kind: prefs.kind,
   }), [prefs.origin, prefs.radiusMi, visibleGames, prefs.kind]);
@@ -211,7 +213,7 @@ export default function Page() {
       <div style={{ display: tab === "map" ? "contents" : "none" }}>
         {mounted && (
           <PlayMap shops={mapShops} occurrences={weekOccs} origin={prefs.origin}
-            radiusMi={prefs.radiusMi} focus={focus} myEvents={mySet} visible={tab === "map"} />
+            radiusMi={prefs.radiusMi} focus={focus} myEvents={mySet} handShops={handShops} visible={tab === "map"} />
         )}
       </div>
 
@@ -225,7 +227,7 @@ export default function Page() {
 
       {tab === "calendar" && prefs.setupDone && (
         <Calendar view={view} setView={setView} anchor={anchor} setAnchor={setAnchor} today={today}
-          occurrences={calendarOccs} myEvents={mySet} myOnly={prefs.myOnly} togglePick={togglePick}
+          occurrences={calendarOccs} myEvents={mySet} handShops={handShops} myOnly={prefs.myOnly} togglePick={togglePick}
           showDistance={prefs.showDistance && !!prefs.origin} onShowShop={showShop} />
       )}
 

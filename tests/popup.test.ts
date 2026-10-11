@@ -6,7 +6,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { popupHtml } from "../components/PlayMap";
-import { scheduleIncomplete, type Occurrence, type PlayEvent, type Shop } from "../lib/schedule";
+import { scheduleIncomplete, shopsWithHandRows, type Occurrence, type PlayEvent, type Shop } from "../lib/schedule";
 
 const shop = (over: Partial<Shop> = {}): Shop => ({
   id: "tiny", name: "Tiny Card Cafe", address: "1 Elm St", city: "Glendale", state: "CA", zip: "91203", lat: 34.15, lon: -118.25,
@@ -19,11 +19,28 @@ const occ = (s: Shop): Occurrence => ({
 });
 
 describe("scheduleIncomplete", () => {
-  it("is true only for an importer-made shop still on its one imported game", () => {
-    expect(scheduleIncomplete({ origin: "riftbound-locator", games: ["riftbound"] })).toBe(true);
-    expect(scheduleIncomplete({ origin: "riftbound-locator", games: ["riftbound", "mtg"] })).toBe(false);   // researched
-    expect(scheduleIncomplete({ games: ["riftbound"] })).toBe(false);                                        // hand-entered
-    expect(scheduleIncomplete({ origin: "riftbound-locator" })).toBe(true);
+  const rift = { id: "e1", shopId: "tiny", origin: "riftbound-locator" };
+  const lor = { id: "e2", shopId: "tiny", origin: "ravensburger-play" };
+  const hand = { id: "e3", shopId: "tiny" };
+
+  it("is true for an importer-made shop where every night came from an importer", () => {
+    expect(scheduleIncomplete({ id: "tiny", origin: "riftbound-locator" }, shopsWithHandRows([rift]))).toBe(true);
+    expect(scheduleIncomplete({ id: "tiny", origin: "riftbound-locator" }, shopsWithHandRows([]))).toBe(true);   // no nights at all
+  });
+
+  it("STAYS true when a second importer adds a game (the 0.1.2.9 rule went false here)", () => {
+    expect(scheduleIncomplete({ id: "tiny", origin: "riftbound-locator" }, shopsWithHandRows([rift, lor]))).toBe(true);
+  });
+
+  it("goes false once a person has entered one night there", () => {
+    expect(scheduleIncomplete({ id: "tiny", origin: "riftbound-locator" }, shopsWithHandRows([rift, lor, hand]))).toBe(false);
+    // ...at THAT shop: a hand row somewhere else changes nothing.
+    expect(scheduleIncomplete({ id: "tiny", origin: "riftbound-locator" }, shopsWithHandRows([rift, { ...hand, shopId: "other" }]))).toBe(true);
+  });
+
+  it("is never true for a hand-entered shop", () => {
+    expect(scheduleIncomplete({ id: "tiny" }, shopsWithHandRows([]))).toBe(false);
+    expect(scheduleIncomplete({ id: "tiny" }, shopsWithHandRows([rift]))).toBe(false);
   });
 });
 
@@ -36,13 +53,12 @@ describe("map popup", () => {
     expect(html).toContain("$10");
   });
 
-  it("says the schedule is partial for an importer-only shop, and not for a researched or hand-entered one", () => {
-    const s = shop({ origin: "riftbound-locator" });
-    expect(popupHtml(s, [occ(s)], new Set())).toMatch(/Only Riftbound is listed here so far/);
-    const researched = shop({ games: ["riftbound", "mtg"], origin: "riftbound-locator" });
-    expect(popupHtml(shop({ origin: "riftbound-locator" }), [], new Set())).toMatch(/Only Riftbound is listed/);
-    expect(popupHtml(researched, [occ(researched)], new Set())).not.toMatch(/listed here so far/);
-    expect(popupHtml(shop({ origin: undefined }), [], new Set())).not.toMatch(/listed here so far/);
+  it("says which games the locators cover when the schedule is incomplete, and nothing when it is not", () => {
+    const s = shop({ origin: "riftbound-locator", games: ["riftbound", "lorcana"] });
+    expect(popupHtml(s, [occ(s)], new Set(), true)).toContain("Only locator-listed nights so far (Riftbound, Disney Lorcana) - other games not checked yet.");
+    expect(popupHtml(shop({ origin: "riftbound-locator", games: undefined }), [], new Set(), true)).toContain("Only locator-listed nights so far - other games not checked yet.");
+    expect(popupHtml(s, [occ(s)], new Set(), false)).not.toMatch(/locator-listed/);
+    expect(popupHtml(s, [occ(s)], new Set())).not.toMatch(/locator-listed/);
   });
 
   it("still says so when a shop has neither events nor notes", () => {

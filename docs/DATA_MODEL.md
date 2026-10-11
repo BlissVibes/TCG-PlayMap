@@ -74,9 +74,11 @@ edited by research sessions afterwards (`docs/SHOP_RESEARCH.md`).
 | `notes` | string | which source was used, or what could not be read |
 | `needsMark` | `"discord"` \| `"phone"` \| `"image"` | optional; only a person can finish this entry, and how. Set with `status: "blocked"`, removed when the shop is `done`. Sessions never open Discord, so a Discord-only schedule is always `"discord"`. |
 
-The map's "partial" mark does not read this file. It comes from the shop row
-itself: `scheduleIncomplete(shop)` in `lib/schedule.ts` is true while a shop
-has an `origin` and at most one game.
+The map's "partial" mark does not read this file. It comes from the data the
+site already loads: `scheduleIncomplete(shop, handShops)` in `lib/schedule.ts`
+is true while a shop has an `origin` and no event row at that shop was
+entered by a person (every row there has an `origin` too). Research that adds
+one hand-entered night clears it; a second importer adding a game does not.
 
 ## Occurrence (derived, never stored)
 

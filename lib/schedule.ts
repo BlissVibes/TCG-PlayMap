@@ -235,15 +235,29 @@ export function isTimeStr(t: unknown): t is string {
 }
 
 /**
- * Is this shop's schedule known to be incomplete? True for a shop a bulk
- * importer created (it has an `origin`) that still lists only the one game
- * that importer covers. 2026-10-10: 103 of the 120 shops from the Riftbound
- * locator showed one or two nights and read as "this store runs one night a
- * week". Research adding a second game clears it; the shop's `notes` say what
- * is and is not known, and the map popup always prints them.
+ * Shops where a PERSON has entered at least one night (an event row with no
+ * `origin`). Computed once from the events and handed to scheduleIncomplete.
  */
-export function scheduleIncomplete(shop: Pick<Shop, "origin" | "games">): boolean {
-  return !!shop.origin && (shop.games?.length ?? 0) <= 1;
+export function shopsWithHandRows(events: readonly Pick<PlayEvent, "shopId" | "origin">[]): Set<string> {
+  const out = new Set<string>();
+  for (const e of events) if (!e.origin) out.add(e.shopId);
+  return out;
+}
+
+/**
+ * Is this shop's schedule known to be incomplete? True for a shop a bulk
+ * importer created (it has an `origin`) at which every night on the calendar
+ * also came from an importer: nobody has looked at the shop's own schedule.
+ *
+ * It is computed from the ROWS, not from how many games the shop lists. The
+ * first version (0.1.2.9) was "origin and at most one game", which went false
+ * the moment a second importer (Lorcana) linked the shop: 72 unresearched
+ * shops would have lost the mark by gaining a game. A shop with only
+ * locator rows for two games is exactly as unresearched as one with one.
+ * The shop's `notes` say what is and is not known; the popup prints them.
+ */
+export function scheduleIncomplete(shop: Pick<Shop, "id" | "origin">, handShops: ReadonlySet<string>): boolean {
+  return !!shop.origin && !handShops.has(shop.id);
 }
 
 // ─── Expansion ────────────────────────────────────────────────────────────────

@@ -22,7 +22,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { loadLeaflet, TILE_ATTRIBUTION, TILE_URL } from "@/lib/leafletCdn";
-import { GAMES } from "@/lib/games";
+import { GAMES, type GameId } from "@/lib/games";
 import { feeLabel, formatTime, scheduleIncomplete, WEEKDAY_SHORT, weekdayOf, type Occurrence, type Shop } from "@/lib/schedule";
 import type { GeoOrigin } from "@/lib/geo";
 import { appleDirectionsUrl, directionsUrl, telHref } from "@/lib/shopLinks";
@@ -38,6 +38,8 @@ export interface PlayMapProps {
   focus: FocusRequest | null;
   /** Ids in the visitor's own calendar, to mark them in the popup. */
   myEvents: ReadonlySet<string>;
+  /** Shops where a person has entered a night; the rest of the importer-made shops are "partial". */
+  handShops: ReadonlySet<string>;
   /**
    * Whether the map tab is showing. The map stays mounted while hidden (so
    * Leaflet is not rebuilt on every tab switch), but a hidden container has
@@ -63,7 +65,9 @@ function initials(name: string): string {
   return (words.length >= 2 ? words[0][0] + words[1][0] : (words[0] ?? "?").slice(0, 2)).toUpperCase();
 }
 
-export function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<string>): string {
+/** `incomplete` = scheduleIncomplete(shop, handShops), decided by the caller, which holds the events. */
+export function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<string>, incomplete = false): string {
+  const listed = (shop.games ?? []).map((g: GameId) => GAMES[g]?.label ?? g).join(", ");
   const byDay = new Map<number, Occurrence[]>();
   for (const o of occs) {
     const wd = weekdayOf(o.date);
@@ -92,14 +96,14 @@ export function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<
     <div class="addr">${esc(shop.address)}, ${esc(shop.city)} ${esc(shop.zip)}${shop.hours ? `<br>${esc(shop.hours)}` : ""}</div>
     ${tel ? `<div class="phone"><a href="${tel}">📞 ${esc(shop.phone!)}</a></div>` : ""}
     ${days ? `<ul>${days}</ul>` : (shop.notes ? "" : `<div class="addr">No events on the calendar yet.</div>`)}
-    ${scheduleIncomplete(shop) ? `<div class="partial">Only ${esc(GAMES[shop.games?.[0] ?? "other"]?.label ?? "one game")} is listed here so far. This shop may run other games.</div>` : ""}
+    ${incomplete ? `<div class="partial">Only locator-listed nights so far${listed ? ` (${esc(listed)})` : ""} - other games not checked yet.</div>` : ""}
     ${/* Always, not only when there are no events: the notes are where "schedule not
          researched yet" and "events are posted on Instagram" live. */ shop.notes ? `<div class="notes">${esc(shop.notes)}</div>` : ""}
     <div class="links" style="margin-top:8px">${links}</div>
   </div>`;
 }
 
-export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents, visible }: PlayMapProps) {
+export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents, handShops, visible }: PlayMapProps) {
   const el = useRef<HTMLDivElement | null>(null);
   const map = useRef<any>(null);
   const markers = useRef<Map<string, any>>(new Map());
@@ -221,7 +225,7 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
         trophy, shopName: s.name,
       });
       // Built when opened, not for every shop on every redraw.
-      m.bindPopup(() => popupHtml(s, occs, myEvents), { maxWidth, minWidth: Math.min(220, maxWidth) });
+      m.bindPopup(() => popupHtml(s, occs, myEvents, scheduleIncomplete(s, handShops)), { maxWidth, minWidth: Math.min(220, maxWidth) });
       markers.current.set(s.id, m);
       made.push(m);
     }
@@ -245,7 +249,7 @@ export function PlayMap({ shops, occurrences, origin, radiusMi, focus, myEvents,
   };
 
   // Draw once the map exists, and redraw whenever the inputs change.
-  useEffect(() => { if (ready) draw(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [ready, shops, occurrences, origin, radiusMi, myEvents]);
+  useEffect(() => { if (ready) draw(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [ready, shops, occurrences, origin, radiusMi, myEvents, handShops]);
 
   // The tab just appeared: the container has a size for the first time, or a
   // new one. Fit if a fit was deferred, otherwise just re-measure.
