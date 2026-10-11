@@ -4748,7 +4748,13 @@
     "website": "https://on-boardgaming.com/",
     "phone": "(760) 566-6782",
     "games": [
-      "lorcana"
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "swu",
+      "union_arena"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -4832,7 +4838,9 @@
     "website": "https://pairadicegames.com",
     "phone": "(760) 940-0139",
     "games": [
-      "lorcana"
+      "lorcana",
+      "mtg",
+      "swu"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,

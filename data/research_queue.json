@@ -2041,10 +2041,11 @@
     "website": "https://on-boardgaming.com/",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/a86cdd17-2358-444f-86eb-bc1a49177ddd",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own events page weekly lineup (curl): weekly rows, no fees; Lorcana, Riftbound and miniatures skipped.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "ottos-video-games-and-more",
@@ -2053,10 +2054,11 @@
     "website": "https://www.facebook.com/ottosvideogames",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/b672afcf-3e79-48cc-bdd3-306cdd6545e5",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Video-game store; Facebook shows no TCG schedule.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "out-of-the-box-goods-llc",
@@ -2081,10 +2083,11 @@
     "website": "https://pairadicegames.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/8241fae5-75de-4789-82b2-d772e51a04d8",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own events page Recurring list (read in browser): weekly rows, no fees; Riftbound, RPG, Heroclix, board nights skipped.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "paladins-game-castle",
@@ -2097,10 +2100,11 @@
       "x": "https://x.com/paladingames"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/f9821eb6-b0ce-4859-afa0-3c72fbf2c06a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site pgcgames.com is empty; Facebook (read in browser) has store info only, no schedule; Instagram handle on file is gone.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "papa-joeys-collectibles-ca",
@@ -2113,10 +2117,12 @@
       "instagram": "https://www.instagram.com/papajoeyscollectibles"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/12efc1a8-8035-41eb-93d8-0f571c83717a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Instagram has Trade Nights / Poke Tournament highlights but no dated schedule; Discord on file, not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "papa-joeys-collectibles-mv",

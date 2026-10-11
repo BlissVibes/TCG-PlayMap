@@ -7,7 +7,7 @@ What the values mean and who sets them: `docs/SHOP_RESEARCH.md`, "The `needsMark
 "Events" is the number of event rows the shop has on the calendar today. 0 means the shop is a
 pin with no schedule; more than 0 usually means only an importer's nights are listed.
 
-## Discord: open the server and read its schedule channel (23)
+## Discord: open the server and read its schedule channel (24)
 
 | Shop | City | Invite | Events | Notes |
 |---|---|---|---|---|
@@ -24,6 +24,7 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Mooncards | Montclair | https://discord.gg/GzdD8tCX3R | 1 | moon-cards.com fails TLS from curl/WebFetch (SSLV3_ALERT_HANDSHAKE_FAILURE) and shows a certificate error page in Chrome (not clicked through); http://moon-cards.com redirects to www.moon-cards.com and serves a 404. Only the Discord (discord.gg/GzdD8tCX3R) remains and is not readable without joining. Needs Mark. |
 | Out of the Box Goods LLC | Pasadena | https://discord.gg/yCP9BNub | 6 | Site (kuson.group) says only 'Events Mon-Fri starting at 6:00PM' with no game or format; hours Mon-Sat 10-3. Discord invite already on the shop row; not opened. |
 | Pandy's Cards and Collectibles | La Habra | https://discord.gg/NhQKsceN | 1 | Browser pass: Instagram/Linktree show hours only; events are on Discord (https://discord.gg/NhQKsceN), not opened. |
+| Papa Joey's Collectibles - CA | Carlsbad | https://discord.gg/c2V2FketJj | 1 | Instagram has Trade Nights / Poke Tournament highlights but no dated schedule; Discord on file, not opened. |
 | STORMXTCG | Ventura | https://discord.gg/sna7e3RznH | 2 | Own site loads events with JavaScript (not readable); Discord (https://discord.gg/sna7e3RznH) not opened. Needs Mark. |
 | THE CRIMSON GUILD (SoCal) | SOUTH EL MONTE | https://discord.gg/XbtBekNFjz | 15 | Browser pass: pinned Instagram 'Local Events' post (instagram.com/p/DYbp8i_G8mC/, 2026-05-17, 'starting May 19th'). 13 weekly rows; Pokémon $7 from the newer Locals graphic. Discord left unopened. |
 | The Game Cellar | San Gabriel | https://discord.gg/HMX6hP9BgW | 2 | Instagram bio lists Pokémon/Magic/Yu-Gi-Oh; linktr.ee/thegamecellar has Discord invite (recorded) + Facebook; no schedule on public pages. Discord not opened. |
