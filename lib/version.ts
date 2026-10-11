@@ -17,7 +17,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.6.3";
+export const VERSION = "0.1.6.4";
 
 export interface ChangeEntry {
   version: string;
@@ -33,6 +33,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.6.4",
+    date: "2026-10-10",
+    changes: ["Internal: the roadmap no longer plans a database; the site stays a static page."],
+  },
   {
     version: "0.1.6.3",
     date: "2026-10-10",

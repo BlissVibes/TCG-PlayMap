@@ -1,8 +1,9 @@
 # Data model
 
-Three collections. Today they are `data/shops.json`, `data/events.json`,
-`data/calendar_log.json`; in Firestore they keep the same names and shapes,
-with document id = `id`. Types live in `lib/schedule.ts` and `lib/data.ts`;
+Three collections: `data/shops.json`, `data/events.json`,
+`data/calendar_log.json`. The site fetches them as static files
+(`/data/*.json`, see `lib/data.ts`). Every row's `id` is stable and unique, so
+the same shapes can move to a database unchanged if one is ever needed. Types live in `lib/schedule.ts` and `lib/data.ts`;
 the validator is `validateData` in `lib/data.ts` and the tests run it against
 the committed files.
 

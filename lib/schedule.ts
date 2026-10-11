@@ -55,7 +55,7 @@ export interface SourceRef {
 }
 
 export interface Shop {
-  /** Stable slug. Ends up in URLs and, later, as the Firestore document id. */
+  /** Stable slug. Ends up in URLs and is every other row's reference to this shop: never rename it. */
   id: string;
   name: string;
   address: string;

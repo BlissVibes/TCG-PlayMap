@@ -8,8 +8,8 @@
  * say). Adding a game is one line here plus a calendar-log entry; the tests in
  * tests/data.test.ts refuse an event whose game id is not in this table.
  *
- * Ids are stable and lowercase because they end up in JSON data and, later,
- * in Firestore documents. Rename the LABEL freely; never rename an id.
+ * Ids are stable and lowercase because they end up in JSON data and in
+ * visitors' saved preferences. Rename the LABEL freely; never rename an id.
  *
  * Colours were picked to be distinguishable from each other as small chips on
  * both the light and dark theme, not to match any publisher's branding.

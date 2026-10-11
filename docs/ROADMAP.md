@@ -20,36 +20,42 @@ with phase 4 in mind.
 - Data is three committed JSON files under `data/`, read through
   `lib/data.ts`'s `DataSource` interface. **Seam #1**: the UI only ever calls
   `getDataSource().load()`.
-- Map (Leaflet from CDN, OSM tiles), week/month calendar, filters (ZIP +
+- Map (Leaflet, vendored; OSM tiles), week/month calendar, filters (ZIP +
   radius 5–250 mi, game, casual/tournament), "My calendar" picks, calendar
   log, site changelog. Preferences in localStorage through `lib/prefs.ts`.
   **Seam #2**: `Prefs` is a serialisable object with stable keys; it is the
   document that gets saved to an account later.
-- Adding data is a JSON edit + a calendar-log line + a version bump (see
-  `docs/ADDING_DATA.md`).
+- Adding data is a JSON edit + a calendar-log line (see
+  `docs/ADDING_DATA.md`). Since 2026-10-10 a data change does not bump the
+  site version.
 
 Done when: Mark can look at it, and the four seed shops read correctly.
 
-## Phase 2 — Firestore behind the same interface
+## Phase 2 — data served as static JSON (done 2026-10-10, v0.1.6.3)
 
-- Collections `shops`, `events`, `calendar_log`; document id = the `id` field
-  in the JSON. Same shapes as `lib/schedule.ts` — `validateData` runs on
-  every read, because Collectify's FEED_FAILURES table is entirely "the read
-  succeeded and returned something wrong".
-- `firestoreDataSource` implements `DataSource`; `getDataSource()` picks it by
-  `NEXT_PUBLIC_DATA_SOURCE`. The JSON files stay as the seed and the fallback
-  when the read returns zero usable rows (a blank map is never truth).
-- A seed script pushes `data/*.json` into Firestore. Per Collectify Rule 12,
-  Firestore writes are the Sonnet window's job, not the coding window's.
-- Still a static page: the browser reads Firestore directly with public
-  read rules. No server yet.
+- The three data files are no longer compiled into the page. The build copies
+  `data/{shops,events,calendar_log}.json` to `/data/*.json`
+  (`scripts/copy_data.mjs`) and the page fetches them at runtime through the
+  same `DataSource` seam. They stay in `data/` in the repo; that is still
+  where people and importers edit them.
+- `validateData` runs on every load, because Collectify's FEED_FAILURES table
+  is entirely "the read succeeded and returned something wrong".
+- A load that fails, comes back empty or fails validation is an ERROR the
+  visitor sees, with a retry. A blank map is never presented as the truth.
+- Each build stamps the data with a content hash (`?v=`), so a new page is
+  never paired with an older cached copy.
+- No database. Mark, 2026-10-10: Firebase is off the roadmap. The site stays a
+  static page with nothing to run and nothing to pay for until submissions
+  (phase 5) need somewhere to land.
 
 ## Phase 3 — move to Vercel, add the server side
 
 - Delete `output: "export"` and `NEXT_PUBLIC_BASE_PATH`. Nothing else in the
   app changes.
 - `/api/version` and `/api/health` (Collectify Rule 7: verify the FEED, not
-  the build — health returns `ok:false` on zero shops).
+  the build). The "fails on zero shops" half already exists without a server:
+  it is the page's data-load error state and the acceptance check on it; a
+  server health route would report the same condition to a monitor.
 - Admin routes behind a token for edits without a commit.
 - Multi-city: `Shop.tz` is already stored; the calendar starts rendering in
   the shop's zone when shops span zones. City/region becomes a selector, the
@@ -57,9 +63,9 @@ Done when: Mark can look at it, and the four seed shops read correctly.
 
 ## Phase 4 — accounts and personal calendars
 
-- Firebase Auth (Collectify's `lib/firebaseClient.ts` / `firebaseVerify.ts`
-  are the pattern). On first sign-in, upload the local `Prefs.myEvents` to
-  the user document instead of discarding it; afterwards the account is the
+- An auth provider and a small database, chosen when this phase starts; no
+  provider is assumed. On first sign-in, upload the local `Prefs.myEvents` to
+  the user's record instead of discarding it; afterwards the account is the
   source and localStorage is the cache.
 - Settings additions that are already stubbed in the UI copy: "saved to your
   account".
@@ -67,8 +73,9 @@ Done when: Mark can look at it, and the four seed shops read correctly.
 ## Phase 5 — submissions and review
 
 - Signed-in users submit a new shop or a schedule change. Submissions land in
-  a `submissions` collection with `status: pending`, never directly in
-  `events`.
+  a `submissions` store with `status: pending`, never directly in `events`.
+  This is the first thing that needs a database (see phase 4: an auth provider
+  and a small database when submissions arrive).
 - A review bench (Collectify's `app/review/` is the pattern: a queue, a
   card, approve/reject, and the resulting calendar-log line written
   automatically). Approving writes the event row AND its log line in one
