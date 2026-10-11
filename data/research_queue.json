@@ -1272,10 +1272,11 @@
       "facebook": "https://www.facebook.com/ShuffleandCut/"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/6a31948f-9d21-493a-8f93-58769d28e726",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site event tickets: only dated events (Hyperia City prerelease Oct 17/18 x4 $34.99; Radiance pre-rift is importer's). No weekly nights published.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "side-quest-games-and-accessories",
@@ -1287,10 +1288,11 @@
       "facebook": "https://www.facebook.com/sidequestsocal"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/0a9a0436-c2e3-4c32-88a8-69d160adc8fb",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Wix events page (embedded event JSON, one instance per week visible so weekly claims rest on repeating entries + 'every Friday' text). FNM Commander Fri, TCG Thursdays. No fees published.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "spellhold-games",
@@ -1316,10 +1318,11 @@
       "discord": "https://discord.gg/sna7e3RznH"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/9f1ce93d-e111-4052-9405-5593fe1ed2f9",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "events.js-driven page, nothing readable; Discord not read.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "stormxtcg-camarillo",
@@ -1328,10 +1331,11 @@
     "website": "https://instagram.com/stormxtcg89",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/4f66bec8-fda4-4527-9f9f-da472e4d7d92",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram only (login-walled).",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "sugoi-stuff",

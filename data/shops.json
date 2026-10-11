@@ -2916,9 +2916,10 @@
       "facebook": "https://www.facebook.com/ShuffleandCut/"
     },
     "games": [
+      "lorcana",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Only dated event tickets are published (retail.shuffleandcut.com/event-tickets/, checked 2026-10-10); no weekly nights found. Also Blood on the Clocktower night (Oct 24), not listed. Discord/Facebook not read. Riftbound pre-rift comes from the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/6a31948f-9d21-493a-8f93-58769d28e726",
@@ -2947,9 +2948,11 @@
       "facebook": "https://www.facebook.com/sidequestsocal"
     },
     "games": [
+      "mtg",
+      "other",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Schedule from the store's own Wix events page (sidequest.fun/event, checked 2026-10-10). Also Wargaming Sundays, Paint & Play Mondays, Saturday Night Nexus (Riftbound, importer's), not listed. Events publish no entry fees. Warhammer is a big part of the store.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/0a9a0436-c2e3-4c32-88a8-69d160adc8fb",
@@ -3013,7 +3016,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (stormxtcg.com) loads its events with JavaScript, so nothing readable; Discord not read. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/9f1ce93d-e111-4052-9405-5593fe1ed2f9",
@@ -3040,7 +3043,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled). Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/4f66bec8-fda4-4527-9f9f-da472e4d7d92",

@@ -474,5 +474,8 @@
   {"date":"2026-10-10","action":"added","game":"hololive","shopId":"wildcardcyclone","summary":"Sat 5 PM (cost not listed)."},
   {"date":"2026-10-10","action":"added","game":"palworld","shopId":"wildcardcyclone","summary":"Sat 6:30 PM (cost not listed)."},
   {"date":"2026-10-10","action":"added","game":"ultraman","shopId":"wildcardcyclone","summary":"Sun 3 PM (cost not listed)."},
-  {"date":"2026-10-10","action":"changed","game":null,"shopId":"lost-levels-tcg","summary":"Lost Levels TCG: fees added to 6 dated events ($35 Lorcana and Pokémon prereleases, $45 Star Trek prerelease weekend, $75 cEDH tournament)."}
+  {"date":"2026-10-10","action":"changed","game":null,"shopId":"lost-levels-tcg","summary":"Lost Levels TCG: fees added to 6 dated events ($35 Lorcana and Pokémon prereleases, $45 Star Trek prerelease weekend, $75 cEDH tournament)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"side-quest-games-and-accessories","summary":"Magic: Friday Night Commander, Fri from noon (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"other","shopId":"side-quest-games-and-accessories","summary":"Open TCG Thursdays 4-10 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"shuffle-and-cut-games","summary":"Lorcana: Hyperia City prerelease Sat Oct 17 and Sun Oct 18 at 12:30 PM and 4:30 PM ($34.99)."}
 ]
