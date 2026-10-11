@@ -29,11 +29,7 @@ run**. Work through these in order. Each step ends with the CLAUDE.md gates
 
 ## 1. Riftbound: populate the map (one run, ~2 minutes)
 
-> **HOLD, 2026-10-10: do not run the pull or the refresh workflow again until
-> Mark rules.** The locator's terms (Carde.io) forbid scripted access; nobody
-> had read them when the first run was made. Details and the exact clauses:
-> `docs/SOURCES.md`, "Bulk sources", the Carde.io row. The commands below are
-> kept for the record and for after his decision.
+Carde.io terms forbid scripted access; Mark's 2026-10-10 decision: pull anyway, lightly — manual trigger only, never more than weekly, polite pacing. (Clauses: `docs/SOURCES.md`, the Carde.io row.)
 
 The official Riftbound store locator has an API that answers without a login. A dry run on
 2026-10-09 found **174 Greater-LA stores, 121 with a weekly Riftbound night**,

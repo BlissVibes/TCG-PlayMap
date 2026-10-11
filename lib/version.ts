@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.5.3";
+export const VERSION = "0.1.5.4";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.5.4",
+    date: "2026-10-10",
+    changes: ["Sources: Mark's decision on the Carde.io locators recorded (pull anyway, lightly)."],
+  },
   {
     version: "0.1.5.3",
     date: "2026-10-10",
