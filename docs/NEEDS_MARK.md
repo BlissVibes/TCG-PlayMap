@@ -7,7 +7,7 @@ What the values mean and who sets them: `docs/SHOP_RESEARCH.md`, "The `needsMark
 "Events" is the number of event rows the shop has on the calendar today. 0 means the shop is a
 pin with no schedule; more than 0 usually means only an importer's nights are listed.
 
-## Discord: open the server and read its schedule channel (19)
+## Discord: open the server and read its schedule channel (20)
 
 | Shop | City | Invite | Events | Notes |
 |---|---|---|---|---|
@@ -18,6 +18,7 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Funhouse 51 collectibles | LANCASTER | https://discord.gg/N9TT7eYa | 7 | Discord only (https://discord.gg/N9TT7eYa); not opened per Mark. Needs Mark. |
 | Geeky Teas & Games | Burbank | https://discord.gg/WgDPx2s2u5 | 4 | Own site fails its TLS certificate check (not bypassed); Discord invite https://discord.gg/WgDPx2s2u5 not opened. Needs Mark. |
 | Grail And Grade LLC | Los Angeles | https://discord.gg/VS5YjB7rpH | 6 | Discord only (https://discord.gg/VS5YjB7rpH); not opened per Mark. Needs Mark. |
+| Green Tower Games | Santa Clarita | https://discord.gg/7WMXpYq5FA | 1 | Facebook page (read in browser) has no schedule in recent posts; the Instagram handle on file (greentowergames.scv) is gone. Discord on file, not opened. |
 | GXGAMERS | LOS ANGELES | https://discord.gg/DrsMGW3puc | 4 | Browser pass: site shows products and hours only; schedule is on Discord (https://discord.gg/DrsMGW3puc), not opened. |
 | Mooncards | Montclair | https://discord.gg/GzdD8tCX3R | 1 | moon-cards.com fails TLS from curl/WebFetch (SSLV3_ALERT_HANDSHAKE_FAILURE) and shows a certificate error page in Chrome (not clicked through); http://moon-cards.com redirects to www.moon-cards.com and serves a 404. Only the Discord (discord.gg/GzdD8tCX3R) remains and is not readable without joining. Needs Mark. |
 | Out of the Box Goods LLC | Pasadena | https://discord.gg/yCP9BNub | 6 | Site (kuson.group) says only 'Events Mon-Fri starting at 6:00PM' with no game or format; hours Mon-Sat 10-3. Discord invite already on the shop row; not opened. |
@@ -41,12 +42,14 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Table 1 Gaming | Bell | (323) 744-2021 | 1 | No website or social found; web search returns nothing for this store. Only a phone number. |
 | Turn Zero Games | Los Angeles | (213) 384-3466 | 1 | Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop. Chrome pass 2026-10-10: socials found on the site (instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games), not yet read. |
 
-## Blocked, no handle: no website and no socials (30)
+## Blocked, no handle: no website and no socials (32)
 
 Research found nothing to read and nothing to follow. Call the shop, or decide it is not worth chasing.
 
 | Shop | City | Phone | Events | Notes |
 |---|---|---|---|---|
+| 424 Collectibles | Los Angeles | (424) 489-3459 | 9 | No website or social found; web search returns nothing for this store. |
+| A & N Collectibles | San Dimas | (909) 394-2375 | 3 | No website or social found; web search returns nothing for this store. |
 | Blue Penguin Gaming | Monterey Park | (626) 789-4454 | 1 | No website or socials; web search found nothing. |
 | Buddies Collectibles | Gardena | none listed | 8 | No website or socials in locator; web search found nothing. |
 | Collectible Exchange | Rancho Cucamonga | (626) 434-6438 | 3 | No website or socials in locator; search found only a directory listing (says call or Instagram). |

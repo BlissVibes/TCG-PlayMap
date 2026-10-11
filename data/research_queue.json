@@ -1712,10 +1712,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/aa70caec-0b62-479e-a7d0-2fae0297f25a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No website or social found; web search returns nothing for this store.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "a-and-n-collectibles",
@@ -1724,10 +1725,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/37f1d110-f16f-4ec1-8235-d3bb530b75f8",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No website or social found; web search returns nothing for this store.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "atomic-comics",
@@ -1963,10 +1965,12 @@
       "instagram": "https://www.instagram.com/greentowergames.scv"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7b7a1835-7b36-4a32-a4ad-7e5e8501750d",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Facebook page (read in browser) has no schedule in recent posts; the Instagram handle on file (greentowergames.scv) is gone. Discord on file, not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "hellspawn-toys-n-collectibles",
@@ -1999,10 +2003,11 @@
     "website": "https://www.luckysevengames.com/",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/0850c5d4-c49c-4aeb-8a88-9cb02ad36d6c",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Store site has a BinderPOS events calendar at /pages/events (read in browser); it shows no events this month or next. Recheck later.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "meeples-family-board-game-cafe-inc",
