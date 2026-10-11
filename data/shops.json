@@ -1288,7 +1288,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (flatearthgames.square.site) is a JavaScript store page with no readable events or hours. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/abd454ec-267b-47dd-b137-247a845e3cf1",
@@ -1317,7 +1317,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Discord only (not readable); web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/060a6437-a6de-455f-a69c-2d8f4860f8d1",
@@ -1343,7 +1343,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials in the locator; web search found nothing under this name. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/50dbd978-297c-4165-8f94-b07a9524bf10",
@@ -1371,9 +1371,10 @@
       "discord": "https://discord.com/invite/kPPUASYBHm"
     },
     "games": [
+      "mtg",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon-Thu 8 AM-10 PM, Fri 8 AM-midnight, Sat 8 AM-10 PM, Sun 8 AM-8 PM. A board game cafe; the events calendar (gamengrounds.com/events, checked 2026-10-10) is mostly board games, D&D, chess and trivia, not listed. Only one TCG night beyond Riftbound (Tue Nexus Nights, $5, from the importer).",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/85a9c3f3-7bd3-49c4-98eb-addbbc7b0959",
@@ -1397,9 +1398,10 @@
     "tz": "America/Los_Angeles",
     "phone": "(951) 736-6133",
     "games": [
+      "mtg",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Weekly Magic Commander from the store's Meetup group (checked 2026-10-10). Also open board gaming Tue 6 PM and D&D Sat 3-7 PM (not listed). Hours not found. Riftbound nights are loaded by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/8c830ebf-769d-4730-880c-a5acc9a6030c",

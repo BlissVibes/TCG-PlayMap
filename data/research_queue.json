@@ -493,10 +493,11 @@
     "website": "https://flatearthgames.square.site",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/abd454ec-267b-47dd-b137-247a845e3cf1",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Square Online site renders client-side; no events or hours readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "funhouse-51-collectibles",
@@ -507,10 +508,11 @@
       "discord": "https://discord.gg/N9TT7eYa"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/060a6437-a6de-455f-a69c-2d8f4860f8d1",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Discord only; search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "game-citi",
@@ -519,10 +521,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/50dbd978-297c-4165-8f94-b07a9524bf10",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; search found nothing under this name.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "game-n-grounds",
@@ -533,10 +536,11 @@
       "discord": "https://discord.com/invite/kPPUASYBHm"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/85a9c3f3-7bd3-49c4-98eb-addbbc7b0959",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site events calendar via The Events Calendar REST API (gamengrounds.com/wp-json/tribe/events/v1/events), read through mid-Nov. Only TCG night besides Riftbound is Commander Wed 5 PM (no fee listed). Rest is board games/D&D/chess, not listed.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "game-nights",
@@ -545,10 +549,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/8c830ebf-769d-4730-880c-a5acc9a6030c",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Store's Meetup group events (meetup.com/gamenightsgaminggroup; event data in page JSON). Weekly Magic Commander Wed 6 PM $7 (same event in consecutive weeks, text says weekly). Open board gaming Tue and D&D Sat not listed.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "game-ogre",

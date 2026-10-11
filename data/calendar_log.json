@@ -369,5 +369,7 @@
   {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"emerald-knights-comics-and-games","summary":"One Piece: Wed 6 PM ($5)."},
   {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"emerald-knights-comics-and-games","summary":"Pokémon: Thu 3:30 PM kids ($10), Thu 6 PM masters ($10)."},
   {"date":"2026-10-10","action":"added","game":"gundam","shopId":"emerald-knights-comics-and-games","summary":"Gundam: Fri 6 PM ($12)."},
-  {"date":"2026-10-10","action":"added","game":"swu","shopId":"emerald-knights-comics-and-games","summary":"Star Wars Unlimited: Sun noon casual league ($7)."}
+  {"date":"2026-10-10","action":"added","game":"swu","shopId":"emerald-knights-comics-and-games","summary":"Star Wars Unlimited: Sun noon casual league ($7)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"game-n-grounds","summary":"Magic: Commander Wed 5 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"game-nights","summary":"Magic: Commander Wed 6 PM ($7)."}
 ]
