@@ -671,7 +671,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Wed-Fri 2-8 PM, Sat-Sun 11 AM-8 PM, closed Mon-Tue. Phone (424) 347-9015. The site lists no events; schedule is on Instagram/Facebook (not readable). Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Wed-Fri 2-8 PM, Sat-Sun 11 AM-8 PM, closed Mon-Tue. Phone (424) 347-9015. The site lists no events; schedule is on Instagram/Facebook (not readable). Only Riftbound listed. Instagram pinned 'Weekly Events Schedule' (posted 2026-09-12, instagram.com/p/DdN4VyWimJ1/) gives DAYS only, no times or fees: Mon-Tue closed; Wed MTG booster draft (needs 8 players); Thu Lorcana League; Fri Friday Night Gundam (constructed); Sat special events and Riftbound Nexus; Sun One Piece and Gundam tournaments. Needs a phone call for start times.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/5a5f8c4a-eb93-49b0-8fe3-937b2ebaa5b5",
@@ -725,9 +725,17 @@
     "website": "https://www.instagram.com/card_cave_tcg/",
     "phone": "(951) 299-8383",
     "games": [
-      "riftbound"
+      "dbs_fusion",
+      "dbs_masters",
+      "gundam",
+      "lorcana",
+      "onepiece",
+      "pokemon",
+      "riftbound",
+      "union_arena",
+      "yugioh"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 7201 Arlington Ave Ste H; hosts Pokémon local tournaments, no dates published. Instagram (@card_cave_tcg) not readable. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 7201 Arlington Ave Ste H; hosts Pokémon local tournaments, no dates published. Instagram (@card_cave_tcg) not readable. Only Riftbound listed. Weekly grid from the store's pinned Instagram post (2026-08-17). Riftbound Fri 6 PM is the importer's. Instagram profile hours: Mon-Tue 2-10 PM (rest not read).",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/79649264-eefc-4683-8fff-e5cd1193600b",
@@ -754,7 +762,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 2717 S Orange Ave Unit B; open noon-8 PM Mon and Thu-Sun, closed Tue-Wed; focus Dragon Ball, Digimon, Pokémon, Flesh and Blood. Facebook not readable. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 2717 S Orange Ave Unit B; open noon-8 PM Mon and Thu-Sun, closed Tue-Wed; focus Dragon Ball, Digimon, Pokémon, Flesh and Blood. Facebook not readable. Only Riftbound listed. Facebook (read 2026-10-10): latest posts are a Sept 2 break-in and GoFundMe plus event recaps; no weekly schedule posted. Phone (657) 210-4133.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/8bd3702a-8e79-4182-9aeb-fb351ed5a5b7",
@@ -891,9 +899,10 @@
     "website": "http://collectorslounge.us/",
     "phone": "(714) 349-0799",
     "games": [
+      "lorcana",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 12-10 PM. 9975 Walker St, phone (714) 349-0799. The site only links Discord/Instagram for the tournament schedule. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 12-10 PM. 9975 Walker St, phone (714) 349-0799. The site only links Discord/Instagram for the tournament schedule. Only Riftbound listed. Instagram bio (2026-10-10): 10 AM-10 PM Mon-Fri, 12-10 PM Sat-Sun, and 'New Location Pending' (the store may be moving). Weekly tournament schedule is on Discord/Linktree (linktr.ee/CollectorsLoungeCa); only the Lorcana Hyperia prerelease weekend is listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/27c45d67-446d-4a70-9850-d67485ff2fb2",
@@ -1731,9 +1740,13 @@
       "x": "ItsTime_TCG"
     },
     "games": [
+      "lorcana",
+      "mtg",
+      "other",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 10 AM-10 PM, 7 days a week. Phone (818) 483-4311. The site says Magic drafts, Pokémon, One Piece, Lorcana, Beyblade and Riftbound nights run most nights, but the schedule is an Elfsight calendar widget whose data could not be read. Only Riftbound listed.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 10 AM-10 PM, 7 days a week. Phone (818) 483-4311. The site says Magic drafts, Pokémon, One Piece, Lorcana, Beyblade and Riftbound nights run most nights, but the schedule is an Elfsight calendar widget whose data could not be read. Only Riftbound listed. Schedule from the Events page calendar (read in a browser 2026-10-10, Oct 11-28). Also Mon Riftbound (importer), Wed One Piece Learn to Play and Thu Trade Night, not listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/f2eeeebe-3117-4afc-9517-0aeb1560ca9e",

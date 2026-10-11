@@ -484,5 +484,18 @@
   {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"tcg-tavern","summary":"Lorcana: weekly league Tue 6 PM (cost not listed)."},
   {"date":"2026-10-10","action":"added","game":"union_arena","shopId":"tcg-tavern","summary":"Union Arena: Wed 3 PM (cost not listed)."},
   {"date":"2026-10-10","action":"added","game":"digimon","shopId":"tcg-tavern","summary":"Digimon: Wed 6 PM and Fri 6 PM (cost not listed)."},
-  {"date":"2026-10-10","action":"added","game":"other","shopId":"tcg-tavern","summary":"Wonders of the First: Sat 6 PM (cost not listed)."}
+  {"date":"2026-10-10","action":"added","game":"other","shopId":"tcg-tavern","summary":"Wonders of the First: Sat 6 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"its-time-sports-cards-tcg-and-esports","summary":"Magic: Tuesday Night Magic Tue 6 PM, Friday Night Magic Fri 6 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"its-time-sports-cards-tcg-and-esports","summary":"Lorcana: Thu 6 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"its-time-sports-cards-tcg-and-esports","summary":"Pokémon: play and trainer trade night Sat 6 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"other","shopId":"its-time-sports-cards-tcg-and-esports","summary":"My Little Pony tournament Sun 6 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"union_arena","shopId":"card-cave","summary":"Union Arena: Mon 7 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"yugioh","shopId":"card-cave","summary":"Yu-Gi-Oh!: Mon 7:15 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"card-cave","summary":"One Piece: Tue 7:15 PM, Thu 7:15 PM, Sat 6:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"card-cave","summary":"Pokémon: Tue 7 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"card-cave","summary":"Gundam: Wed 7 PM, Sun 2 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"card-cave","summary":"Lorcana: Wed 7 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"dbs_fusion","shopId":"card-cave","summary":"Dragon Ball Fusion World: Fri 7 PM, Sun 2 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"dbs_masters","shopId":"card-cave","summary":"Dragon Ball Super Card Game: Sun 2 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"collectors-lounge","summary":"Lorcana: Hyperia City prerelease Thu Oct 15 8 PM, midnight Fri Oct 16, Sat Oct 17 12:30 PM, Sun Oct 18 6 PM ($40)."}
 ]
