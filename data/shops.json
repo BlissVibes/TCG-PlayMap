@@ -3724,9 +3724,23 @@
       "discord": "https://discord.gg/kRbPN7ZbHg"
     },
     "games": [
-      "riftbound"
+      "dbs_fusion",
+      "dbs_masters",
+      "digimon",
+      "fab",
+      "gundam",
+      "hololive",
+      "lorcana",
+      "onepiece",
+      "palworld",
+      "pokemon",
+      "riftbound",
+      "ultraman",
+      "union_arena",
+      "vanguard",
+      "yugioh"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Weekly nights transcribed by eye from the 'Weekly Schedule' image on the store's homepage (checked 2026-10-10); the graphic lists no fees and no casual/tournament labels, so all rows are tournaments with no fee. Riftbound (Thu 7 PM, Sun 2 PM) is the importer's. Sunday 'All Day Commander' (Magic) has no start time and is not listed. Store hours not found.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/7b4c01bd-c83a-416f-a08d-b804c2369142",

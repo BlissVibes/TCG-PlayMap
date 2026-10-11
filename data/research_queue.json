@@ -1606,10 +1606,11 @@
     "website": "https://www.treasuretopiaccg.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/882480f1-ab82-4eb7-9642-d2c1e04292c2",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Wix homepage shows only three dated entries (Oct 2 One Piece beginner 5 PM, Oct 9 Riftbound beginner free 6 PM, Oct 10 Pokemon store tournament no time/fee); 'View All Events' is script-rendered. No upcoming schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "turn-zero-games",
@@ -1618,10 +1619,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/92efaa6d-2354-4148-b3ff-7d29cfd15a18",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "viking-tcg-llc",
@@ -1630,10 +1632,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/cc801a71-b7bd-4c2d-9a7c-db72f783694b",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; web search finds no listing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "warpact-games-llc",
@@ -1642,10 +1645,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/3663ef00-7ac5-4bc3-a1ff-98a4c155739c",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; web search finds no listing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "wildcardcyclone",
@@ -1656,10 +1660,11 @@
       "discord": "https://discord.gg/kRbPN7ZbHg"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/7b4c01bd-c83a-416f-a08d-b804c2369142",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site homepage weekly schedule image (read the image): 24 weekly rows across Gundam, One Piece, Digimon, Dragon Ball Masters and Fusion World, Pokemon, Lorcana, Flesh and Blood, Union Arena, Vanguard, Yu-Gi-Oh! Edison, hololive, Palworld, Ultraman. No fees printed on the graphic (0 of 24 have a fee); Sunday All Day Commander skipped (no time); Riftbound skipped (importer). Hours not found.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-mystery-shop",

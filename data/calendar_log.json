@@ -459,5 +459,19 @@
   {"date":"2026-10-10","action":"added","game":"mtg","shopId":"psycho-turtle-collectibles","summary":"MTG: Reality Fracture Store Champs: 10-11 12 PM ($25); MTG: Monday Night Magic Commander: 10-12 7 PM ($8)."},
   {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"psycho-turtle-collectibles","summary":"One Piece Straw Hat Pirates' Sunday: 10-11 1 PM ($8)."},
   {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"recharge-cafe-llc","summary":"Pokemon League Challenge: 10-11 5 PM (cost not listed)."},
-  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"recharge-cafe-llc","summary":"Lorcana Prerelease: Hyperia City: 10-17 3 PM (cost not listed)."}
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"recharge-cafe-llc","summary":"Lorcana Prerelease: Hyperia City: 10-17 3 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"wildcardcyclone","summary":"Mon 7 PM (cost not listed); Wed 7 PM (cost not listed); Fri 7 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"digimon","shopId":"wildcardcyclone","summary":"Mon 7 PM (cost not listed); Thu 7 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"dbs_masters","shopId":"wildcardcyclone","summary":"Tue 6 PM (cost not listed); Thu 5 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"wildcardcyclone","summary":"Tue 7 PM (cost not listed); Sat 1:30 PM (cost not listed); Sun 1:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"wildcardcyclone","summary":"Tue 7 PM (cost not listed); Fri 7 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"wildcardcyclone","summary":"Wed 6:30 PM (cost not listed); Fri 6:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"dbs_fusion","shopId":"wildcardcyclone","summary":"Wed 7 PM (cost not listed); Fri 5 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"fab","shopId":"wildcardcyclone","summary":"Thu 7:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"union_arena","shopId":"wildcardcyclone","summary":"Sat 2:30 PM (cost not listed); Sun 2:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"vanguard","shopId":"wildcardcyclone","summary":"Sat 3 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"yugioh","shopId":"wildcardcyclone","summary":"Sat 3:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"hololive","shopId":"wildcardcyclone","summary":"Sat 5 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"palworld","shopId":"wildcardcyclone","summary":"Sat 6:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"ultraman","shopId":"wildcardcyclone","summary":"Sun 3 PM (cost not listed)."}
 ]
