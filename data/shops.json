@@ -93,5 +93,37 @@
     "notes": "Weekly schedule from the store's Instagram graphic. Sundays are special events (announced on the store's Discord) plus Yu-Gi-Oh! Edison format. Beyblade X on Tuesdays.",
     "active": true,
     "source": { "url": "https://www.instagram.com/bearcaveccg/", "checked": "2026-10-03", "note": "weekly schedule graphic (Instagram), supplied by Mark" }
+  },
+  {
+    "id": "paper-heros-games-sherman-oaks",
+    "name": "Paper Hero's Games",
+    "address": "14109 Burbank Blvd",
+    "city": "Sherman Oaks",
+    "state": "CA",
+    "zip": "91401",
+    "lat": 34.1722037,
+    "lon": -118.440387,
+    "tz": "America/Los_Angeles",
+    "games": ["cyberpunk", "gundam", "lorcana", "mtg", "neuroscape", "onepiece", "palworld", "pokemon", "riftbound", "swu", "yugioh"],
+    "notes": "Sherman Oaks store (the other is on Santa Monica Blvd). Schedule from the store's public Google Calendar (checked 2026-10-10). Row hand-entered 2026-10-10 before the Riftbound importer landed; the importer should match on id. Riftbound nights are hand-entered (the importer adds none at hand-entered shops). Also runs Warhammer 40K / Kill Team meetups, board game and Commander meetups (not listed). Hours and website not yet found; no phone listed.",
+    "sourceIds": { "riftbound": "a13b676d-7829-4896-a3ec-f877673fc718" },
+    "active": true,
+    "source": { "url":"https://calendar.google.com/calendar/ical/paperherosgames%40gmail.com/public/basic.ics", "checked":"2026-10-10" }
+  },
+  {
+    "id": "paper-heros-games-santa-monica",
+    "name": "Paper Hero's Games",
+    "address": "11304 Santa Monica Blvd",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90025",
+    "lat": 34.0465033,
+    "lon": -118.4486538,
+    "tz": "America/Los_Angeles",
+    "games": ["cyberpunk", "gundam", "lorcana", "mtg", "neuroscape", "onepiece", "pokemon", "riftbound", "swu", "yugioh"],
+    "notes": "Santa Monica Blvd store (the other is in Sherman Oaks). Schedule from the store's public Google Calendar (checked 2026-10-10). Row hand-entered 2026-10-10 before the Riftbound importer landed; the importer should match on id. Riftbound nights are hand-entered (the importer adds none at hand-entered shops). Also runs D&D Adventure League (Tue), Warhammer meetups (Sun) and a Friday board game meetup (not listed). Hours and website not yet found; no phone listed.",
+    "sourceIds": { "riftbound": "67fb2d35-ab07-465b-a7ce-afa03fafbf44" },
+    "active": true,
+    "source": { "url":"https://calendar.google.com/calendar/ical/mshumd4garrccmdg0q98v4fpu0%40group.calendar.google.com/public/basic.ics", "checked":"2026-10-10" }
   }
 ]

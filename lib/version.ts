@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.1.2";
+export const VERSION = "0.1.1.3";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.1.3",
+    date: "2026-10-10",
+    changes: ["Paper Hero's Games added: Sherman Oaks and Santa Monica Blvd weekly nights, fees and upcoming special events; Neuroscape and Cyberpunk TCG added."],
+  },
   {
     version: "0.1.1.2",
     date: "2026-10-10",
