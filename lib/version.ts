@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.3.6";
+export const VERSION = "0.1.3.7";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.3.7",
+    date: "2026-10-10",
+    changes: ["Research batch 17 - hours added for PokeBox USA, PokeMall TCG, Project CCG Alhambra; five shops blocked (no readable schedules)."],
+  },
   {
     version: "0.1.3.6",
     date: "2026-10-10",

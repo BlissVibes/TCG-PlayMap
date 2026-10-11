@@ -2657,7 +2657,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "1be4655d-65a8-4eb5-9d83-547250d20ebc"
-    }
+    },
+    "hours": "Mon 12-11 PM · Tue closed · Wed 12-10 PM · Thu-Sat 12 PM-12 AM · Sun 12-8 PM"
   },
   {
     "id": "pokemall-tcg",
@@ -2684,7 +2685,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "89c45c91-837c-4aee-838a-1168d41c9d60"
-    }
+    },
+    "hours": "Mon, Tue, Thu, Fri 12-8 PM · Sat-Sun 12-9 PM · Wed closed"
   },
   {
     "id": "project-ccg-la",
@@ -2714,7 +2716,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "dab9ca3c-49ab-46cf-bbde-8dfcbb96a896"
-    }
+    },
+    "hours": "Mon 12-5 PM · Tue-Fri 11 AM-9 PM · Sat-Sun 12-9 PM"
   },
   {
     "id": "project-ccg-oc",

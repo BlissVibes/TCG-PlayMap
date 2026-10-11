@@ -1129,10 +1129,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/7ac8a64e-69c1-4179-80e2-e583346a3ce7",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; a directory lists the shop (Placentia) with no events. Nothing readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "pokeboxusa",
@@ -1143,10 +1144,11 @@
       "discord": "https://discord.gg/sJenjb8j"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/1be4655d-65a8-4eb5-9d83-547250d20ebc",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site (Australian chain's new San Gabriel tournament store) has no events or tournaments page; only hours (added). Social/Discord not linked. No schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "pokemall-tcg",
@@ -1155,10 +1157,11 @@
     "website": "https://pokemalltcg.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/89c45c91-837c-4aee-838a-1168d41c9d60",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site /pages/event-calendar embeds event JSON, but it holds only 8 Riftbound events ending Sep 24 (Nexus Night Thu 5:30 PM; importer-owned game, and stale). No other games or fees published. Hours added (closed Wednesdays).",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "project-ccg-la",
@@ -1169,10 +1172,11 @@
       "x": "projectccg"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/dab9ca3c-49ab-46cf-bbde-8dfcbb96a896",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site's Tournaments collection holds one online product (Yu-Gi-Oh Remote Duels Regionals, $25); no in-store schedule published. Alhambra hours from the footer added. Shares the site with the Santa Ana (OC) store.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "project-ccg-oc",
@@ -1181,10 +1185,11 @@
     "website": "https://projectccg.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b230d129-e871-44bf-a795-5c3b559b97c6",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Shares projectccg.com with the Alhambra store; its Tournaments collection has only one online Yu-Gi-Oh product and no in-store schedule. OC-specific hours not published.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "psycho-turtle-collectibles",
