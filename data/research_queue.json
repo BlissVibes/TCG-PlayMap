@@ -1769,10 +1769,11 @@
     "website": "https://www.baseballandgames.com/",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/a685a048-ef82-4a85-8a2e-dd6a8efe1122",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site shows 'Webshop closed'; no events found.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "bases-cards-and-comics",
@@ -1821,10 +1822,11 @@
     "website": "https://cardboardanddie.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/06cdb0e4-1374-43fc-929c-8b902db4f1a4",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own SortSwift weekly schedule (read in browser): full weekly rows with fees; Lorcana/Riftbound, D&D and Cyberpunk skipped. Pokémon VGC (video game) skipped.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "cards-n-hobby-san-diego",
@@ -1873,10 +1875,11 @@
     "website": "https://Comiccult.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/ec3e421d-0cc1-49c9-b147-85dd1f29866d",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own Events Schedule page (read in browser): Star Wars Unlimited Fridays 5 PM only; no fee listed.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "comic-hero-university",
@@ -2176,10 +2179,11 @@
     "website": "https://rsgmenifee.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7569dc69-8339-4716-9bb4-0ad355d2d5a7",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own sign-up page (read in browser): weekly rows added, no fees listed; Lorcana/Riftbound left to importers. Dated Pokémon prereleases 10/25 and 11/1 and LACC events have no times on the page, not added.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "revenge-of",
@@ -2369,10 +2373,12 @@
       "instagram": "https://www.instagram.com/the_hungry_dragon/"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/8aaf304a-f986-46d1-b984-fa1aaed2d270",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site lists Pokémon Cup, Lorcana Set Champs and Flesh & Blood ticket products with no dates or times. Discord on file, not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-nerd-nook-gaming-center",

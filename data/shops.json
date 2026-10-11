@@ -4284,7 +4284,17 @@
     "website": "https://cardboardanddie.com",
     "phone": "(951) 319-6065",
     "games": [
-      "lorcana"
+      "dbs_fusion",
+      "grand_archive",
+      "hololive",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "palworld",
+      "pokemon",
+      "swu",
+      "union_arena",
+      "yugioh"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -4395,7 +4405,8 @@
     "website": "https://Comiccult.com",
     "phone": "(760) 998-2730",
     "games": [
-      "lorcana"
+      "lorcana",
+      "swu"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -5020,7 +5031,14 @@
     "website": "https://rsgmenifee.com",
     "phone": "(951) 800-3525",
     "games": [
-      "lorcana"
+      "digimon",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "swu",
+      "union_arena"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,

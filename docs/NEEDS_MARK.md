@@ -7,7 +7,7 @@ What the values mean and who sets them: `docs/SHOP_RESEARCH.md`, "The `needsMark
 "Events" is the number of event rows the shop has on the calendar today. 0 means the shop is a
 pin with no schedule; more than 0 usually means only an importer's nights are listed.
 
-## Discord: open the server and read its schedule channel (21)
+## Discord: open the server and read its schedule channel (22)
 
 | Shop | City | Invite | Events | Notes |
 |---|---|---|---|---|
@@ -32,6 +32,7 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | THE GAME CHEST Torrance | Torrance | https://discord.gg/9yktRVe8qj | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
 | The Game Chest, Long Beach | Long Beach | https://discord.gg/ZvBeX83hak | 1 | Fifth Game Chest location (Linktree). Chain Instagram has no TCG schedule; events are in per-store Discords. Invite recorded on the shop row, not opened. |
 | The Game Chest, Manhattan Beach | Manhattan Beach | https://discord.gg/d5V9PQD77H | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
+| The Hungry Dragon | Murrieta | https://discord.gg/sjHfGxRuZ2 | 3 | Site lists Pokémon Cup, Lorcana Set Champs and Flesh & Blood ticket products with no dates or times. Discord on file, not opened. |
 
 ## Phone: call the shop for a time or a fee (5)
 

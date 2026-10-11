@@ -810,5 +810,8 @@
   {"date": "2026-10-11", "action": "added", "game": "digimon", "shopId": "s-rank-games", "summary": "Digimon: Evolution Cup Vol. 3 Oct 18 4 PM $10."},
   {"date": "2026-10-11", "action": "added", "game": "swu", "shopId": "the-nerd-nook-gaming-center", "summary": "Star Wars: Unlimited casual open play Oct 16 and Oct 30, 4 PM, free."},
   {"date": "2026-10-11", "action": "added", "game": "yugioh", "shopId": "the-nerd-nook-gaming-center", "summary": "Yu-Gi-Oh!: casual open play Oct 20, 4 PM, free."},
-  {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "the-nerd-nook-gaming-center", "summary": "Magic: UCR club meetup Oct 21, 6:30 PM, free."}
+  {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "the-nerd-nook-gaming-center", "summary": "Magic: UCR club meetup Oct 21, 6:30 PM, free."},
+  {"date": "2026-10-11", "action": "added", "game": null, "shopId": "ready-set-game", "summary": "Ready Set Game weekly schedule added: One Piece Tue/Sat, Star Wars: Unlimited Sat, Pokémon League Sun, Digimon Fri, Union Arena Thu, Magic Commander Thu, Gundam Wed (fees not listed)."},
+  {"date": "2026-10-11", "action": "added", "game": null, "shopId": "cardboardia", "summary": "Cardboardia weekly schedule added: Pokémon Tue/Fri, Star Wars: Unlimited Tue, Union Arena Tue, One Piece Wed, Magic Commander Thu + Friday Night Magic, Palworld, Grand Archive, Yu-Gi-Oh!, Dragon Ball Super: Fusion World, hololive (fees $10-$20)."},
+  {"date": "2026-10-11", "action": "added", "game": "swu", "shopId": "comic-cult-hd", "summary": "Star Wars: Unlimited Fridays 5 PM (fee not listed)."}
 ]
