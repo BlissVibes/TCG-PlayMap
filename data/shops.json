@@ -428,7 +428,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (directory listing, unverified): Mon-Thu 8:30 AM-5 PM, Fri-Sat 8:30 AM-7 PM, Sun 8:30 AM-5 PM. Game nights are posted on Instagram (@experience_anteiku) and Discord, which were not readable. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/d9657ba7-9489-4d0b-aea4-24bd9d183865",
@@ -452,9 +452,13 @@
     "tz": "America/Los_Angeles",
     "phone": "(213) 357-1215",
     "games": [
+      "gundam",
+      "hololive",
+      "onepiece",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Hours (own site): Wed-Sun 12-8 PM (events can close the cafe, e.g. release events). Schedule from the café's own event pages (arcanecafe.com/events, checked 2026-10-10); release events listed through Nov 24 only. Maid café and TCG shop. Riftbound nights loaded by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/d051bd6d-e04e-4dcb-8032-79725fef7804",
@@ -464,7 +468,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "d051bd6d-e04e-4dcb-8032-79725fef7804"
-    }
+    },
+    "website": "https://arcanecafe.com"
   },
   {
     "id": "bges-tabletop",
@@ -484,7 +489,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 11 AM-9 PM every day. Actual address is 7517 Fallbrook Ave, West Hills (the locator says Los Angeles). Events calendar is a JavaScript widget that could not be read; events need sign-up on the website. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/bf1396b2-f027-45b3-afe5-31c5d9ce47ac",
@@ -510,7 +515,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or schedule found. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/36aa465c-00e7-4fb3-8f25-0778e87c67d0",
@@ -538,9 +543,16 @@
       "facebook": "https://facebook.com/boardgameparadise.store"
     },
     "games": [
-      "riftbound"
+      "cookierun",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "riftbound",
+      "swu"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Schedule from the store's own events calendar (checked 2026-10-10; first ~10 days). Also runs board game meetups (Mon, Tue), D&D and Pathfinder, a Veteran Meet-Up (Wed), not listed. Riftbound nights are loaded by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/1c2e3639-4d4d-48b0-a163-ae644dfa9741",

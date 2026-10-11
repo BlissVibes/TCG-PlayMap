@@ -339,5 +339,16 @@
   {"date":"2026-10-10","action":"added","game":"dbs_fusion","shopId":"a-g-collectibles","summary":"Dragon Ball Fusion World FB11 release event Sat Oct 17 2 PM (cost not listed)."},
   {"date":"2026-10-10","action":"added","game":"gundam","shopId":"a-g-collectibles","summary":"Gundam: GD06 release event Sat Oct 31 2 PM; November shop tournament Sun Nov 1 2 PM (cost not listed)."},
   {"date":"2026-10-10","action":"added","game":"weiss","shopId":"a-g-collectibles","summary":"Weiss Schwarz: November shop tournament Sun Nov 1 1 PM (cost not listed)."},
-  {"date":"2026-10-10","action":"added","game":"palworld","shopId":"a-g-collectibles","summary":"Palworld: shop tournament Sun Nov 1 1 PM and Legends Awaken release tournament Sun Nov 1 2 PM (cost not listed)."}
+  {"date":"2026-10-10","action":"added","game":"palworld","shopId":"a-g-collectibles","summary":"Palworld: shop tournament Sun Nov 1 1 PM and Legends Awaken release tournament Sun Nov 1 2 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"board-game-paradise","summary":"Pokémon: Mon 6:30 PM tournament ($10), Sat 10 AM league (free); League Cup Sat Oct 17 2 PM ($30)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"board-game-paradise","summary":"Magic: Commander Thu 4 PM ($10), Friday Night Magic Fri 6:30 PM ($25 draft, $10 Standard); Reality Echoes Fri Oct 16 ($25)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"board-game-paradise","summary":"Gundam: Sun 2 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"swu","shopId":"board-game-paradise","summary":"Star Wars Unlimited: Thu 6:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"cookierun","shopId":"board-game-paradise","summary":"Cookie Run: Sat 2 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"board-game-paradise","summary":"One Piece: Extra Grand Battle Sat Oct 10 6 PM ($30); Pirates Party Sat Oct 17 6:30 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"board-game-paradise","summary":"Lorcana: Hyperia prerelease Sat Oct 17 6:30 PM ($40)."},
+  {"date":"2026-10-10","action":"added","game":"hololive","shopId":"arcane-maid-cafe","summary":"hololive OCG: Sun 1 PM ($10); Live Start Battle Sun Oct 25 ($20), Bloom Cup Sun Nov 1 ($15), Diva Fever cup Sun Nov 22 ($15)."},
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"arcane-maid-cafe","summary":"One Piece: Tue 7 PM ($10); EB-05 event Tue Nov 10 ($20); OP-18 release Nov 21 and Nov 24 ($40)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"arcane-maid-cafe","summary":"Pokémon: Thu 7 PM play night ($5)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"arcane-maid-cafe","summary":"Gundam: Fri 7 PM ($10) from Oct 23; GD06 release event Fri Nov 6 ($40)."}
 ]

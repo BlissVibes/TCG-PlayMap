@@ -81,10 +81,11 @@
       "discord": "https://discord.gg/Sp8hcrWUXp"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d9657ba7-9489-4d0b-aea4-24bd9d183865",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Schedule only on Instagram/Discord; login-walled. Web search found no schedule.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "arcane-maid-cafe",
@@ -93,10 +94,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d051bd6d-e04e-4dcb-8032-79725fef7804",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site event pages (arcanecafe.com/events/<slug>, startDate/price in page data). Weekly: hololive Sun 1 PM $10, One Piece Tue 7 PM $10, Pokémon Thu 7 PM $5, Gundam Fri 7 PM $10 (first listed Oct 23). Dated specials through Nov 24; Dec+ events (ST-37/38 Dec 22, 2027 releases) left out as beyond 8 weeks.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "bges-tabletop",
@@ -107,10 +109,11 @@
       "discord": "https://discord.gg/BMZH5zxX5S"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/bf1396b2-f027-45b3-afe5-31c5d9ce47ac",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Events calendar is a Speaz JS widget (izyrent.speaz.com), not readable; Discord not read. Hours added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "blue-penguin-gaming",
@@ -119,10 +122,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/36aa465c-00e7-4fb3-8f25-0778e87c67d0",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; web search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "board-game-paradise",
@@ -133,10 +137,11 @@
       "facebook": "https://facebook.com/boardgameparadise.store"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/1c2e3639-4d4d-48b0-a163-ae644dfa9741",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site events calendar (boardgameparadise.store/events, WordPress/MEC; read via its load-more AJAX endpoint, covers to ~Oct 20). Weekly nights taken from descriptions that say 'every <day>' or from the same night appearing in consecutive weeks. Fees copied from the descriptions; SWU Thursday and Cookie Run list none. Calendar beyond Oct 20 not read; later-dated specials not added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "boomloot",
