@@ -25,7 +25,7 @@ What the run changed in the tools, so the commands below are still right:
 Written 2026-10-09. The cloud session that built the pipelines stopped before
 running any bulk data scrapes; Mark wants those done in a **local Claude
 run**. Work through these in order. Each step ends with the CLAUDE.md gates
-(rule 5) and a commit. Read CLAUDE.md first.
+(rule 5) and a commit. Data commits do not bump the version (2026-10-10). Read CLAUDE.md first.
 
 ## 1. Riftbound: populate the map (one run, ~2 minutes)
 
@@ -38,7 +38,7 @@ every night with its fee.
 ```
 node scripts/riftbound/pull.mjs                 # ~56 requests, 1.5 s apart
 node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json            # dry run: READ the report
-node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json --apply --bump
+node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json --apply
 ```
 
 - On Node ≥ 22 behind a proxy, prefix the pull with `NODE_USE_ENV_PROXY=1`.
@@ -50,8 +50,9 @@ node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json --apply
   Roanoke VA store is expected there; anything else in it is a question.
 - `--apply` also writes `data/research_queue.json`: one `todo` entry per new
   shop. That queue is step 3.
-- Commit `data/*.json`, `data/candidates/riftbound-locator.json` and
-  `lib/version.ts` together.
+- Commit `data/*.json` and `data/candidates/riftbound-locator.json` together.
+  No version bump: a data run does not move the site version (`docs/ADDING_DATA.md`,
+  section 3). `--bump` no longer exists.
 - Later refreshes are the same three commands. The GitHub workflow "Refresh
   Riftbound from the official locator" does exactly this, with a manual
   trigger only, and can be put on a weekly schedule (see its header).

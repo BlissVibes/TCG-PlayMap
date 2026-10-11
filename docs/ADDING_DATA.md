@@ -1,7 +1,8 @@
 # Adding or changing a shop or schedule (phase 1, JSON)
 
-Every change is three edits in one commit. The tests enforce the first two;
-the third is the versioning rule.
+Every change is two edits in one commit, the data and its calendar-log line;
+the tests enforce both. The third section is the versioning rule: a data
+change does NOT bump the version.
 
 ## 1. The data
 
@@ -37,12 +38,22 @@ player: "Pokémon moved from Thursday 6 PM to Wednesday 7 PM." Shop-level
 entries (new shop, closure) use `game: null`. `tests/data.test.ts` fails if a
 shop has events and no log entry at all.
 
-## 3. The version
+## 3. The version: leave it alone
 
-Bump `VERSION` in `lib/version.ts` by 0.0.0.1 and add a CHANGELOG line in the
-same edit. `tests/version.test.ts` fails otherwise — and on GitHub Pages the
-workflow runs the tests before it builds, so a missed bump is a failed deploy,
-not a silent one.
+**A data change does not bump the version** (Mark, 2026-10-10: "we dont need
+to update the version for every single shop update. its to be saved for
+feature updates and changes."). If your commit touches only `data/`, `docs/`
+or `README.md`, do not edit `lib/version.ts`; `tests/version.test.ts` fails
+a data-only commit that bumps. Name the shops in the commit subject instead:
+`Research batch 23: Game Empire, Brute Force Games; 3 blocked`.
+
+The version moves when the SITE changes: anything outside those paths,
+including a new game in `lib/games.ts`. Then run
+`node scripts/bump_version.mjs "<what changed, for the person using the site>"`
+before the gates; the same test fails a site change that does not bump.
+
+The footer shows "data updated <date>", the newest date in
+`data/calendar_log.json`, so freshness is visible without a version.
 
 ## Then
 
@@ -51,4 +62,7 @@ npm test && npx tsc --noEmit -p tsconfig.json && npm run build
 ```
 
 Push to `main`; the Pages workflow deploys. Verify with
-`curl -s https://blissvibes.github.io/TCG-PlayMap/version.json`.
+`curl -s https://blissvibes.github.io/TCG-PlayMap/version.json`. For a data
+push the `version` there does not change: check `dataUpdated`, `shops` and
+`events` against what you just committed
+(`node -e 'console.log(require("./data/shops.json").length, require("./data/events.json").length)'`).

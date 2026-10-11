@@ -109,6 +109,19 @@ export function validateData(data: PlayMapData): string[] {
   return errs;
 }
 
+/**
+ * The day the data last changed: the newest date in the calendar log, which
+ * gets a line for every shop or night added, moved or removed. Since
+ * 2026-10-10 a data update does not move the site version, so this is how a
+ * visitor (and whoever is checking a deploy) sees how fresh the schedules are.
+ * Null when the log has no usable date.
+ */
+export function dataUpdated(log: readonly Pick<CalendarLogEntry, "date">[]): string | null {
+  let newest: string | null = null;
+  for (const l of log) if (isDateStr(l.date) && (newest == null || l.date > newest)) newest = l.date;
+  return newest;
+}
+
 /** The committed-JSON source. What the GitHub Page runs on. */
 export const jsonDataSource: DataSource = {
   async load() {

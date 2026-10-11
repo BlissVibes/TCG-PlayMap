@@ -128,6 +128,8 @@ try {
   await page.waitForTimeout(600);   // cluster animation
   const footer = await page.locator("footer").innerText();
   const shopCount = Number(/(\d+) shops/.exec(footer)?.[1] ?? 0);
+  // Data updates no longer move the version (2026-10-10), so the footer says when the data last changed.
+  check("footer says when the data was last updated", /data updated [A-Z][a-z]{2} \d{1,2}, 20\d\d/.test(footer), /data updated[^·]*/.exec(footer)?.[0]?.trim() ?? footer.slice(0, 80));
   // Since clustering (0.1.3.0) a shop is often not a DOM pin of its own, so two
   // checks replace "count the pins": what the marker layer HOLDS (PlayMap
   // writes getLayers().length to data-markers), and what is DRAWN - single

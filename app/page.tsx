@@ -16,7 +16,7 @@ import { Filters } from "@/components/Filters";
 import { LogTab } from "@/components/LogTab";
 import { PlayMap, type FocusRequest } from "@/components/PlayMap";
 import { Setup } from "@/components/Setup";
-import { getDataSource, type PlayMapData } from "@/lib/data";
+import { dataUpdated, getDataSource, type PlayMapData } from "@/lib/data";
 import { geocodeZip, normalizeZip } from "@/lib/geo";
 import { GAME_IDS, GAMES, type GameId } from "@/lib/games";
 import { DEFAULT_PREFS, effectiveGames, gameMode, loadPrefs, savePrefs, type Prefs } from "@/lib/prefs";
@@ -27,6 +27,12 @@ import {
 import { VERSION } from "@/lib/version";
 
 type Tab = "map" | "calendar" | "log";
+
+/** "2026-10-10" -> "Oct 10, 2026". Plain string work: no time zone can move the day. */
+function shortDay(d: string): string {
+  const m = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][Number(d.slice(5, 7)) - 1];
+  return `${m} ${Number(d.slice(8, 10))}, ${d.slice(0, 4)}`;
+}
 
 export default function Page() {
   const [data, setData] = useState<PlayMapData | null>(null);
@@ -235,6 +241,7 @@ export default function Page() {
 
       <footer>
         TCG PlayMap v{VERSION} · {shops.length} shops · {events.length} events ·
+        {data && dataUpdated(data.log) ? <> <span className="dataupd">data updated {shortDay(dataUpdated(data.log)!)}</span> ·</> : null}
         {" "}Schedules read from each store&apos;s own site; always check with the store before driving.
       </footer>
     </main>

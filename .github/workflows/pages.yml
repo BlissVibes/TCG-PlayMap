@@ -45,6 +45,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # tests/version.test.ts compares the last commit with the one before it
+          # (site change => version bump, data-only => none). Depth 1 has no "before".
+          fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
           node-version: 22

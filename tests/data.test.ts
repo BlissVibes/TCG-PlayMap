@@ -4,7 +4,7 @@
  * nothing - mutation-check it).
  */
 import { describe, it, expect } from "vitest";
-import { jsonDataSource, validateData, type PlayMapData } from "../lib/data";
+import { dataUpdated, jsonDataSource, validateData, type PlayMapData } from "../lib/data";
 
 describe("committed data", () => {
   it("passes validation", async () => {
@@ -36,6 +36,19 @@ describe("committed data", () => {
     const { events, log } = await jsonDataSource.load();
     const logged = new Set(log.map((l) => l.shopId));
     for (const e of events) expect(logged.has(e.shopId), `no log entry for ${e.shopId}`).toBe(true);
+  });
+});
+
+describe("dataUpdated", () => {
+  it("is the newest calendar-log date, whatever order the log is in", () => {
+    expect(dataUpdated([{ date: "2026-10-03" }, { date: "2026-10-10" }, { date: "2026-09-30" }])).toBe("2026-10-10");
+    expect(dataUpdated([{ date: "2026-10-10" }, { date: "not a date" }, { date: "2026-13-45" }])).toBe("2026-10-10");
+    expect(dataUpdated([])).toBeNull();
+  });
+
+  it("reads a real date from the committed log", async () => {
+    const { log } = await jsonDataSource.load();
+    expect(dataUpdated(log)).toMatch(/^20\d\d-\d\d-\d\d$/);
   });
 });
 

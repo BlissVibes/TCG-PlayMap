@@ -39,7 +39,7 @@ fast-forwards that branch and dispatches the deploy there — see the header of
 
 Bulk data:
 - `node scripts/riftbound/pull.mjs` then
-  `node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json [--apply --bump]`
+  `node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json [--apply]`
   refreshes Riftbound from the official locator.
 - `scripts/bandai/README.md` covers Bandai TCG+ (Mark's Mac only).
 - `docs/LOCAL_RUN.md` lists the data runs still pending.

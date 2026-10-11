@@ -3,11 +3,13 @@
  * MERGE A BULK-SOURCE CANDIDATE FILE INTO THE CALENDAR.
  *
  *   node scripts/candidates/merge.mjs data/candidates/riftbound-locator.json
- *        [--apply] [--bump] [--today YYYY-MM-DD] [--report path.md] [--force]
+ *        [--apply] [--today YYYY-MM-DD] [--report path.md] [--force]
  *
  * Dry-run by default: prints what it WOULD do. --apply writes data/*.json and
- * data/research_queue.json; --bump also bumps lib/version.ts with a changelog
- * line (CLAUDE.md rule 1), so an unattended run can commit in one step.
+ * data/research_queue.json. It does NOT touch lib/version.ts: a data run does
+ * not move the site version (Mark, 2026-10-10; scripts/lib/versionRule.mjs).
+ * The old --bump flag is refused, so a stale command or workflow fails loudly
+ * instead of producing a commit the version test rejects.
  *
  * Input: the format written by scripts/riftbound/pull.mjs and
  * scripts/lorcana/pull.mjs (one file per source) - a list of stores,
@@ -49,7 +51,6 @@
  */
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { bumpVersion } from "../bump_version.mjs";
 import { isMain } from "../lib/isMain.mjs";
 import { cleanWeeklyTitle } from "../lib/weeklyTitle.mjs";
 
@@ -146,10 +147,10 @@ export function outsideRegion(cand, region = DEFAULT_REGION) {
 
 /** How each bulk source is named in shop notes, log lines and the changelog. */
 const SOURCES = {
-  "riftbound-locator": { locator: "official Riftbound store locator", short: "Riftbound locator", refreshed: "Riftbound schedules refreshed from the official store locator" },
-  "ravensburger-play": { locator: "Ravensburger Play store locator (Disney Lorcana)", short: "Ravensburger Play", refreshed: "Lorcana schedules refreshed from Ravensburger Play" },
+  "riftbound-locator": { locator: "official Riftbound store locator", short: "Riftbound locator" },
+  "ravensburger-play": { locator: "Ravensburger Play store locator (Disney Lorcana)", short: "Ravensburger Play" },
 };
-const sourceOf = (origin) => SOURCES[origin] ?? { locator: `${origin} store locator`, short: origin, refreshed: `Schedules refreshed from ${origin}` };
+const sourceOf = (origin) => SOURCES[origin] ?? { locator: `${origin} store locator`, short: origin };
 
 /**
  * A hand-entered night this close to the source's start time is the same night.
@@ -364,9 +365,13 @@ const prettyFile = (rows) => `${JSON.stringify(rows, null, 2)}\n`;
 function main() {
   const argv = process.argv.slice(2);
   const file = argv.find((a) => !a.startsWith("--") && argv[argv.indexOf(a) - 1] !== "--today" && argv[argv.indexOf(a) - 1] !== "--report");
-  if (!file) { console.error("usage: merge.mjs <candidates.json> [--apply] [--bump] [--today YYYY-MM-DD] [--report out.md] [--force]"); process.exit(2); }
+  if (!file) { console.error("usage: merge.mjs <candidates.json> [--apply] [--today YYYY-MM-DD] [--report out.md] [--force]"); process.exit(2); }
   const opt = (n) => { const i = argv.indexOf(`--${n}`); return i >= 0 ? argv[i + 1] : null; };
   const has = (n) => argv.includes(`--${n}`);
+  if (has("bump")) {
+    console.error("--bump is gone: a data run does not move the site version (Mark, 2026-10-10). Run without it; name the source and counts in the commit subject.");
+    process.exit(2);
+  }
   const today = opt("today") ?? laToday();
 
   const cands = JSON.parse(readFileSync(file, "utf8"));
@@ -400,15 +405,6 @@ function main() {
   writeFileSync("data/events.json", rowsFile(events));
   writeFileSync("data/calendar_log.json", rowsFile(log));
   writeFileSync(queuePath, prettyFile(queue));
-  if (has("bump")) {
-    const bits = [
-      r.newShops.length && `${r.newShops.length} new shops`, r.newWeekly.length && `${r.newWeekly.length} new weekly nights`,
-      r.newSpecial.length && `${r.newSpecial.length} upcoming special events`, r.replaced.length && `${r.replaced.length} price changes`,
-      r.ended.length && `${r.ended.length} nights no longer running`, r.filledFees.length && `${r.filledFees.length} prices filled in`,
-    ].filter(Boolean);
-    const v = bumpVersion(`${sourceOf(cands.source).refreshed}: ${bits.join(", ") || "store links updated"}.`, today);
-    console.log(`Version bumped to ${v}.`);
-  }
   console.log("Written: data/shops.json, data/events.json, data/calendar_log.json, data/research_queue.json");
 }
 
