@@ -889,7 +889,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Website is an 'Under Construction' page (info@lostplanetgames.com); Facebook is login-walled; web search finds nothing. No schedule readable.",
+    "notes": "Browser pass: Facebook shows a miniature wargaming/card hobby shop posting weekly hobby drops; no TCG schedule.",
     "checked": "2026-10-10"
   },
   {
@@ -969,7 +969,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram and Facebook only (login-walled from this session); web search finds nothing. No schedule readable.",
+    "notes": "Browser pass: Instagram says coming soon / not yet open; nothing to list.",
     "checked": "2026-10-10"
   },
   {
@@ -1072,8 +1072,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram only (login-walled); web search finds nothing about the shop.",
-    "checked": "2026-10-10"
+    "notes": "Browser pass: Instagram/Linktree show hours only; events are on Discord (https://discord.gg/NhQKsceN), not opened.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "paper-heros-comics",
@@ -1427,8 +1428,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Chain with no website: Instagram @thegamechest (login-walled; bio says 'Torrance | Irvine | Rolling Hills | Long Beach | Manhattan Village - join our Discords for quick updates') and Discord. Web search finds nothing. No schedule readable.",
-    "checked": "2026-10-10"
+    "notes": "Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-game-chest-promenade",
@@ -1440,8 +1442,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Chain with no website: Instagram @thegamechest (login-walled; bio says 'Torrance | Irvine | Rolling Hills | Long Beach | Manhattan Village - join our Discords for quick updates') and Discord. Web search finds nothing. No schedule readable.",
-    "checked": "2026-10-10"
+    "notes": "Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-game-chest-torrance",
@@ -1453,8 +1456,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Chain with no website: Instagram @thegamechest (login-walled; bio says 'Torrance | Irvine | Rolling Hills | Long Beach | Manhattan Village - join our Discords for quick updates') and Discord. Web search finds nothing. No schedule readable.",
-    "checked": "2026-10-10"
+    "notes": "Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-game-chest-manhattan-beach",
@@ -1466,8 +1470,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Chain with no website: Instagram @thegamechest (login-walled; bio says 'Torrance | Irvine | Rolling Hills | Long Beach | Manhattan Village - join our Discords for quick updates') and Discord. Web search finds nothing. No schedule readable.",
-    "checked": "2026-10-10"
+    "notes": "Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-game-hub-and-comic-bug",
@@ -1561,10 +1566,10 @@
       "discord": "https://discord.gg/V8rxm8wPcA"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/4ff8c39f-ba88-41fc-bf8b-b4b1ec05994c",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Own Shopify site /pages/events says 'weekly locals, armories and special tournaments, updated automatically' (One Piece, Gundam, Flesh and Blood, Riftbound, Magic, Grand Archive, Union Arena) but the calendar is script-loaded and nothing in the page source names the feed. Hours added from the page (its structured data gives slightly different weekday hours). Discord and Instagram tilted.gaming.ca not readable. Needs a browser read.",
+    "notes": "Browser pass: the Events page embeds a public Google Calendar; read its iCal feed via scripts/ics/summarise.py. 9 weekly + 10 dated rows, fees from event descriptions. Discord not opened.",
     "checked": "2026-10-10"
   },
   {
@@ -1577,7 +1582,7 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Instagram only (login-walled); web search finds nothing.",
+    "notes": "Browser pass: pinned Instagram schedule dated 2026-01-29 (~8 months old) not used; grid recorded in shop notes. Needs a call or a fresher post.",
     "checked": "2026-10-10"
   },
   {
@@ -1613,10 +1618,10 @@
     "website": "https://www.topspot.cards",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/f81d000d-733c-4cb5-97a5-0efe41d442b2",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Own Shopify site /pages/events is script-rendered and its events collection is empty; the page lists only product categories. No schedule readable.",
+    "notes": "Browser pass: Events page embeds a public Google Calendar (calendar id in the page source); read via summarise.py. 12 weekly + 19 dated rows; fees only on a few events.",
     "checked": "2026-10-10"
   },
   {
