@@ -11,6 +11,8 @@
  *  - A trailing start time, with the weekday in front of it, is removed
  *    ("... Sunday 12 PM"): the block already shows both, and the title's copy
  *    goes wrong the day the store moves the night.
+ *  - A trailing week counter is removed ("Weekly Play Week 11"), but not one
+ *    inside brackets ("(Season 4.2 Week 1)" is the store's own label).
  *  - A weekday on its own stays: "Friday Nexus Nights" is a name.
  *  - When no real word is left, the game's generic night name is used, keeping
  *    any short tag that survived ("1v1").
@@ -30,14 +32,16 @@ const DATE_RE = new RegExp([
 const TAIL_TIME_RE = new RegExp(
   String.raw`[\s,@-]*(?:\b(?:${WEEKDAYS})\b\.?\s*)?(?:@\s*)?\b\d{1,2}(?::?\d{2})?\s*[ap]\.?m\.?\s*$`, "i");
 
-const NIGHT_NAME = { riftbound: "Riftbound Nexus Night" };
+const NIGHT_NAME = { riftbound: "Riftbound Nexus Night", lorcana: "Lorcana Weekly Play" };
+// "Weekly Play Week 11", "Lorcana League - Week 3": a counter that is stale a week later.
+const TAIL_WEEK_RE = /[\s,:-]*\bweek\s*#?\d+\s*$/i;
 
 /** @param {string|null|undefined} title @param {string} [game] @returns {string|null|undefined} */
 export function cleanWeeklyTitle(title, game = "riftbound") {
   if (title == null) return title;
   const fallback = NIGHT_NAME[game] ?? "Weekly play";
   let t = String(title).replace(DATE_RE, " ");
-  for (let prev = null; prev !== t;) { prev = t; t = t.replace(TAIL_TIME_RE, ""); }
+  for (let prev = null; prev !== t;) { prev = t; t = t.replace(TAIL_TIME_RE, "").replace(TAIL_WEEK_RE, ""); }
   t = t.replace(/\(\s*\)/g, " ")                    // brackets the date left empty
     .replace(/\s*,\s*/g, ", ")                      // "2026,Top Deck Keep,Constructed"
     .replace(/\s+/g, " ")

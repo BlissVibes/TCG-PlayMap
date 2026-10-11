@@ -104,16 +104,18 @@ const mostCommon = (xs) => {
  * window and its latest occurrence is no more than 21 days before `today`
  * (a series that stopped a month ago is not a weekly night any more).
  */
-export function buildSlots(events, today) {
+export function buildSlots(events, today, opts = {}) {
+  // Defaults are Riftbound's; scripts/lorcana/pull.mjs passes its own.
+  const { locator = LOCATOR, special: specialRe = SPECIAL, casual: casualRe = CASUAL, tz = null } = opts;
   const byStore = new Map();
   for (const e of events) {
     if (e.event_is_online || e.is_test_event || e.is_template) continue;
     if (e.event_status && /cancel/i.test(e.event_status)) continue;
     const storeId = e.store?.id; if (storeId == null) continue;
-    const when = local(e.start_datetime, e.timezone || "America/Los_Angeles");
+    const when = local(e.start_datetime, tz || e.timezone || "America/Los_Angeles");
     const name = String(e.name ?? "").trim();
-    const special = SPECIAL.test(name) || (e.event_type && e.event_type !== "LOCALS");
-    const row = { id: e.id, ...when, name, desc: String(e.description ?? ""), fee: feeText(e.cost_in_cents), special };
+    const special = specialRe.test(name) || (e.event_type && e.event_type !== "LOCALS");
+    const row = { id: e.id, ...when, name, desc: String(e.description ?? ""), fee: feeText(e.cost_in_cents), special, format: String(e.gameplay_format?.name ?? "").replace(/^\[|\]$/g, "").trim() || null };
     if (!byStore.has(storeId)) byStore.set(storeId, []);
     byStore.get(storeId).push(row);
   }
@@ -138,16 +140,18 @@ export function buildSlots(events, today) {
         weekday: rs[0].weekday, time: rs[0].time, seen: dates.length, dates,
         firstSeen: dates[0], lastSeen: dates.at(-1),
         title, fee: mostCommon(rs.map((r) => r.fee)),
-        kind: CASUAL.test(`${title} ${latest.desc}`) ? "play" : "tournament",
-        eventUrl: `${LOCATOR}/events/${latest.id}`,
+        ...(opts.withFormat && mostCommon(rs.map((r) => r.format)) ? { format: mostCommon(rs.map((r) => r.format)) } : {}),
+        kind: casualRe.test(`${title} ${latest.desc}`) ? "play" : "tournament",
+        eventUrl: `${locator}/events/${latest.id}`,
       });
     }
     const special = rows
       .filter((r) => !used.has(r.id) && r.date >= today)
       .map((r) => ({
         date: r.date, time: r.time, title: r.name, fee: r.fee,
-        kind: CASUAL.test(`${r.name} ${r.desc}`) ? "play" : "tournament",
-        special: r.special, eventUrl: `${LOCATOR}/events/${r.id}`,
+        ...(opts.withFormat && r.format ? { format: r.format } : {}),
+        kind: casualRe.test(`${r.name} ${r.desc}`) ? "play" : "tournament",
+        special: r.special, eventUrl: `${locator}/events/${r.id}`,
       }))
       .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
     out.set(storeId, { recurring: recurring.sort((a, b) => a.weekday - b.weekday || a.time.localeCompare(b.time)), special });

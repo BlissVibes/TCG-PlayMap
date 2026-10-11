@@ -9,7 +9,8 @@
  * data/research_queue.json; --bump also bumps lib/version.ts with a changelog
  * line (CLAUDE.md rule 1), so an unattended run can commit in one step.
  *
- * Input: the format written by scripts/riftbound/pull.mjs - a list of stores,
+ * Input: the format written by scripts/riftbound/pull.mjs and
+ * scripts/lorcana/pull.mjs (one file per source) - a list of stores,
  * each with `recurring` weekly slots and upcoming `special` one-offs, all with
  * fees. (A Bandai TCG+ pull can be converted to the same shape later.)
  *
@@ -24,6 +25,10 @@
  *   - At a hand-entered SHOP the script adds no weekly nights of its own;
  *     differences are only reported, for a human to decide. It may add dated
  *     special events there (regionals, skirmishes), which it then owns.
+ *   - A shop ANOTHER importer created is not hand-entered: this script may add
+ *     its own game's weekly nights there (a Riftbound-locator shop can get
+ *     Lorcana nights from Ravensburger Play), UNLESS a person has already
+ *     entered nights for that game at that shop - then it only reports.
  *   - New shops are created with `origin`, and a research-queue entry so a
  *     human or a cheaper model can fill in their OTHER games
  *     (docs/SHOP_RESEARCH.md).
@@ -119,11 +124,19 @@ export function outsideRegion(cand, region = DEFAULT_REGION) {
   return null;
 }
 
+/** How each bulk source is named in shop notes, log lines and the changelog. */
+const SOURCES = {
+  "riftbound-locator": { locator: "official Riftbound store locator", short: "Riftbound locator", refreshed: "Riftbound schedules refreshed from the official store locator" },
+  "ravensburger-play": { locator: "Ravensburger Play store locator (Disney Lorcana)", short: "Ravensburger Play", refreshed: "Lorcana schedules refreshed from Ravensburger Play" },
+};
+const sourceOf = (origin) => SOURCES[origin] ?? { locator: `${origin} store locator`, short: origin, refreshed: `Schedules refreshed from ${origin}` };
+
 const isActive = (e, today) => !e.validUntil || e.validUntil >= today;
 
 // ── the merge ────────────────────────────────────────────────────────────────
 export function merge({ cands, shops, events, log, queue, today, force = false }) {
   const origin = cands.source;
+  const src = sourceOf(origin);
   const yesterday = addDays(today, -1);
   const r = { newShops: [], newWeekly: [], newSpecial: [], filledFees: [], ended: [], replaced: [], curatedDiffs: [], skipped: [], outOfRegion: [], linked: [], retitled: [] };
   const logLines = [];
@@ -179,7 +192,7 @@ export function merge({ cands, shops, events, log, queue, today, force = false }
         ...(phone ? { phone } : {}),
         ...(Object.keys(c.socials ?? {}).length ? { socials: c.socials } : {}),
         games: [game],
-        notes: `Imported from the official ${game === "riftbound" ? "Riftbound" : game} store locator on ${today}. Other games and store hours not yet researched.`
+        notes: `Imported from the ${src.locator} on ${today}. Other games and store hours not yet researched.`
           + (phone ? "" : " No phone listed on the locator."),
         active: true,
         source: { url: c.sourceUrl ?? undefined, checked: today, note: `${origin} import` },
@@ -187,7 +200,7 @@ export function merge({ cands, shops, events, log, queue, today, force = false }
       };
       shops.push(shop);
       r.newShops.push(`${shop.name} (${shop.city})`);
-      logLines.push({ date: today, action: "added", game: null, shopId: shop.id, summary: `${shop.name} (${shop.city}) added to the map from the official Riftbound store locator.` });
+      logLines.push({ date: today, action: "added", game: null, shopId: shop.id, summary: `${shop.name} (${shop.city}) added to the map from the ${src.locator}.` });
       if (!queue.some((q) => q.shopId === shop.id)) {
         queue.push({ shopId: shop.id, name: shop.name, city: shop.city, website: shop.website ?? null, socials: shop.socials ?? {}, sourceUrl: c.sourceUrl ?? null, status: "todo", added: today, addedBy: origin, notes: "" });
       }
@@ -199,7 +212,10 @@ export function merge({ cands, shops, events, log, queue, today, force = false }
       }
     }
     shopsInPull.add(shop.id);
-    const curated = shop.origin !== origin;
+    // "Curated" = a person owns this game's nights here: a hand-entered shop,
+    // or another importer's shop where someone has typed in nights for this game.
+    const curated = !shop.origin
+      || (shop.origin !== origin && events.some((e) => e.shopId === shop.id && e.game === game && !e.origin && e.weekday != null && isActive(e, today)));
     if (!shop.games?.includes(game)) shop.games = [...(shop.games ?? []), game];
 
     // Weekly nights.
@@ -246,7 +262,8 @@ export function merge({ cands, shops, events, log, queue, today, force = false }
       events.push({
         id, shopId: shop.id, game, kind: x.kind, title: x.title, date: x.date, start: x.time,
         ...(x.fee ? { fee: x.fee } : {}), confidence: "scraped", origin,
-        source: { url: x.eventUrl, checked: today, note: "Riftbound locator" },
+        ...(x.format ? { format: x.format } : {}),
+        source: { url: x.eventUrl, checked: today, note: src.short },
       });
       r.newSpecial.push(`${shop.name} ${x.date} ${fmtTime(x.time)} ${x.fee ?? "(no fee)"} ${x.title}`);
       specials.push(`${fmtDate(x.date)} ${x.title} (${x.fee ?? "cost not listed"})`);
@@ -284,13 +301,14 @@ function weeklyRow(shop, game, s, origin, today, suffix, cands) {
     id: `${shop.id}-${game.slice(0, 2)}-${WD[s.weekday].toLowerCase()}-${s.time.replace(":", "")}${suffix}`,
     shopId: shop.id, game, kind: s.kind, title: cleanWeeklyTitle(s.title, game), weekday: s.weekday, start: s.time,
     ...(s.fee ? { fee: s.fee } : {}),
+    ...(s.format ? { format: s.format } : {}),
     ...(startedInWindow ? { validFrom: s.firstSeen } : {}),
     confidence: "scraped", origin,
-    source: { url: s.eventUrl, checked: today, note: `Riftbound locator, seen ${s.seen}x ${s.firstSeen}..${s.lastSeen}` },
+    source: { url: s.eventUrl, checked: today, note: `${sourceOf(origin).short}, seen ${s.seen}x ${s.firstSeen}..${s.lastSeen}` },
   };
 }
 
-const label = (g) => ({ riftbound: "Riftbound" }[g] ?? g);
+const label = (g) => ({ riftbound: "Riftbound", lorcana: "Lorcana" }[g] ?? g);
 
 // ── file I/O, keeping the repo's one-row-per-line style ──────────────────────
 const rowsFile = (rows) => `[\n${rows.map((r) => `  ${JSON.stringify(r)}`).join(",\n")}\n]\n`;
@@ -340,7 +358,7 @@ function main() {
       r.newSpecial.length && `${r.newSpecial.length} upcoming special events`, r.replaced.length && `${r.replaced.length} price changes`,
       r.ended.length && `${r.ended.length} nights no longer running`, r.filledFees.length && `${r.filledFees.length} prices filled in`,
     ].filter(Boolean);
-    const v = bumpVersion(`Riftbound schedules refreshed from the official store locator: ${bits.join(", ") || "store links updated"}.`, today);
+    const v = bumpVersion(`${sourceOf(cands.source).refreshed}: ${bits.join(", ") || "store links updated"}.`, today);
     console.log(`Version bumped to ${v}.`);
   }
   console.log("Written: data/shops.json, data/events.json, data/calendar_log.json, data/research_queue.json");
