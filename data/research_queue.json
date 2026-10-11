@@ -1799,10 +1799,11 @@
       "instagram": "https://www.instagram.com/blezpalmdesert"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/a03264ce-cd89-45e9-b930-892e23ac8268",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site is a single shop page with no events; Facebook/Instagram not read for a schedule.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "brute-force-games",
@@ -1850,10 +1851,12 @@
     "website": "https://linktr.ee/collectorsworldsw",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/84671ec0-7b31-4fe0-9f49-b59404baba36",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Linktree has TCGplayer, Facebook, Instagram and a Discord; no public schedule found. Discord not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "comic-cult",
@@ -1934,10 +1937,12 @@
       "instagram": "https://www.instagram.com/fistful_of_cards_rc/"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/2bb4c813-8118-40cc-b40f-502ce26a1ebc",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Linktree points to Discord, Wizards and Pokémon locators and Ravensburger (not scraped); no schedule on public pages. Discord not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "game-empire-inc",
@@ -2121,10 +2126,10 @@
       "instagram": "https://www.instagram.com/papajoeyscollectibles"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/12efc1a8-8035-41eb-93d8-0f571c83717a",
-    "status": "blocked",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": "Instagram has Trade Nights / Poke Tournament highlights but no dated schedule; Discord on file, not opened.",
+    "notes": "Own EventForge calendar on /pages/calendar (read in browser): weekly Prime Time rows for all three Papa Joey's stores, fees as listed; Lorcana, Riftbound, Cyberpunk and one-off specials skipped. Pattern checked across two weeks.",
     "checked": "2026-10-11",
     "needsMark": "discord"
   },
@@ -2135,10 +2140,11 @@
     "website": "https://www.instagram.com/papajoeyscollectibles",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7b6b4be7-d28a-42b9-b55d-5781ef9f6d91",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own EventForge calendar on /pages/calendar (read in browser): weekly Prime Time rows for all three Papa Joey's stores, fees as listed; Lorcana, Riftbound, Cyberpunk and one-off specials skipped. Pattern checked across two weeks.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "papa-joeys-collectibles-pb",
@@ -2151,10 +2157,11 @@
       "instagram": "https://www.instagram.com/papajoeyscollectibles"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/715eedd1-28cb-40be-9296-e4f188340b00",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own EventForge calendar on /pages/calendar (read in browser): weekly Prime Time rows for all three Papa Joey's stores, fees as listed; Lorcana, Riftbound, Cyberpunk and one-off specials skipped. Pattern checked across two weeks.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "phranxz-tcg-and-collectibles",
@@ -2163,10 +2170,11 @@
     "website": "https://PHRANXZTCG.COM",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/6e981e15-39de-426d-993f-3ed9f1cb9314",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site is a singles shop with no events text.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "pokestops",
