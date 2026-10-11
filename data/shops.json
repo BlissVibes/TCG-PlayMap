@@ -2061,9 +2061,12 @@
     "website": "https://lostlevelscardshop.com/",
     "phone": "(909) 267-9804",
     "games": [
+      "lorcana",
+      "mtg",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Inside the historic Claremont Packing House, 2nd floor. Events are online-registration tickets on the store site; entry prices render client-side and could not be read, so rows carry no fee. Site mentions 'TCG Fridays' but publishes no weekly schedule. Hours from the store site.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/2e7eebf9-af13-4ab4-9b11-e8e6db2b5d6e",
@@ -2073,7 +2076,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "2e7eebf9-af13-4ab4-9b11-e8e6db2b5d6e"
-    }
+    },
+    "hours": "Mon-Thu 12-8 PM · Fri 11 AM-12 AM · Sat 11 AM-10 PM · Sun 11 AM-6 PM"
   },
   {
     "id": "lost-planet-games",

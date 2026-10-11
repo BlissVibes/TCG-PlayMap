@@ -426,5 +426,9 @@
   {"date":"2026-10-10","action":"added","game":"beyblade","shopId":"the-mystery-shop","summary":"Wed 6 PM (Free)."},
   {"date":"2026-10-10","action":"added","game":"gundam","shopId":"spellhold-games","summary":"Gundam 1st Anniversary Event: 2026-10-11 1 PM ($25)."},
   {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"spellhold-games","summary":"Lorcana: Hyperia City Sealed Prerelease: 2026-10-22 7 PM ($40)."},
-  {"date":"2026-10-10","action":"added","game":null,"shopId":"a-g-collectibles","summary":"More dated events added: 40 upcoming events through early December (Lorcana League, Commander Night, Modern, Union Arena and Dragon Ball Fusion World shop tournaments, November shop tournaments)."}
+  {"date":"2026-10-10","action":"added","game":null,"shopId":"a-g-collectibles","summary":"More dated events added: 40 upcoming events through early December (Lorcana League, Commander Night, Modern, Union Arena and Dragon Ball Fusion World shop tournaments, November shop tournaments)."},
+  {"date":"2026-10-10","action":"changed","game":null,"shopId":"a-g-collectibles","summary":"A.G. Collectibles: fees added to 7 dated events from the store's event pages (Lorcana League free; Commander Night $10; Modern $15; Fusion World FB11 release $30; November shop tournaments $10); 3 more release events added."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"lost-levels-tcg","summary":"Disney Lorcana TCG: Hyperia City Prerelease Event: 10-18 1 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"lost-levels-tcg","summary":"Pokemon TCG: Delta Reign Saturday Prerelease Event: 10-24 1 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"lost-levels-tcg","summary":"Magic: Star Trek Friday Night Prerelease Event: 11-06 6 PM (cost not listed); Magic: Star Trek Saturday Prerelease Event: 11-07 1 PM (cost not listed); Magic: Star Trek Sunday Prerelease Event: 11-08 1 PM (cost not listed); The Atrium cEDH Tournament: 11-21 10 AM (cost not listed)."}
 ]

@@ -850,10 +850,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d5f9afb3-5a81-4f94-8992-4afd2ee73867",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website. Only a third-party directory (atly.com) saying the store hosts weekly TCG game nights, no day/time/game. Nothing readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "lost-levels-tcg",
@@ -862,10 +863,11 @@
     "website": "https://lostlevelscardshop.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/2e7eebf9-af13-4ab4-9b11-e8e6db2b5d6e",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site (lostlevelscardshop.com) event tickets: 6 dated rows (Lorcana/Pokemon prereleases, Magic Star Trek prerelease weekend, cEDH Nov 21). Riftbound tickets skipped (importer). No weekly nights published; prices not readable (client-rendered, '$--'). Hours added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "lost-planet-games",
@@ -876,10 +878,11 @@
       "facebook": "https://www.facebook.com/LostPlanetGames/"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/e83c9052-7e4e-416c-813e-447f7073fd01",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Website is an 'Under Construction' page (info@lostplanetgames.com); Facebook is login-walled; web search finds nothing. No schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "magic-and-monsters",
@@ -888,10 +891,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/55931c18-0406-4d56-986f-0cc46a4ba3f7",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; web search finds only a TCGplayer seller page. Nothing readable about events.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "main-street-cards",
@@ -900,10 +904,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/86d930d0-9b5d-4990-994f-b33627d54815",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; web search finds no listing for this shop. Nothing readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "mega-city-one",

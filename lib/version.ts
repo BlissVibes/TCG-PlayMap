@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.3.2";
+export const VERSION = "0.1.3.3";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.3.3",
+    date: "2026-10-10",
+    changes: ["Research batch 13 - Lost Levels TCG dated events; Lost Planet Games, Loot Box, Magic and Monsters, Main Street Cards blocked; A.G. Collectibles fees filled."],
+  },
   {
     version: "0.1.3.2",
     date: "2026-10-10",
