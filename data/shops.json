@@ -5609,5 +5609,30 @@
     "sourceIds": {
       "lorcana": "b5ebfa05-4aa7-4fb3-a343-a331618cf6cc"
     }
+  },
+  {
+    "id": "the-comic-bug-culver-city",
+    "name": "The Comic Bug (Culver City)",
+    "address": "10814 Jefferson Blvd, Suite L",
+    "city": "Culver City",
+    "state": "CA",
+    "zip": "90230",
+    "lat": 34.0009721,
+    "lon": -118.3946645,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.thecomicbug.com/",
+    "phone": "(310) 204-3240",
+    "hours": "Sun 11 AM-6 PM · Mon-Tue, Thu-Fri 11 AM-7 PM · Wed 9 AM-8 PM · Sat not read",
+    "games": [
+      "mtg",
+      "pokemon"
+    ],
+    "notes": "Found via OpenStreetMap; schedule research pending. Comics shop; the store's site says it has weekly events including Magic: The Gathering, Pokémon and Roblox but its Upcoming Events list was empty on 2026-10-10. Sister store in Manhattan Beach is The Game Hub & Comic Bug. Saturday hours not captured.",
+    "active": true,
+    "source": {
+      "url": "https://www.thecomicbug.com/locations/",
+      "checked": "2026-10-10",
+      "note": "OpenStreetMap lead, store's own site"
+    }
   }
 ]

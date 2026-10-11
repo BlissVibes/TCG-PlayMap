@@ -333,7 +333,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 1.7,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triage": "no-tcg",
+        "evidence": "A&J Games: long-running retro video game shop (CBS LA list, 11132 Palms Blvd area); sells some cards but no TCG events found.",
+        "evidenceUrl": "https://www.cbsnews.com/losangeles/news/best-places-to-buy-vintage-video-games-accessories-in-los-angeles/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Dorcas",
@@ -351,7 +356,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 0.3,
-        "milesFromLaCenter": 1
+        "milesFromLaCenter": 1,
+        "triage": "unknown",
+        "evidence": "No listing or website found for 'Dorcas' at 333 S Alameda St (Arts District); web search finds nothing.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Pulp Fiction Comics",
@@ -405,7 +415,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Inglewood",
         "nearestKnownMi": 3.2,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triage": "unknown",
+        "evidence": "'Big Lou's' is probably Big Lou's Toys and Collectibles (Culver City, toys/diecast/cards, per a 2017 post); no current listing or events found.",
+        "evidenceUrl": "https://www.postalannex.com/large-toy-collectible-showroom-in-culver-city-ca",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Comic Book Hideout",
@@ -1073,7 +1088,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Inglewood",
         "nearestKnownMi": 3.4,
-        "milesFromLaCenter": 9
+        "milesFromLaCenter": 9,
+        "triage": "tcg",
+        "evidence": "The Comic Bug, Culver City: store's own site says 'weekly events including Magic the Gathering, Pokémon, and Roblox'; address 10814 Jefferson Blvd Suite L and phone match OSM. Shop row added; upcoming-events API empty.",
+        "evidenceUrl": "https://www.thecomicbug.com/locations/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "The Labu’Tique Shop",
@@ -2189,7 +2209,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 1.4,
-        "milesFromLaCenter": 9
+        "milesFromLaCenter": 9,
+        "triage": "no-tcg",
+        "evidence": "Coin dealer (Gillio & Associates, gandacoins.com); site is gone.",
+        "evidenceUrl": "https://www.gandacoins.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Gnomon — School of Visual Effects, Games & Animation",
@@ -2207,7 +2232,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 1.2,
-        "milesFromLaCenter": 6
+        "milesFromLaCenter": 6,
+        "triage": "no-tcg",
+        "evidence": "Gnomon: a visual-effects, games and animation school, not a card shop.",
+        "evidenceUrl": "https://www.gnomon.edu",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Arsenal Comics & Games",
@@ -2392,7 +2422,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 2.9,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triage": "no-tcg",
+        "evidence": "Sports Source 2 (11841 Ventura Blvd, Studio City): sports cards and memorabilia only per directory listings.",
+        "evidenceUrl": "https://thecardshopfinder.com/ca/los-angeles/sports-source-2-studio-city/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "AB23 Fashion",
@@ -2482,7 +2517,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 2,
-        "milesFromLaCenter": 5
+        "milesFromLaCenter": 5,
+        "triage": "no-tcg",
+        "evidence": "Candle shop (cantripcandles.com).",
+        "evidenceUrl": "https://cantripcandles.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "CardVault by Tom Brady",
@@ -2644,7 +2684,12 @@
         "bucket": "likely",
         "nearestKnownCity": "San Gabriel",
         "nearestKnownMi": 0.4,
-        "milesFromLaCenter": 8
+        "milesFromLaCenter": 8,
+        "triage": "unknown",
+        "evidence": "OSM tags it shop=bicycle; no website, listing or hobby details found by search.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Brighton Collectibles",
@@ -2662,7 +2707,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Pasadena",
         "nearestKnownMi": 0.1,
-        "milesFromLaCenter": 9
+        "milesFromLaCenter": 9,
+        "triage": "no-tcg",
+        "evidence": "Brighton: national handbag and jewellery chain (store locator page).",
+        "evidenceUrl": "https://www.brighton.com/pages/store-pasadena-ca-340024",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Comic Cellar",

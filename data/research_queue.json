@@ -2443,5 +2443,18 @@
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
     "notes": ""
+  },
+  {
+    "shopId": "the-comic-bug-culver-city",
+    "name": "The Comic Bug (Culver City)",
+    "city": "Culver City",
+    "website": "https://www.thecomicbug.com/",
+    "socials": {},
+    "sourceUrl": "https://www.thecomicbug.com/locations/",
+    "status": "blocked",
+    "added": "2026-10-10",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-10",
+    "notes": "Own site (WordPress + The Events Calendar): tribe events API returns 0 upcoming events and the Upcoming Events section is empty; homepage says 'weekly events including Magic the Gathering, Pokémon, and Roblox' with no days, times or fees. Facebook is where they post (login-walled). Needs a browser/Facebook read."
   }
 ]
