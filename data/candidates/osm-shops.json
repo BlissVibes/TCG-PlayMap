@@ -783,7 +783,12 @@
         "milesFromLaCenter": 32,
         "triageScore": -5,
         "triageOrder": 72,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "So Cal Coins: coin dealer by name; no address or website; not researched further.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Jumpstart Games",
@@ -1572,7 +1577,12 @@
         "milesFromLaCenter": 111,
         "triageScore": 1,
         "triageOrder": 48,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "Coin-Op Game Room (30th St): arcade bar (OSM amenity=bar); site returns a page-not-found.",
+        "evidenceUrl": "https://coinopsd.com",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "NEX Auto Hobby",
@@ -1593,7 +1603,12 @@
         "milesFromLaCenter": 115,
         "triageScore": -1,
         "triageOrder": 66,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "NEX Auto Hobby: OSM tags it as car repair; phone only.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "The Recyard",
@@ -1687,7 +1702,12 @@
         "milesFromLaCenter": 112,
         "triageScore": 1,
         "triageOrder": 49,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "evidence": "Coin-Op Game Room (Gaslamp): arcade bar (OSM amenity=bar).",
+        "evidenceUrl": "https://coinopgaslamp.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Olhausen Gamerooms and Outdoors",
@@ -1797,7 +1817,13 @@
         "milesFromLaCenter": 110,
         "triageScore": -3,
         "triageOrder": 70,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "tcg",
+        "evidence": "TC's Rockets (San Diego, est. 2015, 5155 Waring Rd): comics, toys, games and singles shop; its Events calendar is script-rendered and the events API is closed. Pending the Chrome pass (no shop row yet).",
+        "evidenceUrl": "https://tcsrockets.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11",
+        "pending": "chrome"
       },
       {
         "name": "Gepetto's",
@@ -2185,7 +2211,12 @@
         "milesFromLaCenter": 106,
         "triageScore": -1,
         "triageOrder": 64,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Cutie Surprises (Convoy St): no listing found.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Card Op Coin Laundry",
@@ -2421,7 +2452,12 @@
         "milesFromLaCenter": 63,
         "triageScore": -1,
         "triageOrder": 62,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "unknown",
+        "evidence": "Santa Fe Trading Company (Victorville): no website, phone or listing found.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Santa Fe Trading Company",
@@ -2442,7 +2478,13 @@
         "milesFromLaCenter": 63,
         "triageScore": -1,
         "triageOrder": 63,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "evidence": "Second OSM lead for the same Victorville address as Santa Fe Trading Company.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11",
+        "duplicateOf": "way/1060510936"
       },
       {
         "name": "Kpop And Hello Cutie",
@@ -2510,7 +2552,12 @@
         "milesFromLaCenter": 62,
         "triageScore": -5,
         "triageOrder": 74,
-        "triageOwner": "s2"
+        "triageOwner": "s2",
+        "triage": "no-tcg",
+        "evidence": "Jellyfish Ventura Vintage Boutique: vintage clothing boutique by name.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Mero Games",
