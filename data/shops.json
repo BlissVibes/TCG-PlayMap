@@ -4655,7 +4655,15 @@
     "website": "https://www.kingslayergames.com",
     "phone": "(760) 231-5231",
     "games": [
-      "lorcana"
+      "dbs_fusion",
+      "digimon",
+      "fab",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "union_arena"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -5518,7 +5526,12 @@
       "facebook": "https://www.facebook.com/Tier1Games"
     },
     "games": [
-      "lorcana"
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "union_arena"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,

@@ -7,7 +7,7 @@ What the values mean and who sets them: `docs/SHOP_RESEARCH.md`, "The `needsMark
 "Events" is the number of event rows the shop has on the calendar today. 0 means the shop is a
 pin with no schedule; more than 0 usually means only an importer's nights are listed.
 
-## Discord: open the server and read its schedule channel (22)
+## Discord: open the server and read its schedule channel (23)
 
 | Shop | City | Invite | Events | Notes |
 |---|---|---|---|---|
@@ -33,6 +33,7 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | The Game Chest, Long Beach | Long Beach | https://discord.gg/ZvBeX83hak | 1 | Fifth Game Chest location (Linktree). Chain Instagram has no TCG schedule; events are in per-store Discords. Invite recorded on the shop row, not opened. |
 | The Game Chest, Manhattan Beach | Manhattan Beach | https://discord.gg/d5V9PQD77H | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
 | The Hungry Dragon | Murrieta | https://discord.gg/sjHfGxRuZ2 | 3 | Site lists Pokémon Cup, Lorcana Set Champs and Flesh & Blood ticket products with no dates or times. Discord on file, not opened. |
+| Tier 1 Games | Temecula | https://discord.gg/RaUDVSYh | 15 | Own events page: dated major events added with fees. Weekly calendar is a cross-origin widget with truncated titles, not read; Discord/Facebook on file for weekly nights. |
 
 ## Phone: call the shop for a time or a fee (5)
 
@@ -86,7 +87,7 @@ Research found nothing to read and nothing to follow. Call the shop, or decide i
 | Warpact Games LLC | Lancaster | (661) 241-8151 | 3 | No website; web search finds no listing. |
 | Zander's Game House | Camarillo | (805) 383-9983 | 3 | No site or social found. Only a 2023 weekly list (stale) and a review saying management uses Discord; not used. |
 
-## Re-check soon: weekly nights that end by 2026-11-01 (9 at 4 shops)
+## Re-check soon: weekly nights that end by 2026-11-01 (19 at 5 shops)
 
 As of 2026-10-11, looking 21 days ahead. Each of these nights has an end date on its row and leaves the calendar after
 it. Open the source, see whether the store has published the next month, and extend the row or let it end.
@@ -96,6 +97,21 @@ it. Open the source, see whether the store has published the next month, and ext
 | Night | Game | Ends | Source | Note |
 |---|---|---|---|---|
 | Wed 4 PM Disney Lorcana Attack of the Vine! League | lorcana | 2026-10-14 | https://calendar.google.com/calendar/ical/h45bp3hd925lo21qu6mt3nmsec%40group.calendar.google.com/public/basic.ics | Includes one booster pack. Calendar skips every Wednesday after Oct 14 (league ends). |
+
+### Kingslayer Games Oceanside (Oceanside)
+
+| Night | Game | Ends | Source | Note |
+|---|---|---|---|---|
+| Mon 6 PM Flesh & Blood Armory Classic Constructed | fab | 2026-10-31 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Mon 6:30 PM One Piece Constructed | onepiece | 2026-10-31 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Tue 6:30 PM Gundam Constructed | gundam | 2026-10-31 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Wed 6:30 PM One Piece Constructed | onepiece | 2026-10-31 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Wed 7 PM Queenslayer Commander Slay Pass | mtg | 2026-10-31 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Thu 6:30 PM Pokémon Standard | pokemon | 2026-10-15 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Thu 6:30 PM Union Arena Standard | union_arena | 2026-10-22 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Fri 6 PM MTG FNM Commander Slay Pass | mtg | 2026-10-31 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Sat 12 PM Dragon Ball Super: Fusion World | dbs_fusion | 2026-10-31 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
+| Sat 12 PM Digimon Constructed | digimon | 2026-10-31 | https://www.kingslayergames.com/events/events-calendar/oceanside/ | Store lists no entry fee on the calendar. |
 
 ### Paper Hero's Games (Sherman Oaks)
 

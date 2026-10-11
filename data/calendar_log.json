@@ -813,5 +813,7 @@
   {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "the-nerd-nook-gaming-center", "summary": "Magic: UCR club meetup Oct 21, 6:30 PM, free."},
   {"date": "2026-10-11", "action": "added", "game": null, "shopId": "ready-set-game", "summary": "Ready Set Game weekly schedule added: One Piece Tue/Sat, Star Wars: Unlimited Sat, Pokémon League Sun, Digimon Fri, Union Arena Thu, Magic Commander Thu, Gundam Wed (fees not listed)."},
   {"date": "2026-10-11", "action": "added", "game": null, "shopId": "cardboardia", "summary": "Cardboardia weekly schedule added: Pokémon Tue/Fri, Star Wars: Unlimited Tue, Union Arena Tue, One Piece Wed, Magic Commander Thu + Friday Night Magic, Palworld, Grand Archive, Yu-Gi-Oh!, Dragon Ball Super: Fusion World, hololive (fees $10-$20)."},
-  {"date": "2026-10-11", "action": "added", "game": "swu", "shopId": "comic-cult-hd", "summary": "Star Wars: Unlimited Fridays 5 PM (fee not listed)."}
+  {"date": "2026-10-11", "action": "added", "game": "swu", "shopId": "comic-cult-hd", "summary": "Star Wars: Unlimited Fridays 5 PM (fee not listed)."},
+  {"date": "2026-10-11", "action": "added", "game": null, "shopId": "kingslayer-games-oceanside", "summary": "Kingslayer Oceanside October 2026 calendar added: Flesh & Blood Mon, One Piece Mon/Wed, Gundam Tue, Commander Wed and Fri, Pokémon and Union Arena Thu, Digimon and Dragon Ball Super: Fusion World Sat (fees not listed)."},
+  {"date": "2026-10-11", "action": "added", "game": null, "shopId": "tier-1-games", "summary": "Tier 1 Games major events added: Pokémon Delta Reign prerelease Oct 24, Gundam GD06 Oct 31, Magic Star Trek prereleases Nov 6-8 and RCQs Nov 21, Union Arena Nov 7, One Piece OP18 Nov 22."}
 ]

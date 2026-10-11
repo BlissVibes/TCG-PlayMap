@@ -1835,10 +1835,11 @@
     "website": "https://www.instagram.com/cardsnhobbysd?igsh=MXRlODNua21scWhiZA==",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/d844c8d1-2c51-43e6-aa1e-0342fdd19111",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Instagram has only store hours; no schedule found.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "collectors-world",
@@ -1997,10 +1998,11 @@
     "website": "https://www.kingslayergames.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/a4708f20-f208-450c-a9a7-cabb9ae5573e",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own Oceanside October 2026 calendar (read in browser): weekly rows, no fees listed; Lorcana/Riftbound skipped. Only October published; recheck in November.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "lucky-seven-games",
@@ -2226,10 +2228,11 @@
     "website": "https://sanctumcgc.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/42873927-5d64-411d-b7e1-0167c4b9ab61",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site (sanctumcgc.com) has no events page or schedule text.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "shadow-realm-collectibles-llc",
@@ -2416,10 +2419,12 @@
       "facebook": "https://www.facebook.com/Tier1Games"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7ee92f52-d45f-420f-abb7-6f73eb2ca294",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Own events page: dated major events added with fees. Weekly calendar is a cross-origin widget with truncated titles, not read; Discord/Facebook on file for weekly nights.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "tinytcgshop",
@@ -2455,10 +2460,11 @@
       "instagram": "https://www.instagram.com/Windfallgames"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/4c5fb63a-1388-45e4-b5ca-c394f900beed",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Instagram bio lists Magic, Pokémon, Warhammer; TopDeck hub shows no upcoming events. No schedule public.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "yuva-collectibles",
