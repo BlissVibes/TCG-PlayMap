@@ -1404,10 +1404,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d1de4490-94d7-4937-977e-1c3f1b26970f",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Chain with no website: Instagram @thegamechest (login-walled; bio says 'Torrance | Irvine | Rolling Hills | Long Beach | Manhattan Village - join our Discords for quick updates') and Discord. Web search finds nothing. No schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-game-chest-promenade",
@@ -1416,10 +1417,11 @@
     "website": "https://www.instagram.com/thegamechest/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/a7e43df8-6aa1-42aa-b7da-878ad8ee4f9a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Chain with no website: Instagram @thegamechest (login-walled; bio says 'Torrance | Irvine | Rolling Hills | Long Beach | Manhattan Village - join our Discords for quick updates') and Discord. Web search finds nothing. No schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-game-chest-torrance",
@@ -1428,10 +1430,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/8bf87615-16fb-4768-b85d-8b13722ded14",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Chain with no website: Instagram @thegamechest (login-walled; bio says 'Torrance | Irvine | Rolling Hills | Long Beach | Manhattan Village - join our Discords for quick updates') and Discord. Web search finds nothing. No schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-game-chest-manhattan-beach",
@@ -1440,10 +1443,11 @@
     "website": "https://www.instagram.com/thegamechest/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/2d1cbe2c-55b4-4b2e-bf3b-e0eb8e31c542",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Chain with no website: Instagram @thegamechest (login-walled; bio says 'Torrance | Irvine | Rolling Hills | Long Beach | Manhattan Village - join our Discords for quick updates') and Discord. Web search finds nothing. No schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-game-hub-and-comic-bug",
@@ -1455,10 +1459,11 @@
       "facebook": "https://www.facebook.com/GameHubLA"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/41b2e33f-5ff9-47f6-81b1-e33f9e65869a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Linktree only (linktr.ee/gamehub.cb): Discord, Facebook, Instagram (login-walled), Ravensburger Play Hub store page (events render client-side), melee.gg organisation 9898 for Star Wars Unlimited (403 to scripts) and the Riftbound locator (importer). Needs a browser/Discord read; no schedule readable here.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "the-graveyard-tcg",
