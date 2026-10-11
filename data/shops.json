@@ -5436,7 +5436,10 @@
     "website": "https://www.instagram.com/nerdnookgamingcenter/",
     "phone": "(909) 312-7181",
     "games": [
-      "lorcana"
+      "lorcana",
+      "mtg",
+      "swu",
+      "yugioh"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -5448,6 +5451,9 @@
     "origin": "ravensburger-play",
     "sourceIds": {
       "lorcana": "d470c233-3df1-43d3-b768-52d3d5325730"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/nerdnookgamingcenter/"
     }
   },
   {

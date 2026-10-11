@@ -807,5 +807,8 @@
   {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "tapped-out-gaming", "summary": "Magic: Commander Night Wednesday 4:30 PM free; Friday draft 6 PM $25 (Oct 30 Chaos Draft $30)."},
   {"date": "2026-10-11", "action": "added", "game": "pokemon", "shopId": "tapped-out-gaming", "summary": "Pokémon: Standard Thursday 6:45 PM $8; Challenge Oct 29; Delta Reign pre-release Oct 30 6 PM $35."},
   {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "s-rank-games", "summary": "Magic: Reality Echoes draft Oct 16 7 PM $25; RCQ Oct 23 5 PM $50."},
-  {"date": "2026-10-11", "action": "added", "game": "digimon", "shopId": "s-rank-games", "summary": "Digimon: Evolution Cup Vol. 3 Oct 18 4 PM $10."}
+  {"date": "2026-10-11", "action": "added", "game": "digimon", "shopId": "s-rank-games", "summary": "Digimon: Evolution Cup Vol. 3 Oct 18 4 PM $10."},
+  {"date": "2026-10-11", "action": "added", "game": "swu", "shopId": "the-nerd-nook-gaming-center", "summary": "Star Wars: Unlimited casual open play Oct 16 and Oct 30, 4 PM, free."},
+  {"date": "2026-10-11", "action": "added", "game": "yugioh", "shopId": "the-nerd-nook-gaming-center", "summary": "Yu-Gi-Oh!: casual open play Oct 20, 4 PM, free."},
+  {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "the-nerd-nook-gaming-center", "summary": "Magic: UCR club meetup Oct 21, 6:30 PM, free."}
 ]
