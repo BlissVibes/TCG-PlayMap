@@ -7,7 +7,7 @@ What the values mean and who sets them: `docs/SHOP_RESEARCH.md`, "The `needsMark
 "Events" is the number of event rows the shop has on the calendar today. 0 means the shop is a
 pin with no schedule; more than 0 usually means only an importer's nights are listed.
 
-## Discord: open the server and read its schedule channel (27)
+## Discord: open the server and read its schedule channel (28)
 
 | Shop | City | Invite | Events | Notes |
 |---|---|---|---|---|
@@ -38,8 +38,9 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | The Game Chest, Manhattan Beach | Manhattan Beach | https://discord.gg/d5V9PQD77H | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
 | The Hungry Dragon | Murrieta | https://discord.gg/sjHfGxRuZ2 | 3 | Site lists Pokémon Cup, Lorcana Set Champs and Flesh & Blood ticket products with no dates or times. Discord on file, not opened. |
 | Tier 1 Games | Temecula | https://discord.gg/RaUDVSYh | 15 | Own events page: dated major events added with fees. Weekly calendar is a cross-origin widget with truncated titles, not read; Discord/Facebook on file for weekly nights. |
+| Turn Zero Games | Los Angeles | https://discord.gg/anRuFcAhFS | 1 | IG and FB (browser): address 3959 Wilshire Ste A-9 confirmed, no schedule posted; schedule lives in Discord (invite on shop row, not opened). Phone (213) 384-3466 from locator, not contradicted. |
 
-## Phone: call the shop for a time or a fee (5)
+## Phone: call the shop for a time or a fee (4)
 
 | Shop | City | Phone | Events | Notes |
 |---|---|---|---|---|
@@ -47,7 +48,6 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Pokestops | Encino | (747) 373-0417 | 2 | Site shows store hours only (Tue-Sat 12-6, Sun 5 PM, Mon closed); Instagram bio lists Pokémon, Lorcana, MTG, One Piece, Digimon, DBZ; its Tournaments story highlight is from July and posts are retail. No current schedule public. |
 | Shadow Realm Collectibles LLC | Bell Gardens | (562) 381-0062 | 2 | No website or social found; web search returns nothing for this store. Only a phone number. |
 | Table 1 Gaming | Bell | (323) 744-2021 | 1 | No website or social found; web search returns nothing for this store. Only a phone number. |
-| Turn Zero Games | Los Angeles | (213) 384-3466 | 1 | Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop. Chrome pass 2026-10-10: socials found on the site (instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games), not yet read. |
 
 ## Blocked, no handle: no website and no socials (39)
 

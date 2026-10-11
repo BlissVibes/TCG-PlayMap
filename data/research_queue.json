@@ -1647,9 +1647,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop. Chrome pass 2026-10-10: socials found on the site (instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games), not yet read.",
-    "checked": "2026-10-10",
-    "needsMark": "phone"
+    "notes": "IG and FB (browser): address 3959 Wilshire Ste A-9 confirmed, no schedule posted; schedule lives in Discord (invite on shop row, not opened). Phone (213) 384-3466 from locator, not contradicted.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "viking-tcg-llc",

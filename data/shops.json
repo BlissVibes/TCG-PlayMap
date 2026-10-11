@@ -3901,7 +3901,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Socials (not read): instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Instagram and Facebook (read in a browser 2026-10-11) both give 3959 Wilshire Blvd, Ste A-9, 90010, matching this row; the other address in a directory is stale. Instagram bio lists Magic, Pokémon, Wixoss, Warhammer, D&D. Schedule is kept in Discord (Facebook and Linktree point there; the Linktree schedule image dates from April 2022).",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/92efaa6d-2354-4148-b3ff-7d29cfd15a18",
@@ -3911,7 +3911,13 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "92efaa6d-2354-4148-b3ff-7d29cfd15a18"
-    }
+    },
+    "socials": {
+      "discord": "https://discord.gg/anRuFcAhFS",
+      "facebook": "https://facebook.com/turn0games",
+      "instagram": "https://instagram.com/turn0games"
+    },
+    "website": "http://turnzerogames.com"
   },
   {
     "id": "viking-tcg-llc",
@@ -5268,7 +5274,7 @@
     "games": [
       "lorcana"
     ],
-    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. Own Square site (read in a browser 2026-10-11) lists only a Dec 2025 community card show; Instagram @SPIKES_LOUNGE not read. Instagram @spikes_lounge (read 2026-10-11): 'Lorcana Pack Rush' Saturdays 4 PM, $10 entry, 'starting this Saturday' (post 2026-10-08; cadence not stated, not listed); Community Card Show Fri Oct 16; announced WPN status (official Magic play).",
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. Own Square site (read in a browser 2026-10-11) lists only a Dec 2025 community card show; Instagram @SPIKES_LOUNGE not read. Instagram @spikes_lounge (read 2026-10-11): 'Lorcana Pack Rush' Saturdays 4 PM, $10 entry, 'starting this Saturday' (post 2026-10-08; cadence not stated, not listed); Community Card Show Fri Oct 16; announced WPN status (official Magic play). Re-read 2026-10-11: Lorcana Pack Rush flyer says Saturday 4 PM $10, caption 'starting this Saturday'; no 'every week' wording, so not added as weekly.",
     "active": true,
     "source": {
       "url": "https://tcg.ravensburgerplay.com/stores/813131dd-5ca5-4009-a312-404a4a79f8f7",
