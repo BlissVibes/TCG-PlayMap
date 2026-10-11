@@ -1704,5 +1704,744 @@
     "addedBy": "leads-gundam",
     "checked": "2026-10-10",
     "notes": "Own site: homepage weekly grid + /events/<game> pages (fees). 21 weekly rows, fees on all but Palworld. Riftbound (Tue 6:30 PM $5) NOT added: shop is not in the importer data. Unresolved: stale grids in the homepage HTML (Pokemon Thu 7 PM; Riftbound Tue+Thu); One Piece page lists Tue 6 PM $5 tournament, grid shows Sun 1 PM casual only; Beyblade X every other Sunday has no anchor week."
+  },
+  {
+    "shopId": "424-collectibles",
+    "name": "424 Collectibles",
+    "city": "Los Angeles",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/aa70caec-0b62-479e-a7d0-2fae0297f25a",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "a-and-n-collectibles",
+    "name": "A & N Collectibles",
+    "city": "San Dimas",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/37f1d110-f16f-4ec1-8235-d3bb530b75f8",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "atomic-comics",
+    "name": "Atomic Comics",
+    "city": "Artesia",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/319da76c-77ec-47b5-bbe5-8e75bcf87edf",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "bards-and-cards-game-shop",
+    "name": "Bards & Cards Game Shop",
+    "city": "San Diego",
+    "website": "https://bardsandcards.com",
+    "socials": {
+      "discord": "https://discord.gg/ZaBQsdx6Er",
+      "facebook": "https://facebook.com/bardsncards",
+      "instagram": "https://www.instagram.com/bardsandcards",
+      "x": "https://x.com/bardsandcards"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7d6b8fe3-8086-4ae4-904a-f6472729b0c2",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "baseball-and-games",
+    "name": "Baseball & Games",
+    "city": "Hesperia",
+    "website": "https://www.baseballandgames.com/",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/a685a048-ef82-4a85-8a2e-dd6a8efe1122",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "bases-cards-and-comics",
+    "name": "Bases Cards & Comics",
+    "city": "Lancaster",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/9242a55b-96d8-4b01-a249-8ec2c4837773",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "blez-sports-cards-and-collectibles-formally-omg-collectibles",
+    "name": "BLEZ Sports Cards & Collectibles (formally OMG Collectibles)",
+    "city": "Palm Desert",
+    "website": "http://www.omgcollectibles.com",
+    "socials": {
+      "facebook": "https://www.facebook.com/BLEZPalmDesert",
+      "instagram": "https://www.instagram.com/blezpalmdesert"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/a03264ce-cd89-45e9-b930-892e23ac8268",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "brute-force-games",
+    "name": "Brute Force Games",
+    "city": "San Diego",
+    "website": "https://www.bruteforcemtg.com/",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/bc77372a-da6a-4944-b2a0-c3ee6e4bfbbd",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "cardboardia",
+    "name": "Cardboardia",
+    "city": "Murrieta",
+    "website": "https://cardboardanddie.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/06cdb0e4-1374-43fc-929c-8b902db4f1a4",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "cards-n-hobby-san-diego",
+    "name": "Cards N Hobby San Diego",
+    "city": "Oceanside",
+    "website": "https://www.instagram.com/cardsnhobbysd?igsh=MXRlODNua21scWhiZA==",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/d844c8d1-2c51-43e6-aa1e-0342fdd19111",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "collectors-world",
+    "name": "Collectors World",
+    "city": "Bakersfield",
+    "website": "https://linktr.ee/collectorsworldsw",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/84671ec0-7b31-4fe0-9f49-b59404baba36",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "comic-cult",
+    "name": "Comic Cult",
+    "city": "Torrance",
+    "website": null,
+    "socials": {
+      "facebook": "https://www.facebook.com/comicculttorrance",
+      "instagram": "https://www.instagram.com/comicculttorrance"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/4339c19a-f0b2-4e75-8907-434194ddeba9",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "comic-cult-hd",
+    "name": "Comic Cult HD",
+    "city": "Hesperia",
+    "website": "https://Comiccult.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/ec3e421d-0cc1-49c9-b147-85dd1f29866d",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "comic-hero-university",
+    "name": "Comic Hero University",
+    "city": "Montclair",
+    "website": "http://www.comicherou.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/ffe12719-8e88-4b1a-9ac0-05f077032bc7",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "ditz-hobby-and-games",
+    "name": "Ditz Hobby & Games",
+    "city": "Poway",
+    "website": "https://www.ditzhobbygames.com/",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/314c8dfa-cd57-4620-afe4-763a44ea06ce",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "evolution-collection",
+    "name": "Evolution Collection",
+    "city": "Highland",
+    "website": "https://www.instagram.com/evolution.collection/",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/fb6cf84e-28d0-48e8-a9e3-6de249262d13",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "fistful-of-cards",
+    "name": "Fistful of Cards",
+    "city": "Ridgecrest",
+    "website": "https://linktr.ee/fistfulofcards",
+    "socials": {
+      "discord": "https://discord.com/invite/nwfxddbh9t",
+      "facebook": "https://www.facebook.com/profile.php?id=61555108860818",
+      "instagram": "https://www.instagram.com/fistful_of_cards_rc/"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/2bb4c813-8118-40cc-b40f-502ce26a1ebc",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "game-empire-inc",
+    "name": "Game Empire Inc.",
+    "city": "San Diego",
+    "website": "https://www.gameempire.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/21c4b7f0-209b-4d0f-b1c2-316efeca3a37",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "ggw-toys",
+    "name": "GGW toys",
+    "city": "Torrance",
+    "website": null,
+    "socials": {},
+    "sourceUrl": null,
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "green-tower-games",
+    "name": "Green Tower Games",
+    "city": "Santa Clarita",
+    "website": null,
+    "socials": {
+      "discord": "https://discord.gg/7WMXpYq5FA",
+      "facebook": "https://www.facebook.com/greentowergames",
+      "instagram": "https://www.instagram.com/greentowergames.scv"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7b7a1835-7b36-4a32-a4ad-7e5e8501750d",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "hellspawn-toys-n-collectibles",
+    "name": "Hellspawn toys n collectibles",
+    "city": "Bakersfield",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/d32a4a40-160c-4a39-b629-e6bb99b23ecd",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "kingslayer-games-oceanside",
+    "name": "Kingslayer Games Oceanside",
+    "city": "Oceanside",
+    "website": "https://www.kingslayergames.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/a4708f20-f208-450c-a9a7-cabb9ae5573e",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "lucky-seven-games",
+    "name": "Lucky Seven Games",
+    "city": "Placentia",
+    "website": "https://www.luckysevengames.com/",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/0850c5d4-c49c-4aeb-8a88-9cb02ad36d6c",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "meeples-family-board-game-cafe-inc",
+    "name": "MEEPLES FAMILY BOARD GAME CAFE INC.",
+    "city": "Anaheim",
+    "website": "https://Meeplesfamily.com",
+    "socials": {
+      "discord": "https://discord.gg/PStj7KSjXa",
+      "instagram": "https://www.instagram.com/Meeplesfamily"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/44460eb0-1037-4707-a2bc-42b1a79087e0",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "on-board-gaming",
+    "name": "On-Board Gaming",
+    "city": "Escondido",
+    "website": "https://on-boardgaming.com/",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/a86cdd17-2358-444f-86eb-bc1a49177ddd",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "ottos-video-games-and-more",
+    "name": "Otto's Video Games and More",
+    "city": "Bakersfield",
+    "website": "https://www.facebook.com/ottosvideogames",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/b672afcf-3e79-48cc-bdd3-306cdd6545e5",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "out-of-the-box-goods-llc",
+    "name": "Out of the Box Goods LLC",
+    "city": "Pasadena",
+    "website": "HTTPS://kuson.group",
+    "socials": {
+      "discord": "https://discord.gg/yCP9BNub"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/b1f6843e-024d-4945-930d-a02735f6ae59",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "pair-a-dice-games",
+    "name": "Pair a Dice Games",
+    "city": "Vista",
+    "website": "https://pairadicegames.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/8241fae5-75de-4789-82b2-d772e51a04d8",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "paladins-game-castle",
+    "name": "Paladins Game Castle",
+    "city": "Bakersfield",
+    "website": "https://www.pgcgames.com",
+    "socials": {
+      "facebook": "https://www.facebook.com/paladinsgamecastle",
+      "instagram": "https://www.instagram.com/pgcgames",
+      "x": "https://x.com/paladingames"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/f9821eb6-b0ce-4859-afa0-3c72fbf2c06a",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "papa-joeys-collectibles-ca",
+    "name": "Papa Joey's Collectibles - CA",
+    "city": "Carlsbad",
+    "website": "https://www.instagram.com/papajoeyscollectibles",
+    "socials": {
+      "discord": "https://discord.gg/c2V2FketJj",
+      "facebook": "https://www.facebook.com/papajoeyscollectibles/",
+      "instagram": "https://www.instagram.com/papajoeyscollectibles"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/12efc1a8-8035-41eb-93d8-0f571c83717a",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "papa-joeys-collectibles-mv",
+    "name": "Papa Joey's Collectibles - MV",
+    "city": "San Diego",
+    "website": "https://www.instagram.com/papajoeyscollectibles",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7b6b4be7-d28a-42b9-b55d-5781ef9f6d91",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "papa-joeys-collectibles-pb",
+    "name": "Papa Joey’s Collectibles - PB",
+    "city": "National City",
+    "website": "https://www.papajoeys.com",
+    "socials": {
+      "discord": "https://discord.gg/c2V2FketJj",
+      "facebook": "https://www.facebook.com/papajoeyscollectibles/",
+      "instagram": "https://www.instagram.com/papajoeyscollectibles"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/715eedd1-28cb-40be-9296-e4f188340b00",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "phranxz-tcg-and-collectibles",
+    "name": "PHRANXZ TCG & COLLECTIBLES",
+    "city": "Kernville",
+    "website": "https://PHRANXZTCG.COM",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/6e981e15-39de-426d-993f-3ed9f1cb9314",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "pokestops",
+    "name": "Pokestops",
+    "city": "Encino",
+    "website": "https://www.thepokestops.com",
+    "socials": {
+      "instagram": "https://www.instagram.com/pokestopsencino/"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/01af436c-b1c4-4db1-9b91-7644cd615a5a",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "ready-set-game",
+    "name": "Ready Set Game",
+    "city": "Menifee",
+    "website": "https://rsgmenifee.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7569dc69-8339-4716-9bb4-0ad355d2d5a7",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "revenge-of",
+    "name": "Revenge Of",
+    "city": "Los Angeles",
+    "website": "https://revengeof.com",
+    "socials": {
+      "discord": "https://discord.gg/ybrJWNYz",
+      "facebook": "https://www.facebook.com/revengeofcomicsandpinball/",
+      "instagram": "https://www.instagram.com/revengeof_comicsandpinball"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/4a3762fe-13e2-4ad3-ad9e-11761c056cb9",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "s-rank-games",
+    "name": "S Rank Games",
+    "city": "Ontario",
+    "website": "https://s-rankgames.com",
+    "socials": {
+      "discord": "https://discord.gg/uuCp5hJ4BS",
+      "facebook": "https://facebook.com/SRankGames",
+      "instagram": "https://www.instagram.com/srankgames_"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/27483d95-d36d-488d-a862-93a910c55852",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "sanctum-comics-games-and-cards",
+    "name": "Sanctum Comics Games & Cards",
+    "city": "Temecula",
+    "website": "https://sanctumcgc.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/42873927-5d64-411d-b7e1-0167c4b9ab61",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "shadow-realm-collectibles-llc",
+    "name": "Shadow Realm Collectibles LLC",
+    "city": "Bell Gardens",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/3d755bc6-2eae-44c8-9fb1-d1eae950cf78",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "south-bay-collectibles",
+    "name": "South Bay Collectibles",
+    "city": "Harbor City",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/af985791-7956-49f9-a89c-df52a980498d",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "spikes-lounge",
+    "name": "Spikes Lounge",
+    "city": "Commerce",
+    "website": "https://spikes-hobby-lounge.square.site",
+    "socials": {
+      "discord": "https://discord.gg/9QeqvfuG3U",
+      "facebook": "https://www.facebook.com/p/Spikes-Lounge-100062954215662/",
+      "instagram": "https://www.instagram.com/spikes_lounge"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/813131dd-5ca5-4009-a312-404a4a79f8f7",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "table-1-gaming",
+    "name": "Table 1 Gaming",
+    "city": "Bell",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/1b289804-a121-4a08-9271-00c8ab92e996",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "tapped-out-gaming",
+    "name": "Tapped Out Gaming",
+    "city": "Valencia",
+    "website": "https://tappedoutgaming.net",
+    "socials": {
+      "discord": "https://discord.gg/G7Rtkk5KtE",
+      "facebook": "https://www.facebook.com/tappedoutgaming",
+      "instagram": "https://www.instagram.com/tappedoutgaming"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/c694bb7e-cf6a-436e-9ba6-8c1aa244ee28",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "the-card-goblin",
+    "name": "The Card Goblin",
+    "city": "Bakersfield",
+    "website": null,
+    "socials": {
+      "discord": "https://discord.gg/Y26ZCmY3PZ",
+      "instagram": "https://www.instagram.com/thecardgoblin_tcg"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/5aaecee9-0f62-4e89-985b-a8a558c17731",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "the-game-cellar",
+    "name": "The Game Cellar",
+    "city": "San Gabriel",
+    "website": null,
+    "socials": {
+      "instagram": "https://www.instagram.com/thegamecellar"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/8dff7158-27a5-4085-8295-13215d93d2ce",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "the-game-chest-long-beach",
+    "name": "The Game Chest, Long Beach",
+    "city": "Long Beach",
+    "website": "https://www.instagram.com/thegamechest/",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/6fdd2f58-05f2-4ba5-bd12-3b7c292833d5",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "the-grand-line-trading-post",
+    "name": "The Grand Line Trading Post",
+    "city": "San Diego",
+    "website": "https://www.instagram.com/thegrandlinesd?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/31aa8d24-5a2f-416d-9666-aff172fb7afd",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "the-hungry-dragon",
+    "name": "The Hungry Dragon",
+    "city": "Murrieta",
+    "website": "https://thehungrydragongames.com/",
+    "socials": {
+      "discord": "https://discord.gg/sjHfGxRuZ2",
+      "instagram": "https://www.instagram.com/the_hungry_dragon/"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/8aaf304a-f986-46d1-b984-fa1aaed2d270",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "the-nerd-nook-gaming-center",
+    "name": "The Nerd Nook Gaming Center",
+    "city": "Riverside",
+    "website": "https://www.instagram.com/nerdnookgamingcenter/",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/d470c233-3df1-43d3-b768-52d3d5325730",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "the-shop-dtp",
+    "name": "The Shop DTP",
+    "city": "Pomona",
+    "website": "https://3-bitgames.com",
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/eea04e96-8ace-47ad-b7eb-3569fec2ba25",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "tier-1-games",
+    "name": "Tier 1 Games",
+    "city": "Temecula",
+    "website": "https://www.tier1games.com",
+    "socials": {
+      "discord": "https://discord.gg/RaUDVSYh",
+      "facebook": "https://www.facebook.com/Tier1Games"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/7ee92f52-d45f-420f-abb7-6f73eb2ca294",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "tinytcgshop",
+    "name": "TinyTCGShop",
+    "city": "Pomona",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/3b7b42d3-39ca-48ac-8222-7a94c3cef09b",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "tubbys-lorcana",
+    "name": "Tubbys LORCANA",
+    "city": "La Mesa",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/953e83e4-d4e5-4c02-b41f-98da2c2a729f",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "windfall-games-llc",
+    "name": "Windfall Games LLC",
+    "city": "Tehachapi",
+    "website": "https://www.instagram.com/windfallgames?igsh=MzRlODBiNWFlZA==",
+    "socials": {
+      "instagram": "https://www.instagram.com/Windfallgames"
+    },
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/4c5fb63a-1388-45e4-b5ca-c394f900beed",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "yuva-collectibles",
+    "name": "YUVA collectibles",
+    "city": "Yucca Valley",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/84d9cbe7-9487-4da3-9940-0a7335475645",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
+  },
+  {
+    "shopId": "zanders-game-house",
+    "name": "Zander's Game House",
+    "city": "Camarillo",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://tcg.ravensburgerplay.com/stores/b5ebfa05-4aa7-4fb3-a343-a331618cf6cc",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "ravensburger-play",
+    "notes": ""
   }
 ]

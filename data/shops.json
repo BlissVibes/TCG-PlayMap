@@ -73,7 +73,8 @@
       "checked": "2026-09-30"
     },
     "sourceIds": {
-      "riftbound": "c5769267-1e23-41fe-a551-00639256460f"
+      "riftbound": "c5769267-1e23-41fe-a551-00639256460f",
+      "lorcana": "7bdb7c38-5029-4c34-b053-02a436b80b58"
     }
   },
   {
@@ -115,7 +116,8 @@
       "note": "Weekly Tournaments graphic posted 2026-09-29"
     },
     "sourceIds": {
-      "riftbound": "236ac85f-e4e4-4e0f-a6d0-3f5054328b85"
+      "riftbound": "236ac85f-e4e4-4e0f-a6d0-3f5054328b85",
+      "lorcana": "4aeb3d8a-68e4-40c0-91fe-425f5cefab43"
     }
   },
   {
@@ -153,7 +155,8 @@
       "note": "schedule is an image; transcribed by hand"
     },
     "sourceIds": {
-      "riftbound": "6e1927c6-56bf-4fd9-92e1-fe5391981cda"
+      "riftbound": "6e1927c6-56bf-4fd9-92e1-fe5391981cda",
+      "lorcana": "a646de02-3549-40c9-b1a8-1e3a44c05631"
     }
   },
   {
@@ -191,6 +194,9 @@
       "url": "https://www.instagram.com/bearcaveccg/",
       "checked": "2026-10-03",
       "note": "weekly schedule graphic (Instagram), supplied by Mark"
+    },
+    "sourceIds": {
+      "lorcana": "f220e421-68f5-477d-a41b-340c145b3aae"
     }
   },
   {
@@ -218,7 +224,8 @@
     ],
     "notes": "Sherman Oaks store (the other is on Santa Monica Blvd). Schedule from the store's public Google Calendar (checked 2026-10-10). Row hand-entered 2026-10-10 before the Riftbound importer landed; the importer should match on id. Riftbound nights are hand-entered (the importer adds none at hand-entered shops). Also runs Warhammer 40K / Kill Team meetups, board game and Commander meetups (not listed). Hours and website not yet found; no phone listed.",
     "sourceIds": {
-      "riftbound": "a13b676d-7829-4896-a3ec-f877673fc718"
+      "riftbound": "a13b676d-7829-4896-a3ec-f877673fc718",
+      "lorcana": "62a0e74d-1719-4235-b37c-96013da5f041"
     },
     "active": true,
     "source": {
@@ -250,7 +257,8 @@
     ],
     "notes": "Santa Monica Blvd store (the other is in Sherman Oaks). Schedule from the store's public Google Calendar (checked 2026-10-10). Row hand-entered 2026-10-10 before the Riftbound importer landed; the importer should match on id. Riftbound nights are hand-entered (the importer adds none at hand-entered shops). Also runs D&D Adventure League (Tue), Warhammer meetups (Sun) and a Friday board game meetup (not listed). Hours and website not yet found; no phone listed.",
     "sourceIds": {
-      "riftbound": "67fb2d35-ab07-465b-a7ce-afa03fafbf44"
+      "riftbound": "67fb2d35-ab07-465b-a7ce-afa03fafbf44",
+      "lorcana": "dd36dc79-ad38-48f0-a4d0-821ada2bbfaa"
     },
     "active": true,
     "source": {
@@ -286,7 +294,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "4e0cb63b-8b69-4b71-b3dd-fa5f239f352d"
+      "riftbound": "4e0cb63b-8b69-4b71-b3dd-fa5f239f352d",
+      "lorcana": "17c3355a-a1f6-4ff7-b704-094730ac93d6"
     }
   },
   {
@@ -319,7 +328,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "b4c79293-697d-4278-9d67-1651b123aa63"
+      "riftbound": "b4c79293-697d-4278-9d67-1651b123aa63",
+      "lorcana": "8f04b514-eaff-4262-b95c-df681fa7ce77"
     }
   },
   {
@@ -498,7 +508,8 @@
       "mtg",
       "onepiece",
       "pokemon",
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): 11 AM-9 PM every day. Actual address is 7517 Fallbrook Ave, West Hills (the locator says Los Angeles). Events calendar is a JavaScript widget that could not be read; events need sign-up on the website. Only Riftbound listed. Weekly nights from the store's own event pages (read in a browser 2026-10-10). Also Hyperia prerelease Sat Oct 17, Pokémon prereleases Oct 24 and 30, Gundam GD06 release Sun Nov 1, Star Trek prereleases Nov 6-7 (times and fees not read), plus D&D/RPG nights, not listed. Events need website sign-up. Riftbound Tue Nexus Night is the importer's.",
     "active": true,
@@ -509,7 +520,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "bf1396b2-f027-45b3-afe5-31c5d9ce47ac"
+      "riftbound": "bf1396b2-f027-45b3-afe5-31c5d9ce47ac",
+      "lorcana": "d3f3596f-5ce7-4fc3-aac6-0be3740da143"
     }
   },
   {
@@ -572,7 +584,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "1c2e3639-4d4d-48b0-a163-ae644dfa9741"
+      "riftbound": "1c2e3639-4d4d-48b0-a163-ae644dfa9741",
+      "lorcana": "3870a9a1-b79c-418f-b214-09bc1aa021da"
     }
   },
   {
@@ -653,7 +666,8 @@
     "lon": -118.3098018,
     "tz": "America/Los_Angeles",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website; web search found nothing. Only Riftbound listed. No phone listed on the locator.",
     "active": true,
@@ -664,7 +678,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "7afa63a0-df9d-45d7-bfd9-3d1613847b05"
+      "riftbound": "7afa63a0-df9d-45d7-bfd9-3d1613847b05",
+      "lorcana": "b1b988d8-5f7f-4c1d-ba9a-3152834d2e1a"
     }
   },
   {
@@ -680,7 +695,8 @@
     "website": "https://camposcardboutique.com/",
     "phone": "(424) 347-9015",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Wed-Fri 2-8 PM, Sat-Sun 11 AM-8 PM, closed Mon-Tue. Phone (424) 347-9015. The site lists no events; schedule is on Instagram/Facebook (not readable). Only Riftbound listed. Instagram pinned 'Weekly Events Schedule' (posted 2026-09-12, instagram.com/p/DdN4VyWimJ1/) gives DAYS only, no times or fees: Mon-Tue closed; Wed MTG booster draft (needs 8 players); Thu Lorcana League; Fri Friday Night Gundam (constructed); Sat special events and Riftbound Nexus; Sun One Piece and Gundam tournaments. Needs a phone call for start times.",
     "active": true,
@@ -691,7 +707,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "5a5f8c4a-eb93-49b0-8fe3-937b2ebaa5b5"
+      "riftbound": "5a5f8c4a-eb93-49b0-8fe3-937b2ebaa5b5",
+      "lorcana": "bbb19d38-ff43-4a25-8991-85414bf18cb7"
     }
   },
   {
@@ -709,7 +726,8 @@
       "facebook": "https://www.facebook.com/CardAddictionGames"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1538 N State College Blvd, open 2 PM-midnight, runs Magic, Pokémon, Yu-Gi-Oh!, Lorcana; no schedule found. Facebook not readable. Only Riftbound listed.",
     "active": true,
@@ -720,7 +738,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "f4cf0879-3973-42ef-88de-b96f8019ebdf"
+      "riftbound": "f4cf0879-3973-42ef-88de-b96f8019ebdf",
+      "lorcana": "53b8892e-e114-4be1-923a-86f5e1bd5269"
     }
   },
   {
@@ -755,7 +774,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "79649264-eefc-4683-8fff-e5cd1193600b"
+      "riftbound": "79649264-eefc-4683-8fff-e5cd1193600b",
+      "lorcana": "33434502-ee5f-4e74-9eb0-bb181758b4f5"
     }
   },
   {
@@ -798,7 +818,8 @@
     "website": "https://cardboardgames.store",
     "phone": "(714) 606-7598",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon-Fri 4-8 PM, Sat-Sun 12-8 PM. The site's events page (cardboardgames.store/events) lists only paid special events (Riftbound and past Magic/Lorcana prereleases); no weekly nights and nothing non-Riftbound upcoming. Only Riftbound listed.",
     "active": true,
@@ -809,7 +830,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "de624c19-dac3-47ec-8c95-80aff03d04ea"
+      "riftbound": "de624c19-dac3-47ec-8c95-80aff03d04ea",
+      "lorcana": "60cc47f2-4ec9-4cdb-a5d6-ee7bd8b0cbdc"
     }
   },
   {
@@ -855,7 +877,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "d41ef1a3-e23a-4953-bc2d-a4450ff12bd9"
+      "riftbound": "d41ef1a3-e23a-4953-bc2d-a4450ff12bd9",
+      "lorcana": "7c304e7c-3140-47a3-bfa5-a6bfee809ce1"
     }
   },
   {
@@ -870,7 +893,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(626) 434-6438",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 9155 Archibald Ave Ste E, Pokémon League location, closed Mon-Tue; phone 909-256-4840; no schedule published. Only Riftbound listed.",
     "active": true,
@@ -881,7 +905,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "2c17e28a-c945-466c-9b61-b0fa6e90b26e"
+      "riftbound": "2c17e28a-c945-466c-9b61-b0fa6e90b26e",
+      "lorcana": "95ad4f02-ae7e-4537-856e-743c7397c52a"
     }
   },
   {
@@ -942,7 +967,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "27c45d67-446d-4a70-9850-d67485ff2fb2"
+      "riftbound": "27c45d67-446d-4a70-9850-d67485ff2fb2",
+      "lorcana": "a67e260a-c425-402e-8a17-0e92686d968c"
     }
   },
   {
@@ -973,7 +999,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "3109bbd9-6c45-4df9-b570-145e68ca7f9a"
+      "riftbound": "3109bbd9-6c45-4df9-b570-145e68ca7f9a",
+      "lorcana": "71102516-46cd-4428-ae3d-4436318fdb08"
     }
   },
   {
@@ -988,7 +1015,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(951) 496-3588",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1003 W 6th St, Magic and Pokémon shop, weekends open late. No website; search found no schedule. Only Riftbound listed.",
     "active": true,
@@ -999,7 +1027,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "cbb6082f-8cfa-47da-8a63-f14ab071e9aa"
+      "riftbound": "cbb6082f-8cfa-47da-8a63-f14ab071e9aa",
+      "lorcana": "e6a54a04-5142-4782-8c72-8d5ea5a64209"
     }
   },
   {
@@ -1017,7 +1046,8 @@
     "games": [
       "gundam",
       "onepiece",
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); search found nothing. Only Riftbound listed. Own event calendar site danimalztradingcards.lovable.app (read 2026-10-10): only dated events, no weekly nights. Hours Mon-Sat 11 AM-7 PM, Sun 11 AM-5 PM; phone (562) 377-7488; Del Amo Blvd address.",
     "active": true,
@@ -1028,7 +1058,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "aa8dbdae-3994-4795-bec7-aef9597be5a7"
+      "riftbound": "aa8dbdae-3994-4795-bec7-aef9597be5a7",
+      "lorcana": "633f72ad-5435-4e0b-a6fa-ce9f0fc3b00f"
     }
   },
   {
@@ -1070,7 +1101,8 @@
     "website": "https://DiceHouseGames.com",
     "phone": "(714) 871-6494",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Tue-Sat 11 AM-9 PM, Sun 11 AM-7 PM, closed Mon. Website is a one-page hours site; events are on Facebook (facebook.com/dicehousegames), not readable. Only Riftbound listed.",
     "active": true,
@@ -1081,7 +1113,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "74ee941f-229f-42dc-b2e8-51eb0dc679bc"
+      "riftbound": "74ee941f-229f-42dc-b2e8-51eb0dc679bc",
+      "lorcana": "8e52b7d7-b5bc-4d45-bfae-0bb3ffb14d13"
     }
   },
   {
@@ -1165,7 +1198,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "bc8e0e76-201d-4e77-b724-3dca33ebaa5b"
+      "riftbound": "bc8e0e76-201d-4e77-b724-3dca33ebaa5b",
+      "lorcana": "090f0067-0de6-4d63-b136-35ab5128d178"
     }
   },
   {
@@ -1181,7 +1215,8 @@
     "website": "https://www.instagram.com/drewbeescollectables/",
     "phone": "(951) 475-7227",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1047 W 6th St Ste E; reported Friday Pokémon, Saturday Lorcana/Union Arena, Sunday One Piece/Magic, not confirmed. Website is an Instagram page (login-walled). Only Riftbound listed. Instagram (read 2026-10-10): hobby store, phone (951) 475-7227, drewbees.com in bio; no schedule graphic in the first posts or highlights. Posts about a card show festival Oct 10.",
     "active": true,
@@ -1192,7 +1227,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "87c19443-c9a1-44e1-b68d-e105d63ec791"
+      "riftbound": "87c19443-c9a1-44e1-b68d-e105d63ec791",
+      "lorcana": "c259c531-dc95-45fb-ad9a-807a716c22ab"
     }
   },
   {
@@ -1265,7 +1301,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "2350359c-94ed-4df8-b14a-fb42a1017ef5"
+      "riftbound": "2350359c-94ed-4df8-b14a-fb42a1017ef5",
+      "lorcana": "a0616bde-0c38-40a3-9469-fceb3c3b9ee7"
     }
   },
   {
@@ -1309,7 +1346,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(562) 249-8172",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials in the locator; web search found nothing. Only Riftbound listed.",
     "active": true,
@@ -1320,7 +1358,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "7961c0cd-da05-4366-b88e-a5a4530ebe58"
+      "riftbound": "7961c0cd-da05-4366-b88e-a5a4530ebe58",
+      "lorcana": "1e9f0952-f32b-4f31-a18a-7d57c4a40fb3"
     }
   },
   {
@@ -1365,7 +1404,8 @@
       "discord": "https://discord.gg/N9TT7eYa"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Discord only (not readable); web search found nothing. Only Riftbound listed.",
     "active": true,
@@ -1376,7 +1416,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "060a6437-a6de-455f-a69c-2d8f4860f8d1"
+      "riftbound": "060a6437-a6de-455f-a69c-2d8f4860f8d1",
+      "lorcana": "0ba6696f-ecb1-469f-862b-055f3373dc7c"
     }
   },
   {
@@ -1495,7 +1536,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "96e5c562-0fb5-480e-943a-0457a5620ecf"
+      "riftbound": "96e5c562-0fb5-480e-943a-0457a5620ecf",
+      "lorcana": "8e4832a8-b828-459b-9346-191fee00f156"
     }
   },
   {
@@ -1516,7 +1558,8 @@
       "x": "gamesformeeple"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site is down while the store moves to a new website and point-of-sale system (checked 2026-10-10); events are on Discord/Instagram. Only Riftbound listed.",
     "active": true,
@@ -1527,7 +1570,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "82a1bcba-5477-4b86-b805-3282a3486cbd"
+      "riftbound": "82a1bcba-5477-4b86-b805-3282a3486cbd",
+      "lorcana": "04ba059c-3fd8-4f2f-aba1-928a7b384415"
     }
   },
   {
@@ -1577,7 +1621,8 @@
       "discord": "https://discord.gg/WgDPx2s2u5"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (geekyteas.com) fails its TLS certificate check from here, so it was not read. Chamber directory: 900 W Alameda Ave, (818) 639-2283, lists Magic tournaments with no days. Only Riftbound listed.",
     "active": true,
@@ -1588,7 +1633,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "126bfb72-6978-471d-b75b-60910720f796"
+      "riftbound": "126bfb72-6978-471d-b75b-60910720f796",
+      "lorcana": "f53c8806-bc16-47ff-8faa-2fcb361882ca"
     }
   },
   {
@@ -1633,7 +1679,8 @@
       "discord": "https://discord.gg/VS5YjB7rpH"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): closed Mon; Tue-Thu 3-9 PM, Fri 3-10 PM, Sat-Sun 12-8 PM. The Events page (grailandgrade.com/pages/events) shows no events; schedule is on Discord. Only Riftbound listed.",
     "active": true,
@@ -1644,7 +1691,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "134079ab-f115-4739-81d8-d24d29cb862d"
+      "riftbound": "134079ab-f115-4739-81d8-d24d29cb862d",
+      "lorcana": "fe23f25d-5086-483b-ab27-50e8af15c938"
     }
   },
   {
@@ -1663,7 +1711,8 @@
       "discord": "https://discord.gg/DrsMGW3puc"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (gxgamers.com) renders client-side with no readable text; Discord not read. Only Riftbound listed. Browser read 2026-10-10: hours Mon, Wed-Fri 5:30-10 PM, Sat-Sun 5-10 PM, closed Tue; 1251 S Alvarado St Ste C-5, (323) 230-0185. The site lists products only, no events (Discord).",
     "active": true,
@@ -1674,7 +1723,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "6274e25c-d450-4cf7-ad07-c104eaef94c2"
+      "riftbound": "6274e25c-d450-4cf7-ad07-c104eaef94c2",
+      "lorcana": "1468deb6-5e4a-4f82-9df1-5abb37805187"
     }
   },
   {
@@ -1699,7 +1749,8 @@
       "gundam",
       "mtg",
       "onepiece",
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon-Sat 11 AM-9 PM, Sun 11 AM-7 PM. Schedule from the store's event calendar API (haikugaming.com/events, checked 2026-10-10). NOT listed because the calendar's day disagrees with the event text: Yu-Gi-Oh! weekly ($7; calendar Sat 1 PM, text says Sunday 1 PM), Lorcana weekly ($10; calendar Tue 6:30 PM, text says Thursday 6 PM), One Piece Thursday series ($10, calendar Thu 6:30 PM, text once says Sunday). Also free Learn to Play nights, HeroClix, Dice Throne, board game night (not listed). Riftbound Mon night is the importer's.",
     "active": true,
@@ -1710,7 +1761,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "e89ce134-7318-4b14-a1c8-ac3b63e78e99"
+      "riftbound": "e89ce134-7318-4b14-a1c8-ac3b63e78e99",
+      "lorcana": "fc7a1b3b-9e5b-4acd-9674-23a1d1a2c717"
     }
   },
   {
@@ -1725,7 +1777,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(714) 900-4372",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials; web search found nothing. Only Riftbound listed.",
     "active": true,
@@ -1736,7 +1789,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "7df01900-5d19-4f2f-a12a-4fa5cbff03d6"
+      "riftbound": "7df01900-5d19-4f2f-a12a-4fa5cbff03d6",
+      "lorcana": "ac247f36-a958-4708-b952-b7958e840dd7"
     }
   },
   {
@@ -1751,7 +1805,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(562) 643-9977",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials; web search found nothing. Only Riftbound listed.",
     "active": true,
@@ -1762,7 +1817,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "766d50f6-1578-456d-afde-04567d8dfafb"
+      "riftbound": "766d50f6-1578-456d-afde-04567d8dfafb",
+      "lorcana": "a6151012-f661-43aa-b191-15cd82f809fa"
     }
   },
   {
@@ -1796,7 +1852,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "f2eeeebe-3117-4afc-9517-0aeb1560ca9e"
+      "riftbound": "f2eeeebe-3117-4afc-9517-0aeb1560ca9e",
+      "lorcana": "fcf0081b-165f-44a3-8279-95c904b4ed91"
     }
   },
   {
@@ -1819,7 +1876,8 @@
       "onepiece",
       "pokemon",
       "riftbound",
-      "yugioh"
+      "yugioh",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 11893 Valley View St, about noon-10 PM daily, phone 714-750-6162, says it hosts tournaments and league nights with no days. Website is an Instagram page (login-walled). Only Riftbound listed. Weekly schedule from the pinned Instagram post of 2026-05-21 (20 weeks old when read 2026-10-10; recent Commander sign-up posts match it). Riftbound Tue/Thu/Sat/Sun slots on it are the importer's. Special events are announced separately.",
     "active": true,
@@ -1830,7 +1888,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "27cde07f-4a41-4342-b640-73b9eb46b2b7"
+      "riftbound": "27cde07f-4a41-4342-b640-73b9eb46b2b7",
+      "lorcana": "f6149cb7-de72-4024-8a9d-ffcf955694b6"
     }
   },
   {
@@ -1898,7 +1957,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(424) 227-6004",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials; web search found nothing. Only Riftbound listed.",
     "active": true,
@@ -1909,7 +1969,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "adf98ebc-88fb-40ee-a804-305bc217bfa0"
+      "riftbound": "adf98ebc-88fb-40ee-a804-305bc217bfa0",
+      "lorcana": "497b9441-1eab-47b4-8e3a-c4db5e5624ed"
     }
   },
   {
@@ -1928,7 +1989,8 @@
       "discord": "https://discord.gg/tUpTbtJ4"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); Discord not read; web search found nothing. Only Riftbound listed. Instagram (read 2026-10-10): no weekly schedule; one-off Pokémon League Cup Sat Oct 10 1 PM ($20) and a Magic RCQ.",
     "active": true,
@@ -1939,7 +2001,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "9155fc75-a1c9-447a-b065-f3b8a7931496"
+      "riftbound": "9155fc75-a1c9-447a-b065-f3b8a7931496",
+      "lorcana": "6c03f0b1-6b1d-432a-8280-27dce2ce1559"
     }
   },
   {
@@ -1982,7 +2045,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "b02e62af-0407-492d-acc0-701e73ff6ca3"
+      "riftbound": "b02e62af-0407-492d-acc0-701e73ff6ca3",
+      "lorcana": "200c5ba2-2f50-4f0c-b5ae-04d76fb428c6"
     }
   },
   {
@@ -2020,7 +2084,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "61cfbfd0-9c0d-4b76-bee3-7fdb82571ad7"
+      "riftbound": "61cfbfd0-9c0d-4b76-bee3-7fdb82571ad7",
+      "lorcana": "fcc4b788-33a3-4c77-86c9-d8d3812db26d"
     }
   },
   {
@@ -2035,7 +2100,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(562) 991-5487",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials in the locator; web search found nothing. Only Riftbound listed.",
     "active": true,
@@ -2046,7 +2112,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "2627424b-fb2b-435c-85ee-975d8820dbdd"
+      "riftbound": "2627424b-fb2b-435c-85ee-975d8820dbdd",
+      "lorcana": "a29ec37f-a7e0-4718-abd4-04000d1934d1"
     }
   },
   {
@@ -2066,7 +2133,8 @@
       "x": "LegacyComicsCA"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon, Tue, Thu, Fri 11:30 AM-8 PM; Wed and Sat 10 AM-8 PM; Sun 11:30 AM-8 PM. The Tournament Schedule page (legacycomics.com/tournament-schedule-2/) is a stale image last updated 2026-05-25, so no nights listed. Only Riftbound listed.",
     "active": true,
@@ -2077,7 +2145,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "21849f32-76e0-4bcb-8472-39fbb39a8b03"
+      "riftbound": "21849f32-76e0-4bcb-8472-39fbb39a8b03",
+      "lorcana": "654fd8c0-c294-4fb0-b909-bf3a8f809c42"
     }
   },
   {
@@ -2133,7 +2202,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "2e7eebf9-af13-4ab4-9b11-e8e6db2b5d6e"
+      "riftbound": "2e7eebf9-af13-4ab4-9b11-e8e6db2b5d6e",
+      "lorcana": "db25a9f3-e542-44f3-82b5-55c2bb4241ae"
     },
     "hours": "Mon-Thu 12-8 PM · Fri 11 AM-12 AM · Sat 11 AM-10 PM · Sun 11 AM-6 PM"
   },
@@ -2153,7 +2223,8 @@
       "facebook": "https://www.facebook.com/LostPlanetGames/"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Facebook (read in a browser 2026-10-10): miniature wargaming and card games hobby shop at 2711 Plaza Del Amo Unit 511, (424) 488-2400; posts are weekly hobby drops, no TCG schedule.",
     "active": true,
@@ -2164,7 +2235,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "e83c9052-7e4e-416c-813e-447f7073fd01"
+      "riftbound": "e83c9052-7e4e-416c-813e-447f7073fd01",
+      "lorcana": "c3400348-a570-4312-a195-255f7d5475a2"
     }
   },
   {
@@ -2179,7 +2251,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(949) 829-9809",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2190,7 +2263,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "55931c18-0406-4d56-986f-0cc46a4ba3f7"
+      "riftbound": "55931c18-0406-4d56-986f-0cc46a4ba3f7",
+      "lorcana": "9ad3d027-173b-4ab2-8c2e-7ee3c2d88d15"
     }
   },
   {
@@ -2260,7 +2334,8 @@
     "website": "https://www.instagram.com/minerasportscards_com/?hl=en",
     "phone": "(424) 456-7877",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2271,7 +2346,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "d62aef4b-b6f3-4a19-a842-20e1beb749bf"
+      "riftbound": "d62aef4b-b6f3-4a19-a842-20e1beb749bf",
+      "lorcana": "c194f6b1-a4a9-4639-bebc-fd4b13425ac8"
     }
   },
   {
@@ -2286,7 +2362,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(626) 536-7689",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2297,7 +2374,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "a1bc6c91-4635-4562-b04a-88b7f8766cef"
+      "riftbound": "a1bc6c91-4635-4562-b04a-88b7f8766cef",
+      "lorcana": "7547c9c6-124c-4b08-a3dd-6173aceeb25f"
     }
   },
   {
@@ -2436,7 +2514,8 @@
       "discord": "https://discord.gg/A8JJBQV3kp"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2447,7 +2526,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "d4fad571-2484-4cdc-8d5d-c6480ce26651"
+      "riftbound": "d4fad571-2484-4cdc-8d5d-c6480ce26651",
+      "lorcana": "f57b5582-2f51-4799-bf64-6326856f501d"
     },
     "hours": "Tue 12-8 PM · Wed 4-10 PM · Thu-Fri 12-10 PM · Sat 11 AM-10 PM · Sun 11 AM-7 PM · Mon closed"
   },
@@ -2495,7 +2575,8 @@
     "website": "https://www.orangeclawclub.com",
     "phone": "(714) 576-6437",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2506,7 +2587,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "4a26fb3b-2494-4233-a2cf-3d91c088b52a"
+      "riftbound": "4a26fb3b-2494-4233-a2cf-3d91c088b52a",
+      "lorcana": "cc6f0c4a-9086-49ef-b9c5-2d5d6a8dd9e2"
     }
   },
   {
@@ -2555,7 +2637,8 @@
       "facebook": "https://www.facebook.com/paperheroscomics"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2566,7 +2649,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "716a260e-7b59-4a45-95a2-772cda261722"
+      "riftbound": "716a260e-7b59-4a45-95a2-772cda261722",
+      "lorcana": "4f78bc1e-7300-479d-bb9a-baffe7f3af26"
     }
   },
   {
@@ -2603,7 +2687,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "91355277-c79a-4a47-8e91-97aefeafaeb7"
+      "riftbound": "91355277-c79a-4a47-8e91-97aefeafaeb7",
+      "lorcana": "bb2d759f-c463-4568-bc04-0dcc7019164a"
     }
   },
   {
@@ -2703,7 +2788,8 @@
       "discord": "https://discord.gg/sJenjb8j"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2714,7 +2800,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "1be4655d-65a8-4eb5-9d83-547250d20ebc"
+      "riftbound": "1be4655d-65a8-4eb5-9d83-547250d20ebc",
+      "lorcana": "c4d118c9-880d-45b1-9a3f-d71e1e9b2ed0"
     },
     "hours": "Mon 12-11 PM · Tue closed · Wed 12-10 PM · Thu-Sat 12 PM-12 AM · Sun 12-8 PM"
   },
@@ -2762,7 +2849,8 @@
       "x": "projectccg"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2773,7 +2861,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "dab9ca3c-49ab-46cf-bbde-8dfcbb96a896"
+      "riftbound": "dab9ca3c-49ab-46cf-bbde-8dfcbb96a896",
+      "lorcana": "59b7624e-b5e6-45d3-911c-a0aafa753bdc"
     },
     "hours": "Mon 12-5 PM · Tue-Fri 11 AM-9 PM · Sat-Sun 12-9 PM"
   },
@@ -2790,7 +2879,8 @@
     "website": "https://projectccg.com",
     "phone": "(714) 760-4123",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2801,7 +2891,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "b230d129-e871-44bf-a795-5c3b559b97c6"
+      "riftbound": "b230d129-e871-44bf-a795-5c3b559b97c6",
+      "lorcana": "091f698c-ce28-4968-b811-7e022cd8393b"
     }
   },
   {
@@ -2820,7 +2911,8 @@
       "digimon",
       "mtg",
       "onepiece",
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Event tickets for the week go on sale Mondays at 8 PM at /collections/events, so only the current week is visible: 4 dated rows. Titles hint at weekly Monday-night Commander and Sunday One Piece, not confirmed as recurring. Hours from the store site.",
     "active": true,
@@ -2831,7 +2923,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "ca9cc2de-1a91-4ee0-a436-5182521f53b4"
+      "riftbound": "ca9cc2de-1a91-4ee0-a436-5182521f53b4",
+      "lorcana": "48460364-4676-4ea4-92fb-ec9f87dba4a0"
     },
     "hours": "Mon-Sat 12-10 PM · Sun 11 AM-5 PM"
   },
@@ -2880,7 +2973,8 @@
     "website": "https://www.readysetripz.com",
     "phone": "(747) 223-2005",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -2891,7 +2985,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "a7d2719e-f081-4e43-ae59-1d3a82b98a04"
+      "riftbound": "a7d2719e-f081-4e43-ae59-1d3a82b98a04",
+      "lorcana": "d13fbc78-1bc9-4984-af9c-71b632ab3425"
     }
   },
   {
@@ -2924,7 +3019,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "d355928f-dc0e-4efe-829b-a22c7f1ef5bc"
+      "riftbound": "d355928f-dc0e-4efe-829b-a22c7f1ef5bc",
+      "lorcana": "4825df71-d100-4c9e-b12d-1ab944efd9b8"
     }
   },
   {
@@ -2986,7 +3082,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "6a31948f-9d21-493a-8f93-58769d28e726"
+      "riftbound": "6a31948f-9d21-493a-8f93-58769d28e726",
+      "lorcana": "55094d8d-fa21-4753-a0a0-3a4c2b9c14bd"
     }
   },
   {
@@ -3052,7 +3149,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "6b57c476-e41a-45a5-8163-296d0d4804e3"
+      "riftbound": "6b57c476-e41a-45a5-8163-296d0d4804e3",
+      "lorcana": "a2550a46-1907-4971-8da1-936e6f47e221"
     },
     "hours": "Mon-Fri 1-10:30 PM, Sat-Sun 12-8 PM"
   },
@@ -3072,7 +3170,8 @@
       "discord": "https://discord.gg/sna7e3RznH"
     },
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Own site (stormxtcg.com) loads its events with JavaScript, so nothing readable; Discord not read. Only Riftbound listed.",
     "active": true,
@@ -3083,7 +3182,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "9f1ce93d-e111-4052-9405-5593fe1ed2f9"
+      "riftbound": "9f1ce93d-e111-4052-9405-5593fe1ed2f9",
+      "lorcana": "7d5716ad-6d93-444f-b579-09bf01f88bc7"
     }
   },
   {
@@ -3104,7 +3204,8 @@
       "mtg",
       "onepiece",
       "pokemon",
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled). Only Riftbound listed. Weekly schedule from the pinned 'Weekly Locals' Instagram graphic of 2026-07-12; closed Mondays. The Riftbound Fri 6:30 PM slot on it is the importer's. A newer pinned 'Updated store hours' post exists but its text was not readable at grid size.",
     "active": true,
@@ -3115,7 +3216,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "4f66bec8-fda4-4527-9f9f-da472e4d7d92"
+      "riftbound": "4f66bec8-fda4-4527-9f9f-da472e4d7d92",
+      "lorcana": "1e27c41d-2849-4c92-bcad-4c3a77c27657"
     }
   },
   {
@@ -3236,7 +3338,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "1f312479-930d-46af-824e-a81d94754ea9"
+      "riftbound": "1f312479-930d-46af-824e-a81d94754ea9",
+      "lorcana": "ba579d5b-d0b1-429f-bc04-b0e676c8de31"
     }
   },
   {
@@ -3272,7 +3375,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "ef0a85e0-6fac-49d4-bbad-441e72c2ff9f"
+      "riftbound": "ef0a85e0-6fac-49d4-bbad-441e72c2ff9f",
+      "lorcana": "d9256188-fb86-4701-803c-b7255a094197"
     }
   },
   {
@@ -3287,7 +3391,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(949) 932-0559",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Chain Instagram @thegamechest (read 2026-10-10): the grid shows summer programs and product posts, no TCG schedule; events are announced in per-store Discords (linktr.ee/thegamechest), which were not opened.",
     "active": true,
@@ -3298,7 +3403,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "d1de4490-94d7-4937-977e-1c3f1b26970f"
+      "riftbound": "d1de4490-94d7-4937-977e-1c3f1b26970f",
+      "lorcana": "82f5e618-e924-433d-9649-917a8e7cc48b"
     }
   },
   {
@@ -3314,7 +3420,8 @@
     "website": "https://www.instagram.com/thegamechest/",
     "phone": "(310) 377-1193",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Chain Instagram @thegamechest (read 2026-10-10): the grid shows summer programs and product posts, no TCG schedule; events are announced in per-store Discords (linktr.ee/thegamechest), which were not opened.",
     "active": true,
@@ -3325,7 +3432,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "a7e43df8-6aa1-42aa-b7da-878ad8ee4f9a"
+      "riftbound": "a7e43df8-6aa1-42aa-b7da-878ad8ee4f9a",
+      "lorcana": "86929e18-26a4-487f-90de-88d12b5954ba"
     }
   },
   {
@@ -3340,7 +3448,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(949) 466-7747",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Chain Instagram @thegamechest (read 2026-10-10): the grid shows summer programs and product posts, no TCG schedule; events are announced in per-store Discords (linktr.ee/thegamechest), which were not opened.",
     "active": true,
@@ -3351,7 +3460,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "8bf87615-16fb-4768-b85d-8b13722ded14"
+      "riftbound": "8bf87615-16fb-4768-b85d-8b13722ded14",
+      "lorcana": "2715a553-c0ee-413e-a48e-58af25850feb"
     }
   },
   {
@@ -3367,7 +3477,8 @@
     "website": "https://www.instagram.com/thegamechest/",
     "phone": "(310) 546-2626",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Chain Instagram @thegamechest (read 2026-10-10): the grid shows summer programs and product posts, no TCG schedule; events are announced in per-store Discords (linktr.ee/thegamechest), which were not opened.",
     "active": true,
@@ -3378,7 +3489,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "2d1cbe2c-55b4-4b2e-bf3b-e0eb8e31c542"
+      "riftbound": "2d1cbe2c-55b4-4b2e-bf3b-e0eb8e31c542",
+      "lorcana": "fb90ae3d-5736-48de-a167-43a6537c3e59"
     }
   },
   {
@@ -3410,7 +3522,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "41b2e33f-5ff9-47f6-81b1-e33f9e65869a"
+      "riftbound": "41b2e33f-5ff9-47f6-81b1-e33f9e65869a",
+      "lorcana": "64595d49-5287-4e8d-9d1d-fd238c936a43"
     }
   },
   {
@@ -3451,7 +3564,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(909) 395-0935",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -3462,7 +3576,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "6dfe07b0-cfa4-4edd-bbed-e7b1e3449cc6"
+      "riftbound": "6dfe07b0-cfa4-4edd-bbed-e7b1e3449cc6",
+      "lorcana": "726c4a26-c26b-48fc-9d23-a1016a996f71"
     }
   },
   {
@@ -3478,7 +3593,8 @@
     "website": "https://www.instagram.com/olympusprojectwhittier/",
     "phone": "(562) 273-5019",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -3489,7 +3605,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "be779a4d-9d25-4906-86c0-ae82cd8c4caf"
+      "riftbound": "be779a4d-9d25-4906-86c0-ae82cd8c4caf",
+      "lorcana": "61a8c3f9-f52f-4744-b66f-5f8b073993f4"
     }
   },
   {
@@ -3534,7 +3651,8 @@
     "website": "https://www.team3j.com/",
     "phone": "(714) 758-3803",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Sports-card shop; skipped in the Chrome pass.",
     "active": true,
@@ -3545,7 +3663,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "83a836e6-f84f-4ce0-8083-4f4c2f95d22a"
+      "riftbound": "83a836e6-f84f-4ce0-8083-4f4c2f95d22a",
+      "lorcana": "b9e95f52-ad38-42ff-8d75-d0b7de228690"
     }
   },
   {
@@ -3584,7 +3703,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "4ff8c39f-ba88-41fc-bf8b-b4b1ec05994c"
+      "riftbound": "4ff8c39f-ba88-41fc-bf8b-b4b1ec05994c",
+      "lorcana": "c62288ef-e6be-4c2a-aa96-6add619be8c8"
     },
     "hours": "Tue-Thu 3-9 PM · Fri 3-10 PM · Sat 12-8 PM · Sun 12-7 PM · Mon closed"
   },
@@ -3601,7 +3721,8 @@
     "website": "https://www.instagram.com/_tkcollectibles/",
     "phone": "(714) 943-0812",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched. Instagram (read 2026-10-10): the pinned Weekly Tournament Schedule post is dated 2026-01-29 ('starts 2/2/26', 'more updates and times coming'), about 8 months old, so no nights are listed. It showed Mon Lorcana 6 PM/Pokémon 7 PM/Gundam 7:30 PM; Tue One Piece 7 PM/FaB 7:30 PM; Wed DBS FW 6 PM/Pokémon 7 PM; Thu Union Arena 6 PM/One Piece 7 PM; Fri Riftbound 6 PM/Pokémon 7 PM/Magic 7:30 PM; Sat Magic noon/Riftbound 1 PM/One Piece 2 PM and 7 PM; Sun Magic noon/Pokémon Gym Leader 2 PM. Needs a call to confirm.",
     "active": true,
@@ -3612,7 +3733,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "7ed6b746-9a5b-4c7e-8005-10cbd92be4cf"
+      "riftbound": "7ed6b746-9a5b-4c7e-8005-10cbd92be4cf",
+      "lorcana": "9a5e1bd7-a04c-49d1-bfe4-9fe5c8db7e78"
     }
   },
   {
@@ -3627,7 +3749,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(626) 723-6904",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -3638,7 +3761,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "9f7591f0-f17e-4ed2-95bd-d7a1312c0662"
+      "riftbound": "9f7591f0-f17e-4ed2-95bd-d7a1312c0662",
+      "lorcana": "2f53c19e-e260-4acf-8772-7f976ed371dc"
     }
   },
   {
@@ -3676,7 +3800,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "828d4aeb-03b7-4cdb-8a2f-2b2862f4f8bf"
+      "riftbound": "828d4aeb-03b7-4cdb-8a2f-2b2862f4f8bf",
+      "lorcana": "0d81d165-158f-48dd-90d4-c32622eab23d"
     }
   },
   {
@@ -3808,7 +3933,8 @@
     "tz": "America/Los_Angeles",
     "phone": "(661) 241-8151",
     "games": [
-      "riftbound"
+      "riftbound",
+      "lorcana"
     ],
     "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -3819,7 +3945,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "3663ef00-7ac5-4bc3-a1ff-98a4c155739c"
+      "riftbound": "3663ef00-7ac5-4bc3-a1ff-98a4c155739c",
+      "lorcana": "2fb50135-df55-4ddd-9706-0c9c836cf85b"
     }
   },
   {
@@ -3863,7 +3990,8 @@
     },
     "origin": "riftbound-locator",
     "sourceIds": {
-      "riftbound": "7b4c01bd-c83a-416f-a08d-b804c2369142"
+      "riftbound": "7b4c01bd-c83a-416f-a08d-b804c2369142",
+      "lorcana": "db58f902-d5d0-43b5-bbe5-33a37c0c6a4b"
     }
   },
   {
@@ -3903,6 +4031,1583 @@
     "source": {
       "url": "https://mysteryshop805.com/",
       "checked": "2026-10-10"
+    }
+  },
+  {
+    "id": "424-collectibles",
+    "name": "424 Collectibles",
+    "address": "1428 S Gaffey St",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90731",
+    "lat": 33.730918599999995,
+    "lon": -118.29221299999999,
+    "tz": "America/Los_Angeles",
+    "phone": "(424) 489-3459",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/aa70caec-0b62-479e-a7d0-2fae0297f25a",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "aa70caec-0b62-479e-a7d0-2fae0297f25a"
+    }
+  },
+  {
+    "id": "a-and-n-collectibles",
+    "name": "A & N Collectibles",
+    "address": "105 West Arrow Highway, ste 7",
+    "city": "San Dimas",
+    "state": "CA",
+    "zip": "91773",
+    "lat": 34.1033373,
+    "lon": -117.8078104,
+    "tz": "America/Los_Angeles",
+    "phone": "(909) 394-2375",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/37f1d110-f16f-4ec1-8235-d3bb530b75f8",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "37f1d110-f16f-4ec1-8235-d3bb530b75f8"
+    }
+  },
+  {
+    "id": "atomic-comics",
+    "name": "Atomic Comics",
+    "address": "11414 Artesia Boulevard, STE B",
+    "city": "Artesia",
+    "state": "CA",
+    "zip": "90701",
+    "lat": 33.8725035,
+    "lon": -118.0904582,
+    "tz": "America/Los_Angeles",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. No phone listed on the locator.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/319da76c-77ec-47b5-bbe5-8e75bcf87edf",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "319da76c-77ec-47b5-bbe5-8e75bcf87edf"
+    }
+  },
+  {
+    "id": "bards-and-cards-game-shop",
+    "name": "Bards & Cards Game Shop",
+    "address": "936 Fifth Avenue",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "92101",
+    "lat": 32.715151,
+    "lon": -117.1604531,
+    "tz": "America/Los_Angeles",
+    "website": "https://bardsandcards.com",
+    "phone": "(619) 937-2211",
+    "socials": {
+      "discord": "https://discord.gg/ZaBQsdx6Er",
+      "facebook": "https://facebook.com/bardsncards",
+      "instagram": "https://www.instagram.com/bardsandcards",
+      "x": "https://x.com/bardsandcards"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/7d6b8fe3-8086-4ae4-904a-f6472729b0c2",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "7d6b8fe3-8086-4ae4-904a-f6472729b0c2"
+    }
+  },
+  {
+    "id": "baseball-and-games",
+    "name": "Baseball & Games",
+    "address": "16727 Bear Valley Road",
+    "city": "Hesperia",
+    "state": "CA",
+    "zip": "92345",
+    "lat": 34.4705128,
+    "lon": -117.2989109,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.baseballandgames.com/",
+    "phone": "(760) 949-1845",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/a685a048-ef82-4a85-8a2e-dd6a8efe1122",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "a685a048-ef82-4a85-8a2e-dd6a8efe1122"
+    }
+  },
+  {
+    "id": "bases-cards-and-comics",
+    "name": "Bases Cards & Comics",
+    "address": "42035 12th Street West",
+    "city": "Lancaster",
+    "state": "CA",
+    "zip": "93534",
+    "lat": 34.6472398,
+    "lon": -118.1525171,
+    "tz": "America/Los_Angeles",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. No phone listed on the locator.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/9242a55b-96d8-4b01-a249-8ec2c4837773",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "9242a55b-96d8-4b01-a249-8ec2c4837773"
+    }
+  },
+  {
+    "id": "blez-sports-cards-and-collectibles-formally-omg-collectibles",
+    "name": "BLEZ Sports Cards & Collectibles (formally OMG Collectibles)",
+    "address": "77622 Country Club Drive, Suite J",
+    "city": "Palm Desert",
+    "state": "CA",
+    "zip": "92211",
+    "lat": 33.7587074,
+    "lon": -116.3103578,
+    "tz": "America/Los_Angeles",
+    "website": "http://www.omgcollectibles.com",
+    "phone": "(760) 360-3790",
+    "socials": {
+      "facebook": "https://www.facebook.com/BLEZPalmDesert",
+      "instagram": "https://www.instagram.com/blezpalmdesert"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/a03264ce-cd89-45e9-b930-892e23ac8268",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "a03264ce-cd89-45e9-b930-892e23ac8268"
+    }
+  },
+  {
+    "id": "brute-force-games",
+    "name": "Brute Force Games",
+    "address": "3755 Murphy Canyon Road, l",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "92123",
+    "lat": 32.8109162,
+    "lon": -117.1159312,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.bruteforcemtg.com/",
+    "phone": "(619) 230-5655",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/bc77372a-da6a-4944-b2a0-c3ee6e4bfbbd",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "bc77372a-da6a-4944-b2a0-c3ee6e4bfbbd"
+    }
+  },
+  {
+    "id": "cardboardia",
+    "name": "Cardboardia",
+    "address": "39815 Alta Murrieta Drive, Suite C6",
+    "city": "Murrieta",
+    "state": "CA",
+    "zip": "92563",
+    "lat": 33.5607142,
+    "lon": -117.1781286,
+    "tz": "America/Los_Angeles",
+    "website": "https://cardboardanddie.com",
+    "phone": "(951) 319-6065",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/06cdb0e4-1374-43fc-929c-8b902db4f1a4",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "06cdb0e4-1374-43fc-929c-8b902db4f1a4"
+    }
+  },
+  {
+    "id": "cards-n-hobby-san-diego",
+    "name": "Cards N Hobby San Diego",
+    "address": "2174 Vista Way suite a",
+    "city": "Oceanside",
+    "state": "CA",
+    "zip": "92054",
+    "lat": 33.182863,
+    "lon": -117.34182220000001,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.instagram.com/cardsnhobbysd?igsh=MXRlODNua21scWhiZA==",
+    "phone": "(760) 696-3088",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/d844c8d1-2c51-43e6-aa1e-0342fdd19111",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "d844c8d1-2c51-43e6-aa1e-0342fdd19111"
+    }
+  },
+  {
+    "id": "collectors-world",
+    "name": "Collectors World",
+    "address": "9339 Rosedale Hwy suite b",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93312",
+    "lat": 35.38316649284065,
+    "lon": -119.10523123313521,
+    "tz": "America/Los_Angeles",
+    "website": "https://linktr.ee/collectorsworldsw",
+    "phone": "(661) 858-9260",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/84671ec0-7b31-4fe0-9f49-b59404baba36",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "84671ec0-7b31-4fe0-9f49-b59404baba36"
+    }
+  },
+  {
+    "id": "comic-cult",
+    "name": "Comic Cult",
+    "address": "1047 West Carson Street",
+    "city": "Torrance",
+    "state": "CA",
+    "zip": "90504",
+    "lat": 33.8319148,
+    "lon": -118.2940475,
+    "tz": "America/Los_Angeles",
+    "phone": "(310) 328-5830",
+    "socials": {
+      "facebook": "https://www.facebook.com/comicculttorrance",
+      "instagram": "https://www.instagram.com/comicculttorrance"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/4339c19a-f0b2-4e75-8907-434194ddeba9",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "4339c19a-f0b2-4e75-8907-434194ddeba9"
+    }
+  },
+  {
+    "id": "comic-cult-hd",
+    "name": "Comic Cult HD",
+    "address": "9594 I Avenue, Suite F",
+    "city": "Hesperia",
+    "state": "CA",
+    "zip": "92345",
+    "lat": 34.4258963,
+    "lon": -117.2820986,
+    "tz": "America/Los_Angeles",
+    "website": "https://Comiccult.com",
+    "phone": "(760) 998-2730",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/ec3e421d-0cc1-49c9-b147-85dd1f29866d",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "ec3e421d-0cc1-49c9-b147-85dd1f29866d"
+    }
+  },
+  {
+    "id": "comic-hero-university",
+    "name": "Comic Hero University",
+    "address": "5060 E Montclair Plaza Lane, #2141",
+    "city": "Montclair",
+    "state": "CA",
+    "zip": "91763",
+    "lat": 34.0872809,
+    "lon": -117.6955969,
+    "tz": "America/Los_Angeles",
+    "website": "http://www.comicherou.com",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. No phone listed on the locator.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/ffe12719-8e88-4b1a-9ac0-05f077032bc7",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "ffe12719-8e88-4b1a-9ac0-05f077032bc7"
+    }
+  },
+  {
+    "id": "ditz-hobby-and-games",
+    "name": "Ditz Hobby & Games",
+    "address": "12344 Oak Knoll Rd ste d",
+    "city": "Poway",
+    "state": "CA",
+    "zip": "92064",
+    "lat": 32.95032294478986,
+    "lon": -117.06355760297949,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.ditzhobbygames.com/",
+    "phone": "(858) 253-6063",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/314c8dfa-cd57-4620-afe4-763a44ea06ce",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "314c8dfa-cd57-4620-afe4-763a44ea06ce"
+    }
+  },
+  {
+    "id": "evolution-collection",
+    "name": "Evolution Collection",
+    "address": "4, 3654, E Highland Ave",
+    "city": "Highland",
+    "state": "CA",
+    "zip": "92346",
+    "lat": 34.1362655,
+    "lon": -117.2067903,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.instagram.com/evolution.collection/",
+    "phone": "(909) 672-0958",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/fb6cf84e-28d0-48e8-a9e3-6de249262d13",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "fb6cf84e-28d0-48e8-a9e3-6de249262d13"
+    }
+  },
+  {
+    "id": "fistful-of-cards",
+    "name": "Fistful of Cards",
+    "address": "901 South China Lake Boulevard, STE #300",
+    "city": "Ridgecrest",
+    "state": "CA",
+    "zip": "93555",
+    "lat": 35.6074888,
+    "lon": -117.6711227,
+    "tz": "America/Los_Angeles",
+    "website": "https://linktr.ee/fistfulofcards",
+    "phone": "(422) 966-9891",
+    "socials": {
+      "discord": "https://discord.com/invite/nwfxddbh9t",
+      "facebook": "https://www.facebook.com/profile.php?id=61555108860818",
+      "instagram": "https://www.instagram.com/fistful_of_cards_rc/"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/2bb4c813-8118-40cc-b40f-502ce26a1ebc",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "2bb4c813-8118-40cc-b40f-502ce26a1ebc"
+    }
+  },
+  {
+    "id": "game-empire-inc",
+    "name": "Game Empire Inc.",
+    "address": "5037, Shawline St",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "92111",
+    "lat": 32.8334634,
+    "lon": -117.1632518,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.gameempire.com",
+    "phone": "(858) 576-1525",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/21c4b7f0-209b-4d0f-b1c2-316efeca3a37",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "21c4b7f0-209b-4d0f-b1c2-316efeca3a37"
+    }
+  },
+  {
+    "id": "ggw-toys",
+    "name": "GGW toys",
+    "address": "2140 Artesia Boulevard",
+    "city": "Torrance",
+    "state": "CA",
+    "zip": "90504",
+    "lat": 33.8722036,
+    "lon": -118.3172226,
+    "tz": "America/Los_Angeles",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. No phone listed on the locator.",
+    "active": true,
+    "source": {
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "store-2153"
+    },
+    "phone": "(310) 487-5054",
+    "website": "https://www.grailsgonewild.com"
+  },
+  {
+    "id": "green-tower-games",
+    "name": "Green Tower Games",
+    "address": "24787 Valley Street",
+    "city": "Santa Clarita",
+    "state": "CA",
+    "zip": "91321",
+    "lat": 34.3790541,
+    "lon": -118.5411534,
+    "tz": "America/Los_Angeles",
+    "phone": "(661) 888-1294",
+    "socials": {
+      "discord": "https://discord.gg/7WMXpYq5FA",
+      "facebook": "https://www.facebook.com/greentowergames",
+      "instagram": "https://www.instagram.com/greentowergames.scv"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/7b7a1835-7b36-4a32-a4ad-7e5e8501750d",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "7b7a1835-7b36-4a32-a4ad-7e5e8501750d"
+    }
+  },
+  {
+    "id": "hellspawn-toys-n-collectibles",
+    "name": "Hellspawn toys n collectibles",
+    "address": "5456 California Ave",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93309",
+    "lat": 35.357912999999996,
+    "lon": -119.06214000000001,
+    "tz": "America/Los_Angeles",
+    "phone": "(323) 703-2052",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/d32a4a40-160c-4a39-b629-e6bb99b23ecd",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "d32a4a40-160c-4a39-b629-e6bb99b23ecd"
+    }
+  },
+  {
+    "id": "kingslayer-games-oceanside",
+    "name": "Kingslayer Games Oceanside",
+    "address": "3365 Mission Avenue, suite j",
+    "city": "Oceanside",
+    "state": "CA",
+    "zip": "92058",
+    "lat": 33.2174334,
+    "lon": -117.3411016,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.kingslayergames.com",
+    "phone": "(760) 231-5231",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/a4708f20-f208-450c-a9a7-cabb9ae5573e",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "a4708f20-f208-450c-a9a7-cabb9ae5573e"
+    }
+  },
+  {
+    "id": "lucky-seven-games",
+    "name": "Lucky Seven Games",
+    "address": "2001 E Orangethorpe Ave",
+    "city": "Placentia",
+    "state": "CA",
+    "zip": "92870",
+    "lat": 33.8673062,
+    "lon": -117.8200977,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.luckysevengames.com/",
+    "phone": "(657) 467-7770",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/0850c5d4-c49c-4aeb-8a88-9cb02ad36d6c",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "0850c5d4-c49c-4aeb-8a88-9cb02ad36d6c"
+    }
+  },
+  {
+    "id": "meeples-family-board-game-cafe-inc",
+    "name": "MEEPLES FAMILY BOARD GAME CAFE INC.",
+    "address": "321 West Katella Avenue",
+    "city": "Anaheim",
+    "state": "CA",
+    "zip": "92802",
+    "lat": 33.804887,
+    "lon": -117.9114094,
+    "tz": "America/Los_Angeles",
+    "website": "https://Meeplesfamily.com",
+    "phone": "(714) 215-4105",
+    "socials": {
+      "discord": "https://discord.gg/PStj7KSjXa",
+      "instagram": "https://www.instagram.com/Meeplesfamily"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/44460eb0-1037-4707-a2bc-42b1a79087e0",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "44460eb0-1037-4707-a2bc-42b1a79087e0"
+    }
+  },
+  {
+    "id": "on-board-gaming",
+    "name": "On-Board Gaming",
+    "address": "316 W Mission Ave",
+    "city": "Escondido",
+    "state": "CA",
+    "zip": "92025",
+    "lat": 33.1308553,
+    "lon": -117.0905325,
+    "tz": "America/Los_Angeles",
+    "website": "https://on-boardgaming.com/",
+    "phone": "(760) 566-6782",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/a86cdd17-2358-444f-86eb-bc1a49177ddd",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "a86cdd17-2358-444f-86eb-bc1a49177ddd"
+    }
+  },
+  {
+    "id": "ottos-video-games-and-more",
+    "name": "Otto's Video Games and More",
+    "address": "7401 White Lane, Space A 2",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93309",
+    "lat": 35.3175482,
+    "lon": -119.0846186,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.facebook.com/ottosvideogames",
+    "phone": "(661) 381-7686",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/b672afcf-3e79-48cc-bdd3-306cdd6545e5",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "b672afcf-3e79-48cc-bdd3-306cdd6545e5"
+    }
+  },
+  {
+    "id": "out-of-the-box-goods-llc",
+    "name": "Out of the Box Goods LLC",
+    "address": "261 East Colorado Boulevard, 208",
+    "city": "Pasadena",
+    "state": "CA",
+    "zip": "91101",
+    "lat": 34.1461566,
+    "lon": -118.1450743,
+    "tz": "America/Los_Angeles",
+    "website": "HTTPS://kuson.group",
+    "phone": "(626) 596-0796",
+    "socials": {
+      "discord": "https://discord.gg/yCP9BNub"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/b1f6843e-024d-4945-930d-a02735f6ae59",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "b1f6843e-024d-4945-930d-a02735f6ae59"
+    }
+  },
+  {
+    "id": "pair-a-dice-games",
+    "name": "Pair a Dice Games",
+    "address": "2020 Hacienda Drive, Ste A",
+    "city": "Vista",
+    "state": "CA",
+    "zip": "92081",
+    "lat": 33.1839454,
+    "lon": -117.2849253,
+    "tz": "America/Los_Angeles",
+    "website": "https://pairadicegames.com",
+    "phone": "(760) 940-0139",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/8241fae5-75de-4789-82b2-d772e51a04d8",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "8241fae5-75de-4789-82b2-d772e51a04d8"
+    }
+  },
+  {
+    "id": "paladins-game-castle",
+    "name": "Paladins Game Castle",
+    "address": "6225 District Boulevard",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93313",
+    "lat": 35.3121426,
+    "lon": -119.071993,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.pgcgames.com",
+    "phone": "(661) 205-0489",
+    "socials": {
+      "facebook": "https://www.facebook.com/paladinsgamecastle",
+      "instagram": "https://www.instagram.com/pgcgames",
+      "x": "https://x.com/paladingames"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/f9821eb6-b0ce-4859-afa0-3c72fbf2c06a",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "f9821eb6-b0ce-4859-afa0-3c72fbf2c06a"
+    }
+  },
+  {
+    "id": "papa-joeys-collectibles-ca",
+    "name": "Papa Joey's Collectibles - CA",
+    "address": "2525 El Camino Real suite 169",
+    "city": "Carlsbad",
+    "state": "CA",
+    "zip": "92008",
+    "lat": 33.178187699999995,
+    "lon": -117.3324498,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.instagram.com/papajoeyscollectibles",
+    "phone": "(760) 307-4284",
+    "socials": {
+      "discord": "https://discord.gg/c2V2FketJj",
+      "facebook": "https://www.facebook.com/papajoeyscollectibles/",
+      "instagram": "https://www.instagram.com/papajoeyscollectibles"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/12efc1a8-8035-41eb-93d8-0f571c83717a",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "12efc1a8-8035-41eb-93d8-0f571c83717a"
+    }
+  },
+  {
+    "id": "papa-joeys-collectibles-mv",
+    "name": "Papa Joey's Collectibles - MV",
+    "address": "1640 Camino Del Rio N Suite 200",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "92108",
+    "lat": 32.7683405,
+    "lon": -117.1476152,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.instagram.com/papajoeyscollectibles",
+    "phone": "(760) 276-4138",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/7b6b4be7-d28a-42b9-b55d-5781ef9f6d91",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "7b6b4be7-d28a-42b9-b55d-5781ef9f6d91"
+    }
+  },
+  {
+    "id": "papa-joeys-collectibles-pb",
+    "name": "Papa Joey’s Collectibles - PB",
+    "address": "3030 Plaza Bonita Rd Suite 1256",
+    "city": "National City",
+    "state": "CA",
+    "zip": "91950",
+    "lat": 32.65690942293828,
+    "lon": -117.06599405662243,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.papajoeys.com",
+    "phone": "(619) 773-6198",
+    "socials": {
+      "discord": "https://discord.gg/c2V2FketJj",
+      "facebook": "https://www.facebook.com/papajoeyscollectibles/",
+      "instagram": "https://www.instagram.com/papajoeyscollectibles"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/715eedd1-28cb-40be-9296-e4f188340b00",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "715eedd1-28cb-40be-9296-e4f188340b00"
+    }
+  },
+  {
+    "id": "phranxz-tcg-and-collectibles",
+    "name": "PHRANXZ TCG & COLLECTIBLES",
+    "address": "13425, Sierra Way",
+    "city": "Kernville",
+    "state": "CA",
+    "zip": "93238",
+    "lat": 35.7580405,
+    "lon": -118.4196418,
+    "tz": "America/Los_Angeles",
+    "website": "https://PHRANXZTCG.COM",
+    "phone": "(931) 378-2089",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/6e981e15-39de-426d-993f-3ed9f1cb9314",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "6e981e15-39de-426d-993f-3ed9f1cb9314"
+    }
+  },
+  {
+    "id": "pokestops",
+    "name": "Pokestops",
+    "address": "18001 Ventura Blvd",
+    "city": "Encino",
+    "state": "CA",
+    "zip": "91316",
+    "lat": 34.1649005,
+    "lon": -118.5245207,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.thepokestops.com",
+    "phone": "(747) 373-0417",
+    "socials": {
+      "instagram": "https://www.instagram.com/pokestopsencino/"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/01af436c-b1c4-4db1-9b91-7644cd615a5a",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "01af436c-b1c4-4db1-9b91-7644cd615a5a"
+    }
+  },
+  {
+    "id": "ready-set-game",
+    "name": "Ready Set Game",
+    "address": "26830 Cherry Hills Boulevard",
+    "city": "Menifee",
+    "state": "CA",
+    "zip": "92586",
+    "lat": 33.7121829,
+    "lon": -117.191379,
+    "tz": "America/Los_Angeles",
+    "website": "https://rsgmenifee.com",
+    "phone": "(951) 800-3525",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/7569dc69-8339-4716-9bb4-0ad355d2d5a7",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "7569dc69-8339-4716-9bb4-0ad355d2d5a7"
+    }
+  },
+  {
+    "id": "revenge-of",
+    "name": "Revenge Of",
+    "address": "ste a, 3420, Eagle Rock Blvd",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90065",
+    "lat": 34.1144664,
+    "lon": -118.2359026,
+    "tz": "America/Los_Angeles",
+    "website": "https://revengeof.com",
+    "phone": "(323) 561-3017",
+    "socials": {
+      "discord": "https://discord.gg/ybrJWNYz",
+      "facebook": "https://www.facebook.com/revengeofcomicsandpinball/",
+      "instagram": "https://www.instagram.com/revengeof_comicsandpinball"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/4a3762fe-13e2-4ad3-ad9e-11761c056cb9",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "4a3762fe-13e2-4ad3-ad9e-11761c056cb9"
+    }
+  },
+  {
+    "id": "s-rank-games",
+    "name": "S Rank Games",
+    "address": "2448 South Vineyard Avenue, 101",
+    "city": "Ontario",
+    "state": "CA",
+    "zip": "91761",
+    "lat": 34.02857999676268,
+    "lon": -117.6126680462184,
+    "tz": "America/Los_Angeles",
+    "website": "https://s-rankgames.com",
+    "phone": "(909) 773-1933",
+    "socials": {
+      "discord": "https://discord.gg/uuCp5hJ4BS",
+      "facebook": "https://facebook.com/SRankGames",
+      "instagram": "https://www.instagram.com/srankgames_"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/27483d95-d36d-488d-a862-93a910c55852",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "27483d95-d36d-488d-a862-93a910c55852"
+    }
+  },
+  {
+    "id": "sanctum-comics-games-and-cards",
+    "name": "Sanctum Comics Games & Cards",
+    "address": "suite a, 26489, Ynez Rd",
+    "city": "Temecula",
+    "state": "CA",
+    "zip": "92591",
+    "lat": 33.521593100000004,
+    "lon": -117.1587597,
+    "tz": "America/Los_Angeles",
+    "website": "https://sanctumcgc.com",
+    "phone": "(951) 296-6600",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/42873927-5d64-411d-b7e1-0167c4b9ab61",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "42873927-5d64-411d-b7e1-0167c4b9ab61"
+    }
+  },
+  {
+    "id": "shadow-realm-collectibles-llc",
+    "name": "Shadow Realm Collectibles LLC",
+    "address": "7508 Eastern Avenue",
+    "city": "Bell Gardens",
+    "state": "CA",
+    "zip": "90201",
+    "lat": 33.9654525,
+    "lon": -118.1649098,
+    "tz": "America/Los_Angeles",
+    "phone": "(562) 381-0062",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/3d755bc6-2eae-44c8-9fb1-d1eae950cf78",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "3d755bc6-2eae-44c8-9fb1-d1eae950cf78"
+    }
+  },
+  {
+    "id": "south-bay-collectibles",
+    "name": "South Bay Collectibles",
+    "address": "1671 West Anaheim Street",
+    "city": "Harbor City",
+    "state": "CA",
+    "zip": "90710",
+    "lat": 33.7867716,
+    "lon": -118.3068399,
+    "tz": "America/Los_Angeles",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. No phone listed on the locator.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/af985791-7956-49f9-a89c-df52a980498d",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "af985791-7956-49f9-a89c-df52a980498d"
+    }
+  },
+  {
+    "id": "spikes-lounge",
+    "name": "Spikes Lounge",
+    "address": "5211 E Washington Blvd, ste 10",
+    "city": "Commerce",
+    "state": "CA",
+    "zip": "90040",
+    "lat": 34.003448396595616,
+    "lon": -118.1666540490729,
+    "tz": "America/Los_Angeles",
+    "website": "https://spikes-hobby-lounge.square.site",
+    "phone": "(323) 529-4892",
+    "socials": {
+      "discord": "https://discord.gg/9QeqvfuG3U",
+      "facebook": "https://www.facebook.com/p/Spikes-Lounge-100062954215662/",
+      "instagram": "https://www.instagram.com/spikes_lounge"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/813131dd-5ca5-4009-a312-404a4a79f8f7",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "813131dd-5ca5-4009-a312-404a4a79f8f7"
+    }
+  },
+  {
+    "id": "table-1-gaming",
+    "name": "Table 1 Gaming",
+    "address": "4219 Gage Avenue",
+    "city": "Bell",
+    "state": "CA",
+    "zip": "90201",
+    "lat": 33.9786858,
+    "lon": -118.191863,
+    "tz": "America/Los_Angeles",
+    "phone": "(323) 744-2021",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/1b289804-a121-4a08-9271-00c8ab92e996",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "1b289804-a121-4a08-9271-00c8ab92e996"
+    }
+  },
+  {
+    "id": "tapped-out-gaming",
+    "name": "Tapped Out Gaming",
+    "address": "28410 Avenue Stanford",
+    "city": "Valencia",
+    "state": "CA",
+    "zip": "91355",
+    "lat": 34.4387933,
+    "lon": -118.5953903,
+    "tz": "America/Los_Angeles",
+    "website": "https://tappedoutgaming.net",
+    "phone": "(661) 294-2736",
+    "socials": {
+      "discord": "https://discord.gg/G7Rtkk5KtE",
+      "facebook": "https://www.facebook.com/tappedoutgaming",
+      "instagram": "https://www.instagram.com/tappedoutgaming"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/c694bb7e-cf6a-436e-9ba6-8c1aa244ee28",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "c694bb7e-cf6a-436e-9ba6-8c1aa244ee28"
+    }
+  },
+  {
+    "id": "the-card-goblin",
+    "name": "The Card Goblin",
+    "address": "5456 California Avenue",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93307",
+    "lat": 35.375952,
+    "lon": -119.0194677,
+    "tz": "America/Los_Angeles",
+    "phone": "(661) 654-1327",
+    "socials": {
+      "discord": "https://discord.gg/Y26ZCmY3PZ",
+      "instagram": "https://www.instagram.com/thecardgoblin_tcg"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/5aaecee9-0f62-4e89-985b-a8a558c17731",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "5aaecee9-0f62-4e89-985b-a8a558c17731"
+    }
+  },
+  {
+    "id": "the-game-cellar",
+    "name": "The Game Cellar",
+    "address": "261 S San Gabriel Blvd",
+    "city": "San Gabriel",
+    "state": "CA",
+    "zip": "91776",
+    "lat": 34.0993564,
+    "lon": -118.0913727,
+    "tz": "America/Los_Angeles",
+    "phone": "(626) 406-4182",
+    "socials": {
+      "instagram": "https://www.instagram.com/thegamecellar"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/8dff7158-27a5-4085-8295-13215d93d2ce",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "8dff7158-27a5-4085-8295-13215d93d2ce"
+    }
+  },
+  {
+    "id": "the-game-chest-long-beach",
+    "name": "The Game Chest, Long Beach",
+    "address": "4800 2nd St",
+    "city": "Long Beach",
+    "state": "CA",
+    "zip": "90803",
+    "lat": 33.76140639281962,
+    "lon": -118.1379255,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.instagram.com/thegamechest/",
+    "phone": "(562) 434-6556",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/6fdd2f58-05f2-4ba5-bd12-3b7c292833d5",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "6fdd2f58-05f2-4ba5-bd12-3b7c292833d5"
+    }
+  },
+  {
+    "id": "the-grand-line-trading-post",
+    "name": "The Grand Line Trading Post",
+    "address": "9845 Erma Rd suite 202",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "92131",
+    "lat": 32.9194239,
+    "lon": -117.11495599999999,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.instagram.com/thegrandlinesd?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr",
+    "phone": "(858) 248-0240",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/31aa8d24-5a2f-416d-9666-aff172fb7afd",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "31aa8d24-5a2f-416d-9666-aff172fb7afd"
+    }
+  },
+  {
+    "id": "the-hungry-dragon",
+    "name": "The Hungry Dragon",
+    "address": "24620 Jefferson Avenue, Suite A",
+    "city": "Murrieta",
+    "state": "CA",
+    "zip": "92562",
+    "lat": 33.5612341,
+    "lon": -117.2091583,
+    "tz": "America/Los_Angeles",
+    "website": "https://thehungrydragongames.com/",
+    "phone": "(951) 698-7399",
+    "socials": {
+      "discord": "https://discord.gg/sjHfGxRuZ2",
+      "instagram": "https://www.instagram.com/the_hungry_dragon/"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/8aaf304a-f986-46d1-b984-fa1aaed2d270",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "8aaf304a-f986-46d1-b984-fa1aaed2d270"
+    }
+  },
+  {
+    "id": "the-nerd-nook-gaming-center",
+    "name": "The Nerd Nook Gaming Center",
+    "address": "1201 University Ave #104b",
+    "city": "Riverside",
+    "state": "CA",
+    "zip": "92507",
+    "lat": 33.9757491,
+    "lon": -117.33749350000001,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.instagram.com/nerdnookgamingcenter/",
+    "phone": "(909) 312-7181",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/d470c233-3df1-43d3-b768-52d3d5325730",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "d470c233-3df1-43d3-b768-52d3d5325730"
+    }
+  },
+  {
+    "id": "the-shop-dtp",
+    "name": "The Shop DTP",
+    "address": "266, W 2nd St",
+    "city": "Pomona",
+    "state": "CA",
+    "zip": "91766",
+    "lat": 34.0576426,
+    "lon": -117.7519119,
+    "tz": "America/Los_Angeles",
+    "website": "https://3-bitgames.com",
+    "phone": "(909) 905-2749",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/eea04e96-8ace-47ad-b7eb-3569fec2ba25",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "eea04e96-8ace-47ad-b7eb-3569fec2ba25"
+    }
+  },
+  {
+    "id": "tier-1-games",
+    "name": "Tier 1 Games",
+    "address": "27250 Madison Ave, ste d",
+    "city": "Temecula",
+    "state": "CA",
+    "zip": "92590",
+    "lat": 33.5271927,
+    "lon": -117.1671735,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.tier1games.com",
+    "phone": "(951) 694-8437",
+    "socials": {
+      "discord": "https://discord.gg/RaUDVSYh",
+      "facebook": "https://www.facebook.com/Tier1Games"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/7ee92f52-d45f-420f-abb7-6f73eb2ca294",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "7ee92f52-d45f-420f-abb7-6f73eb2ca294"
+    }
+  },
+  {
+    "id": "tinytcgshop",
+    "name": "TinyTCGShop",
+    "address": "883 East Holt Avenue, Suite B",
+    "city": "Pomona",
+    "state": "CA",
+    "zip": "91767",
+    "lat": 34.062992,
+    "lon": -117.7330034,
+    "tz": "America/Los_Angeles",
+    "phone": "(310) 621-8569",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/3b7b42d3-39ca-48ac-8222-7a94c3cef09b",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "3b7b42d3-39ca-48ac-8222-7a94c3cef09b"
+    }
+  },
+  {
+    "id": "tubbys-lorcana",
+    "name": "Tubbys LORCANA",
+    "address": "9019 Park Plaza Drive, Suite AA",
+    "city": "La Mesa",
+    "state": "CA",
+    "zip": "91942",
+    "lat": 32.7913861,
+    "lon": -117.0026145,
+    "tz": "America/Los_Angeles",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. No phone listed on the locator.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/953e83e4-d4e5-4c02-b41f-98da2c2a729f",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "953e83e4-d4e5-4c02-b41f-98da2c2a729f"
+    }
+  },
+  {
+    "id": "windfall-games-llc",
+    "name": "Windfall Games LLC",
+    "address": "suite b, 118, E F St",
+    "city": "Tehachapi",
+    "state": "CA",
+    "zip": "93561",
+    "lat": 35.1306057,
+    "lon": -118.4468594,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.instagram.com/windfallgames?igsh=MzRlODBiNWFlZA==",
+    "phone": "(661) 771-7056",
+    "socials": {
+      "instagram": "https://www.instagram.com/Windfallgames"
+    },
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/4c5fb63a-1388-45e4-b5ca-c394f900beed",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "4c5fb63a-1388-45e4-b5ca-c394f900beed"
+    }
+  },
+  {
+    "id": "yuva-collectibles",
+    "name": "YUVA collectibles",
+    "address": "57576, 29 Palms Hwy",
+    "city": "Yucca Valley",
+    "state": "CA",
+    "zip": "92284",
+    "lat": 34.126744599999995,
+    "lon": -116.40804650000001,
+    "tz": "America/Los_Angeles",
+    "phone": "(442) 322-1276",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/84d9cbe7-9487-4da3-9940-0a7335475645",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "84d9cbe7-9487-4da3-9940-0a7335475645"
+    }
+  },
+  {
+    "id": "zanders-game-house",
+    "name": "Zander's Game House",
+    "address": "2270 Ventura Boulevard",
+    "city": "Camarillo",
+    "state": "CA",
+    "zip": "93010",
+    "lat": 34.21625,
+    "lon": -119.039442,
+    "tz": "America/Los_Angeles",
+    "phone": "(805) 383-9983",
+    "games": [
+      "lorcana"
+    ],
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "active": true,
+    "source": {
+      "url": "https://tcg.ravensburgerplay.com/stores/b5ebfa05-4aa7-4fb3-a343-a331618cf6cc",
+      "checked": "2026-10-10",
+      "note": "ravensburger-play import"
+    },
+    "origin": "ravensburger-play",
+    "sourceIds": {
+      "lorcana": "b5ebfa05-4aa7-4fb3-a343-a331618cf6cc"
     }
   }
 ]

@@ -103,10 +103,25 @@ export function matchShop(shops, cand, game) {
  * with whatever it likes: the 2026-10-10 pull came back with a store in
  * Roanoke, Virginia (2,146 mi) which became an active shop the LA map could not
  * pin, and the browser acceptance check (a pin per shop) went red.
- * The furthest genuine store in that pull was 68 mi from the centre (Yucaipa);
- * 120 mi takes in Santa Barbara, Lancaster, Palm Springs and San Diego's north
- * edge and nothing in another state. A candidate file may carry its own
- * `region: { lat, lon, miles, states }` when a pull covers somewhere else.
+ * The furthest genuine store in that Riftbound pull was 68 mi from the centre
+ * (Yucaipa), because that pull only swept LA, Orange, Ventura and the western
+ * Inland Empire.
+ *
+ * WHAT 120 MILES ACTUALLY COVERS, measured on the 2026-10-10 Lorcana pull (one
+ * search over this whole circle): San Diego CITY and county (San Diego,
+ * National City, La Mesa, Poway, Escondido, Oceanside, Carlsbad, Vista),
+ * the Bakersfield area (Bakersfield, Tehachapi) and up to Ridgecrest and
+ * Kernville, Temecula and Murrieta, and the Coachella Valley / high desert
+ * (Palm Desert, Yucca Valley). An earlier version of this comment said "San
+ * Diego's north edge"; that was wrong. 25 of that pull's 56 new shops were
+ * 70 to 118 miles out.
+ * Mark's decision, 2026-10-10 (relayed by the planner window): keep those
+ * shops. The site is LA-centred, not LA-only; a visitor's ZIP and radius
+ * decide what they see. So a source that covers only part of this circle
+ * (Riftbound today) leaves far shops showing fewer games than they run, which
+ * is what the "partial" mark is for.
+ * A candidate file may carry its own `region: { lat, lon, miles, states }`
+ * when a pull covers somewhere else.
  */
 export const DEFAULT_REGION = { name: "Greater Los Angeles", lat: 34.0522, lon: -118.2437, miles: 120, states: ["CA"] };
 

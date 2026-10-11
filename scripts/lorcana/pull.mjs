@@ -65,6 +65,13 @@ export function storeRow(s) {
   // A bare street line ("1 Elm St") parses as a city. When the line carried no
   // state or ZIP, trust the store's own city field and keep the line as the street.
   if (full && !parts.zip && !parts.state && pick(s, "city")) parts = { address: String(full).trim(), city: null, state: null, zip: null };
+  // "3030 Plaza Bonita Rd Suite 1256 National City, CA 91950": no comma between
+  // street and city, so the whole run parses as the city. The store's own city
+  // field says where to cut.
+  const own = pick(s, "city");
+  if (own && !parts.address && parts.city && parts.city.length > String(own).length && parts.city.toLowerCase().endsWith(String(own).toLowerCase())) {
+    parts = { ...parts, address: parts.city.slice(0, -String(own).length).replace(/[\s,]+$/, ""), city: String(own) };
+  }
   const handle = (v, base) => (v ? (/^https?:/.test(v) ? v : `${base}${String(v).replace(/^@/, "")}`) : null);
   return {
     sourceId: s.uuid ?? `store-${s.id}`, storeNumber: s.id,

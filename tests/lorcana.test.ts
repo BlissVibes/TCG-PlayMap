@@ -69,6 +69,14 @@ describe("lorcana pull helpers", () => {
       .toMatchObject({ city: "Glendale", state: "CA", zip: "91203", sourceId: "store-1", sourceUrl: null });
   });
 
+  it("cuts street from city when the address line has no comma between them", () => {
+    expect(storeRow({ id: 2, name: "PB", full_address: "3030 Plaza Bonita Rd Suite 1256 National City, CA 91950, USA", city: "National City" }))
+      .toMatchObject({ address: "3030 Plaza Bonita Rd Suite 1256", city: "National City", state: "CA", zip: "91950" });
+    // A normal line is left exactly as parsed, even if the store's city field differs in case.
+    expect(storeRow({ id: 3, name: "X", full_address: "7301 Melrose Ave, Los Angeles, CA 90046, USA", city: "LOS ANGELES" }))
+      .toMatchObject({ address: "7301 Melrose Ave", city: "Los Angeles" });
+  });
+
   it("treats championships and prereleases as one-offs, but weekly draft and sealed as weekly", () => {
     for (const t of ["Sunday Afternoon Attack of the Vine! Set Championship", "Hyperia City Prerelease (Sealed)", "Hyperia City Pre-Release Event", "Weekly Play Special Event (Sealed)", "Lorcana Challenge Qualifier"]) {
       expect(SPECIAL.test(t), t).toBe(true);
