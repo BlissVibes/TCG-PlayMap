@@ -10,6 +10,7 @@
 | 4. Bandai TCG+ | **Pending** (Mark, on his Mac). |
 | 5. Chrome pass over the blocked shops | New 2026-10-10, see below. |
 | 6. Mark's own follow-up (`needsMark`) | New 2026-10-10, see below. |
+| 7. OpenStreetMap discovery + triage | First sweep run by hand 2026-10-10 (514 hits, three areas missed); scripted 2026-10-11, see below. |
 
 What the run changed in the tools, so the commands below are still right:
 - The scripts now run from a folder path with a space in it (0.1.1.2). Before
@@ -166,3 +167,62 @@ node -e 'for (const q of require("./data/research_queue.json")) if (q.needsMark)
 
 Hand what you learn to a research session; it writes the rows, the log lines
 and clears the field. The field's convention is in `docs/DATA_MODEL.md`.
+
+## 7. OpenStreetMap discovery, then triage
+
+The play-network locators only know stores that registered with that
+publisher. OpenStreetMap knows shops that exist. `scripts/osm/pull.mjs` asks
+the public Overpass API for game, hobby, toy, collector and trading-card
+shops, and anything named like one, across the 120-mile region, and writes
+`data/candidates/osm-shops.json`.
+
+**These are leads, not listings.** OSM says a shop exists and where. It says
+nothing about what the shop runs or when. Nothing in that file reaches the map
+until a person or a research session has checked the shop and entered it the
+usual way (`docs/SHOP_RESEARCH.md`).
+
+```
+node scripts/osm/pull.mjs --list-tiles          # the 30 tiles and their boxes; no request
+node scripts/osm/pull.mjs --tiles r3c0          # one tile (re-run the ones that failed)
+node scripts/osm/pull.mjs --since 2026-10-11    # every tile not pulled since that date
+node scripts/osm/pull.mjs                       # the whole grid: 30 requests, 8 s apart
+node scripts/osm/pull.mjs --no-pull             # no request: re-check the leads against data/shops.json
+```
+
+- **One writer at a time.** The leads file is edited by whoever is triaging.
+  Run the script in the checkout that owns the file, commit it there; do not
+  run it in two checkouts and merge the results by hand.
+- Overpass is a free public service and is often busy: a tile can answer 504
+  twice and work the third time. The script tries a tile three times with a
+  growing wait, then moves on, and stops the run after three failed tiles in
+  a row. Failed tiles are printed with the exact `--tiles` command to re-run.
+  The file's `tiles` field records, per tile, when it was last pulled or how
+  it last failed, and `gaps` names the tiles never pulled.
+- The first, hand-run sweep (2026-10-10) used 16 ad-hoc boxes and missed three
+  areas: the Santa Barbara coast, the mountains north of La Cañada / Azusa, and
+  the Santa Maria / Kern edge. Its note is kept in the file. A full grid run
+  closes those; `r3c0` (Santa Barbara) was pulled on 2026-10-11 as the proof
+  run and found 7 shops.
+- **A re-run never loses triage.** Leads are matched by `osmId`. The script
+  rewrites only the fields it produces (name, address, coordinates, website,
+  phone, hours, the OSM tags, the distance fields, `possibleDuplicateOf`).
+  Every other field on a lead is kept exactly as found: `triage`,
+  `triageEvidence`, `evidenceUrl`, `triagedBy`, `pending`, anything added
+  later. A lead's `bucket` (`likely` / `unlikely` / `chain`) is assigned once
+  and then left alone, because people correct it; `--rebucket` recomputes it
+  for leads with no `triage`.
+- A lead OSM no longer returns is not removed. It gets `osmGone: <date>`, and
+  only when the tile covering it was actually pulled in that run.
+- `possibleDuplicateOf` is the script's guess (same name elsewhere, or within
+  300 ft of one of our shops). When a person settles it, they write
+  `duplicateOf` (it is that shop) or `distinctFromKnown` (it is not) and
+  delete the guess; the script will not put it back.
+- A lead that has become one of our shops moves to `alreadyKnown`, with all
+  its fields. Run `--no-pull` after a research batch to get that.
+
+**Triage** is step 3's job with a different input: take `likely` leads
+nearest first (`milesFromLaCenter`), check the shop's own site and socials for
+card-game nights, and record the verdict and the evidence on the lead. A shop
+that does run TCG nights is then added to `data/shops.json` and
+`data/events.json` by the normal runbook. `unlikely` and `chain` are kept so
+the next sweep does not offer them again as new.
