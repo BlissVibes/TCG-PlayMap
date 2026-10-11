@@ -2469,5 +2469,17 @@
     "addedBy": "osm-triage",
     "checked": "2026-10-10",
     "notes": "Own Shopify site: /pages/events embeds a Styled Calendar (embed.styledcalendar.com/#gljThOg4rJ1QwcYfgo0m, script-rendered) and /collections/event-tickets is empty; there is also a Discord. Needs a browser read of the calendar."
+  },
+  {
+    "shopId": "insomniac-collectibles",
+    "name": "Insomniac Collectibles",
+    "city": "Bellflower",
+    "website": "https://collectiblecardsbellflower.com/",
+    "socials": {},
+    "sourceUrl": "https://collectiblecardsbellflower.com/",
+    "status": "todo",
+    "added": "2026-10-10",
+    "addedBy": "osm-triage",
+    "notes": "Own site mentions a gaming center and 'Gaming Events' but publishes no schedule on the pages read (Home). Check the Gaming page and socials."
   }
 ]

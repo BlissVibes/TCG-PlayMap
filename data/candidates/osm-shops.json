@@ -548,7 +548,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Diamond Bar",
         "nearestKnownMi": 4.3,
-        "milesFromLaCenter": 19
+        "milesFromLaCenter": 19,
+        "triage": "no-tcg",
+        "evidence": "ComicBookClothing: pop-culture apparel store.",
+        "evidenceUrl": "https://comicbookclothing.com",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "JD’s Big Game Fishing Tackle",
@@ -584,7 +589,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Harbor City",
         "nearestKnownMi": 1.7,
-        "milesFromLaCenter": 18
+        "milesFromLaCenter": 18,
+        "triage": "unknown",
+        "evidence": "popmonster.net returns a 404 page; nothing else found.",
+        "evidenceUrl": "https://www.popmonster.net/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "The Landmark Antiques and Collectibles Hall",
@@ -625,7 +635,13 @@
           "id": "the-game-chest-torrance",
           "miles": 0.11,
           "why": "similar name nearby"
-        }
+        },
+        "triage": "tcg",
+        "evidence": "Same place as the shop already on the map: The Game Chest Torrance (0.11 mi away); no new row.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10",
+        "duplicateOf": "the-game-chest-torrance"
       },
       {
         "name": "Game Boss",
@@ -792,7 +808,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Harbor City",
         "nearestKnownMi": 1.6,
-        "milesFromLaCenter": 18
+        "milesFromLaCenter": 18,
+        "triage": "unknown",
+        "evidence": "Ageless Geeks (agelessgeeks.com): toy and collectibles store site; the home page mentions trading cards only in passing, no events.",
+        "evidenceUrl": "https://agelessgeeks.com",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Warhammer",
@@ -1018,7 +1039,12 @@
           "id": "the-game-chest-torrance",
           "miles": 0.06,
           "why": "another known shop within 300 ft"
-        }
+        },
+        "triage": "no-tcg",
+        "evidence": "Chalice Collectibles Torrance: Funko Pop and collectibles Shopify store; no card games.",
+        "evidenceUrl": "https://www.chalicecollectibles.com",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Kouhigh Toys",
@@ -1054,7 +1080,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Cerritos",
         "nearestKnownMi": 1.1,
-        "milesFromLaCenter": 14
+        "milesFromLaCenter": 14,
+        "triage": "tcg",
+        "evidence": "Insomniac Collectibles: own site calls itself a trading card store with a gaming center for tournaments; real address 16229 Bellflower Blvd (OSM had 9842 Flower St). Shop row added.",
+        "evidenceUrl": "https://collectiblecardsbellflower.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Cali Games",
@@ -1226,7 +1257,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Lawndale",
         "nearestKnownMi": 0.5,
-        "milesFromLaCenter": 14
+        "milesFromLaCenter": 14,
+        "triage": "no-tcg",
+        "evidence": "Name says sports cards and memorabilia (Box Breaks: Sports Cards & Memorabilia); not researched further.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Game Towne",
@@ -2470,7 +2506,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Sherman Oaks",
         "nearestKnownMi": 3.6,
-        "milesFromLaCenter": 17
+        "milesFromLaCenter": 17,
+        "triage": "no-tcg",
+        "evidence": "AB23 Fashion: clothing store by name; not researched further.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Spellbound",
@@ -2612,11 +2653,12 @@
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 0.6,
         "milesFromLaCenter": 10,
-        "triage": "unknown",
-        "evidence": "Burbank Sportscards (935 N Hollywood Way, (818) 843-2600, burbankcards.com): sports-card shop that also carries Pokémon boosters, Magic and Yu-Gi-Oh singles per a listing; no events found. Same address is given for Toy Mandala in an L.A. Taco article.",
+        "triage": "tcg",
+        "evidence": "Burbank Sportscards (935 N Hollywood Way, (818) 843-2600, burbankcards.com): sports-card shop that also carries Pokémon boosters, Magic and Yu-Gi-Oh singles per a listing; no events found. Pending the Chrome pass for site/hours/events before a shop row. Same address is given for Toy Mandala in an L.A. Taco article.",
         "evidenceUrl": "https://www.burbankchamber.org/directory/burbank-sportscards",
         "triagedBy": "sonnet2",
-        "triagedOn": "2026-10-10"
+        "triagedOn": "2026-10-10",
+        "pending": "chrome"
       },
       {
         "name": "Coins and Comics",
@@ -2829,7 +2871,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Baldwin Park",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 18
+        "milesFromLaCenter": 18,
+        "triage": "no-tcg",
+        "evidence": "Airsoft N Hobby: airsoft/hobby shop by name and OSM tag shop=sports; not researched further.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Dark Side Games",
@@ -2852,7 +2899,13 @@
         },
         "nearestKnownCity": "Duarte",
         "nearestKnownMi": 0.1,
-        "milesFromLaCenter": 16
+        "milesFromLaCenter": 16,
+        "triage": "tcg",
+        "evidence": "Same place as the shop already on the map: Dark Side Games (0.07 mi away, 1036 Huntington Dr); no new row.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10",
+        "duplicateOf": "dark-side-games"
       },
       {
         "name": "Chalice Collectibles",

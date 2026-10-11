@@ -5658,5 +5658,27 @@
       "checked": "2026-10-10",
       "note": "OpenStreetMap lead, store's own site"
     }
+  },
+  {
+    "id": "insomniac-collectibles",
+    "name": "Insomniac Collectibles",
+    "address": "16229 Bellflower Blvd",
+    "city": "Bellflower",
+    "state": "CA",
+    "zip": "90706",
+    "lat": 33.8870339,
+    "lon": -118.1253589,
+    "tz": "America/Los_Angeles",
+    "website": "https://collectiblecardsbellflower.com/",
+    "phone": "(562) 382-0549",
+    "hours": "Mon-Thu 12-9 PM · Fri 12-10 PM · Sat 10 AM-10 PM · Sun 10 AM-9 PM",
+    "games": [],
+    "notes": "Found via OpenStreetMap; schedule research pending. Trading card and collectibles store with a gaming center for tournaments (own site); no event schedule on the site as of 2026-10-10.",
+    "active": true,
+    "source": {
+      "url": "https://collectiblecardsbellflower.com/",
+      "checked": "2026-10-10",
+      "note": "OpenStreetMap lead, store's own site"
+    }
   }
 ]
