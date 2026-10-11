@@ -362,5 +362,12 @@
   {"date":"2026-10-10","action":"added","game":"mtg","shopId":"comic-quest-lake-forest-ca","summary":"Magic: Friday Night Magic Fri 6 PM (free); Star Trek prerelease Fri Nov 6 6 PM, Sat Nov 7 and Sun Nov 8 noon."},
   {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"collector-legion","summary":"Pokémon Delta Reign prerelease Sat Oct 24 1 PM ($35)."},
   {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"double-d20s-cards-and-games","summary":"Lorcana: Hyperia City prerelease Fri Oct 16 1 PM and 7 PM ($40)."},
-  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"double-d20s-cards-and-games","summary":"Magic: RCQ Standard Sat Oct 17 1 PM and Sat Nov 14 1 PM ($30)."}
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"double-d20s-cards-and-games","summary":"Magic: RCQ Standard Sat Oct 17 1 PM and Sat Nov 14 1 PM ($30)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"emerald-knights-comics-and-games","summary":"Magic: Commander Tue 5 PM ($5) and Sat 5 PM ($5), FNM Draft Fri 6 PM ($25), Modern Sun noon ($7); Star Trek prerelease Fri Nov 6 and Sat Nov 7 ($50)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"emerald-knights-comics-and-games","summary":"Lorcana: Tue 4 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"digimon","shopId":"emerald-knights-comics-and-games","summary":"Digimon: Wed 6 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"emerald-knights-comics-and-games","summary":"One Piece: Wed 6 PM ($5)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"emerald-knights-comics-and-games","summary":"Pokémon: Thu 3:30 PM kids ($10), Thu 6 PM masters ($10)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"emerald-knights-comics-and-games","summary":"Gundam: Fri 6 PM ($12)."},
+  {"date":"2026-10-10","action":"added","game":"swu","shopId":"emerald-knights-comics-and-games","summary":"Star Wars Unlimited: Sun noon casual league ($7)."}
 ]

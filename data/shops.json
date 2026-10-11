@@ -1141,7 +1141,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1047 W 6th St Ste E; reported Friday Pokémon, Saturday Lorcana/Union Arena, Sunday One Piece/Magic, not confirmed. Website is an Instagram page (login-walled). Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/87c19443-c9a1-44e1-b68d-e105d63ec791",
@@ -1172,7 +1172,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Instagram, Facebook and Discord only; none readable; web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/b0bfb8c0-5b38-4df7-9a2c-69a4e5f7e4b5",
@@ -1197,9 +1197,16 @@
     "website": "https://emeraldknights.com/",
     "phone": "(818) 588-3631",
     "games": [
-      "riftbound"
+      "digimon",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "riftbound",
+      "swu"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own calendar): Tue-Sat 11 AM-10 PM, Sun 11 AM-6 PM, closed Monday. Schedule from the store's public Google Calendar (checked 2026-10-10); times shown are registration, round 1 is in each night's notes. Riftbound nights are loaded by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/2350359c-94ed-4df8-b14a-fb42a1017ef5",
@@ -1228,7 +1235,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Discord only (not readable); web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/86d742c7-2d71-4cee-9787-0ae35ffff40b",
@@ -1254,7 +1261,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials in the locator; web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/7961c0cd-da05-4366-b88e-a5a4530ebe58",

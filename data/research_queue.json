@@ -423,10 +423,11 @@
     "website": "https://www.instagram.com/drewbeescollectables/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/87c19443-c9a1-44e1-b68d-e105d63ec791",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram page (login-walled); only an unverified directory blurb about a weekly pattern.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "dxn-provisions",
@@ -438,10 +439,11 @@
       "facebook": "https://www.facebook.com/dxnprovision/"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b0bfb8c0-5b38-4df7-9a2c-69a4e5f7e4b5",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram/Facebook/Discord only (login-walled); search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "emerald-knights-comics-and-games",
@@ -450,10 +452,11 @@
     "website": "https://emeraldknights.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/2350359c-94ed-4df8-b14a-fb42a1017ef5",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Embedded public Google Calendar (store@ekcomicsandgames.com) via scripts/ics/summarise.py; 11 weekly series, fees from each event's description. Star Trek prerelease Nov 6-7 added. Calendar also shows 11-10PM store-hours entries (not events).",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "falcons-nest-games",
@@ -464,10 +467,11 @@
       "discord": "https://discord.gg/96WQDhtPc"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/86d742c7-2d71-4cee-9787-0ae35ffff40b",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Discord only; search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "finch-and-sparrow-games",
@@ -476,10 +480,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/7961c0cd-da05-4366-b88e-a5a4530ebe58",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "flat-earth-games",
