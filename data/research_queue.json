@@ -1541,10 +1541,11 @@
       "discord": "https://discord.gg/V8rxm8wPcA"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/4ff8c39f-ba88-41fc-bf8b-b4b1ec05994c",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site /pages/events says 'weekly locals, armories and special tournaments, updated automatically' (One Piece, Gundam, Flesh and Blood, Riftbound, Magic, Grand Archive, Union Arena) but the calendar is script-loaded and nothing in the page source names the feed. Hours added from the page (its structured data gives slightly different weekday hours). Discord and Instagram tilted.gaming.ca not readable. Needs a browser read.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "tk-collectibles",
@@ -1553,10 +1554,11 @@
     "website": "https://www.instagram.com/_tkcollectibles/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/7ed6b746-9a5b-4c7e-8005-10cbd92be4cf",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram only (login-walled); web search finds nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "top-choice-gaming-llc",
@@ -1565,10 +1567,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/9f7591f0-f17e-4ed2-95bd-d7a1312c0662",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; web search finds no listing (19 E Citrus Ave is also a music venue address). Nothing readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "top-deck-keep",
@@ -1577,10 +1580,11 @@
     "website": "https://top-deck-keep.shoplightspeed.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/828d4aeb-03b7-4cdb-8a2f-2b2862f4f8bf",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Lightspeed shop sells dated event tickets but only 9 are listed and none has a start time (so no rows): Beyblade X tournament 10/10 $10; Lorcana Hyperia City prerelease 10/18 $30; Lorcana scaling case tournament 10/24 $25; Pokemon Delta Reign prerelease 10/24 $30; MTG Hobbit 2-slot Standard RCQ 11/14 $30; Riftbound Pre-Rift 10/16 3 PM and 7 PM, 10/17, 10/18 $30 (importer-owned). The /event-calendar page is script-rendered. Weekly nights not published. Enough here for a quick follow-up if the store posts times.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "topspot-cards",
@@ -1589,10 +1593,11 @@
     "website": "https://www.topspot.cards",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/f81d000d-733c-4cb5-97a5-0efe41d442b2",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site /pages/events is script-rendered and its events collection is empty; the page lists only product categories. No schedule readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "treasuretopia-ccg",
