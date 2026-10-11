@@ -7,7 +7,7 @@ What the values mean and who sets them: `docs/SHOP_RESEARCH.md`, "The `needsMark
 "Events" is the number of event rows the shop has on the calendar today. 0 means the shop is a
 pin with no schedule; more than 0 usually means only an importer's nights are listed.
 
-## Discord: open the server and read its schedule channel (26)
+## Discord: open the server and read its schedule channel (27)
 
 | Shop | City | Invite | Events | Notes |
 |---|---|---|---|---|
@@ -28,6 +28,7 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Pandy's Cards and Collectibles | La Habra | https://discord.gg/NhQKsceN | 1 | Browser pass: Instagram/Linktree show hours only; events are on Discord (https://discord.gg/NhQKsceN), not opened. |
 | Papa Joey's Collectibles - CA | Carlsbad | https://discord.gg/c2V2FketJj | 12 | Own EventForge calendar on /pages/calendar (read in browser): weekly Prime Time rows for all three Papa Joey's stores, fees as listed; Lorcana, Riftbound, Cyberpunk and one-off specials skipped. Pattern checked across two weeks. |
 | STORMXTCG | Ventura | https://discord.gg/sna7e3RznH | 2 | Own site loads events with JavaScript (not readable); Discord (https://discord.gg/sna7e3RznH) not opened. Needs Mark. |
+| The Card Goblin | Bakersfield | https://discord.gg/Y26ZCmY3PZ | 2 | Discord and Instagram on file; Instagram not read for a schedule, Discord not opened. |
 | THE CRIMSON GUILD (SoCal) | SOUTH EL MONTE | https://discord.gg/XbtBekNFjz | 15 | Browser pass: pinned Instagram 'Local Events' post (instagram.com/p/DYbp8i_G8mC/, 2026-05-17, 'starting May 19th'). 13 weekly rows; Pokémon $7 from the newer Locals graphic. Discord left unopened. |
 | The Game Cellar | San Gabriel | https://discord.gg/HMX6hP9BgW | 2 | Instagram bio lists Pokémon/Magic/Yu-Gi-Oh; linktr.ee/thegamecellar has Discord invite (recorded) + Facebook; no schedule on public pages. Discord not opened. |
 | The Game Chest Irvine | Irvine | https://discord.gg/A23t4qy8Ap | 4 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
@@ -48,7 +49,7 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Table 1 Gaming | Bell | (323) 744-2021 | 1 | No website or social found; web search returns nothing for this store. Only a phone number. |
 | Turn Zero Games | Los Angeles | (213) 384-3466 | 1 | Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop. Chrome pass 2026-10-10: socials found on the site (instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games), not yet read. |
 
-## Blocked, no handle: no website and no socials (35)
+## Blocked, no handle: no website and no socials (39)
 
 Research found nothing to read and nothing to follow. Call the shop, or decide it is not worth chasing.
 
@@ -66,8 +67,10 @@ Research found nothing to read and nothing to follow. Call the shop, or decide i
 | Domino City Gaming | El Monte | (626) 406-4141 | 1 | No website; search found only a directory listing. |
 | Finch and Sparrow Games | Signal Hill | (562) 249-8172 | 3 | No website or socials; search found nothing. |
 | Game Citi | Fullerton | (949) 283-0398 | 2 | No website or socials; search found nothing under this name. |
+| GameZone | Lemon Grove | (619) 467-7757 | 0 | City newsletter calls it an official Yu-Gi-Oh!/Pokémon retailer since 2007; one undated third-party listing mentions Commander Tuesday 6 PM, not used. No schedule on a store source. |
 | Genki Stuff | Lakewood | (562) 425-4350 | 1 | No website or socials; search found nothing. |
 | GGW toys | Torrance | (310) 487-5054 | 3 | No website or social found; web search returns nothing for this store. |
+| Hellspawn toys n collectibles | Bakersfield | (323) 703-2052 | 1 | No site or social on file; web search returns nothing for this store. |
 | Hidden Collectibles | Orange | (714) 900-4372 | 8 | No website or socials; search found nothing. |
 | Hobby Overflow Card Store | Cypress | (562) 643-9977 | 6 | No website or socials; search found nothing. |
 | Junkyard Cards | Long Beach | (562) 480-1341 | 1 | No website; search found only a directory listing. |
@@ -86,8 +89,10 @@ Research found nothing to read and nothing to follow. Call the shop, or decide i
 | The Light | Ontario | (909) 395-0935 | 7 | No website. Directories call it a tournament-focused hub (Pokemon, Lorcana, Yu-Gi-Oh!, Magic nights) with hours unverified (one says closed Wed/Thu), but give no days, times or fees. Nothing readable from the shop itself. |
 | TinyTCGShop | Pomona | (310) 621-8569 | 2 | Only a third-party directory listing (Pokémon/One Piece/YGO singles, evenings 5:30-10 PM, closed Wed/Sun); no site, socials or events found. |
 | Top Choice Gaming LLC | Redlands | (626) 723-6904 | 7 | No website; web search finds no listing (19 E Citrus Ave is also a music venue address). Nothing readable. |
+| Tubbys LORCANA | La Mesa | none listed | 2 | No site or social on file; web search returns nothing. Lorcana-only importer row. |
 | Viking TCG LLC | La Crescenta | (818) 935-8541 | 2 | No website; web search finds no listing. |
 | Warpact Games LLC | Lancaster | (661) 241-8151 | 3 | No website; web search finds no listing. |
+| YUVA collectibles | Yucca Valley | (442) 322-1276 | 5 | No site or social on file; web search returns nothing for this store. |
 | Zander's Game House | Camarillo | (805) 383-9983 | 3 | No site or social found. Only a 2023 weekly list (stale) and a review saying management uses Discord; not used. |
 
 ## Re-check soon: weekly nights that end by 2026-11-01 (19 at 5 shops)

@@ -1995,10 +1995,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/d32a4a40-160c-4a39-b629-e6bb99b23ecd",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No site or social on file; web search returns nothing for this store.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "kingslayer-games-oceanside",
@@ -2337,10 +2338,12 @@
       "instagram": "https://www.instagram.com/thecardgoblin_tcg"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/5aaecee9-0f62-4e89-985b-a8a558c17731",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Discord and Instagram on file; Instagram not read for a schedule, Discord not opened.",
+    "checked": "2026-10-11",
+    "needsMark": "discord"
   },
   {
     "shopId": "the-game-cellar",
@@ -2465,10 +2468,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/953e83e4-d4e5-4c02-b41f-98da2c2a729f",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No site or social on file; web search returns nothing. Lorcana-only importer row.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "windfall-games-llc",
@@ -2492,10 +2496,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/84d9cbe7-9487-4da3-9940-0a7335475645",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "No site or social on file; web search returns nothing for this store.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "zanders-game-house",
@@ -2621,10 +2626,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://www.atly.com/location/GameZone1",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-11",
     "addedBy": "osm-triage",
-    "notes": "No website. Only an aggregator listing (trading card store, Tuesday 6 PM casual Commander). Needs the Chrome pass or a phone call."
+    "notes": "City newsletter calls it an official Yu-Gi-Oh!/Pokémon retailer since 2007; one undated third-party listing mentions Commander Tuesday 6 PM, not used. No schedule on a store source.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "av-pop-shop",
