@@ -5,10 +5,26 @@
  * matching test failed.
  */
 import { describe, it, expect } from "vitest";
-import { buildSlots, feeText, splitAddress } from "../scripts/riftbound/pull.mjs";
+import { buildSlots, feeText, parseArgs, splitAddress } from "../scripts/riftbound/pull.mjs";
 import { cleanWeeklyTitle, DEFAULT_REGION, matchShop, merge, normPhone, outsideRegion, slug } from "../scripts/candidates/merge.mjs";
 import { nextVersion } from "../scripts/bump_version.mjs";
 import { validateData } from "../lib/data";
+
+describe("riftbound pull: arguments are read before any request", () => {
+  it("--help and anything unrecognised never start a pull", () => {
+    expect(parseArgs(["--help"])).toEqual({ help: true });
+    expect(parseArgs(["-h"])).toEqual({ help: true });
+    expect(parseArgs(["--apply"]).error).toMatch(/--apply/);
+    expect(parseArgs(["data/candidates/riftbound-locator.json"]).error).toMatch(/riftbound-locator/);
+    expect(parseArgs(["--out"]).error).toMatch(/--out/);
+    expect(parseArgs(["--ahead", "-3"]).error).toMatch(/--ahead/);
+  });
+
+  it("accepts the three real options, and the workflow's bare call", () => {
+    expect(parseArgs([])).toEqual({ out: "data/candidates/riftbound-locator.json", back: 35, ahead: 56 });
+    expect(parseArgs(["--out", "x.json", "--back", "14", "--ahead", "28"])).toEqual({ out: "x.json", back: 14, ahead: 28 });
+  });
+});
 
 describe("riftbound pull helpers", () => {
   it("splits every address format the locator returns", () => {

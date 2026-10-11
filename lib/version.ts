@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.5.6";
+export const VERSION = "0.1.5.7";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.5.7",
+    date: "2026-10-10",
+    changes: ["Internal: the Riftbound pull reads its arguments before making any request."],
+  },
   {
     version: "0.1.5.6",
     date: "2026-10-10",

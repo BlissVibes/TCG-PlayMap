@@ -189,12 +189,37 @@ async function pagedAll(firstUrl) {
 }
 
 // ── main ─────────────────────────────────────────────────────────────────────
+const USAGE = "usage: node scripts/riftbound/pull.mjs [--out <file.json>] [--back <days>] [--ahead <days>]\n"
+  + "Makes about 56 paced requests to the Riftbound locator. Run by hand, never more than weekly (docs/SOURCES.md).";
+
+/**
+ * Read the arguments BEFORE any request; anything unrecognised stops the run.
+ * This script used to ignore what it did not know, so `pull.mjs --help` ran a
+ * full pull. That happened on the Lorcana script on 2026-10-10 (a second pull
+ * nobody meant to make) and the same hole was here. A source we agreed to
+ * touch lightly must not be pulled by a typo. Exported for tests.
+ * @returns {{ out?: string, back?: number, ahead?: number, help?: boolean, error?: string }}
+ */
+export function parseArgs(argv) {
+  /** @type {{ out: string, back: number, ahead: number }} */
+  const opts = { out: "data/candidates/riftbound-locator.json", back: 35, ahead: 56 };
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === "--help" || a === "-h") return { help: true };
+    if (a === "--out" && argv[i + 1] && !argv[i + 1].startsWith("--")) opts.out = argv[++i];
+    else if ((a === "--back" || a === "--ahead") && /^\d+$/.test(argv[i + 1] ?? "")) opts[a.slice(2)] = Number(argv[++i]);
+    else return { error: `unrecognised or incomplete argument: ${a}` };
+  }
+  return opts;
+}
+
 async function main() {
-  const argv = process.argv.slice(2);
-  const arg = (n, d) => { const i = argv.indexOf(`--${n}`); return i >= 0 ? argv[i + 1] : d; };
-  const out = arg("out", "data/candidates/riftbound-locator.json");
+  const opts = parseArgs(process.argv.slice(2));
+  if (opts.help) { console.log(USAGE); return; }
+  if (opts.error) { console.error(`${opts.error}\n${USAGE}`); process.exit(2); }
+  const out = opts.out;
   const today = local(new Date().toISOString()).date;
-  const from = addDays(today, -Number(arg("back", "35"))), to = addDays(today, Number(arg("ahead", "56")));
+  const from = addDays(today, -opts.back), to = addDays(today, opts.ahead);
 
   const stores = new Map();   // numeric store id -> record
   const events = new Map();
