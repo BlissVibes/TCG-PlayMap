@@ -782,10 +782,11 @@
       "discord": "https://discord.gg/tUpTbtJ4"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/9155fc75-a1c9-447a-b065-f3b8a7931496",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram page (login-walled); search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "kingslayer-games",
@@ -794,10 +795,11 @@
     "website": "https://Kingslayergames.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b02e62af-0407-492d-acc0-701e73ff6ca3",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own events calendar (kingslayergames.com/events/events-calendar/fountain-valley/): each cell is a link with date, title and time; ticket price read from one event page per format. Weekly = same game, weekday and time on 3+ dates in October. Calendar only covers October, so rows should be re-checked in November. Riftbound skipped (importer). Other formats/prices in row notes.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "kingslayer-games-lake-forest",
@@ -806,10 +808,11 @@
     "website": "https://www.kingslayergames.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/61cfbfd0-9c0d-4b76-bee3-7fdb82571ad7",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own events calendar (…/events-calendar/lake-forest/), same method as the Fountain Valley store. Pokémon League Cup Oct 31 added as a dated row. October only; re-check in November.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "krazy-nicks-games",
@@ -818,10 +821,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/2627424b-fb2b-435c-85ee-975d8820dbdd",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "legacy-comics-and-cards-inc",
@@ -833,10 +837,11 @@
       "x": "LegacyComicsCA"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/21849f32-76e0-4bcb-8472-39fbb39a8b03",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Tournament Schedule page is an image last updated 2026-05-25 (stale); Facebook group not read. Hours added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "loot-box",

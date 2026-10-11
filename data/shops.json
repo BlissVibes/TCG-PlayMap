@@ -1872,7 +1872,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Website is an Instagram page (login-walled); Discord not read; web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/9155fc75-a1c9-447a-b065-f3b8a7931496",
@@ -1897,9 +1897,25 @@
     "website": "https://Kingslayergames.com",
     "phone": "(714) 884-4701",
     "games": [
-      "riftbound"
+      "azuki",
+      "cookierun",
+      "dbs_fusion",
+      "digimon",
+      "fab",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "neuroscape",
+      "onepiece",
+      "palworld",
+      "pokemon",
+      "riftbound",
+      "sorcery",
+      "swu",
+      "union_arena",
+      "yugioh"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Schedule from the store's own events calendar (kingslayergames.com/events/events-calendar/, Fountain Valley page, read through Oct 31, checked 2026-10-10). Fees are the event ticket prices. The rotating format weeks (e.g. Lorcana Core vs Hyperia Sealed) are noted on each row. Riftbound nights and pre-rifts are loaded by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/b02e62af-0407-492d-acc0-701e73ff6ca3",
@@ -1924,9 +1940,20 @@
     "website": "https://www.kingslayergames.com",
     "phone": "(949) 215-3936",
     "games": [
-      "riftbound"
+      "dbs_fusion",
+      "digimon",
+      "fab",
+      "gundam",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "pokemon",
+      "riftbound",
+      "sorcery",
+      "swu",
+      "union_arena"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Schedule from the store's own events calendar (kingslayergames.com/events/events-calendar/, Lake Forest page, read through Oct 31, checked 2026-10-10). Fees are the event ticket prices. The rotating format weeks (e.g. Lorcana Core vs Hyperia Sealed) are noted on each row. Riftbound nights and pre-rifts are loaded by the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/61cfbfd0-9c0d-4b76-bee3-7fdb82571ad7",
@@ -1952,7 +1979,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials in the locator; web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/2627424b-fb2b-435c-85ee-975d8820dbdd",
@@ -1983,7 +2010,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Mon, Tue, Thu, Fri 11:30 AM-8 PM; Wed and Sat 10 AM-8 PM; Sun 11:30 AM-8 PM. The Tournament Schedule page (legacycomics.com/tournament-schedule-2/) is a stale image last updated 2026-05-25, so no nights listed. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/21849f32-76e0-4bcb-8472-39fbb39a8b03",

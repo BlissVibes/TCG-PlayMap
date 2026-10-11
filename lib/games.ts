@@ -47,6 +47,7 @@ export const GAMES = {
   naruto:        { label: "Naruto Kayou",                    short: "NARUTO", color: "#e58b1a" },
   palworld:      { label: "Palworld TCG",                    short: "PAL",    color: "#4f9a6e" },
   neuroscape:    { label: "Neuroscape TCG",                  short: "NEURO",  color: "#12a4c4" },
+  sorcery:       { label: "Sorcery: Contested Realm",        short: "SORC",   color: "#6b4423" },
   cyberpunk:     { label: "Cyberpunk TCG",                   short: "CYBER",  color: "#b6d400" },
   // Not a card game, listed on purpose (Mark, 2026-10-09: "keep beyblade
   // nights"). Shops run it on the same weekly rota as their TCG nights.
