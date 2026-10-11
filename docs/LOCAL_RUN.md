@@ -152,11 +152,19 @@ would unblock it.
 ## 6. Mark's own follow-up: the `needsMark` list
 
 Whatever is left needs a person. The queue entries with a `needsMark` field
-are that list:
+are that list, and `docs/NEEDS_MARK.md` is that list on one page:
 
 ```
-node -e 'for (const q of require("./data/research_queue.json")) if (q.needsMark) console.log(q.needsMark.padEnd(9), q.name, "-", q.city)'
+node scripts/needs_mark.mjs            # rewrite docs/NEEDS_MARK.md from data/research_queue.json
+node scripts/needs_mark.mjs --check    # write nothing; exit 1 if the page is out of date
 ```
+
+The page has one section per `needsMark` value, each line with the invite
+link, phone number or place to look, the shop's event count and the entry's
+notes; and a last section, "Blocked, no handle", for blocked shops with no
+website and no socials, to call or to drop. It is generated: never edit it by
+hand. **Re-run the script in the same commit as any change to `needsMark` or
+to a blocked entry's notes** (a data commit, so no version bump).
 
 - `discord`: join or open the shop's Discord server and read its schedule
   channel.
