@@ -1270,10 +1270,11 @@
       "facebook": "https://www.facebook.com/SpellholdGames"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/6b57c476-e41a-45a5-8163-296d0d4804e3",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site Weekly Events category lists only dated ticket products (Gundam 1st Anniversary Oct 11 $25, Lorcana Hyperia City prerelease Oct 22 $40: added as dated rows). No weekly schedule readable: /about has no schedule text, Facebook/Instagram login-walled. Needs Mark's schedule image. Hours added to the shop row.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "stormxtcg",
@@ -1614,5 +1615,18 @@
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
     "notes": ""
+  },
+  {
+    "shopId": "the-mystery-shop",
+    "name": "The Mystery Shop",
+    "city": "Oxnard",
+    "website": "https://mysteryshop805.com/",
+    "socials": {},
+    "sourceUrl": "https://mysteryshop805.com/",
+    "status": "done",
+    "added": "2026-10-10",
+    "addedBy": "leads-gundam",
+    "checked": "2026-10-10",
+    "notes": "Own site: homepage weekly grid + /events/<game> pages (fees). 21 weekly rows, fees on all but Palworld. Riftbound (Tue 6:30 PM $5) NOT added: shop is not in the importer data. Unresolved: stale grids in the homepage HTML (Pokemon Thu 7 PM; Riftbound Tue+Thu); One Piece page lists Tue 6 PM $5 tournament, grid shows Sun 1 PM casual only; Beyblade X every other Sunday has no anchor week."
   }
 ]

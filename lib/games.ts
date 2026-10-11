@@ -49,6 +49,11 @@ export const GAMES = {
   neuroscape:    { label: "Neuroscape TCG",                  short: "NEURO",  color: "#12a4c4" },
   sorcery:       { label: "Sorcery: Contested Realm",        short: "SORC",   color: "#6b4423" },
   cyberpunk:     { label: "Cyberpunk TCG",                   short: "CYBER",  color: "#b6d400" },
+  godzilla:      { label: "Godzilla Card Game",              short: "GODZ",   color: "#2e7d32" },
+  universus:     { label: "UniVersus",                       short: "UVS",    color: "#c2185b" },
+  ultraman:      { label: "Ultraman Card Game",              short: "ULTRA",  color: "#e53935" },
+  vanguard:      { label: "Cardfight!! Vanguard",            short: "CFV",    color: "#6a1b9a" },
+  shadowverse:   { label: "Shadowverse: Evolve",             short: "SVE",    color: "#00897b" },
   // Not a card game, listed on purpose (Mark, 2026-10-09: "keep beyblade
   // nights"). Shops run it on the same weekly rota as their TCG nights.
   beyblade:      { label: "Beyblade X",                      short: "BEY",    color: "#475569" },

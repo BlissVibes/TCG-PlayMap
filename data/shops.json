@@ -2937,15 +2937,18 @@
     "lat": 33.808738508470576,
     "lon": -117.83730281691892,
     "tz": "America/Los_Angeles",
-    "website": "https://Spellholdgames.com",
+    "website": "https://www.spellholdgames.com/",
     "phone": "(657) 221-0854",
     "socials": {
-      "facebook": "https://www.facebook.com/SpellholdGames"
+      "facebook": "https://www.facebook.com/spellholdgames",
+      "instagram": "https://www.instagram.com/spellhold.games/"
     },
     "games": [
+      "gundam",
+      "lorcana",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Hours from the store site. Only dated events are published (store's Weekly Events page lists ticket products per date); Directory says Pokemon, One Piece, Flesh and Blood and Gundam events run through the week but no weekly schedule is readable (likely an image on Facebook/Instagram, login-walled). Sister store of Collector Legion (Lawndale).",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/6b57c476-e41a-45a5-8163-296d0d4804e3",
@@ -2955,7 +2958,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "6b57c476-e41a-45a5-8163-296d0d4804e3"
-    }
+    },
+    "hours": "Mon-Fri 1-10:30 PM, Sat-Sun 12-8 PM"
   },
   {
     "id": "stormxtcg",
@@ -3697,6 +3701,45 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "7b4c01bd-c83a-416f-a08d-b804c2369142"
+    }
+  },
+  {
+    "id": "the-mystery-shop",
+    "name": "The Mystery Shop",
+    "address": "420 S A St",
+    "city": "Oxnard",
+    "state": "CA",
+    "zip": "93030",
+    "lat": 34.1987487,
+    "lon": -119.1784688,
+    "tz": "America/Los_Angeles",
+    "website": "https://mysteryshop805.com/",
+    "phone": "(805) 628-3048",
+    "hours": "Mon-Sat 12-10 PM, Sun 12-7 PM",
+    "games": [
+      "beyblade",
+      "godzilla",
+      "gundam",
+      "hololive",
+      "lorcana",
+      "mtg",
+      "onepiece",
+      "palworld",
+      "pokemon",
+      "riftbound",
+      "swu",
+      "ultraman",
+      "union_arena",
+      "universus",
+      "vanguard",
+      "weiss",
+      "yugioh"
+    ],
+    "notes": "Weekly nights from the store's per-game pages and homepage grid (checked 2026-10-10). Also comics, live DIY music, D&D, board games, Super Smash Bros. and fighting-game tournaments (not listed). Casual TCG play Sat and Sun 12-5 PM is free. Cyberpunk TCG is 'coming soon' (day/time TBD). Beyblade X tournaments ($8) run every other Sunday 1 PM but the anchor week is not published, so not listed (Wed 6 PM open play is). Riftbound (Tue 6:30 PM, $5 per the store) is not listed here: the store is not in the Riftbound importer's data. Conflicts in the store's own pages: the homepage HTML holds stale copies of the weekly grid (Pokemon Thu 7 PM; Riftbound Tue+Thu); the visible grid was used. The One Piece page also lists a Tue 6 PM $5 tournament that the grid omits.",
+    "active": true,
+    "source": {
+      "url": "https://mysteryshop805.com/",
+      "checked": "2026-10-10"
     }
   }
 ]

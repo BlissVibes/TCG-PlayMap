@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.3.1";
+export const VERSION = "0.1.3.2";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.3.2",
+    date: "2026-10-10",
+    changes: ["Added The Mystery Shop (Oxnard) weekly nights, Spellhold Games events and more A.G. Collectibles dates; new games Godzilla, UniVersus, Ultraman, Cardfight!! Vanguard, Shadowverse."],
+  },
   {
     version: "0.1.3.1",
     date: "2026-10-10",
