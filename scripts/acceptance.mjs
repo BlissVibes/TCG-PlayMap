@@ -107,10 +107,32 @@ try {
   await page.getByRole("tab", { name: "Map" }).click();
   await page.waitForSelector(".leaflet-container", { timeout: 20000 });
   await page.waitForFunction(() => document.querySelectorAll(".pin").length > 0, null, { timeout: 15000 }).catch(() => {});
-  const pins = await page.locator(".pin").count();
+  await page.waitForTimeout(600);   // cluster animation
   const footer = await page.locator("footer").innerText();
   const shopCount = Number(/(\d+) shops/.exec(footer)?.[1] ?? 0);
-  check("map draws a pin per shop on a fresh visit", pins > 0 && pins === shopCount, `${pins} pins, ${shopCount} shops`);
+  // Since clustering (0.1.3.0) a shop is often not a DOM pin of its own, so two
+  // checks replace "count the pins": what the marker layer HOLDS (PlayMap
+  // writes getLayers().length to data-markers), and what is DRAWN - single
+  // pins plus the count on each cluster bubble. Both must equal the shops.
+  const held = Number(await page.locator(".map").getAttribute("data-markers"));
+  const drawnInfo = await page.evaluate(() => {
+    const pins = [...document.querySelectorAll(".pin")];
+    const r = pins.map((p) => p.getBoundingClientRect());
+    let covered = 0;
+    for (let i = 0; i < r.length; i++) for (let j = i + 1; j < r.length; j++) {
+      if (Math.abs(r[i].x - r[j].x) < 10 && Math.abs(r[i].y - r[j].y) < 10) { covered++; break; }
+    }
+    return {
+      drawn: pins.reduce((n, p) => n + (p.classList.contains("cluster") ? Number(p.dataset.count) : 1), 0),
+      bubbles: pins.length, clusters: pins.filter((p) => p.classList.contains("cluster")).length, covered,
+      trophies: document.querySelectorAll(".pin .badge").length,
+    };
+  });
+  check("map holds a marker per shop on a fresh visit", held > 0 && held === shopCount, `${held} markers, ${shopCount} shops`);
+  check("every shop is drawn, as its own pin or inside a cluster", drawnInfo.drawn === shopCount,
+    `${drawnInfo.drawn} of ${shopCount} in ${drawnInfo.bubbles} bubbles (${drawnInfo.clusters} clusters)`);
+  check("no pin sits on top of another", drawnInfo.covered === 0, `${drawnInfo.covered} covered`);
+  check("tournament trophies survive clustering", drawnInfo.trophies > 0, `${drawnInfo.trophies} badges`);
 
   // Block -> map jump opens that shop's popup.
   await page.getByRole("tab", { name: "Calendar" }).click();
@@ -119,6 +141,12 @@ try {
   await page.waitForSelector(".leaflet-popup h3", { timeout: 15000 }).catch(() => {});
   const popup = await page.locator(".leaflet-popup h3").first().innerText().catch(() => "");
   check("clicking a block opens that shop on the map", popup === shopName, `${popup || "no popup"} vs ${shopName}`);
+  await page.waitForTimeout(400);
+  const fitInfo = await page.evaluate(() => {
+    const p = document.querySelector(".leaflet-popup")?.getBoundingClientRect(), m = document.querySelector(".map").getBoundingClientRect();
+    return p ? { ok: p.top >= m.top - 1 && p.bottom <= m.bottom + 1 && p.left >= m.left - 1 && p.right <= m.right + 1, d: `popup ${Math.round(p.width)}x${Math.round(p.height)} in map ${Math.round(m.width)}x${Math.round(m.height)}` } : { ok: false, d: "no popup" };
+  });
+  check("the popup fits inside the map", fitInfo.ok, fitInfo.d);
 
   // Theme toggle.
   const before = await page.locator("main").getAttribute("data-theme");

@@ -25,6 +25,13 @@
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const LEAFLET_JS = `${BASE}/vendor/leaflet/leaflet.js`;
 export const LEAFLET_CSS = `${BASE}/vendor/leaflet/leaflet.css`;
+/**
+ * Leaflet.markercluster 1.5.3 (MIT, LICENSE alongside), vendored the same way
+ * and for the same reason. Only its structural stylesheet is shipped; the
+ * cluster bubble is drawn with this site's own .pin styles (globals.css).
+ */
+export const CLUSTER_JS = `${BASE}/vendor/leaflet.markercluster/leaflet.markercluster.js`;
+export const CLUSTER_CSS = `${BASE}/vendor/leaflet.markercluster/MarkerCluster.css`;
 
 let leafletPromise: Promise<void> | null = null;
 
@@ -43,7 +50,20 @@ export function loadLeaflet(): Promise<void> {
     document.head.appendChild(css);
     const js = document.createElement("script");
     js.src = LEAFLET_JS;
-    js.onload = () => resolve();
+    js.onload = () => {
+      // The plugin extends the global L, so it loads strictly after Leaflet.
+      // If it fails the map still works, unclustered (PlayMap checks for it):
+      // overlapping pins are better than no map.
+      const ccss = document.createElement("link");
+      ccss.rel = "stylesheet";
+      ccss.href = CLUSTER_CSS;
+      document.head.appendChild(ccss);
+      const cjs = document.createElement("script");
+      cjs.src = CLUSTER_JS;
+      cjs.onload = () => resolve();
+      cjs.onerror = () => resolve();
+      document.body.appendChild(cjs);
+    };
     js.onerror = () => reject(new Error("failed to load Leaflet"));
     document.body.appendChild(js);
   });
