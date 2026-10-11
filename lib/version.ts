@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.2.6";
+export const VERSION = "0.1.2.7";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.2.7",
+    date: "2026-10-10",
+    changes: ["Store hours and notes added for It's Time!, JJs Collectibles, Joyful Toad TCG, Junkyard Cards, Kartelles and Collectibles (0 weekly nights; no schedules published)."],
+  },
   {
     version: "0.1.2.6",
     date: "2026-10-10",

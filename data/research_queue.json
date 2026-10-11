@@ -713,10 +713,11 @@
       "x": "ItsTime_TCG"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/f2eeeebe-3117-4afc-9517-0aeb1560ca9e",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site says a full weekly schedule is shown below the heading, but it is an Elfsight event calendar widget; its public boot data holds only placeholder events (posters/webinars), so the real source (id 84415ad7-6ca7-4b55-b9fe-47a4568dce25) is unreadable. Needs a browser or a phone call. Hours/phone added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "jjs-collectibles",
@@ -727,10 +728,11 @@
       "discord": "https://discord.com/invite/mVaqJPgtkA"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/27cde07f-4a41-4342-b640-73b9eb46b2b7",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram page (login-walled); Discord not read; search found only an unverified directory blurb.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "joyful-toad-tcg",
@@ -739,10 +741,11 @@
     "website": "https://www.instagram.com/joyfultoadtcg/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/8f9dd9b0-e319-46d4-a452-1df611dc79fa",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Instagram only (login-walled); search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "junkyard-cards",
@@ -751,10 +754,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/dd1599e7-8343-49aa-be34-26c53d2ec939",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; search found only a directory listing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "kartelles-and-collectibles",
@@ -763,10 +767,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/adf98ebc-88fb-40ee-a804-305bc217bfa0",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "kings-collectible-cards",
