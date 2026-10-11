@@ -2051,7 +2051,7 @@
   {
     "id": "lost-levels-tcg",
     "name": "Lost Levels TCG",
-    "address": "532 West 1st Street, Suite #218",
+    "address": "532 West 1st Street, Suite 218",
     "city": "Claremont",
     "state": "CA",
     "zip": "91711",
@@ -2066,7 +2066,7 @@
       "pokemon",
       "riftbound"
     ],
-    "notes": "Inside the historic Claremont Packing House, 2nd floor. Events are online-registration tickets on the store site; entry prices render client-side and could not be read, so rows carry no fee. Site mentions 'TCG Fridays' but publishes no weekly schedule. Hours from the store site.",
+    "notes": "Second floor of the historic Claremont Packing House. Events are online-registration tickets; prices were read in a browser (sonnet 1 Chrome pass, 2026-10-10). Site mentions 'TCG Fridays' but publishes no weekly schedule. Store-hours link on the site not opened; hours as on the homepage. Email tournaments@lostlevelscardshop.com.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/2e7eebf9-af13-4ab4-9b11-e8e6db2b5d6e",

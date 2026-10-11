@@ -866,7 +866,7 @@
     "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Own site (lostlevelscardshop.com) event tickets: 6 dated rows (Lorcana/Pokemon prereleases, Magic Star Trek prerelease weekend, cEDH Nov 21). Riftbound tickets skipped (importer). No weekly nights published; prices not readable (client-rendered, '$--'). Hours added.",
+    "notes": "Own site (lostlevelscardshop.com) event tickets: 6 dated rows (Lorcana/Pokemon prereleases, Magic Star Trek prerelease weekend, cEDH Nov 21), fees read in a browser by sonnet 1 ($35/$45/$75). No weekly nights published. Riftbound tickets skipped (importer; their fees $35 are in chrome-findings-for-sonnet2.json). Hours added.",
     "checked": "2026-10-10"
   },
   {
@@ -976,8 +976,9 @@
     "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": "Website moon-cards.com fails the TLS handshake from curl and WebFetch (SSLV3_ALERT_HANDSHAKE_FAILURE), so nothing could be read; the Discord invite is not readable without login. Needs Mark to look at the site/Discord.",
-    "checked": "2026-10-10"
+    "notes": "moon-cards.com fails TLS from curl/WebFetch (SSLV3_ALERT_HANDSHAKE_FAILURE) and shows a certificate error page in Chrome (not clicked through); http://moon-cards.com redirects to www.moon-cards.com and serves a 404. Only the Discord (discord.gg/GzdD8tCX3R) remains and is not readable without joining. Needs Mark.",
+    "checked": "2026-10-10",
+    "needsMark": "discord"
   },
   {
     "shopId": "nav-toys-and-collectibles",
