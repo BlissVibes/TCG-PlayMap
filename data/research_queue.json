@@ -1884,10 +1884,11 @@
     "website": "http://www.comicherou.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/ffe12719-8e88-4b1a-9ac0-05f077032bc7",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site (comicherou.com) has no event or TCG text; search finds nothing.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "ditz-hobby-and-games",
@@ -2204,10 +2205,11 @@
       "instagram": "https://www.instagram.com/srankgames_"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/27483d95-d36d-488d-a862-93a910c55852",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Store site Events list (curl): dated MTG draft/RCQ and Digimon cup added; Pokémon League Challenge and Commander party were 10/10 (past). Lorcana/Riftbound left to importers. No weekly Magic/Pokémon rows (none published).",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "sanctum-comics-games-and-cards",
@@ -2290,10 +2292,11 @@
       "instagram": "https://www.instagram.com/tappedoutgaming"
     },
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/c694bb7e-cf6a-436e-9ba6-8c1aa244ee28",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Oct 2026 calendar graphic on the store's Facebook (read in browser): One Piece Sun, Gundam Mon, Commander Wed, Pokémon Thu, MTG draft Fri + dated specials. Riftbound/Lorcana left to importers. Only October published; recheck in November.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "the-card-goblin",
@@ -2386,10 +2389,11 @@
     "website": "https://3-bitgames.com",
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/eea04e96-8ace-47ad-b7eb-3569fec2ba25",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Site (3-bitgames.com) is a video-game store, no events page; third-party directory lists nothing.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "tier-1-games",
@@ -2413,10 +2417,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://tcg.ravensburgerplay.com/stores/3b7b42d3-39ca-48ac-8222-7a94c3cef09b",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "ravensburger-play",
-    "notes": ""
+    "notes": "Only a third-party directory listing (Pokémon/One Piece/YGO singles, evenings 5:30-10 PM, closed Wed/Sun); no site, socials or events found.",
+    "checked": "2026-10-11"
   },
   {
     "shopId": "tubbys-lorcana",

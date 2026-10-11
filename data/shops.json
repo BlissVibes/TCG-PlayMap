@@ -5085,7 +5085,9 @@
       "instagram": "https://www.instagram.com/srankgames_"
     },
     "games": [
-      "lorcana"
+      "lorcana",
+      "mtg",
+      "digimon"
     ],
     "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
     "active": true,
@@ -5254,9 +5256,13 @@
       "instagram": "https://www.instagram.com/tappedoutgaming"
     },
     "games": [
-      "lorcana"
+      "lorcana",
+      "onepiece",
+      "gundam",
+      "mtg",
+      "pokemon"
     ],
-    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the Ravensburger Play store locator (Disney Lorcana) on 2026-10-10. Other games and store hours not yet researched. October 2026 schedule read from the store's Facebook calendar graphic.",
     "active": true,
     "source": {
       "url": "https://tcg.ravensburgerplay.com/stores/c694bb7e-cf6a-436e-9ba6-8c1aa244ee28",

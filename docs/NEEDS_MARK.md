@@ -42,7 +42,7 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Table 1 Gaming | Bell | (323) 744-2021 | 1 | No website or social found; web search returns nothing for this store. Only a phone number. |
 | Turn Zero Games | Los Angeles | (213) 384-3466 | 1 | Own CrystalCommerce site (turnzerogames.com): Featured Events 'No products found', /calendar empty; community on Discord and Twitch. A directory lists the store at 4423 W 12th St (phone 213-340-8930) while our row has 3959 Wilshire and the site shows (213) 384-3466: address worth a human check. Nothing readable about events. NEEDS MARK (address/phone): our shop row says 3959 Wilshire Boulevard Ste A-9, (213) 384-3466 (also the phone on turnzerogames.com); a directory (thecardshopfinder.com) lists 4423 W 12th St, Los Angeles 90020, phone (213) 340-8930. Confirm which is current before anything else is written for this shop. Chrome pass 2026-10-10: socials found on the site (instagram.com/turn0games, facebook.com/turn0games, twitch.tv/turn0games), not yet read. |
 
-## Blocked, no handle: no website and no socials (32)
+## Blocked, no handle: no website and no socials (33)
 
 Research found nothing to read and nothing to follow. Call the shop, or decide it is not worth chasing.
 
@@ -77,6 +77,7 @@ Research found nothing to read and nothing to follow. Call the shop, or decide i
 | Sugoi Stuff | Garden Grove | (562) 394-5080 | 2 | No website; directory blurb only. Gundam lead (leads-gundam.json) unconfirmed. |
 | The Graveyard TCG | South Gate | (323) 835-5989 | 1 | No website; web search finds no listing. Nothing readable. |
 | The Light | Ontario | (909) 395-0935 | 7 | No website. Directories call it a tournament-focused hub (Pokemon, Lorcana, Yu-Gi-Oh!, Magic nights) with hours unverified (one says closed Wed/Thu), but give no days, times or fees. Nothing readable from the shop itself. |
+| TinyTCGShop | Pomona | (310) 621-8569 | 2 | Only a third-party directory listing (Pokémon/One Piece/YGO singles, evenings 5:30-10 PM, closed Wed/Sun); no site, socials or events found. |
 | Top Choice Gaming LLC | Redlands | (626) 723-6904 | 7 | No website; web search finds no listing (19 E Citrus Ave is also a music venue address). Nothing readable. |
 | Viking TCG LLC | La Crescenta | (818) 935-8541 | 2 | No website; web search finds no listing. |
 | Warpact Games LLC | Lancaster | (661) 241-8151 | 3 | No website; web search finds no listing. |

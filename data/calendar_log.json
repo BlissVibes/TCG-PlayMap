@@ -801,5 +801,11 @@
   {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"the-game-hub-and-comic-bug","summary":"Pokémon: Learn to Play Mon and Fri 4 PM ($25)."},
   {"date":"2026-10-11","action":"added","game":null,"shopId":"burbank-sportscards","summary":"Burbank Sportscards (Burbank) added to the map from an OpenStreetMap lead."},
   {"date":"2026-10-11","action":"added","game":"pokemon","shopId":"burbank-sportscards","summary":"Pokémon: Delta Reign pre-release Tue Oct 27 6:15 PM; monthly tournament first Tuesday 7 PM (Nov 3, Dec 1) (cost not listed)."},
-  {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "revenge-of", "summary": "Magic: Friday draft 6 PM; Casual Commander Night Saturday 6 PM (October 2026 calendar graphic; cost not listed)."}
+  {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "revenge-of", "summary": "Magic: Friday draft 6 PM; Casual Commander Night Saturday 6 PM (October 2026 calendar graphic; cost not listed)."},
+  {"date": "2026-10-11", "action": "added", "game": "onepiece", "shopId": "tapped-out-gaming", "summary": "One Piece: Sunday 1:30 PM $10, plus Pirate Party battles Oct 4/18/25 4:30 PM $10."},
+  {"date": "2026-10-11", "action": "added", "game": "gundam", "shopId": "tapped-out-gaming", "summary": "Gundam: Monday 6:30 PM $10."},
+  {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "tapped-out-gaming", "summary": "Magic: Commander Night Wednesday 4:30 PM free; Friday draft 6 PM $25 (Oct 30 Chaos Draft $30)."},
+  {"date": "2026-10-11", "action": "added", "game": "pokemon", "shopId": "tapped-out-gaming", "summary": "Pokémon: Standard Thursday 6:45 PM $8; Challenge Oct 29; Delta Reign pre-release Oct 30 6 PM $35."},
+  {"date": "2026-10-11", "action": "added", "game": "mtg", "shopId": "s-rank-games", "summary": "Magic: Reality Echoes draft Oct 16 7 PM $25; RCQ Oct 23 5 PM $50."},
+  {"date": "2026-10-11", "action": "added", "game": "digimon", "shopId": "s-rank-games", "summary": "Digimon: Evolution Cup Vol. 3 Oct 18 4 PM $10."}
 ]
