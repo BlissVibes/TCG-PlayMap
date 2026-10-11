@@ -766,5 +766,9 @@
   {"date":"2026-10-10","action":"added","game":null,"shopId":"yuva-collectibles","summary":"YUVA collectibles (Yucca Valley) added to the map from the Ravensburger Play store locator (Disney Lorcana)."},
   {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"yuva-collectibles","summary":"Lorcana from the official locator: weekly Sat 10:30 AM (Free). upcoming: Oct 10 Learn-to-Play Lorcana (Free); Oct 10 MORNING YUVA LORCANA SATURDAY (Free); Oct 16 Hyperia City Prerelease ($45); Oct 17 Hyperia City Prerelease ($45)."},
   {"date":"2026-10-10","action":"added","game":null,"shopId":"zanders-game-house","summary":"Zander's Game House (Camarillo) added to the map from the Ravensburger Play store locator (Disney Lorcana)."},
-  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"zanders-game-house","summary":"Lorcana from the official locator: weekly Wed 6 PM ($5). upcoming: Oct 18 Sunday Hyperia City Prerelease (Sealed) ($40); Oct 21 Wednesday Hyperia City Prerelease (Sealed) ($40)."}
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"zanders-game-house","summary":"Lorcana from the official locator: weekly Wed 6 PM ($5). upcoming: Oct 18 Sunday Hyperia City Prerelease (Sealed) ($40); Oct 21 Wednesday Hyperia City Prerelease (Sealed) ($40)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"the-game-hub-and-comic-bug","summary":"Lorcana: Thu 6 PM ($25) draft."},
+  {"date":"2026-10-10","action":"changed","game":"lorcana","shopId":"collectors-lounge","summary":"Lorcana entry fees added: Sun, Thu and Sat nights are $10 per the Ravensburger Play listing."},
+  {"date":"2026-10-10","action":"changed","game":"lorcana","shopId":"its-time-sports-cards-tcg-and-esports","summary":"Lorcana Thursday night entry fee added: $10 per the Ravensburger Play listing."},
+  {"date":"2026-10-10","action":"changed","game":"lorcana","shopId":"paper-heros-games-huntington-beach","summary":"Lorcana Wednesday night entry fee added: $10 per the Ravensburger Play listing."}
 ]
