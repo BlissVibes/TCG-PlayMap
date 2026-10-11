@@ -13,7 +13,7 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 |---|---|---|---|---|
 | Aki Collectibles | San Gabriel | https://discord.gg/NeWkG2A4bb | 1 | Discord only (https://discord.gg/NeWkG2A4bb); not opened per Mark. Needs Mark. |
 | All Ways Gaming | Chatsworth | https://discord.gg/4DfG8xse | 2 | Discord only (https://discord.gg/4DfG8xse); not opened per Mark. Needs Mark. |
-| Collectors Lounge | Cypress | no invite recorded | 25 | Browser pass: schedule graphic found in the site's gallery (collectorslounge.us 'Tournament schedule and photos'; undated image). 18 weekly rows, no fees. Instagram bio says 'New Location Pending' - confirm the shop hasn't moved. Discord (discord.gg/mRBj4Bgpzs) left unopened. |
+| Collectors Lounge | Cypress | https://discord.gg/mRBj4Bgpzs | 25 | Browser pass: schedule graphic found in the site's gallery (collectorslounge.us 'Tournament schedule and photos'; undated image). 18 weekly rows, no fees. Instagram bio says 'New Location Pending' - confirm the shop hasn't moved. Discord (discord.gg/mRBj4Bgpzs) left unopened. |
 | Falcon's Nest Games | Downey | https://discord.gg/96WQDhtPc | 1 | Discord only (https://discord.gg/96WQDhtPc); not opened per Mark. Needs Mark. |
 | Funhouse 51 collectibles | LANCASTER | https://discord.gg/N9TT7eYa | 7 | Discord only (https://discord.gg/N9TT7eYa); not opened per Mark. Needs Mark. |
 | Geeky Teas & Games | Burbank | https://discord.gg/WgDPx2s2u5 | 4 | Own site fails its TLS certificate check (not bypassed); Discord invite https://discord.gg/WgDPx2s2u5 not opened. Needs Mark. |
@@ -23,10 +23,10 @@ pin with no schedule; more than 0 usually means only an importer's nights are li
 | Pandy's Cards and Collectibles | La Habra | https://discord.gg/NhQKsceN | 1 | Browser pass: Instagram/Linktree show hours only; events are on Discord (https://discord.gg/NhQKsceN), not opened. |
 | STORMXTCG | Ventura | https://discord.gg/sna7e3RznH | 2 | Own site loads events with JavaScript (not readable); Discord (https://discord.gg/sna7e3RznH) not opened. Needs Mark. |
 | THE CRIMSON GUILD (SoCal) | SOUTH EL MONTE | https://discord.gg/XbtBekNFjz | 15 | Browser pass: pinned Instagram 'Local Events' post (instagram.com/p/DYbp8i_G8mC/, 2026-05-17, 'starting May 19th'). 13 weekly rows; Pokémon $7 from the newer Locals graphic. Discord left unopened. |
-| The Game Chest Irvine | Irvine | no invite recorded | 4 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
-| The Game Chest Promenade | Rolling Hills Estates | no invite recorded | 2 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
-| THE GAME CHEST Torrance | Torrance | no invite recorded | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
-| The Game Chest, Manhattan Beach | Manhattan Beach | no invite recorded | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
+| The Game Chest Irvine | Irvine | https://discord.gg/A23t4qy8Ap | 4 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
+| The Game Chest Promenade | Rolling Hills Estates | https://discord.gg/dtW6852uc2 | 2 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
+| THE GAME CHEST Torrance | Torrance | https://discord.gg/9yktRVe8qj | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
+| The Game Chest, Manhattan Beach | Manhattan Beach | https://discord.gg/d5V9PQD77H | 3 | Browser pass: chain Instagram @thegamechest has no TCG schedule; events are in per-store Discords (linktr.ee/thegamechest), not opened. |
 
 ## Phone: call the shop for a time or a fee (1)
 
