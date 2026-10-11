@@ -1003,7 +1003,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. No website or socials in the locator; web search found nothing. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/57e6e0ac-4c0b-48a9-9594-f962d51ed26a",
@@ -1030,7 +1030,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Hours (own site): Tue-Sat 11 AM-9 PM, Sun 11 AM-7 PM, closed Mon. Website is a one-page hours site; events are on Facebook (facebook.com/dicehousegames), not readable. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/74ee941f-229f-42dc-b2e8-51eb0dc679bc",
@@ -1056,7 +1056,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 1150 N Harbor Blvd Ste 118, Pokémon and Yu-Gi-Oh! focus. No website; no schedule found. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/74cd43c5-7e20-42ab-9769-5de24008af06",
@@ -1082,7 +1082,7 @@
     "games": [
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Directory listing (unverified): 10959 Main St, Pokémon and Yu-Gi-Oh! focus, tournaments and casual play with no days published. No website; no schedule found. Only Riftbound listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/87be7a5f-eb75-4237-a507-f20f95275485",
@@ -1110,9 +1110,11 @@
       "discord": "https://discord.gg/7eb3QGSgj"
     },
     "games": [
+      "lorcana",
+      "mtg",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Only dated event tickets are published (dd20s.com/collections/event-tickets, checked 2026-10-10); no weekly nights or store hours on the site. Weekly play is announced on their Discord (not read). Riftbound prerelease/nights come from the importer.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/bc8e0e76-201d-4e77-b724-3dca33ebaa5b",

@@ -356,10 +356,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/57e6e0ac-4c0b-48a9-9594-f962d51ed26a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website or socials; web search found nothing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "dice-house-games",
@@ -368,10 +369,11 @@
     "website": "https://DiceHouseGames.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/74ee941f-229f-42dc-b2e8-51eb0dc679bc",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site is a one-page hours site; events only on Facebook (login-walled).",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "do-we-collectibles",
@@ -380,10 +382,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/74cd43c5-7e20-42ab-9769-5de24008af06",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; search found only a directory listing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "domino-city-gaming",
@@ -392,10 +395,11 @@
     "website": null,
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/87be7a5f-eb75-4237-a507-f20f95275485",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "No website; search found only a directory listing.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "double-d20s-cards-and-games",
@@ -406,10 +410,11 @@
       "discord": "https://discord.gg/7eb3QGSgj"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/bc8e0e76-201d-4e77-b724-3dca33ebaa5b",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site: /collections/event-tickets/products.json lists dated tickets only (Lorcana prerelease Oct 16 1 PM/7 PM $40; RCQ Standard Oct 17 and Nov 14 1 PM $30; Riftbound Pre-Rift Oct 18 is importer's). No weekly nights published; Discord not read.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "drewbees-comics-cards-and-collectables",

@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.2.1";
+export const VERSION = "0.1.2.2";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.2.2",
+    date: "2026-10-10",
+    changes: ["Schedules added for Double D20's Cards & Games (0 weekly nights; dated prerelease and RCQ events only)."],
+  },
   {
     version: "0.1.2.1",
     date: "2026-10-10",
