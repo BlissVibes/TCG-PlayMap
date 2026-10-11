@@ -315,7 +315,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Lawndale",
         "nearestKnownMi": 0.9,
-        "milesFromLaCenter": 14
+        "milesFromLaCenter": 14,
+        "triage": "no-tcg",
+        "evidence": "Bros. Game Shop: new and used video games and systems.",
+        "evidenceUrl": "https://www.brosgameshop.com",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "A & J Games",
@@ -397,7 +402,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 0.1,
-        "milesFromLaCenter": 11
+        "milesFromLaCenter": 11,
+        "triage": "unknown",
+        "evidence": "No listing found for 'Make Asobi' at 2115 Sawtelle Blvd.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Big Lou's",
@@ -479,7 +489,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Manhattan Beach Blvd.",
         "nearestKnownMi": 0.5,
-        "milesFromLaCenter": 14
+        "milesFromLaCenter": 14,
+        "triage": "no-tcg",
+        "evidence": "Games Workshop Warhammer store (miniatures, not a TCG).",
+        "evidenceUrl": "https://overlookmaps.com/places/6346812742132398",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Jaspy's Sports Cards & Collectibles",
@@ -682,7 +697,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Manhattan Beach",
         "nearestKnownMi": 0.3,
-        "milesFromLaCenter": 13
+        "milesFromLaCenter": 13,
+        "triage": "unknown",
+        "evidence": "No name, address or website in OSM and nothing found for 'Jumpstart Games' (toys).",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Cardzilla",
@@ -1052,7 +1072,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Hawthorne",
         "nearestKnownMi": 1.7,
-        "milesFromLaCenter": 12
+        "milesFromLaCenter": 12,
+        "triage": "no-tcg",
+        "evidence": "Cali Games (Lawndale): retro video game store.",
+        "evidenceUrl": "https://www.caligames.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "8 Ball Cards Games",
@@ -2463,7 +2488,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 1.4,
-        "milesFromLaCenter": 11
+        "milesFromLaCenter": 11,
+        "triage": "tcg",
+        "evidence": "Spellbound LARP & Games sells Magic (Reality Fracture), TCGs, board games and TTRPGs, has game nights, reservations and an events calendar (script-rendered Styled Calendar). Shop row added.",
+        "evidenceUrl": "https://larpandgames.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Halo 13",
@@ -2540,7 +2570,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Los Angeles",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triage": "unknown",
+        "evidence": "CardVault by Tom Brady (Westfield Century City, opened Sept 2026): sports-card retail chain that sells Pokémon product; press mentions live box breaks and trade nights, no TCG tournaments found.",
+        "evidenceUrl": "https://www.westfield.com/en/united-states/centurycity/retailers/cardvault-by-tom-brady/85617",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Blast From the Past",
@@ -2576,7 +2611,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Burbank",
         "nearestKnownMi": 0.6,
-        "milesFromLaCenter": 10
+        "milesFromLaCenter": 10,
+        "triage": "unknown",
+        "evidence": "Burbank Sportscards (935 N Hollywood Way, (818) 843-2600, burbankcards.com): sports-card shop that also carries Pokémon boosters, Magic and Yu-Gi-Oh singles per a listing; no events found. Same address is given for Toy Mandala in an L.A. Taco article.",
+        "evidenceUrl": "https://www.burbankchamber.org/directory/burbank-sportscards",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Coins and Comics",
@@ -2830,7 +2870,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Arcadia",
         "nearestKnownMi": 1.2,
-        "milesFromLaCenter": 13
+        "milesFromLaCenter": 13,
+        "triage": "no-tcg",
+        "evidence": "Chalice Collectibles: Funko Pop and collectibles Shopify store; no card games.",
+        "evidenceUrl": "https://chalicecollectibles.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "K+Pop",
@@ -2866,7 +2911,12 @@
         "bucket": "likely",
         "nearestKnownCity": "Arcadia",
         "nearestKnownMi": 1.3,
-        "milesFromLaCenter": 12
+        "milesFromLaCenter": 12,
+        "triage": "unknown",
+        "evidence": "No listing found for Hypnotized Hobbies at 400 S Baldwin Ave, Arcadia (the Westfield Santa Anita mall address).",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-10"
       },
       {
         "name": "Calipoke House",

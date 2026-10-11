@@ -2456,5 +2456,18 @@
     "addedBy": "osm-triage",
     "checked": "2026-10-10",
     "notes": "Own site (WordPress + The Events Calendar): tribe events API returns 0 upcoming events and the Upcoming Events section is empty; homepage says 'weekly events including Magic the Gathering, Pokémon, and Roblox' with no days, times or fees. Facebook is where they post (login-walled). Needs a browser/Facebook read."
+  },
+  {
+    "shopId": "spellbound-larp-and-games",
+    "name": "Spellbound LARP & Games",
+    "city": "North Hollywood",
+    "website": "https://larpandgames.com/",
+    "socials": {},
+    "sourceUrl": "https://larpandgames.com/pages/events",
+    "status": "blocked",
+    "added": "2026-10-10",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-10",
+    "notes": "Own Shopify site: /pages/events embeds a Styled Calendar (embed.styledcalendar.com/#gljThOg4rJ1QwcYfgo0m, script-rendered) and /collections/event-tickets is empty; there is also a Discord. Needs a browser read of the calendar."
   }
 ]

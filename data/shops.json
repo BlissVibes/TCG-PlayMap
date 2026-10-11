@@ -5634,5 +5634,29 @@
       "checked": "2026-10-10",
       "note": "OpenStreetMap lead, store's own site"
     }
+  },
+  {
+    "id": "spellbound-larp-and-games",
+    "name": "Spellbound LARP & Games",
+    "address": "11300 Magnolia Blvd, Suite 7",
+    "city": "North Hollywood",
+    "state": "CA",
+    "zip": "91601",
+    "lat": 34.1646312,
+    "lon": -118.3777628,
+    "tz": "America/Los_Angeles",
+    "website": "https://larpandgames.com/",
+    "phone": "(818) 824-3034",
+    "hours": "Mon-Thu 3-11 PM · Fri-Sun 12 PM-12 AM",
+    "games": [
+      "mtg"
+    ],
+    "notes": "Found via OpenStreetMap; schedule research pending. LARP gear, board games, TTRPGs and Magic/TCG singles and sealed; offers game nights, table reservations and ticketed events. Its events calendar is a script-rendered Styled Calendar embed and the event-tickets collection was empty on 2026-10-10.",
+    "active": true,
+    "source": {
+      "url": "https://larpandgames.com/",
+      "checked": "2026-10-10",
+      "note": "OpenStreetMap lead, store's own site"
+    }
   }
 ]
