@@ -450,5 +450,14 @@
   {"date":"2026-10-10","action":"added","game":"palworld","shopId":"paper-heros-games-huntington-beach","summary":"Palworld TCG Grand Challengers Cup: 10-24 5 PM (cost not listed); Palworld TCG Legends Awaken Release Tournament: 11-18 6 PM (cost not listed)."},
   {"date":"2026-10-10","action":"added","game":"cyberpunk","shopId":"paper-heros-games-huntington-beach","summary":"Cyberpunk TCG Welcome to Night City Prerelease: 11-01 5 PM ($40); Cyberpunk TCG Night City Showdown: 11-22 5 PM ($15)."},
   {"date":"2026-10-10","action":"added","game":"gundam","shopId":"paper-heros-games-huntington-beach","summary":"Gundam TCG GD06 Sealed Release Event: 11-05 7 PM (cost not listed)."},
-  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"paper-heros-games-huntington-beach","summary":"One Piece EB-05 Release Event: 11-09 7 PM (cost not listed); One Piece OP-18 Release Event: 11-23 7 PM (cost not listed); One Piece OP-18 Release Event: 11-30 7 PM (cost not listed)."}
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"paper-heros-games-huntington-beach","summary":"One Piece EB-05 Release Event: 11-09 7 PM (cost not listed); One Piece OP-18 Release Event: 11-23 7 PM (cost not listed); One Piece OP-18 Release Event: 11-30 7 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"rawmon","summary":"Fri 6:30 PM (Free) Friday Night Magic."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"rawmon","summary":"Pokemon Local Play: 10-10 3 PM ($10); Pokemon Local Play: 10-17 3 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"dbs_fusion","shopId":"rawmon","summary":"Dragon Ball Super Masters & Fusion World Event: 10-10 3 PM (cost not listed); Dragon Ball Super Masters & Fusion World Event: 10-17 3 PM (cost not listed); Dragon Ball Super Masters & Fusion World Event: 10-24 3 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"gundam","shopId":"rawmon","summary":"Gundam Card Game Event: 10-15 6:30 PM (cost not listed); Gundam Card Game Event: 10-22 6:30 PM (cost not listed); Gundam Card Game Event: 10-29 6:30 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"digimon","shopId":"psycho-turtle-collectibles","summary":"Digimon Evolution Cup 2026 Vol. 3: 10-10 6 PM ($10)."},
+  {"date":"2026-10-10","action":"added","game":"mtg","shopId":"psycho-turtle-collectibles","summary":"MTG: Reality Fracture Store Champs: 10-11 12 PM ($25); MTG: Monday Night Magic Commander: 10-12 7 PM ($8)."},
+  {"date":"2026-10-10","action":"added","game":"onepiece","shopId":"psycho-turtle-collectibles","summary":"One Piece Straw Hat Pirates' Sunday: 10-11 1 PM ($8)."},
+  {"date":"2026-10-10","action":"added","game":"pokemon","shopId":"recharge-cafe-llc","summary":"Pokemon League Challenge: 10-11 5 PM (cost not listed)."},
+  {"date":"2026-10-10","action":"added","game":"lorcana","shopId":"recharge-cafe-llc","summary":"Lorcana Prerelease: Hyperia City: 10-17 3 PM (cost not listed)."}
 ]

@@ -1198,10 +1198,11 @@
     "website": "http://www.psychoturtlegames.com/",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/ca9cc2de-1a91-4ee0-a436-5182521f53b4",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site /collections/events (event tickets for the current week only, on sale Mondays 8 PM): 4 dated rows with fees ($8, $8, $10, $25). Weekly pattern not published; titles suggest Mon Commander and Sun One Piece. Hours added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "rawmon",
@@ -1210,10 +1211,11 @@
     "website": "https://Rawmon.org",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/3f758951-3777-4108-aa1a-dc71b5c35a26",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site events calendar (rawmon.org/events/, plus each event page for time and cost): 1 weekly row (FNM Fri 6:30 PM Free) and 8 dated rows (Pokemon Local Play $10, DBS Masters/Fusion World, Gundam Thursdays) for October. Calendar shows October only; Gundam entry cost TBD and DBS prints none. Riftbound skipped. Address corrected and hours added.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "readysetripz",
@@ -1222,10 +1224,11 @@
     "website": "https://www.readysetripz.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/a7d2719e-f081-4e43-ae59-1d3a82b98a04",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Online breaks seller (Whatnot streams) with a Discord; the site has Shop/About only, no in-store events.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "recharge-cafe-llc",
@@ -1237,10 +1240,11 @@
       "facebook": "https://www.facebook.com/profile.php?id=100088439739730"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d355928f-dc0e-4efe-829b-a22c7f1ef5bc",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Wix site homepage lists 4 upcoming events (Red Dragon's Inn D&D, Pokemon League Challenge Oct 11, Riftbound Pre-Rift, Lorcana prerelease Oct 17): 2 dated rows added without fees (event pages sit behind a bot check). No weekly schedule published. Address updated to the new location.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "robo-hunters",
@@ -1251,10 +1255,11 @@
       "facebook": "https://www.facebook.com/robohunters"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/b29a446d-437f-43c1-a4ee-9936114d9290",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site sells TCG, blind boxes, diecast and models; no events or tournaments page.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "shuffle-and-cut-games",

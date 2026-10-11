@@ -2749,19 +2749,22 @@
   {
     "id": "psycho-turtle-collectibles",
     "name": "Psycho Turtle Collectibles",
-    "address": "9547 Telegraph Road",
+    "address": "9547 1/2 Telegraph Road",
     "city": "Pico Rivera",
     "state": "CA",
     "zip": "90660",
     "lat": 33.9542776,
     "lon": -118.09915109999999,
     "tz": "America/Los_Angeles",
-    "website": "http://www.psychoturtlegames.com/",
+    "website": "https://www.psychoturtlegames.com/",
     "phone": "(562) 383-0068",
     "games": [
+      "digimon",
+      "mtg",
+      "onepiece",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Event tickets for the week go on sale Mondays at 8 PM at /collections/events, so only the current week is visible: 4 dated rows. Titles hint at weekly Monday-night Commander and Sunday One Piece, not confirmed as recurring. Hours from the store site.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/ca9cc2de-1a91-4ee0-a436-5182521f53b4",
@@ -2771,24 +2774,29 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "ca9cc2de-1a91-4ee0-a436-5182521f53b4"
-    }
+    },
+    "hours": "Mon-Sat 12-10 PM · Sun 11 AM-5 PM"
   },
   {
     "id": "rawmon",
     "name": "Rawmon",
-    "address": "14545 Valley View Ave ste c",
+    "address": "15024 Imperial Highway",
     "city": "La Mirada",
     "state": "CA",
     "zip": "90638",
-    "lat": 33.8997483,
-    "lon": -118.03066340000001,
+    "lat": 33.9170297,
+    "lon": -118.0110117,
     "tz": "America/Los_Angeles",
-    "website": "https://Rawmon.org",
+    "website": "https://rawmon.org/",
     "phone": "(562) 777-5749",
     "games": [
+      "dbs_fusion",
+      "gundam",
+      "mtg",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Address moved from Valley View Ave to 15024 Imperial Highway per the store site (re-geocoded; the geocoder matched the house number). Schedule from the store's events calendar, read for October 2026 only. Riftbound Nexus Nights (Wed and Sun 6:30 PM, $10) belong to the Riftbound importer. Family Fun Night (Fri, free) is not a TCG night and is not listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/3f758951-3777-4108-aa1a-dc71b5c35a26",
@@ -2798,7 +2806,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "3f758951-3777-4108-aa1a-dc71b5c35a26"
-    }
+    },
+    "hours": "Daily 10 AM-9 PM"
   },
   {
     "id": "readysetripz",
@@ -2830,23 +2839,25 @@
   {
     "id": "recharge-cafe-llc",
     "name": "Recharge Cafe LLC",
-    "address": "unit 2, 1253, Evergreen Rd",
+    "address": "770 Angeles Crest Highway",
     "city": "Wrightwood",
     "state": "CA",
     "zip": "92397",
-    "lat": 34.36019063796028,
-    "lon": -117.6344260536788,
+    "lat": 34.3655758,
+    "lon": -117.6457249,
     "tz": "America/Los_Angeles",
-    "website": "https://www.rechargecafellc.com",
+    "website": "https://www.rechargecafellc.com/",
     "phone": "(760) 987-8617",
     "socials": {
       "discord": "https://discord.gg/bkH3bwsGFp",
       "facebook": "https://www.facebook.com/profile.php?id=100088439739730"
     },
     "games": [
+      "lorcana",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Moved: the store site says 'We Have Moved to 770 State Hwy 2, Wrightwood' (geocoded as 770 Angeles Crest Highway, the same road). Cafe, homeschool academy and tabletop community; also D&D and Red Dragon's Inn nights (not listed). Homepage shows only 4 events; event pages are bot-checked, so fees and any weekly nights are unread. Phone and hours not re-checked.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/d355928f-dc0e-4efe-829b-a22c7f1ef5bc",

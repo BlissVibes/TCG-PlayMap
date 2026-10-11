@@ -13,7 +13,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.3.7";
+export const VERSION = "0.1.3.8";
 
 export interface ChangeEntry {
   version: string;
@@ -23,6 +23,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.3.8",
+    date: "2026-10-10",
+    changes: ["Research batch 18 - Rawmon, Psycho Turtle Collectibles and Recharge Cafe events added; Rawmon and Recharge Cafe addresses updated; Ready Set Ripz and Robo Hunters blocked."],
+  },
   {
     version: "0.1.3.7",
     date: "2026-10-10",
