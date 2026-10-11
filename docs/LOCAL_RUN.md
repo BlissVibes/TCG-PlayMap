@@ -29,7 +29,13 @@ run**. Work through these in order. Each step ends with the CLAUDE.md gates
 
 ## 1. Riftbound: populate the map (one run, ~2 minutes)
 
-The official Riftbound store locator has an open API (no login). A dry run on
+> **HOLD, 2026-10-10: do not run the pull or the refresh workflow again until
+> Mark rules.** The locator's terms (Carde.io) forbid scripted access; nobody
+> had read them when the first run was made. Details and the exact clauses:
+> `docs/SOURCES.md`, "Bulk sources", the Carde.io row. The commands below are
+> kept for the record and for after his decision.
+
+The official Riftbound store locator has an API that answers without a login. A dry run on
 2026-10-09 found **174 Greater-LA stores, 121 with a weekly Riftbound night**,
 every night with its fee.
 
