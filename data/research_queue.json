@@ -2533,5 +2533,30 @@
     "addedBy": "osm-triage",
     "checked": "2026-10-11",
     "notes": "Own events page, October 2026 grid parsed: 7 weekly TCG rows, no fees printed; days with 'Show all' may hide more. Riftbound skipped (importer)."
+  },
+  {
+    "shopId": "linebreakers-games-cards-and-comics",
+    "name": "Linebreakers Comics, Cards & Games",
+    "city": "Victorville",
+    "website": "https://www.comicbooksurplus.com/",
+    "socials": {},
+    "sourceUrl": "https://www.comicbooksurplus.com/collections/event-tickets",
+    "status": "done",
+    "added": "2026-10-11",
+    "addedBy": "osm-triage",
+    "checked": "2026-10-11",
+    "notes": "Own Shopify event tickets: 3 weekly rows (One Piece Sundays 4 PM $10; Commander free Fri 4 PM and Sun 3 PM) and 2 dated free events. Warhammer/AoS/Starcraft skipped. Hours and phone not found."
+  },
+  {
+    "shopId": "gamezone-lemon-grove",
+    "name": "GameZone",
+    "city": "Lemon Grove",
+    "website": null,
+    "socials": {},
+    "sourceUrl": "https://www.atly.com/location/GameZone1",
+    "status": "todo",
+    "added": "2026-10-11",
+    "addedBy": "osm-triage",
+    "notes": "No website. Only an aggregator listing (trading card store, Tuesday 6 PM casual Commander). Needs the Chrome pass or a phone call."
   }
 ]

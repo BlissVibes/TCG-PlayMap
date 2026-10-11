@@ -5783,5 +5783,54 @@
       "checked": "2026-10-11",
       "note": "OpenStreetMap lead, store's events page"
     }
+  },
+  {
+    "id": "linebreakers-games-cards-and-comics",
+    "name": "Linebreakers Comics, Cards & Games",
+    "address": "15491 7th Street",
+    "city": "Victorville",
+    "state": "CA",
+    "zip": "92395",
+    "lat": 34.5336465,
+    "lon": -117.2956603,
+    "tz": "America/Los_Angeles",
+    "website": "https://www.comicbooksurplus.com/",
+    "games": [
+      "onepiece",
+      "mtg",
+      "swu"
+    ],
+    "notes": "Found via OpenStreetMap; schedule from the event tickets on the store's Shopify site (checked 2026-10-11). 4,000 sq ft High Desert comics, cards and games store; also Warhammer, Age of Sigmar and Starcraft events (not listed). Star Wars Unlimited events cost $5 per ticket; days not stated. No phone listed. Hours not found.",
+    "active": true,
+    "source": {
+      "url": "https://www.comicbooksurplus.com/collections/event-tickets",
+      "checked": "2026-10-11",
+      "note": "OpenStreetMap lead, store's event tickets"
+    }
+  },
+  {
+    "id": "gamezone-lemon-grove",
+    "name": "GameZone",
+    "address": "7943 Broadway",
+    "city": "Lemon Grove",
+    "state": "CA",
+    "zip": "91945",
+    "lat": 32.7425407,
+    "lon": -117.0280452,
+    "tz": "America/Los_Angeles",
+    "phone": "(619) 467-7757",
+    "hours": "Tue-Thu 12-5 PM · Fri-Sat 12-6 PM · Sun 12-5 PM · Mon closed (per OpenStreetMap)",
+    "games": [
+      "mtg",
+      "yugioh",
+      "pokemon"
+    ],
+    "notes": "Found via OpenStreetMap; schedule research pending. A place-listing aggregator calls it a trading card store (Magic, Yu-Gi-Oh!, Pokémon singles) with tournaments, casual play and a Tuesday 6 PM casual Commander night; not confirmed by the store. No website. Coordinates from OpenStreetMap.",
+    "active": true,
+    "source": {
+      "url": "https://www.atly.com/location/GameZone1",
+      "checked": "2026-10-11",
+      "note": "OpenStreetMap lead, aggregator listing"
+    }
   }
 ]

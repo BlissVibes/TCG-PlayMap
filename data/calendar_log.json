@@ -780,5 +780,9 @@
   {"date":"2026-10-11","action":"added","game":"shadowverse","shopId":"knowhere-games-and-comics","summary":"Fri 6:30 PM (cost not listed)."},
   {"date":"2026-10-11","action":"added","game":"weiss","shopId":"knowhere-games-and-comics","summary":"Sat 5 PM (cost not listed)."},
   {"date":"2026-10-11","action":"added","game":"godzilla","shopId":"knowhere-games-and-comics","summary":"Sat 5:30 PM (cost not listed)."},
-  {"date":"2026-10-11","action":"added","game":"hololive","shopId":"knowhere-games-and-comics","summary":"Sat 6 PM (cost not listed)."}
+  {"date":"2026-10-11","action":"added","game":"hololive","shopId":"knowhere-games-and-comics","summary":"Sat 6 PM (cost not listed)."},
+  {"date":"2026-10-11","action":"added","game":"onepiece","shopId":"linebreakers-games-cards-and-comics","summary":"Sun 4 PM ($10)."},
+  {"date":"2026-10-11","action":"added","game":"mtg","shopId":"linebreakers-games-cards-and-comics","summary":"Fri 4 PM (Free); Sun 3 PM (Free)."},
+  {"date":"2026-10-11","action":"added","game":"mtg","shopId":"linebreakers-games-cards-and-comics","summary":"MTG Competitive Commander Night: 10-11 6 PM (Free)."},
+  {"date":"2026-10-11","action":"added","game":"swu","shopId":"linebreakers-games-cards-and-comics","summary":"Twin Suns Day: 10-23 6 PM (Free)."}
 ]

@@ -1556,7 +1556,12 @@
         "milesFromLaCenter": 87,
         "triageScore": 2,
         "triageOrder": 43,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "evidence": "Sky High Comics (San Marcos): comics shop by name; no website or listing found.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Coin-Op Game Room",
@@ -1681,7 +1686,12 @@
         "milesFromLaCenter": 85,
         "triageScore": 5,
         "triageOrder": 25,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "evidence": "Kart1: go-kart supplier.",
+        "evidenceUrl": "https://kart1.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Coin-Op Game Room",
@@ -1728,7 +1738,12 @@
         "milesFromLaCenter": 105,
         "triageScore": 9,
         "triageOrder": 5,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "evidence": "Olhausen Gamerooms and Outdoors: billiards and game-room furniture retailer.",
+        "evidenceUrl": "https://olhausengo.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Warhammer",
@@ -1796,7 +1811,12 @@
         "milesFromLaCenter": 68,
         "triageScore": 9,
         "triageOrder": 3,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "evidence": "Game & Graze (Murrieta, 68 mi): gameandgraze.com does not resolve; nothing else found. Possibly closed.",
+        "evidenceUrl": "https://gameandgraze.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "TC's Rockets",
@@ -1954,7 +1974,12 @@
         "milesFromLaCenter": 102,
         "triageScore": 6,
         "triageOrder": 19,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "evidence": "Brickmania: LEGO-compatible military brick kits store.",
+        "evidenceUrl": "https://www.brickmania.com/miramar-store-san-diego-ca",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "GameZone",
@@ -1975,7 +2000,13 @@
         "milesFromLaCenter": 114,
         "triageScore": 4,
         "triageOrder": 29,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "tcg",
+        "evidence": "GameZone (Lemon Grove, 114 mi): an aggregator lists it as a trading card store with tournaments and casual play; phone and hours from OSM. Shop row added, schedule pending.",
+        "evidenceUrl": "https://www.atly.com/location/GameZone1",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11",
+        "pending": "chrome"
       },
       {
         "name": "Rizosports",
@@ -2117,7 +2148,12 @@
         "milesFromLaCenter": 100,
         "triageScore": 7,
         "triageOrder": 13,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "evidence": "SD Sports Cards (Mira Mesa): sports-card shop with a break schedule; no card-game play found.",
+        "evidenceUrl": "https://sdsportscards.com/",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "RipzNHits",
@@ -2138,7 +2174,12 @@
         "milesFromLaCenter": 102,
         "triageScore": 1,
         "triageOrder": 47,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "unknown",
+        "evidence": "RipzNHits (San Diego): ripznhitz.com shows only 'Coming Soon'.",
+        "evidenceUrl": "https://ripznhitz.com",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Dhampire",
@@ -2237,7 +2278,12 @@
         "milesFromLaCenter": 107,
         "triageScore": -1,
         "triageOrder": 65,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "evidence": "Card Op Coin Laundry: a coin laundromat (name only, hours 5:30-22:00).",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Red Card Parking",
@@ -2389,7 +2435,12 @@
         "milesFromLaCenter": 76,
         "triageScore": -2,
         "triageOrder": 69,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "evidence": "North Shore Antiques & Collectibles (Fawnskin): antiques by name.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Redlands Vinyl Records & Collectibles",
@@ -2410,7 +2461,12 @@
         "milesFromLaCenter": 61,
         "triageScore": -1,
         "triageOrder": 61,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "no-tcg",
+        "evidence": "Redlands Vinyl Records & Collectibles: record shop by name.",
+        "evidenceUrl": null,
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Linebreakers Games, Cards & Comics",
@@ -2431,7 +2487,12 @@
         "milesFromLaCenter": 64,
         "triageScore": 6,
         "triageOrder": 17,
-        "triageOwner": "s1"
+        "triageOwner": "s1",
+        "triage": "tcg",
+        "evidence": "Linebreakers Comics, Cards & Games (Victorville, 64 mi): event tickets show One Piece Sundays $10 and free Commander nights; shop row and 3 weekly rows added.",
+        "evidenceUrl": "https://www.comicbooksurplus.com/collections/event-tickets",
+        "triagedBy": "sonnet2",
+        "triagedOn": "2026-10-11"
       },
       {
         "name": "Santa Fe Trading Company",
