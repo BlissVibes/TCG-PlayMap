@@ -2339,15 +2339,17 @@
     "lat": 34.0484928,
     "lon": -118.3573842,
     "tz": "America/Los_Angeles",
-    "website": "http://www.nextgengames.la/",
+    "website": "https://www.nextgengames.la/",
     "phone": "(323) 938-3400",
     "socials": {
       "discord": "https://discord.com/invite/DxfmsR8"
     },
     "games": [
+      "mtg",
+      "pokemon",
       "riftbound"
     ],
-    "notes": "Imported from the official Riftbound store locator on 2026-10-10. Other games and store hours not yet researched.",
+    "notes": "Schedule from the store's public Google Calendar (checked 2026-10-10). Also runs D&D Adventurer's League (Mon 7 PM), Warhammer 40k night (Tue), board game nights (Tue/Wed), open RPG night (Sat) - not listed. Riftbound Nexus Nights (Thu 7:30 PM, fee not stated) belong to the Riftbound importer and are not hand-entered. Star Trek prerelease (Nov 6), Standard RCQs (Oct 25, Nov 22) and Reality Echoes (Nov 1) are all-day calendar entries with no start time, so not listed.",
     "active": true,
     "source": {
       "url": "https://locator.riftbound.uvsgames.com/stores/9b99f789-5639-4c98-b34b-5c5f4a87d4b0",
@@ -2357,7 +2359,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "9b99f789-5639-4c98-b34b-5c5f4a87d4b0"
-    }
+    },
+    "hours": "Mon-Fri 12-10 PM · Sat 11 AM-9 PM · Sun 11 AM-6 PM"
   },
   {
     "id": "nexus-tabletop-games",
@@ -2387,7 +2390,8 @@
     "origin": "riftbound-locator",
     "sourceIds": {
       "riftbound": "d4fad571-2484-4cdc-8d5d-c6480ce26651"
-    }
+    },
+    "hours": "Tue 12-8 PM · Wed 4-10 PM · Thu-Fri 12-10 PM · Sat 11 AM-10 PM · Sun 11 AM-7 PM · Mon closed"
   },
   {
     "id": "odyssey-games",

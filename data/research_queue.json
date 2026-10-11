@@ -986,10 +986,11 @@
     "website": "https://www.navtoysandcollectibles.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/cdaac506-1671-4a18-a184-c6fe3a8cef9e",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site is password-protected ('Enter store using password'); nothing readable.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "next-gen-games",
@@ -1000,10 +1001,11 @@
       "discord": "https://discord.com/invite/DxfmsR8"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/9b99f789-5639-4c98-b34b-5c5f4a87d4b0",
-    "status": "todo",
+    "status": "done",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own public Google Calendar (nextgenvidgames@gmail.com, linked from nextgengames.la/service/calendar): 12 weekly rows (Magic Mon-Sun, Pokemon Thu) with fees on all but Pokemon (store prints none), 5 dated rows. Riftbound, D&D, Warhammer, board games, RPG skipped. All-day entries without a time skipped.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "nexus-tabletop-games",
@@ -1014,10 +1016,11 @@
       "discord": "https://discord.gg/A8JJBQV3kp"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/d4fad571-2484-4cdc-8d5d-c6480ce26651",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own Shopify site: Events collection is empty and no events page exists; community is on Discord (not readable). Hours added (Tue 12-8, Wed 4-10, Thu-Fri 12-10, Sat 11-10, Sun 11-7, Mon closed).",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "odyssey-games",
@@ -1029,10 +1032,11 @@
       "facebook": "https://www.facebook.com/OdysseyGamesPasadena/"
     },
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/15e0ad12-723d-4a74-ba39-61cbe0950e35",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Own site (GoDaddy builder) has only Home/About/Bulletin Board pages with placeholder text and a Discord invite; no schedule readable. Needs the Discord.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "orange-claw-club",
@@ -1041,10 +1045,11 @@
     "website": "https://www.orangeclawclub.com",
     "socials": {},
     "sourceUrl": "https://locator.riftbound.uvsgames.com/stores/4a26fb3b-2494-4233-a2cf-3d91c088b52a",
-    "status": "todo",
+    "status": "blocked",
     "added": "2026-10-10",
     "addedBy": "riftbound-locator",
-    "notes": ""
+    "notes": "Shopify events page embeds a calendar, but its data runs only Jul-Sep 27 2026 (stale): Pokemon Play Sat 2 PM, Lorcana Trade & Play Fri 5 PM, Riftbound Nexus Night Fri 5 PM, Capsule Combat Sun 1 PM, no fees. No October events published, so no rows. Claw-machine arcade; follow @orange.claw.club on Instagram.",
+    "checked": "2026-10-10"
   },
   {
     "shopId": "pandys-cards-and-collectibles",
