@@ -18,7 +18,8 @@ import { PlayMap, type FocusRequest } from "@/components/PlayMap";
 import { Setup } from "@/components/Setup";
 import { DataLoadError, dataUpdated, getDataSource, type PlayMapData } from "@/lib/data";
 import { geocodeZip, normalizeZip } from "@/lib/geo";
-import { GAME_IDS, GAMES, type GameId } from "@/lib/games";
+import type React from "react";
+import { GAME_IDS, GAMES, chipVars, type GameId } from "@/lib/games";
 import { DEFAULT_PREFS, effectiveGames, gameMode, loadPrefs, savePrefs, type Prefs } from "@/lib/prefs";
 import {
   addDays, filterOccurrences, occurrencesInRange, shopPassesFilter, shopsWithHandRows, shopsWithoutSchedule, startOfWeek, toDateStr,
@@ -197,7 +198,7 @@ export default function Page() {
               <span className="hdrrow">Game</span><span className="hdrrow">Mine</span><span className="hdrrow">Hide</span>
               {settingsGames.map((g) => (
                 <div key={g} style={{ display: "contents" }}>
-                  <span><span className="gchip" style={{ ["--chip" as any]: GAMES[g].color }}>{GAMES[g].short}</span> {GAMES[g].label}</span>
+                  <span><span className="gchip" style={chipVars(g) as React.CSSProperties}>{GAMES[g].short}</span> {GAMES[g].label}</span>
                   <label><input type="checkbox" checked={prefs.myGames.includes(g)} aria-label={`${GAMES[g].label} is one of my TCGs`}
                     onChange={() => toggleIn("myGames", g)} /></label>
                   <label><input type="checkbox" checked={prefs.hiddenGames.includes(g)} aria-label={`Hide ${GAMES[g].label}`}

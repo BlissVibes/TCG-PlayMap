@@ -7,7 +7,8 @@
  * move?" and "did the site change?".
  */
 
-import { GAMES, isGameId } from "@/lib/games";
+import type React from "react";
+import { GAMES, chipVars, isGameId } from "@/lib/games";
 import type { CalendarLogEntry } from "@/lib/data";
 import type { Shop } from "@/lib/schedule";
 import { CHANGELOG, VERSION } from "@/lib/version";
@@ -33,7 +34,7 @@ export function LogTab({ log, shops, onShowShop }: {
             <div key={i} className="logline">
               <span className={`act ${e.action}`}>{e.action}</span>
               {e.game && isGameId(e.game) && (
-                <span className="gchip" style={{ ["--chip" as any]: GAMES[e.game].color }}>{GAMES[e.game].short}</span>
+                <span className="gchip" style={chipVars(e.game) as React.CSSProperties}>{GAMES[e.game].short}</span>
               )}
               <button className="shoplink" onClick={() => onShowShop(e.shopId)}>{shopName.get(e.shopId) ?? e.shopId}</button>
               <span>{e.summary}</span>

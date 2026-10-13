@@ -17,7 +17,7 @@
  * to the site itself.
  */
 
-export const VERSION = "0.1.7.0";
+export const VERSION = "0.1.7.1";
 
 export interface ChangeEntry {
   version: string;
@@ -33,6 +33,11 @@ export interface ChangeEntry {
 
 /** Newest first. Every commit adds to the top entry or creates a new one. */
 export const CHANGELOG: ChangeEntry[] = [
+  {
+    version: "0.1.7.1",
+    date: "2026-10-13",
+    changes: ["Riftbound is now purple and Magic white. Hover over a game button, or press and hold it on a phone, to see the game's full name. Opening an event widens its day so it's easy to read."],
+  },
   {
     version: "0.1.7.0",
     date: "2026-10-11",

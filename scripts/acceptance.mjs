@@ -94,7 +94,33 @@ try {
   await page.locator(".block .body").first().click();
   check("tapping a block opens its details in place",
     (await page.locator(".block").first().locator('a[aria-label^="Directions to"]').count()) === 1 && (await page.locator(".block .more").count()) === 1);
+  // ...and widens that day's column, so the focused day is obvious (2026-10-13).
+  await page.waitForTimeout(400);   // the column width transition
+  const widths = await page.evaluate(() => {
+    const days = [...document.querySelectorAll(".week .day")];
+    const focus = days.find((d) => d.classList.contains("focus"));
+    const others = days.filter((d) => d !== focus).map((d) => d.getBoundingClientRect().width);
+    return { focus: focus ? Math.round(focus.getBoundingClientRect().width) : 0, other: Math.round(Math.max(...others)), hasBlock: !!focus?.querySelector(".block .more") };
+  });
+  check("opening an event widens its day column", widths.hasBlock && widths.focus > widths.other * 1.8, `focused ${widths.focus}px vs others ≤${widths.other}px`);
   await page.locator(".block .body").first().click();
+  await page.waitForTimeout(400);
+  check("closing it puts the columns back", (await page.locator(".week .day.focus").count()) === 0);
+
+  // TCG chips: full name on hover, and on a long press without toggling (2026-10-13).
+  const chip = page.locator(".filters .chip.game").first();
+  const label = await chip.getAttribute("aria-label");
+  await chip.hover();
+  const hovered = await chip.locator(".full").evaluate((e) => ({ shown: getComputedStyle(e).display !== "none", text: e.textContent }));
+  check("hovering a TCG chip shows its full name", hovered.shown && hovered.text === label, `${hovered.text ?? "-"} (${hovered.shown ? "shown" : "hidden"})`);
+  await page.mouse.move(0, 0);
+  const chipWas = await chip.getAttribute("aria-pressed");
+  await chip.dispatchEvent("touchstart");
+  await page.waitForTimeout(650);
+  await chip.dispatchEvent("touchend");
+  await chip.dispatchEvent("click");     // the click a finger-lift produces
+  const longPress = { expanded: await chip.evaluate((e) => e.classList.contains("expanded")), pressed: await chip.getAttribute("aria-pressed") };
+  check("a long press shows the full name and does not toggle the filter", longPress.expanded && longPress.pressed === chipWas, `expanded ${longPress.expanded}, pressed ${chipWas} -> ${longPress.pressed}`);
   // "Details" opens every block: the checks below look at all of them.
   await page.getByRole("button", { name: "Details" }).click();
   check("'Details' opens every block", (await page.locator(".block .more").count()) === blocks, `${await page.locator(".block .more").count()}/${blocks}`);

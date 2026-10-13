@@ -22,8 +22,9 @@
  * understand what dates of the week they will be playing what game".
  */
 
-import { useMemo, useState } from "react";
-import { GAMES } from "@/lib/games";
+import { useEffect, useMemo, useState } from "react";
+import type React from "react";
+import { GAMES, chipVars } from "@/lib/games";
 import {
   addDays, feeLabel, formatTime, groupByDate, MONTH_LABELS, monthGrid, parseDateStr, shortTime, weekDates,
   scheduleIncomplete, WEEKDAY_LABELS, WEEKDAY_SHORT, type Occurrence,
@@ -65,7 +66,7 @@ function Block({ o, mine, greyed, open, partial, showDistance, togglePick, toggl
   const tel = telHref(o.shop.phone);
   return (
     <div className={`block${open ? " open" : ""}${mine ? " mine" : ""}${greyed ? " greyed" : ""}`}
-      style={{ ["--chip" as any]: g.color }} data-event={o.event.id} data-date={o.date}>
+      style={chipVars(o.event.game) as React.CSSProperties} data-event={o.event.id} data-date={o.date}>
       <button className="pick" aria-pressed={mine} onClick={() => togglePick(o.event.id)}
         aria-label={mine ? `Remove ${g.label} at ${o.shop.name} from my calendar` : `Add ${g.label} at ${o.shop.name} to my calendar`}
         title={mine ? "In my calendar" : "Add to my calendar"}>{mine ? "✓" : "+"}</button>
@@ -118,6 +119,14 @@ export function Calendar(p: CalendarProps) {
   /** "Details": every block open, the pre-0.1.3.1 view. */
   const [allOpen, setAllOpen] = useState(false);
   const flip = (key: string) => setFlipped((s) => { const n = new Set(s); if (n.has(key)) n.delete(key); else n.add(key); return n; });
+  /**
+   * The week day holding the event the visitor just opened. Its column widens
+   * so the opened event is easy to read and it is obvious which day is in
+   * focus (Mark, 2026-10-13). Cleared when that day's last open event closes,
+   * on paging, and in "Details" mode (everything open, nothing to single out).
+   */
+  const [focusDay, setFocusDay] = useState<string | null>(null);
+  useEffect(() => { setFocusDay(null); }, [p.anchor, p.view, allOpen]);
   const byDate = useMemo(() => groupByDate(p.occurrences), [p.occurrences]);
   const anchorDt = parseDateStr(p.anchor);
 
@@ -150,7 +159,14 @@ export function Calendar(p: CalendarProps) {
     const key = `${o.event.id}@${o.date}`;
     return (
       <Block key={key} o={o} mine={isMine(o)} greyed={isGreyed(o)}
-        open={(allOpen || openByDefault) !== flipped.has(key)} toggleOpen={() => flip(key)}
+        open={(allOpen || openByDefault) !== flipped.has(key)}
+        toggleOpen={() => {
+          const wasOpen = (allOpen || openByDefault) !== flipped.has(key);
+          flip(key);
+          if (p.view !== "week" || allOpen) return;
+          if (!wasOpen) setFocusDay(o.date);
+          else if (focusDay === o.date && ![...flipped].some((k) => k !== key && k.endsWith(`@${o.date}`))) setFocusDay(null);
+        }}
         partial={scheduleIncomplete(o.shop, p.handShops)}
         showDistance={p.showDistance} togglePick={p.togglePick} onShowShop={p.onShowShop} />
     );
@@ -177,11 +193,13 @@ export function Calendar(p: CalendarProps) {
       </div>
 
       {p.view === "week" ? (
-        <div className="week">
+        <div className="week" style={focusDay && week.includes(focusDay)
+          ? { ["--cols" as any]: week.map((d) => (d === focusDay ? "minmax(0, 2.5fr)" : "minmax(0, 1fr)")).join(" ") }
+          : undefined}>
           {week.map((d, i) => {
             const list = byDate.get(d) ?? [];
             return (
-              <div key={d} className={`day${d === p.today ? " today" : ""}${todayIdx >= 0 && i < todayIdx ? " past" : ""}`}
+              <div key={d} className={`day${d === p.today ? " today" : ""}${todayIdx >= 0 && i < todayIdx ? " past" : ""}${d === focusDay ? " focus" : ""}`}
                 style={{ ["--ord" as any]: todayIdx >= 0 ? (i - todayIdx + 7) % 7 : i }}>
                 <div className="dayhdr"><b>{WEEKDAY_LABELS[i]}</b>{shortDate(d)}</div>
                 <div className="daybody">
@@ -210,7 +228,7 @@ export function Calendar(p: CalendarProps) {
                     const trophy = o.event.kind === "tournament";
                     return (
                       <span key={`${o.event.id}@${o.date}`} className={`mini${isGreyed(o) ? " greyed" : ""}`}
-                        style={{ ["--chip" as any]: g.color }}
+                        style={chipVars(o.event.game) as React.CSSProperties}
                         title={`${formatTime(o.event.start)} ${g.label} at ${o.shop.name}${trophy ? " (tournament)" : ""} - ${feeLabel(o.event.fee)}`}>
                         <b>{shortTime(o.event.start)}</b> {g.short}{trophy ? " 🏆" : ""} <span className="mfee">{o.event.fee ?? "?"}</span> <span className="mshop">{o.shop.name}</span>
                       </span>

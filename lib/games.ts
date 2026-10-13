@@ -26,7 +26,8 @@ export interface GameInfo {
 
 export const GAMES = {
   pokemon:       { label: "Pokémon TCG",                     short: "PKMN",   color: "#e3b400" },
-  mtg:           { label: "Magic: The Gathering",            short: "MTG",    color: "#e0632f" },
+  // White, at Mark's request (2026-10-13). chipVars() gives it dark text and a grey edge.
+  mtg:           { label: "Magic: The Gathering",            short: "MTG",    color: "#ffffff" },
   yugioh:        { label: "Yu-Gi-Oh!",                       short: "YGO",    color: "#7b5cd6" },
   onepiece:      { label: "One Piece Card Game",             short: "OP",     color: "#d8262b" },
   lorcana:       { label: "Disney Lorcana",                  short: "LOR",    color: "#3a8fd9" },
@@ -37,7 +38,8 @@ export const GAMES = {
   gundam:        { label: "Gundam Card Game",                short: "GUNDAM", color: "#3d5aa8" },
   grand_archive: { label: "Grand Archive",                   short: "GA",     color: "#1f8a8a" },
   swu:           { label: "Star Wars: Unlimited",            short: "SWU",    color: "#6f7a2e" },
-  riftbound:     { label: "Riftbound",                       short: "RIFT",   color: "#b8973a" },
+  // Purple, at Mark's request (2026-10-13); kept clear of Yu-Gi-Oh!'s blue-violet and Vanguard's dark purple.
+  riftbound:     { label: "Riftbound",                       short: "RIFT",   color: "#a33ad6" },
   azuki:         { label: "Azuki TCG",                       short: "AZUKI",  color: "#e4587a" },
   union_arena:   { label: "Union Arena",                     short: "UA",     color: "#5b7fe0" },
   weiss:         { label: "Weiß Schwarz",                    short: "WS",     color: "#8a8f99" },
@@ -70,4 +72,39 @@ export function isGameId(x: unknown): x is GameId {
 
 export function gameInfo(id: GameId): GameInfo {
   return GAMES[id];
+}
+
+/** WCAG relative luminance of a #rrggbb colour, 0 (black) .. 1 (white). */
+export function luminance(hex: string): number {
+  const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex);
+  if (!m) return 0;
+  const lin = (c: string) => { const v = parseInt(c, 16) / 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; };
+  return 0.2126 * lin(m[1]) + 0.7152 * lin(m[2]) + 0.0722 * lin(m[3]);
+}
+
+/**
+ * THE CSS VARIABLES THAT PAINT A GAME CHIP. Every surface that colours by
+ * game (filter chips, calendar blocks, month chips, the map popup, settings)
+ * sets these three instead of a bare `--chip`, so a light colour cannot
+ * silently become white-on-white:
+ *   --chip       the fill;
+ *   --chip-ink   text on the fill: dark on a near-white fill (Magic), else white;
+ *   --chip-edge  the outline / block accent: grey for a near-white fill, which
+ *                would otherwise vanish on the light theme; else the fill.
+ * The thresholds only catch very light colours, so every other game keeps
+ * the look it had.
+ */
+export function chipVars(id: GameId): Record<string, string> {
+  const color = GAMES[id].color;
+  const l = luminance(color);
+  return {
+    "--chip": color,
+    "--chip-ink": l > 0.6 ? "#1a1d23" : "#fff",
+    "--chip-edge": l > 0.85 ? "#9aa3b2" : color,
+  };
+}
+
+/** The same, as an inline `style` string, for HTML built outside React (map popups). */
+export function chipVarsCss(id: GameId): string {
+  return Object.entries(chipVars(id)).map(([k, v]) => `${k}:${v}`).join(";");
 }

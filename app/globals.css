@@ -74,7 +74,23 @@ input, select { font: inherit; }
 }
 .chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-text); }
 .chip .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
-.chip.game[aria-pressed="true"] { background: var(--chip); border-color: var(--chip); color: #fff; }
+/* Game colours come from chipVars(): --chip (fill), --chip-ink (text on it),
+   --chip-edge (outline; grey for a near-white fill like Magic's). */
+.chip.game .dot { background: var(--chip); box-shadow: inset 0 0 0 1px var(--chip-edge, var(--chip)); }
+.chip.game[aria-pressed="true"] { background: var(--chip); border-color: var(--chip-edge, var(--chip)); color: var(--chip-ink, #fff); }
+.chip.game[aria-pressed="true"] .dot { background: var(--chip-ink, #fff); box-shadow: none; }
+/* The full name: an overlay that starts exactly over the chip (no reflow, no flicker). */
+.chip.game { position: relative; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+.chip.game .full {
+  display: none; position: absolute; left: -1px; top: -1px; z-index: 30;
+  min-width: calc(100% + 2px); max-width: min(80vw, 360px); box-sizing: border-box;
+  padding: 4px 10px; border-radius: 999px; border: 1px solid var(--chip-edge, var(--border));
+  background: var(--panel); color: var(--text); box-shadow: 0 4px 14px rgba(0,0,0,.18);
+  align-items: center; gap: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none;
+}
+.chip.game[aria-pressed="true"] .full { background: var(--chip); color: var(--chip-ink, #fff); }
+@media (hover: hover) { .chip.game:hover .full { display: inline-flex; } }
+.chip.game:focus-visible .full, .chip.game.expanded .full { display: inline-flex; }
 .field {
   padding: 5px 9px; border-radius: 8px; border: 1px solid var(--border);
   background: var(--field); color: var(--text); font-size: 13px;
@@ -126,7 +142,8 @@ input, select { font: inherit; }
 .popup .partial { color: var(--text2); font-size: 12px; font-style: italic; margin-top: 8px; }
 .gchip {
   display: inline-block; padding: 1px 6px; border-radius: 6px; font-size: 11px;
-  font-weight: 650; color: #fff; background: var(--chip); vertical-align: middle;
+  font-weight: 650; color: var(--chip-ink, #fff); background: var(--chip); vertical-align: middle;
+  box-shadow: inset 0 0 0 1px var(--chip-edge, var(--chip));
 }
 
 /* ── Calendar ───────────────────────────────────────────────────────────── */
@@ -137,7 +154,10 @@ input, select { font: inherit; }
 .seg button { border: 0; background: transparent; color: var(--text2); padding: 5px 10px; font-size: 12px; }
 .seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); }
 
-.week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+/* --cols is set when an event is opened: that day's column widens (Mark, 2026-10-13). */
+.week { display: grid; grid-template-columns: var(--cols, repeat(7, minmax(0, 1fr))); gap: 8px; transition: grid-template-columns .25s ease; }
+.day.focus { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 35%, transparent), var(--shadow); }
+.day.focus .dayhdr b { color: var(--accent); }
 .day { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; min-height: 120px; box-shadow: var(--shadow); }
 .day.today { border-color: var(--accent); }
 .dayhdr { padding: 8px 10px 6px; border-bottom: 1px solid var(--border2); font-size: 12px; color: var(--muted); }
@@ -150,19 +170,19 @@ input, select { font: inherit; }
 .daybody { gap: 4px; }
 .block {
   display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: 2px 6px; align-items: start;
-  border: 1px solid var(--border2); border-left: 4px solid var(--chip);
+  border: 1px solid var(--border2); border-left: 4px solid var(--chip-edge, var(--chip));
   border-radius: 7px; padding: 3px 3px 3px 5px; background: var(--bg);
   font-size: 12px; line-height: 1.35;
 }
-.block.open { padding-bottom: 6px; background: var(--panel); border-color: var(--border); border-left-color: var(--chip); }
-.block.mine { border-color: var(--chip); background: color-mix(in srgb, var(--chip) 12%, var(--panel)); }
+.block.open { padding-bottom: 6px; background: var(--panel); border-color: var(--border); border-left-color: var(--chip-edge, var(--chip)); }
+.block.mine { border-color: var(--chip-edge, var(--chip)); background: color-mix(in srgb, var(--chip) 12%, var(--panel)); }
 .block.greyed { opacity: .35; filter: grayscale(.6); }
 .block .pick {
   width: 18px; height: 18px; border-radius: 5px; border: 1px solid var(--border);
   background: var(--field); color: var(--text); font-size: 12px; line-height: 1; padding: 0;
   display: grid; place-items: center;
 }
-.block .pick[aria-pressed="true"] { background: var(--chip); border-color: var(--chip); color: #fff; }
+.block .pick[aria-pressed="true"] { background: var(--chip); border-color: var(--chip-edge, var(--chip)); color: var(--chip-ink, #fff); }
 .block .body {
   min-width: 0; text-align: left; background: transparent; border: 0; padding: 0; color: inherit; cursor: pointer;
   font: inherit; display: flex; flex-wrap: wrap; gap: 0 4px; align-items: center;
@@ -206,7 +226,7 @@ input, select { font: inherit; }
 .cell.today { border-color: var(--accent); }
 .cell.sel { outline: 2px solid var(--accent); }
 .cell .num { font-size: 12px; color: var(--muted); }
-.cell .mini { font-size: 10px; line-height: 1.5; padding: 0 4px; border-radius: 4px; color: #fff; background: var(--chip); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cell .mini { font-size: 10px; line-height: 1.5; padding: 0 4px; border-radius: 4px; color: var(--chip-ink, #fff); background: var(--chip); box-shadow: inset 0 0 0 1px var(--chip-edge, var(--chip)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .cell .mini b { font-weight: 650; }
 .cell .mini .mshop { opacity: .85; }
 .cell .mini.greyed { opacity: .35; }

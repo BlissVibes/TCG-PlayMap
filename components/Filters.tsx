@@ -12,7 +12,9 @@
  * The rule itself lives in lib/prefs.ts (effectiveGames) so it is tested.
  */
 
-import { GAME_IDS, GAMES, type GameId } from "@/lib/games";
+import type React from "react";
+import { useEffect, useRef, useState } from "react";
+import { GAME_IDS, GAMES, chipVars, type GameId } from "@/lib/games";
 import { RADIUS_CHOICES, type GeoOrigin } from "@/lib/geo";
 import type { EventKind } from "@/lib/schedule";
 
@@ -84,12 +86,59 @@ export function Filters(p: FiltersProps) {
         )}
         <button className="chip" aria-pressed={p.mode === "all"} onClick={p.showAll}>Show all TCGs</button>
         {games.map((g) => (
-          <button key={g} className="chip game" aria-pressed={p.games.has(g)} onClick={() => p.toggleGame(g)}
-            style={{ ["--chip" as any]: GAMES[g].color }} title={GAMES[g].label}>
-            <span className="dot" style={{ background: p.games.has(g) ? "#fff" : GAMES[g].color }} />{GAMES[g].short}
-          </button>
+          <GameChip key={g} g={g} pressed={p.games.has(g)} onToggle={() => p.toggleGame(g)} />
         ))}
       </div>
     </div>
+  );
+}
+
+/** How long a finger must rest on a chip before it counts as "hold to see the name". */
+export const LONG_PRESS_MS = 450;
+/** How long the full name stays up after the finger lifts. */
+const HOLD_SHOW_MS = 1800;
+
+/**
+ * ONE GAME CHIP: the short code ("RIFT"), and the full name ("Riftbound") on
+ * hover, keyboard focus, or a long press on a phone (Mark, 2026-10-13).
+ *
+ * The full name is an OVERLAY on top of the chip, not a wider chip: a chip that
+ * grows on hover reflows the whole row, the hovered chip jumps to the next
+ * line, the pointer is no longer on it, it shrinks back - and flickers. The
+ * overlay starts exactly over the chip and extends right, so nothing moves.
+ *
+ * A long press must not toggle the filter: the finger lifting after a hold
+ * fires a click, which is swallowed here.
+ */
+function GameChip({ g, pressed, onToggle }: { g: GameId; pressed: boolean; onToggle: () => void }) {
+  const [held, setHeld] = useState(false);
+  const timer = useRef<number | null>(null);
+  const hide = useRef<number | null>(null);
+  const longPressed = useRef(false);
+  const clear = (t: React.MutableRefObject<number | null>) => { if (t.current != null) window.clearTimeout(t.current); t.current = null; };
+  useEffect(() => () => { clear(timer); clear(hide); }, []);
+
+  const start = () => {
+    longPressed.current = false;
+    clear(timer); clear(hide);
+    timer.current = window.setTimeout(() => { longPressed.current = true; setHeld(true); }, LONG_PRESS_MS);
+  };
+  const end = (e: React.TouchEvent) => {
+    clear(timer);
+    if (longPressed.current) {
+      e.preventDefault();                       // no click after a hold
+      hide.current = window.setTimeout(() => setHeld(false), HOLD_SHOW_MS);
+    }
+  };
+  const info = GAMES[g];
+  return (
+    <button className={`chip game${held ? " expanded" : ""}`} aria-pressed={pressed} aria-label={info.label}
+      title={info.label} style={chipVars(g) as React.CSSProperties}
+      onClick={(e) => { if (longPressed.current) { longPressed.current = false; e.preventDefault(); return; } onToggle(); }}
+      onTouchStart={start} onTouchEnd={end} onTouchMove={() => clear(timer)} onTouchCancel={() => clear(timer)}
+      onContextMenu={(e) => e.preventDefault()}>
+      <span className="dot" />{info.short}
+      <span className="full" aria-hidden><span className="dot" />{info.label}</span>
+    </button>
   );
 }

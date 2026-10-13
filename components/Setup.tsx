@@ -13,8 +13,9 @@
  * and can be changed later in Settings (or by running setup again).
  */
 
+import type React from "react";
 import { useState } from "react";
-import { GAMES, GAME_IDS, type GameId } from "@/lib/games";
+import { GAMES, GAME_IDS, chipVars, type GameId } from "@/lib/games";
 import { RADIUS_CHOICES, geocodeZip, normalizeZip, type GeoOrigin } from "@/lib/geo";
 
 export interface SetupResult {
@@ -99,8 +100,8 @@ export function Setup({ initial, availableGames, onDone }: {
           <div className={`row${nudge && !myGames.length ? " nudge" : ""}`} role="group" aria-label="Your TCGs">
             {games.map((g) => (
               <button key={g} className="chip game" aria-pressed={myGames.includes(g)} title={GAMES[g].label}
-                style={{ ["--chip" as any]: GAMES[g].color }} onClick={() => toggle(myGames, setMyGames, g)}>
-                <span className="dot" style={{ background: myGames.includes(g) ? "#fff" : GAMES[g].color }} />{GAMES[g].label}
+                style={chipVars(g) as React.CSSProperties} onClick={() => toggle(myGames, setMyGames, g)}>
+                <span className="dot" />{GAMES[g].label}
               </button>
             ))}
           </div>

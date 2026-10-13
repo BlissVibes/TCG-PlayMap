@@ -22,7 +22,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { loadLeaflet, TILE_ATTRIBUTION, TILE_URL } from "@/lib/leafletCdn";
-import { GAMES, type GameId } from "@/lib/games";
+import { GAMES, chipVarsCss, type GameId } from "@/lib/games";
 import { feeLabel, formatTime, scheduleIncomplete, WEEKDAY_SHORT, weekdayOf, type Occurrence, type Shop } from "@/lib/schedule";
 import type { GeoOrigin } from "@/lib/geo";
 import { appleDirectionsUrl, directionsUrl, telHref } from "@/lib/shopLinks";
@@ -83,7 +83,7 @@ export function popupHtml(shop: Shop, occs: Occurrence[], myEvents: ReadonlySet<
       const mine = myEvents.has(o.event.id) ? " ✓" : "";
       const extra = [o.event.title, o.event.format].filter(Boolean).join(" · ");
       // Cost is always shown (rule 9).
-      return `<li>${esc(formatTime(o.event.start))} <span class="gchip" style="--chip:${g.color}">${esc(g.short)}</span>${t}${mine} <b class="pfee">${esc(feeLabel(o.event.fee))}</b>${extra ? ` <span style="color:var(--muted)">${esc(extra)}</span>` : ""}</li>`;
+      return `<li>${esc(formatTime(o.event.start))} <span class="gchip" style="${chipVarsCss(o.event.game)}">${esc(g.short)}</span>${t}${mine} <b class="pfee">${esc(feeLabel(o.event.fee))}</b>${extra ? ` <span style="color:var(--muted)">${esc(extra)}</span>` : ""}</li>`;
     }).join("");
     return `<li><b>${WEEKDAY_SHORT[wd]}</b><ul>${items}</ul></li>`;
   }).join("");
